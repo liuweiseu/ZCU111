@@ -262,7 +262,7 @@ tx_snapshot/ss/status	xps:sw_reg	sim_port	off
 tx_snapshot/ss/status	xps:sw_reg	show_format	on
 gbe0	xps:ten_gbe	flavour	sfp+
 gbe0	xps:ten_gbe	slot	0
-gbe0	xps:ten_gbe	port_r1	1
+gbe0	xps:ten_gbe	port_r1	2
 gbe0	xps:ten_gbe	port_r2_cx4	0
 gbe0	xps:ten_gbe	port_r2_sfpp	0
 gbe0	xps:ten_gbe	rx_dist_ram	off
@@ -403,7 +403,8 @@ tx_snapshot/ss	casper:snapshot	provide_outputs	off
 tx_snapshot/ss	casper:snapshot	use_dsp48	on
 77777	77777	tags	casper:bitsnap,casper:snapshot,xps:bram,xps:sw_reg,xps:ten_gbe,xps:xsg
 77777	77777	system	zcu111_tengbe
-77777	77777	builddate	22-Oct-2020\_13:04:42
+77777	77777	builddate	22-Oct-2020\_21:54:19
+77777	77777	ans	20015998304256
 77777	77777	blk	zcu111_tengbe/gbe0
 77777	77777	latency	NaN
 77777	77777	xlSgRoot	/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/lib/lnx64.o/matlab/sysgen.mexa64

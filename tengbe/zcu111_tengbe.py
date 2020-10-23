@@ -10,7 +10,7 @@ import casperfpga, time, struct, sys, logging, socket, numpy
 #Decide where we're going to send the data, and from which addresses:
 fabric_port= 60000         
 mac_base= (2<<40) + (2<<32)
-ip_base = 192*(2**24) + 168*(2**16) + 10*(2**8)
+ip_base = 192*(2**24) + 168*(2**16) + 1*(2**8)
 
 pkt_period = 16384  #how often to send another packet in FPGA clocks (200MHz)
 payload_len = 128   #how big to make each packet in 64bit words
@@ -56,7 +56,7 @@ if __name__ == '__main__':
         snap = args[0]
     if opts.fpg != '':
         fpgfile = opts.fpg
-		
+        
 # DO NOT CHANGE THESE THREE VALUES!!!
 mac_location = 0x0c
 ip_location = 0x14
@@ -109,10 +109,10 @@ try:
 
     print 'Setting-up destination addresses...',
     sys.stdout.flush()
-    fpga.write_int('dest_ip',ip_base+13)
+    fpga.write_int('dest_ip',ip_base+90)
     fpga.write_int('dest_port',fabric_port)
     print 'done'
-	
+    
     print '---------------------------'
     print 'Setting-up packet source...',
     sys.stdout.flush()
@@ -125,8 +125,8 @@ try:
     fpga.write_int('rst', 3)
     fpga.write_int('rst', 0)
     print 'done'
-	
-	print 'Enabling output...',
+    
+    print 'Enabling output...',
     sys.stdout.flush()
     fpga.write_int('pkt_sim_enable', 1)
     print 'done'

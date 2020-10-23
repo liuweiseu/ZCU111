@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
-| Date         : Thu Oct 22 13:20:15 2020
+| Date         : Thu Oct 22 22:10:35 2020
 | Host         : wei-Berkeley running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
 | Design       : top
@@ -107,14 +107,14 @@ Table of Contents
 +----------------------+------+-------+-----------+-------+
 |       Site Type      | Used | Fixed | Available | Util% |
 +----------------------+------+-------+-----------+-------+
-| GLOBAL CLOCK BUFFERs |   10 |     0 |       696 |  1.44 |
-|   BUFGCE             |    7 |     0 |       216 |  3.24 |
+| GLOBAL CLOCK BUFFERs |    7 |     0 |       696 |  1.01 |
+|   BUFGCE             |    5 |     0 |       216 |  2.31 |
 |   BUFGCE_DIV         |    0 |     0 |        32 |  0.00 |
-|   BUFG_GT            |    3 |     0 |       312 |  0.96 |
+|   BUFG_GT            |    2 |     0 |       312 |  0.64 |
 |   BUFG_PS            |    0 |     0 |        72 |  0.00 |
 |   BUFGCTRL*          |    0 |     0 |        64 |  0.00 |
 | PLL                  |    0 |     0 |        16 |  0.00 |
-| MMCM                 |    3 |     0 |         8 | 37.50 |
+| MMCM                 |    1 |     0 |         8 | 12.50 |
 +----------------------+------+-------+-----------+-------+
 * Note: Each used BUFGCTRL counts as two GLOBAL CLOCK BUFFERs. This table does not include global clocking resources, only buffer cell usage. See the Clock Utilization Report (report_clock_utilization) for detailed accounting of global clocking resource availability.
 
@@ -170,7 +170,7 @@ Table of Contents
 | LUT4          |  644 |                 CLB |
 | LUT3          |  643 |                 CLB |
 | FDSE          |  338 |            Register |
-| LUT1          |  306 |                 CLB |
+| LUT1          |  307 |                 CLB |
 | SRL16E        |  288 |                 CLB |
 | CARRY8        |  104 |                 CLB |
 | RAMB36E2      |   80 |           Block Ram |
@@ -178,11 +178,11 @@ Table of Contents
 | RAMD32        |   72 |                 CLB |
 | MUXF7         |   61 |                 CLB |
 | RAMS32        |   24 |                 CLB |
-| BUFGCE        |    7 |               Clock |
-| MMCME4_ADV    |    3 |               Clock |
-| BUFG_GT_SYNC  |    3 |               Clock |
-| BUFG_GT       |    3 |               Clock |
+| BUFGCE        |    5 |               Clock |
 | OBUF          |    2 |                 I/O |
+| BUFG_GT_SYNC  |    2 |               Clock |
+| BUFG_GT       |    2 |               Clock |
+| MMCME4_ADV    |    1 |               Clock |
 | IBUFDS_GTE4   |    1 |                 I/O |
 | IBUFCTRL      |    1 |              Others |
 | GTYE4_COMMON  |    1 |            Advanced |

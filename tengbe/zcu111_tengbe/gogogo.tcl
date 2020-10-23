@@ -18,7 +18,7 @@ import_files -force /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_source
 import_files -force /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/cpu_buffer.xci
 import_files -force /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/rx_packet_fifo_dist.xci
 import_files -force /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/tengbaser_phy_ultrascale/tengbaser_phy_ultrascale.xci
-import_files -force /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_reset_wrapper.v
+import_files -force /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/tengbaser_phy_ultrascale_reset.v
 import_files -force /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_gt_gtye4_common_wrapper.v
 import_files -force /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/tengbaser_infrastructure_ultrascale.v
 import_files -force /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_clocking_wrapper.v

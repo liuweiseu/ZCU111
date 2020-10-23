@@ -35,13 +35,13 @@ read_verilog -library xil_defaultlib {
   /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/kat_ten_gb_eth.v
   /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sys_block/sys_block_counter.v
   /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/tengbaser_infrastructure_ultrascale.v
+  /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/tengbaser_phy_ultrascale_reset.v
   /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_rx.v
   /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_tx.v
   /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/wb_attach.v
   /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_clocking_wrapper.v
   /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_common_wrapper.v
   /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_gt_gtye4_common_wrapper.v
-  /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_reset_wrapper.v
   /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/infrastructure/zcu111_infrastructure.v
   /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v
 }

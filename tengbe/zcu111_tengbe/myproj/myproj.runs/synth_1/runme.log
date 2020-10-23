@@ -142,7 +142,7 @@ INFO: [Common 17-86] Your Synthesis license expires in 28 day(s)
 INFO: [Common 17-1686] The version limit for your license is '2020.10' and will not allow you to run Xilinx software released after that date (year & month). A version limit expiration means that while you will be able to continue to use the current version of tools or IP with this license, you will not be able to use any updates or new releases.
 INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 31787 
+INFO: Helper process launched with PID 4681 
 load diablo GTM unisim library
 WARNING: [Synth 8-2507] parameter declaration becomes local in xxv_ethernet_v3_0_3_cl73autoneg_an_pcontrol with formal parameter declaration list [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ipshared/2b5c/hdl/xxv_ethernet_v3_0_vl_rfs.sv:158876]
 WARNING: [Synth 8-2507] parameter declaration becomes local in xxv_ethernet_v3_0_3_cl73autoneg_an_pcontrol with formal parameter declaration list [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ipshared/2b5c/hdl/xxv_ethernet_v3_0_vl_rfs.sv:158898]
@@ -153,7 +153,7 @@ WARNING: [Synth 8-2507] parameter declaration becomes local in xxv_ethernet_v3_0
 WARNING: [Synth 8-2507] parameter declaration becomes local in xxv_ethernet_v1_0_xilinx_cl73autoneg_an_pcontrol with formal parameter declaration list [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ipshared/2b5c/hdl/xxv_ethernet_v3_0_vl_rfs.sv:251004]
 WARNING: [Synth 8-2507] parameter declaration becomes local in xxv_ethernet_v1_0_xilinx_cl73autoneg_an_pcontrol with formal parameter declaration list [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ipshared/2b5c/hdl/xxv_ethernet_v3_0_vl_rfs.sv:251015]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2589.688 ; gain = 268.527 ; free physical = 8764 ; free virtual = 30607
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2589.688 ; gain = 268.527 ; free physical = 4858 ; free virtual = 26000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:7]
 INFO: [Synth 8-638] synthesizing module 'gpio_simulink2ext' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/gpio_simulink2ext/gpio_simulink2ext.vhd:26]
@@ -172,29 +172,29 @@ INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [/home/wei/casp
 INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/utils/cdc_synchroniser.vhd:153]
 INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/utils/cdc_synchroniser.vhd:154]
 INFO: [Synth 8-256] done synthesizing module 'cdc_synchroniser' (2#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/utils/cdc_synchroniser.vhd:146]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_dest_ip' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:326]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_dest_port' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:337]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_rxbadctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:348]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_rxctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:359]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_rxeofctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:370]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_rxofctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:381]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_rxs_ss_ctrl' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:392]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_rxs_ss_status' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:403]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_rxvldctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:414]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_txctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:425]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_txfullctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:436]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_txofctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:447]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_txs_ss_ctrl' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:458]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_txs_ss_status' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:469]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_txvldctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:480]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_linkup' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:491]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_tx_cnt' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:502]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_pkt_sim_enable' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:513]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_pkt_sim_payload_len' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:524]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_pkt_sim_period' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:535]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_rst' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:546]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_tx_snapshot_ss_ctrl' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:557]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_tx_snapshot_ss_status' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:568]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_dest_ip' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:320]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_dest_port' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:331]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_rxbadctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:342]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_rxctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:353]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_rxeofctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:364]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_rxofctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:375]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_rxs_ss_ctrl' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:386]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_rxs_ss_status' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:397]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_rxvldctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:408]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_txctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:419]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_txfullctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:430]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_txofctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:441]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_txs_ss_ctrl' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:452]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_txs_ss_status' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:463]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_txvldctr' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:474]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_linkup' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:485]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0_tx_cnt' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:496]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_pkt_sim_enable' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:507]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_pkt_sim_payload_len' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:518]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_pkt_sim_period' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:529]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_rst' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:540]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_tx_snapshot_ss_ctrl' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:551]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_tx_snapshot_ss_status' of module 'cdc_synchroniser' has 7 connections declared, but only 5 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:562]
 INFO: [Synth 8-638] synthesizing module 'axi4lite_ic_wrapper' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/axi4lite_ic_wrapper.vhdl:130]
 INFO: [Synth 8-638] synthesizing module 'axi4lite_axi4lite_top_ic' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_axi4lite_top_ic.vhd:43]
 WARNING: [Synth 8-5858] RAM axi4lite_mosi_arr_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
@@ -310,8 +310,8 @@ WARNING: [Synth 8-3848] Net axi4lite_sw_reg_in[tx_snapshot_ss_ctrl] in module/en
 WARNING: [Synth 8-3848] Net axi4lite_sys_block_in_we[sys_scratchpad] in module/entity axi4lite_ic_wrapper does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/axi4lite_ic_wrapper.vhdl:140]
 WARNING: [Synth 8-3848] Net axi4lite_sys_block_in[sys_scratchpad] in module/entity axi4lite_ic_wrapper does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/axi4lite_ic_wrapper.vhdl:141]
 INFO: [Synth 8-256] done synthesizing module 'axi4lite_ic_wrapper' (19#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/axi4lite_ic_wrapper.vhdl:130]
-WARNING: [Synth 8-689] width (40) of port connection 's_axi4lite_araddr' does not match port width (32) of module 'axi4lite_ic_wrapper' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:671]
-WARNING: [Synth 8-689] width (40) of port connection 's_axi4lite_awaddr' does not match port width (32) of module 'axi4lite_ic_wrapper' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:674]
+WARNING: [Synth 8-689] width (40) of port connection 's_axi4lite_araddr' does not match port width (32) of module 'axi4lite_ic_wrapper' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:665]
+WARNING: [Synth 8-689] width (40) of port connection 's_axi4lite_awaddr' does not match port width (32) of module 'axi4lite_ic_wrapper' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:668]
 INFO: [Synth 8-6157] synthesizing module 'sys_block_counter' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sys_block/sys_block_counter.v:16]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter COUNT_FROM bound to: 0 - type: integer 
@@ -699,8 +699,8 @@ INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_xlcounter_free' [/home/we
 	Parameter core_name0 bound to: zcu111_tengbe_c_counter_binary_v12_0_i1 - type: string 
 	Parameter op_width bound to: 18 - type: integer 
 	Parameter op_arith bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'zcu111_tengbe_c_counter_binary_v12_0_i1' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i1_stub.vhdl:5' bound to instance 'core_instance1' of component 'zcu111_tengbe_c_counter_binary_v12_0_i1' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2638]
-INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_c_counter_binary_v12_0_i1' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i1_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'zcu111_tengbe_c_counter_binary_v12_0_i1' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i1_stub.vhdl:5' bound to instance 'core_instance1' of component 'zcu111_tengbe_c_counter_binary_v12_0_i1' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2638]
+INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_c_counter_binary_v12_0_i1' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i1_stub.vhdl:15]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_xlcounter_free' (61#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2552]
 INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_xlslice__parameterized1' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:128]
 	Parameter new_msb bound to: 16 - type: integer 
@@ -774,8 +774,8 @@ INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_xlcounter_free__parameter
 	Parameter core_name0 bound to: zcu111_tengbe_c_counter_binary_v12_0_i2 - type: string 
 	Parameter op_width bound to: 2 - type: integer 
 	Parameter op_arith bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'zcu111_tengbe_c_counter_binary_v12_0_i2' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i2_stub.vhdl:5' bound to instance 'core_instance2' of component 'zcu111_tengbe_c_counter_binary_v12_0_i2' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2648]
-INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_c_counter_binary_v12_0_i2' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i2_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'zcu111_tengbe_c_counter_binary_v12_0_i2' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i2_stub.vhdl:5' bound to instance 'core_instance2' of component 'zcu111_tengbe_c_counter_binary_v12_0_i2' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2648]
+INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_c_counter_binary_v12_0_i2' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i2_stub.vhdl:15]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_xlcounter_free__parameterized0' (73#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2552]
 INFO: [Synth 8-638] synthesizing module 'sysgen_mux_b78b4e20e5' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:1353]
 INFO: [Synth 8-256] done synthesizing module 'sysgen_mux_b78b4e20e5' (74#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:1353]
@@ -1034,8 +1034,8 @@ INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_xlslice__parameterized15'
 	Parameter y_width bound to: 28 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_xlslice__parameterized15' (94#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:128]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_ctrl_split_x1' (95#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:2185]
-INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_status_x1' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:2273]
-INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_status_x1' (96#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:2273]
+INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_status_x0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:2273]
+INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_status_x0' (96#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:2273]
 INFO: [Synth 8-638] synthesizing module 'sysgen_delay_4804586b6c' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:997]
 INFO: [Synth 8-256] done synthesizing module 'sysgen_delay_4804586b6c' (97#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:997]
 INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_xlconvert__parameterized4' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:287]
@@ -1075,10 +1075,10 @@ INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_xlconvert__parameter
 INFO: [Synth 8-638] synthesizing module 'sysgen_reinterpret_5ead3c5237' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:1125]
 INFO: [Synth 8-256] done synthesizing module 'sysgen_reinterpret_5ead3c5237' (98#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:1125]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_ss_x0' (99#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:2355]
-INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_trig_delay_x0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:2577]
-INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_trig_delay_x0' (100#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:2577]
-INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_we_delay_x0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:2670]
-INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_we_delay_x0' (101#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:2670]
+INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_trig_delay' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:2577]
+INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_trig_delay' (100#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:2577]
+INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_we_delay' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:2670]
+INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_we_delay' (101#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:2670]
 INFO: [Synth 8-638] synthesizing module 'xlpassthrough__parameterized0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:661]
 	Parameter din_width bound to: 1 - type: integer 
 	Parameter dout_width bound to: 1 - type: integer 
@@ -1126,8 +1126,8 @@ INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_split_x0' [/home/wei/casp
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_split_x0' (118#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:4645]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_munge_in_x1' (119#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:4749]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_bram_x1' (120#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:4811]
-INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_ctrl' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:4918]
-INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_ctrl' (121#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:4918]
+INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_ctrl_x0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:4918]
+INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_ctrl_x0' (121#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:4918]
 INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_ctrl_combine' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:4968]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_ctrl_combine' (122#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:4968]
 INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_ctrl_split' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:5042]
@@ -1135,10 +1135,10 @@ INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_ctrl_split' (123#1) 
 INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_status' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:5130]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_status' (124#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:5130]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_ss_x1' (125#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:5212]
-INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_trig_delay' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:5434]
-INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_trig_delay' (126#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:5434]
-INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_we_delay' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:5527]
-INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_we_delay' (127#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:5527]
+INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_trig_delay_x0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:5434]
+INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_trig_delay_x0' (126#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:5434]
+INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_we_delay_x0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:5527]
+INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_we_delay_x0' (127#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:5527]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_txs' (128#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:5635]
 INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_txvldctr' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:5822]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_txvldctr' (129#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:5822]
@@ -1336,22 +1336,22 @@ INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_xlcounter_free__parameter
 	Parameter core_name0 bound to: zcu111_tengbe_c_counter_binary_v12_0_i0 - type: string 
 	Parameter op_width bound to: 32 - type: integer 
 	Parameter op_arith bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'zcu111_tengbe_c_counter_binary_v12_0_i0' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i0_stub.vhdl:5' bound to instance 'core_instance0' of component 'zcu111_tengbe_c_counter_binary_v12_0_i0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2628]
-INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_c_counter_binary_v12_0_i0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'zcu111_tengbe_c_counter_binary_v12_0_i0' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i0_stub.vhdl:5' bound to instance 'core_instance0' of component 'zcu111_tengbe_c_counter_binary_v12_0_i0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2628]
+INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_c_counter_binary_v12_0_i0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i0_stub.vhdl:15]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_xlcounter_free__parameterized1' (143#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2552]
 INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_xlcounter_free__parameterized2' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2552]
 	Parameter core_name0 bound to: zcu111_tengbe_c_counter_binary_v12_0_i3 - type: string 
 	Parameter op_width bound to: 32 - type: integer 
 	Parameter op_arith bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'zcu111_tengbe_c_counter_binary_v12_0_i3' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i3_stub.vhdl:5' bound to instance 'core_instance3' of component 'zcu111_tengbe_c_counter_binary_v12_0_i3' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2658]
-INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_c_counter_binary_v12_0_i3' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i3_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'zcu111_tengbe_c_counter_binary_v12_0_i3' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i3_stub.vhdl:5' bound to instance 'core_instance3' of component 'zcu111_tengbe_c_counter_binary_v12_0_i3' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2658]
+INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_c_counter_binary_v12_0_i3' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i3_stub.vhdl:15]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_xlcounter_free__parameterized2' (143#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2552]
 INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_xlcounter_free__parameterized3' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2552]
 	Parameter core_name0 bound to: zcu111_tengbe_c_counter_binary_v12_0_i4 - type: string 
 	Parameter op_width bound to: 64 - type: integer 
 	Parameter op_arith bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'zcu111_tengbe_c_counter_binary_v12_0_i4' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i4_stub.vhdl:5' bound to instance 'core_instance4' of component 'zcu111_tengbe_c_counter_binary_v12_0_i4' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2668]
-INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_c_counter_binary_v12_0_i4' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i4_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'zcu111_tengbe_c_counter_binary_v12_0_i4' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i4_stub.vhdl:5' bound to instance 'core_instance4' of component 'zcu111_tengbe_c_counter_binary_v12_0_i4' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2668]
+INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_c_counter_binary_v12_0_i4' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i4_stub.vhdl:15]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_xlcounter_free__parameterized3' (143#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2552]
 INFO: [Synth 8-638] synthesizing module 'sysgen_delay_6d3d9ae438' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2071]
 INFO: [Synth 8-256] done synthesizing module 'sysgen_delay_6d3d9ae438' (144#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2071]
@@ -1437,8 +1437,8 @@ INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_xlcounter_free__parameter
 	Parameter core_name0 bound to: zcu111_tengbe_c_counter_binary_v12_0_i5 - type: string 
 	Parameter op_width bound to: 17 - type: integer 
 	Parameter op_arith bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'zcu111_tengbe_c_counter_binary_v12_0_i5' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i5_stub.vhdl:5' bound to instance 'core_instance5' of component 'zcu111_tengbe_c_counter_binary_v12_0_i5' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2678]
-INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_c_counter_binary_v12_0_i5' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i5_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'zcu111_tengbe_c_counter_binary_v12_0_i5' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i5_stub.vhdl:5' bound to instance 'core_instance5' of component 'zcu111_tengbe_c_counter_binary_v12_0_i5' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2678]
+INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_c_counter_binary_v12_0_i5' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_tengbe_c_counter_binary_v12_0_i5_stub.vhdl:15]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_xlcounter_free__parameterized4' (155#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2552]
 INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_xlslice__parameterized16' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:128]
 	Parameter new_msb bound to: 15 - type: integer 
@@ -1525,14 +1525,14 @@ INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_split_x1' [/home/wei/casp
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_split_x1' (164#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:8658]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_munge_in' (165#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:8762]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_bram' (166#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:8824]
-INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_ctrl_x0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:8931]
-INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_ctrl_x0' (167#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:8931]
+INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_ctrl' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:8931]
+INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_ctrl' (167#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:8931]
 INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_ctrl_combine_x0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:8981]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_ctrl_combine_x0' (168#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:8981]
 INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_ctrl_split_x0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:9055]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_ctrl_split_x0' (169#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:9055]
-INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_status_x0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:9143]
-INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_status_x0' (170#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:9143]
+INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_status_x1' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:9143]
+INFO: [Synth 8-256] done synthesizing module 'zcu111_tengbe_status_x1' (170#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe.vhd:9143]
 INFO: [Synth 8-638] synthesizing module 'sysgen_delay_91717f0392' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2314]
 INFO: [Synth 8-256] done synthesizing module 'sysgen_delay_91717f0392' (171#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:2314]
 INFO: [Synth 8-638] synthesizing module 'zcu111_tengbe_xlconvert__parameterized13' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/sysgen/zcu111_tengbe_entity_declarations.vhd:287]
@@ -1588,46 +1588,7 @@ INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE4' [/home/wei/Software/Vivad
 	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
 	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
 INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE4' (177#1) [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:33047]
-INFO: [Synth 8-6157] synthesizing module 'BUFG_GT' [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:1251]
-	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
-	Parameter STARTUP_SYNC bound to: FALSE - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT' (178#1) [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:1251]
-INFO: [Synth 8-6157] synthesizing module 'MMCM_BASE' [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:40654]
-	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
-	Parameter CLKFBOUT_MULT_F bound to: 8.000000 - type: float 
-	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKIN1_PERIOD bound to: 6.400000 - type: float 
-	Parameter CLKOUT0_DIVIDE_F bound to: 16.000000 - type: float 
-	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
-	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
-	Parameter CLOCK_HOLD bound to: FALSE - type: string 
-	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
-	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
-	Parameter STARTUP_WAIT bound to: FALSE - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'MMCM_BASE' (179#1) [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:40654]
-WARNING: [Synth 8-7023] instance 'clkgen_i' of module 'MMCM_BASE' has 18 connections declared, but only 7 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_clocking_wrapper.v:99]
-INFO: [Synth 8-6157] synthesizing module 'BUFG' [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:1075]
-INFO: [Synth 8-6155] done synthesizing module 'BUFG' (180#1) [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:1075]
-INFO: [Synth 8-6155] done synthesizing module 'xxv_ethernet_1_clocking_wrapper' (181#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_clocking_wrapper.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'xxv_ethernet_1_clocking_wrapper' (178#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_clocking_wrapper.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xxv_ethernet_1_common_wrapper' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_common_wrapper.v:51]
 INFO: [Synth 8-6157] synthesizing module 'xxv_ethernet_1_gt_gtye4_common_wrapper' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_gt_gtye4_common_wrapper.v:4]
 INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_5_gtye4_common' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/gtwizard_ultrascale_v1_7_gtye4_common.v:55]
@@ -1956,18 +1917,11 @@ INFO: [Synth 8-6157] synthesizing module 'GTYE4_COMMON' [/home/wei/Software/Viva
 	Parameter UB_CFG4 bound to: 16'b0000000000000000 
 	Parameter UB_CFG5 bound to: 16'b0000010000000000 
 	Parameter UB_CFG6 bound to: 16'b0000000000000000 
-INFO: [Synth 8-6155] done synthesizing module 'GTYE4_COMMON' (182#1) [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:24565]
-INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_5_gtye4_common' (183#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/gtwizard_ultrascale_v1_7_gtye4_common.v:55]
-INFO: [Synth 8-6155] done synthesizing module 'xxv_ethernet_1_gt_gtye4_common_wrapper' (184#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_gt_gtye4_common_wrapper.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'xxv_ethernet_1_common_wrapper' (185#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_common_wrapper.v:51]
-INFO: [Synth 8-6157] synthesizing module 'xxv_ethernet_1_reset_wrapper' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_reset_wrapper.v:51]
-INFO: [Synth 8-6157] synthesizing module 'xxv_ethernet_1_reset_wrapper_cdc_sync' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_reset_wrapper.v:143]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_reset_wrapper.v:150]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_reset_wrapper.v:151]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_reset_wrapper.v:152]
-INFO: [Synth 8-6155] done synthesizing module 'xxv_ethernet_1_reset_wrapper_cdc_sync' (186#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_reset_wrapper.v:143]
-INFO: [Synth 8-6155] done synthesizing module 'xxv_ethernet_1_reset_wrapper' (187#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_reset_wrapper.v:51]
-INFO: [Synth 8-6155] done synthesizing module 'tengbaser_infrastructure_ultrascale' (188#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/tengbaser_infrastructure_ultrascale.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'GTYE4_COMMON' (179#1) [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:24565]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_5_gtye4_common' (180#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/gtwizard_ultrascale_v1_7_gtye4_common.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'xxv_ethernet_1_gt_gtye4_common_wrapper' (181#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_gt_gtye4_common_wrapper.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'xxv_ethernet_1_common_wrapper' (182#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_common_wrapper.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'tengbaser_infrastructure_ultrascale' (183#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/tengbaser_infrastructure_ultrascale.v:53]
 INFO: [Synth 8-6157] synthesizing module 'tengbaser_phy_ultrascale' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/tengbaser_phy_ultrascale.v:58]
 INFO: [Synth 8-6157] synthesizing module 'tengbaser_phy_ultrascale_wrapper' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:53]
 	Parameter C_LINE_RATE bound to: 10 - type: integer 
@@ -2007,7 +1961,11 @@ INFO: [Synth 8-6157] synthesizing module 'tengbaser_phy_ultrascale_ultrascale_tx
 	Parameter P_USRCLK_DIV bound to: 3'b000 
 	Parameter P_USRCLK2_INT_DIV bound to: 0 - type: integer 
 	Parameter P_USRCLK2_DIV bound to: 3'b000 
-INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_ultrascale_tx_userclk' (189#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_ultrascale_tx_userclk.v:62]
+INFO: [Synth 8-6157] synthesizing module 'BUFG_GT' [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:1251]
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter STARTUP_SYNC bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT' (184#1) [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:1251]
+INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_ultrascale_tx_userclk' (185#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_ultrascale_tx_userclk.v:62]
 INFO: [Synth 8-6157] synthesizing module 'tengbaser_phy_ultrascale_ultrascale_rx_userclk' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_ultrascale_rx_userclk.v:62]
 	Parameter P_CONTENTS bound to: 0 - type: integer 
 	Parameter P_FREQ_RATIO_SOURCE_TO_USRCLK bound to: 1 - type: integer 
@@ -2016,7 +1974,7 @@ INFO: [Synth 8-6157] synthesizing module 'tengbaser_phy_ultrascale_ultrascale_rx
 	Parameter P_USRCLK_DIV bound to: 3'b000 
 	Parameter P_USRCLK2_INT_DIV bound to: 0 - type: integer 
 	Parameter P_USRCLK2_DIV bound to: 3'b000 
-INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_ultrascale_rx_userclk' (190#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_ultrascale_rx_userclk.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_ultrascale_rx_userclk' (186#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_ultrascale_rx_userclk.v:62]
 INFO: [Synth 8-6157] synthesizing module 'tengbaser_phy_ultrascale_gt' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt.v:62]
 INFO: [Synth 8-6157] synthesizing module 'tengbaser_phy_ultrascale_gt_gtwizard_top' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt_gtwizard_top.v:175]
 	Parameter C_CHANNEL_ENABLE bound to: 192'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000 
@@ -2025,7 +1983,7 @@ INFO: [Synth 8-6157] synthesizing module 'tengbaser_phy_ultrascale_gt_gtwizard_t
 	Parameter C_COMMON_SCALING_FACTOR bound to: 1 - type: integer 
 	Parameter C_CPLL_VCO_FREQUENCY bound to: 2578.125000 - type: float 
 	Parameter C_FORCE_COMMONS bound to: 0 - type: integer 
-	Parameter C_FREERUN_FREQUENCY bound to: 100.000000 - type: float 
+	Parameter C_FREERUN_FREQUENCY bound to: 128.000000 - type: float 
 	Parameter C_GT_TYPE bound to: 3 - type: integer 
 	Parameter C_GT_REV bound to: 67 - type: integer 
 	Parameter C_INCLUDE_CPLL_CAL bound to: 2 - type: integer 
@@ -2117,7 +2075,7 @@ INFO: [Synth 8-6157] synthesizing module 'tengbaser_phy_ultrascale_gt_gtwizard_g
 	Parameter C_PCIE_CORECLK_FREQ bound to: 250 - type: integer 
 	Parameter C_COMMON_SCALING_FACTOR bound to: 1 - type: integer 
 	Parameter C_CPLL_VCO_FREQUENCY bound to: 2578.125000 - type: float 
-	Parameter C_FREERUN_FREQUENCY bound to: 100.000000 - type: float 
+	Parameter C_FREERUN_FREQUENCY bound to: 128.000000 - type: float 
 	Parameter C_GT_REV bound to: 67 - type: integer 
 	Parameter C_INCLUDE_CPLL_CAL bound to: 2 - type: integer 
 	Parameter C_ENABLE_COMMON_USRCLK bound to: 0 - type: integer 
@@ -2167,10 +2125,10 @@ INFO: [Synth 8-6157] synthesizing module 'tengbaser_phy_ultrascale_gt_gtwizard_g
 	Parameter P_TX_MASTER_CH_PACKED_IDX bound to: 0 - type: integer 
 	Parameter P_RX_MASTER_CH_PACKED_IDX bound to: 0 - type: integer 
 	Parameter P_CPLL_CAL_FREQ_COUNT_WINDOW bound to: 16'b0011111010000000 
-	Parameter P_CPLL_CAL_TXOUTCLK_PERIOD bound to: 18'b000001010000100100 
+	Parameter P_CPLL_CAL_TXOUTCLK_PERIOD bound to: 18'b000000111110111100 
 	Parameter P_CPLL_CAL_WAIT_DEASSERT_CPLLPD bound to: 16'b0000000100000000 
-	Parameter P_CPLL_CAL_TXOUTCLK_PERIOD_DIV100 bound to: 18'b000000000000110100 
-	Parameter P_CDR_TIMEOUT_FREERUN_CYC bound to: 26'b00000001010111100110000100 
+	Parameter P_CPLL_CAL_TXOUTCLK_PERIOD_DIV100 bound to: 18'b000000000000101000 
+	Parameter P_CDR_TIMEOUT_FREERUN_CYC bound to: 26'b00000001110000000111110000 
 INFO: [Synth 8-6157] synthesizing module 'tengbaser_phy_ultrascale_gt_gtye4_channel_wrapper' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt_gtye4_channel_wrapper.v:56]
 	Parameter MASTER_EN bound to: 0 - type: integer 
 	Parameter NUM_CHANNELS bound to: 1 - type: integer 
@@ -3623,16 +3581,16 @@ INFO: [Synth 8-6157] synthesizing module 'GTYE4_CHANNEL' [/home/wei/Software/Viv
 	Parameter USB_U2_SAS_MIN_COM bound to: 36 - type: integer 
 	Parameter USE_PCS_CLK_PHASE_SEL bound to: 1'b0 
 	Parameter Y_ALL_MODE bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'GTYE4_CHANNEL' (191#1) [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:23404]
-INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_6_gtye4_channel' (192#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/gtwizard_ultrascale_v1_7_gtye4_channel.v:55]
-INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_gt_gtye4_channel_wrapper' (193#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt_gtye4_channel_wrapper.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'GTYE4_CHANNEL' (187#1) [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:23404]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_6_gtye4_channel' (188#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/gtwizard_ultrascale_v1_7_gtye4_channel.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_gt_gtye4_channel_wrapper' (189#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt_gtye4_channel_wrapper.v:56]
 INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_6_gtye4_delay_powergood' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_delay_powergood.v:55]
 	Parameter C_USER_GTPOWERGOOD_DELAY_EN bound to: 1 - type: integer 
 	Parameter C_PCIE_ENABLE bound to: 0 - type: integer 
 INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_delay_powergood.v:87]
 INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_delay_powergood.v:89]
 INFO: [Synth 8-226] default block is never used [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_delay_powergood.v:137]
-INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_6_gtye4_delay_powergood' (194#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_delay_powergood.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_6_gtye4_delay_powergood' (190#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_delay_powergood.v:55]
 INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_6_bit_synchronizer' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_bit_sync.v:55]
 	Parameter INITIALIZE bound to: 5'b00000 
 	Parameter FREQUENCY bound to: 512 - type: integer 
@@ -3640,14 +3598,14 @@ INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casp
 INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_bit_sync.v:72]
 INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_bit_sync.v:73]
 INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_bit_sync.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_6_bit_synchronizer' (195#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_bit_sync.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_6_bit_synchronizer' (191#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_bit_sync.v:55]
 INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_6_gtwiz_reset' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_gtwiz_reset.v:55]
-	Parameter P_FREERUN_FREQUENCY bound to: 100.000000 - type: float 
+	Parameter P_FREERUN_FREQUENCY bound to: 128.000000 - type: float 
 	Parameter P_USE_CPLL_CAL bound to: 0 - type: integer 
 	Parameter P_TX_PLL_TYPE bound to: 0 - type: integer 
 	Parameter P_RX_PLL_TYPE bound to: 0 - type: integer 
 	Parameter P_RX_LINE_RATE bound to: 10.312500 - type: float 
-	Parameter P_CDR_TIMEOUT_FREERUN_CYC bound to: 26'b00000001010111100110000100 
+	Parameter P_CDR_TIMEOUT_FREERUN_CYC bound to: 26'b00000001110000000111110000 
 	Parameter ST_RESET_ALL_INIT bound to: 3'b000 
 	Parameter ST_RESET_ALL_BRANCH bound to: 3'b001 
 	Parameter ST_RESET_ALL_TX_PLL bound to: 3'b010 
@@ -3679,7 +3637,7 @@ INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casp
 INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_reset_sync.v:73]
 INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_reset_sync.v:74]
 INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_reset_sync.v:75]
-INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_6_reset_synchronizer' (196#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_reset_sync.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_6_reset_synchronizer' (192#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_reset_sync.v:55]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_gtwiz_reset.v:164]
 INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_6_reset_inv_synchronizer' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_reset_inv_sync.v:55]
 	Parameter FREQUENCY bound to: 512 - type: integer 
@@ -3687,32 +3645,39 @@ INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casp
 INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_reset_inv_sync.v:73]
 INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_reset_inv_sync.v:74]
 INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_reset_inv_sync.v:75]
-INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_6_reset_inv_synchronizer' (197#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_reset_inv_sync.v:55]
-INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_6_gtwiz_reset' (198#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_gtwiz_reset.v:55]
-INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_gt_gtwizard_gtye4' (199#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt_gtwizard_gtye4.v:143]
-INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_gt_gtwizard_top' (200#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt_gtwizard_top.v:175]
-INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_gt' (201#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_6_reset_inv_synchronizer' (193#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_reset_inv_sync.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_6_gtwiz_reset' (194#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/hdl/gtwizard_ultrascale_v1_7_gtwiz_reset.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_gt_gtwizard_gtye4' (195#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt_gtwizard_gtye4.v:143]
+INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_gt_gtwizard_top' (196#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt_gtwizard_top.v:175]
+INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_gt' (197#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt.v:62]
 INFO: [Synth 8-6157] synthesizing module 'tengbaser_phy_ultrascale_cdc_sync' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:730]
 INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:736]
 INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:737]
-INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_cdc_sync' (202#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:730]
+INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_cdc_sync' (198#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:730]
 INFO: [Synth 8-6157] synthesizing module 'tengbaser_phy_ultrascale_retiming_sync' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:762]
 	Parameter WIDTH bound to: 64 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_retiming_sync' (203#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:762]
+INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_retiming_sync' (199#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:762]
 INFO: [Synth 8-6157] synthesizing module 'tengbaser_phy_ultrascale_retiming_sync__parameterized0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:762]
 	Parameter WIDTH bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_retiming_sync__parameterized0' (203#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:762]
+INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_retiming_sync__parameterized0' (199#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:762]
 INFO: [Synth 8-6157] synthesizing module 'tengbaser_phy_ultrascale_retiming_sync__parameterized1' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:762]
 	Parameter WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_retiming_sync__parameterized1' (203#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:762]
+INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_retiming_sync__parameterized1' (199#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:762]
 INFO: [Synth 8-6157] synthesizing module 'tengbaser_phy_ultrascale_top' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_top.v:51]
 	Parameter SERDES_WIDTH bound to: 64 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'RAM32M' [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:70040]
-INFO: [Synth 8-6155] done synthesizing module 'RAM32M' (210#1) [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:70040]
-INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_top' (230#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_top.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'RAM32M' (206#1) [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:70040]
+INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_top' (226#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_top.v:51]
 WARNING: [Synth 8-3848] Net gtwiz_reset_qpll1reset_out_0 in module/entity tengbaser_phy_ultrascale_wrapper does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:187]
-INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_wrapper' (231#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:53]
-INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale' (232#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/tengbaser_phy_ultrascale.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_wrapper' (227#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/xxv_ethernet_v3_0_3/tengbaser_phy_ultrascale_wrapper.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale' (228#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/tengbaser_phy_ultrascale.v:58]
+INFO: [Synth 8-6157] synthesizing module 'tengbaser_phy_ultrascale_reset' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/tengbaser_phy_ultrascale_reset.v:51]
+INFO: [Synth 8-6157] synthesizing module 'xxv_ethernet_1_reset_wrapper_cdc_sync' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/tengbaser_phy_ultrascale_reset.v:136]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/tengbaser_phy_ultrascale_reset.v:143]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/tengbaser_phy_ultrascale_reset.v:144]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/tengbaser_phy_ultrascale_reset.v:145]
+INFO: [Synth 8-6155] done synthesizing module 'xxv_ethernet_1_reset_wrapper_cdc_sync' (229#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/tengbaser_phy_ultrascale_reset.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'tengbaser_phy_ultrascale_reset' (230#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/tengbaser_phy_ultrascale_reset.v:51]
 INFO: [Synth 8-6157] synthesizing module 'kat_ten_gb_eth' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/kat_ten_gb_eth.v:2]
 	Parameter FABRIC_MAC bound to: 48'b000100100011010001010110011110000000000000000000 
 	Parameter FABRIC_IP bound to: -1062731500 - type: integer 
@@ -3735,7 +3700,7 @@ INFO: [Synth 8-638] synthesizing module 'ten_gig_eth_mac_UCB' [/home/wei/casper/
 data -  crc -  -  - 
 INFO: [Synth 8-226] default block is never used [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/ten_gig_eth_mac_UCB.vhd:749]
 INFO: [Synth 8-226] default block is never used [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/ten_gig_eth_mac_UCB.vhd:754]
-INFO: [Synth 8-256] done synthesizing module 'ten_gig_eth_mac_UCB' (233#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/ten_gig_eth_mac_UCB.vhd:99]
+INFO: [Synth 8-256] done synthesizing module 'ten_gig_eth_mac_UCB' (231#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/ten_gig_eth_mac_UCB.vhd:99]
 INFO: [Synth 8-6157] synthesizing module 'wb_attach' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/wb_attach.v:2]
 	Parameter FABRIC_MAC bound to: 48'b000100100011010001010110011110000000000000000000 
 	Parameter FABRIC_IP bound to: -1062731500 - type: integer 
@@ -3783,7 +3748,7 @@ INFO: [Synth 8-6157] synthesizing module 'wb_attach' [/home/wei/casper/ZCU111/te
 	Parameter REG_PHY_CONTROL_0 bound to: 8'b00010000 
 	Parameter REG_ARP_SIZE bound to: 8'b00010001 
 WARNING: [Synth 8-3848] Net local_port_mask_reg in module/entity wb_attach does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/wb_attach.v:142]
-INFO: [Synth 8-6155] done synthesizing module 'wb_attach' (234#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/wb_attach.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'wb_attach' (232#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/wb_attach.v:2]
 INFO: [Synth 8-6157] synthesizing module 'tge_tx' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_tx.v:2]
 	Parameter CPU_ENABLE bound to: 1 - type: integer 
 	Parameter LARGE_PACKETS bound to: 1 - type: integer 
@@ -3800,13 +3765,13 @@ INFO: [Synth 8-6157] synthesizing module 'tge_tx' [/home/wei/casper/ZCU111/tengb
 	Parameter TX_SEND_LAST bound to: 4'b1001 
 	Parameter TX_CPU_WAIT bound to: 4'b1010 
 	Parameter TX_SEND_CPU bound to: 4'b1011 
-INFO: [Synth 8-638] synthesizing module 'tx_fifo_ext' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/tx_fifo_ext_stub.vhdl:20]
-INFO: [Synth 8-638] synthesizing module 'cpu_buffer' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/cpu_buffer_stub.vhdl:21]
-INFO: [Synth 8-638] synthesizing module 'tx_packet_fifo' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/tx_packet_fifo_stub.vhdl:22]
-INFO: [Synth 8-638] synthesizing module 'tx_packet_ctrl_fifo' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/tx_packet_ctrl_fifo_stub.vhdl:22]
-INFO: [Synth 8-638] synthesizing module 'arp_cache' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/arp_cache_stub.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'tx_fifo_ext' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/tx_fifo_ext_stub.vhdl:20]
+INFO: [Synth 8-638] synthesizing module 'cpu_buffer' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/cpu_buffer_stub.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'tx_packet_fifo' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/tx_packet_fifo_stub.vhdl:22]
+INFO: [Synth 8-638] synthesizing module 'tx_packet_ctrl_fifo' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/tx_packet_ctrl_fifo_stub.vhdl:22]
+INFO: [Synth 8-638] synthesizing module 'arp_cache' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/arp_cache_stub.vhdl:21]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_tx.v:386]
-INFO: [Synth 8-6155] done synthesizing module 'tge_tx' (235#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_tx.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'tge_tx' (233#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_tx.v:2]
 INFO: [Synth 8-6157] synthesizing module 'tge_rx' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_rx.v:2]
 	Parameter CPU_ENABLE bound to: 1 - type: integer 
 	Parameter USE_DISTRIBUTED_RAM bound to: 0 - type: integer 
@@ -3826,7 +3791,7 @@ INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "NO" *) [/home/wei/ca
 INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "NO" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_rx.v:342]
 INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "NO" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_rx.v:362]
 INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "NO" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_rx.v:363]
-INFO: [Synth 8-638] synthesizing module 'rx_packet_fifo_bram' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/rx_packet_fifo_bram_stub.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'rx_packet_fifo_bram' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/rx_packet_fifo_bram_stub.vhdl:21]
 INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "NO" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_rx.v:468]
 INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "NO" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_rx.v:469]
 INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "NO" *) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_rx.v:505]
@@ -3836,12 +3801,12 @@ INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "NO" *) [/home/wei/ca
 INFO: [Synth 8-155] case statement is not full and has no default [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_rx.v:113]
 INFO: [Synth 8-251] tge_rx_cpu: got good frame, waiting for buffer to become available [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_rx.v:315]
 INFO: [Synth 8-251] tge_rx_cpu: buffer free, swapping now [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_rx.v:324]
-INFO: [Synth 8-638] synthesizing module 'rx_packet_ctrl_fifo' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/rx_packet_ctrl_fifo_stub.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'rx_packet_ctrl_fifo' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/rx_packet_ctrl_fifo_stub.vhdl:21]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_rx.v:479]
-INFO: [Synth 8-6155] done synthesizing module 'tge_rx' (236#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_rx.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'tge_rx' (234#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/tge_rx.v:2]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/kat_ten_gb_eth.v:345]
-INFO: [Synth 8-6155] done synthesizing module 'kat_ten_gb_eth' (237#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/kat_ten_gb_eth.v:2]
-WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0' of module 'kat_ten_gb_eth' has 44 connections declared, but only 43 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:869]
+INFO: [Synth 8-6155] done synthesizing module 'kat_ten_gb_eth' (235#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/kat_ten_gb_eth/kat_ten_gb_eth.v:2]
+WARNING: [Synth 8-7023] instance 'zcu111_tengbe_gbe0' of module 'kat_ten_gb_eth' has 44 connections declared, but only 43 given [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:863]
 INFO: [Synth 8-638] synthesizing module 'axi_slave_wishbone_classic_master' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/axi_slave_wishbone_classic_master.vhd:108]
 	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -3853,7 +3818,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_slave_wishbone_classic_master' [/ho
 	Parameter C_S_AXI_BUSER_WIDTH bound to: 1 - type: integer 
 WARNING: [Synth 8-3848] Net S_AXI_BUSER in module/entity axi_slave_wishbone_classic_master does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/axi_slave_wishbone_classic_master.vhd:83]
 WARNING: [Synth 8-3848] Net S_AXI_RUSER in module/entity axi_slave_wishbone_classic_master does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/axi_slave_wishbone_classic_master.vhd:103]
-INFO: [Synth 8-256] done synthesizing module 'axi_slave_wishbone_classic_master' (238#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/axi_slave_wishbone_classic_master.vhd:108]
+INFO: [Synth 8-256] done synthesizing module 'axi_slave_wishbone_classic_master' (236#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/tengbaser_infrastructure_ultrascale/axi_slave_wishbone_classic_master.vhd:108]
 INFO: [Synth 8-6157] synthesizing module 'zcu111_infrastructure' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/infrastructure/zcu111_infrastructure.v:1]
 	Parameter MULTIPLY bound to: 8.000000 - type: float 
 	Parameter DIVIDE bound to: 4.000000 - type: float 
@@ -3866,8 +3831,8 @@ INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [/home/wei/Software/Vivado_201
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (239#1) [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:32871]
-INFO: [Synth 8-6157] synthesizing module 'MMCM_BASE__parameterized0' [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:40654]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (237#1) [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:32871]
+INFO: [Synth 8-6157] synthesizing module 'MMCM_BASE' [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:40654]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT_F bound to: 8.000000 - type: float 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
@@ -3898,74 +3863,36 @@ INFO: [Synth 8-6157] synthesizing module 'MMCM_BASE__parameterized0' [/home/wei/
 	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
 	Parameter REF_JITTER1 bound to: 0.000000 - type: float 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'MMCM_BASE__parameterized0' (239#1) [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:40654]
-INFO: [Synth 8-6157] synthesizing module 'MMCM_BASE__parameterized1' [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:40654]
-	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
-	Parameter CLKFBOUT_MULT_F bound to: 8.000000 - type: float 
-	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKIN1_PERIOD bound to: 7.812500 - type: float 
-	Parameter CLKOUT0_DIVIDE_F bound to: 5.120000 - type: float 
-	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
-	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
-	Parameter CLOCK_HOLD bound to: FALSE - type: string 
-	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
-	Parameter REF_JITTER1 bound to: 0.000000 - type: float 
-	Parameter STARTUP_WAIT bound to: FALSE - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'MMCM_BASE__parameterized1' (239#1) [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:40654]
+INFO: [Synth 8-6155] done synthesizing module 'MMCM_BASE' (238#1) [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:40654]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (239#1) [/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/scripts/rt/data/unisim_comp_diablo.v:1075]
 INFO: [Synth 8-6155] done synthesizing module 'zcu111_infrastructure' (240#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/infrastructure/zcu111_infrastructure.v:1]
 INFO: [Synth 8-638] synthesizing module 'zcu111' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2004]
 INFO: [Synth 8-638] synthesizing module 'zcu111_axi_interconnect_0_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:1149]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1CG92RI' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:97]
-INFO: [Synth 8-3491] module 'zcu111_auto_ds_0' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_auto_ds_0_stub.vhdl:5' bound to instance 'auto_ds' of component 'zcu111_auto_ds_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:331]
-INFO: [Synth 8-638] synthesizing module 'zcu111_auto_ds_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_auto_ds_0_stub.vhdl:87]
+INFO: [Synth 8-3491] module 'zcu111_auto_ds_0' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_auto_ds_0_stub.vhdl:5' bound to instance 'auto_ds' of component 'zcu111_auto_ds_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:331]
+INFO: [Synth 8-638] synthesizing module 'zcu111_auto_ds_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_auto_ds_0_stub.vhdl:87]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1CG92RI' (241#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:97]
 INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_9O4VJ' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:498]
-INFO: [Synth 8-3491] module 'zcu111_auto_ds_1' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_auto_ds_1_stub.vhdl:5' bound to instance 'auto_ds' of component 'zcu111_auto_ds_1' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:732]
-INFO: [Synth 8-638] synthesizing module 'zcu111_auto_ds_1' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_auto_ds_1_stub.vhdl:87]
+INFO: [Synth 8-3491] module 'zcu111_auto_ds_1' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_auto_ds_1_stub.vhdl:5' bound to instance 'auto_ds' of component 'zcu111_auto_ds_1' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:732]
+INFO: [Synth 8-638] synthesizing module 'zcu111_auto_ds_1' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_auto_ds_1_stub.vhdl:87]
 INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_9O4VJ' (242#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:498]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_16GXSXB' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:903]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_16GXSXB' (243#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:903]
-INFO: [Synth 8-3491] module 'zcu111_xbar_0' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'zcu111_xbar_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:1825]
-INFO: [Synth 8-638] synthesizing module 'zcu111_xbar_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_xbar_0_stub.vhdl:93]
+INFO: [Synth 8-3491] module 'zcu111_xbar_0' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'zcu111_xbar_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:1825]
+INFO: [Synth 8-638] synthesizing module 'zcu111_xbar_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_xbar_0_stub.vhdl:93]
 INFO: [Synth 8-256] done synthesizing module 'zcu111_axi_interconnect_0_0' (244#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:1149]
-INFO: [Synth 8-3491] module 'zcu111_axi_protocol_convert_1_0' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_axi_protocol_convert_1_0_stub.vhdl:5' bound to instance 'axi_protocol_convert_1' of component 'zcu111_axi_protocol_convert_1_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2553]
-INFO: [Synth 8-638] synthesizing module 'zcu111_axi_protocol_convert_1_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_axi_protocol_convert_1_0_stub.vhdl:67]
-INFO: [Synth 8-3491] module 'zcu111_axi_protocol_convert_2_0' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_axi_protocol_convert_2_0_stub.vhdl:5' bound to instance 'axi_protocol_convert_2' of component 'zcu111_axi_protocol_convert_2_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2612]
-INFO: [Synth 8-638] synthesizing module 'zcu111_axi_protocol_convert_2_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_axi_protocol_convert_2_0_stub.vhdl:67]
-INFO: [Synth 8-3491] module 'zcu111_proc_sys_reset_0_0' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'zcu111_proc_sys_reset_0_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2671]
-INFO: [Synth 8-638] synthesizing module 'zcu111_proc_sys_reset_0_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_proc_sys_reset_0_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'zcu111_zynq_ultra_ps_e_0_0' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_zynq_ultra_ps_e_0_0_stub.vhdl:5' bound to instance 'zynq_ultra_ps_e_0' of component 'zcu111_zynq_ultra_ps_e_0_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2684]
-INFO: [Synth 8-638] synthesizing module 'zcu111_zynq_ultra_ps_e_0_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-31757-wei-Berkeley/realtime/zcu111_zynq_ultra_ps_e_0_0_stub.vhdl:56]
+INFO: [Synth 8-3491] module 'zcu111_axi_protocol_convert_1_0' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_axi_protocol_convert_1_0_stub.vhdl:5' bound to instance 'axi_protocol_convert_1' of component 'zcu111_axi_protocol_convert_1_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2553]
+INFO: [Synth 8-638] synthesizing module 'zcu111_axi_protocol_convert_1_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_axi_protocol_convert_1_0_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'zcu111_axi_protocol_convert_2_0' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_axi_protocol_convert_2_0_stub.vhdl:5' bound to instance 'axi_protocol_convert_2' of component 'zcu111_axi_protocol_convert_2_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2612]
+INFO: [Synth 8-638] synthesizing module 'zcu111_axi_protocol_convert_2_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_axi_protocol_convert_2_0_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'zcu111_proc_sys_reset_0_0' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'zcu111_proc_sys_reset_0_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2671]
+INFO: [Synth 8-638] synthesizing module 'zcu111_proc_sys_reset_0_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_proc_sys_reset_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'zcu111_zynq_ultra_ps_e_0_0' declared at '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_zynq_ultra_ps_e_0_0_stub.vhdl:5' bound to instance 'zynq_ultra_ps_e_0' of component 'zcu111_zynq_ultra_ps_e_0_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2684]
+INFO: [Synth 8-638] synthesizing module 'zcu111_zynq_ultra_ps_e_0_0' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/.Xil/Vivado-4537-wei-Berkeley/realtime/zcu111_zynq_ultra_ps_e_0_0_stub.vhdl:56]
 INFO: [Synth 8-256] done synthesizing module 'zcu111' (245#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/bd/zcu111/synth/zcu111.vhd:2004]
-WARNING: [Synth 8-689] width (40) of port connection 'M_AXI_RFDC_araddr' does not match port width (32) of module 'zcu111' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:1001]
-WARNING: [Synth 8-689] width (40) of port connection 'M_AXI_RFDC_awaddr' does not match port width (32) of module 'zcu111' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:1005]
-WARNING: [Synth 8-3848] Net M_AXI_RFDC_arready in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:246]
-WARNING: [Synth 8-3848] Net M_AXI_RFDC_awready in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:250]
-WARNING: [Synth 8-3848] Net M_AXI_RFDC_bresp in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:253]
-WARNING: [Synth 8-3848] Net M_AXI_RFDC_bvalid in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:254]
-WARNING: [Synth 8-3848] Net M_AXI_RFDC_rdata in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:255]
-WARNING: [Synth 8-3848] Net M_AXI_RFDC_rresp in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:257]
-WARNING: [Synth 8-3848] Net M_AXI_RFDC_rvalid in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:258]
-WARNING: [Synth 8-3848] Net M_AXI_RFDC_wready in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:260]
+WARNING: [Synth 8-689] width (40) of port connection 'M_AXI_RFDC_araddr' does not match port width (32) of module 'zcu111' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:995]
+WARNING: [Synth 8-689] width (40) of port connection 'M_AXI_RFDC_awaddr' does not match port width (32) of module 'zcu111' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:999]
 WARNING: [Synth 8-3848] Net user_rst in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:113]
 WARNING: [Synth 8-3848] Net zcu111_tengbe_gbe0_rxbadctr_in_we in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:117]
 WARNING: [Synth 8-3848] Net zcu111_tengbe_gbe0_rxctr_in_we in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:118]
@@ -3988,6 +3915,14 @@ WARNING: [Synth 8-3848] Net zcu111_tengbe_sys_rev_in_we in module/entity top doe
 WARNING: [Synth 8-3848] Net zcu111_tengbe_sys_rev_rcs_in in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:150]
 WARNING: [Synth 8-3848] Net zcu111_tengbe_sys_rev_rcs_in_we in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:151]
 WARNING: [Synth 8-3848] Net zcu111_tengbe_sys_clkcounter_in_we in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:146]
+WARNING: [Synth 8-3848] Net M_AXI_RFDC_arready in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:241]
+WARNING: [Synth 8-3848] Net M_AXI_RFDC_awready in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:245]
+WARNING: [Synth 8-3848] Net M_AXI_RFDC_bresp in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:248]
+WARNING: [Synth 8-3848] Net M_AXI_RFDC_bvalid in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:249]
+WARNING: [Synth 8-3848] Net M_AXI_RFDC_rdata in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:250]
+WARNING: [Synth 8-3848] Net M_AXI_RFDC_rresp in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:252]
+WARNING: [Synth 8-3848] Net M_AXI_RFDC_rvalid in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:253]
+WARNING: [Synth 8-3848] Net M_AXI_RFDC_wready in module/entity top does not have driver. [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:255]
 INFO: [Synth 8-6155] done synthesizing module 'top' (246#1) [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/zcu111_tengbe/top.v:7]
 WARNING: [Synth 8-3331] design s00_couplers_imp_16GXSXB has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s00_couplers_imp_16GXSXB has unconnected port M_ARESETN
@@ -4091,7 +4026,7 @@ WARNING: [Synth 8-3331] design ten_gig_eth_mac_UCB has unconnected port tx_ifg_d
 WARNING: [Synth 8-3331] design ten_gig_eth_mac_UCB has unconnected port tx_ifg_delay[4]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2824.469 ; gain = 503.309 ; free physical = 8787 ; free virtual = 30635
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 2824.469 ; gain = 503.309 ; free physical = 4882 ; free virtual = 26029
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -4104,12 +4039,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 2824.469 ; gain = 503.309 ; free physical = 8826 ; free virtual = 30674
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 2824.469 ; gain = 503.309 ; free physical = 4919 ; free virtual = 26067
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 2824.469 ; gain = 503.309 ; free physical = 8826 ; free virtual = 30674
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 2824.469 ; gain = 503.309 ; free physical = 4919 ; free virtual = 26067
 ---------------------------------------------------------------------------------
-INFO: [Netlist 29-17] Analyzing 566 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 563 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -4167,12 +4102,12 @@ Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.src
 Finished Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_c_counter_binary_v12_0_i2/zcu111_tengbe_c_counter_binary_v12_0_i2/zcu111_tengbe_c_counter_binary_v12_0_i2_in_context.xdc] for cell 'zcu111_tengbe_inst/zcu111_tengbe_struct/tx_snapshot/ss/basic_ctrl/dram_munge/input_count/comp2.core_instance2'
 Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_c_counter_binary_v12_0_i3/zcu111_tengbe_c_counter_binary_v12_0_i3/zcu111_tengbe_c_counter_binary_v12_0_i3_in_context.xdc] for cell 'zcu111_tengbe_inst/zcu111_tengbe_struct/pkt_sim/counter1/comp3.core_instance3'
 Finished Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_c_counter_binary_v12_0_i3/zcu111_tengbe_c_counter_binary_v12_0_i3/zcu111_tengbe_c_counter_binary_v12_0_i3_in_context.xdc] for cell 'zcu111_tengbe_inst/zcu111_tengbe_struct/pkt_sim/counter1/comp3.core_instance3'
-Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale_board.xdc] for cell 'tengbaser_phy1/inst'
-Finished Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale_board.xdc] for cell 'tengbaser_phy1/inst'
-Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale.xdc] for cell 'tengbaser_phy1/inst'
-Finished Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale.xdc] for cell 'tengbaser_phy1/inst'
-Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt.xdc] for cell 'tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst'
-Finished Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt.xdc] for cell 'tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst'
+Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale_board.xdc] for cell 'tengbaser_phy2/inst'
+Finished Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale_board.xdc] for cell 'tengbaser_phy2/inst'
+Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale.xdc] for cell 'tengbaser_phy2/inst'
+Finished Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale.xdc] for cell 'tengbaser_phy2/inst'
+Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt.xdc] for cell 'tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_gt/inst'
+Finished Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt.xdc] for cell 'tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_gt/inst'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/ip_0/synth/tengbaser_phy_ultrascale_gt.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/constrs_1/imports/zcu111_tengbe/user_const.xdc]
@@ -4189,21 +4124,21 @@ Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.run
 Finished Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale_exceptions.xdc] for cell 'tengbaser_phy1/inst'
-Finished Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale_exceptions.xdc] for cell 'tengbaser_phy1/inst'
+Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale_exceptions.xdc] for cell 'tengbaser_phy2/inst'
+Finished Parsing XDC File [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/ip/tengbaser_phy_ultrascale/synth/tengbaser_phy_ultrascale_exceptions.xdc] for cell 'tengbaser_phy2/inst'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2909.281 ; gain = 0.000 ; free physical = 8618 ; free virtual = 30467
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2908.312 ; gain = 0.000 ; free physical = 4712 ; free virtual = 25860
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 566 instances were transformed.
-  BUFG => BUFGCE: 6 instances
+  A total of 563 instances were transformed.
+  BUFG => BUFGCE: 5 instances
   FD => FDRE: 2 instances
   FDE => FDRE: 525 instances
   IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances
-  MMCM_BASE => MMCME4_ADV: 3 instances
+  MMCM_BASE => MMCME4_ADV: 1 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 29 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2909.281 ; gain = 0.000 ; free physical = 8618 ; free virtual = 30467
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2908.312 ; gain = 0.000 ; free physical = 4714 ; free virtual = 25862
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'zcu111_tengbe_gbe0/tge_rx_inst/rx_cpu_enabled.cpu_rx_buffer' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst' at clock pin 'rd_clk' is different from the actual clock period '3.906', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst' at clock pin 'rd_clk' is different from the actual clock period '3.906', this can lead to different synthesis results.
@@ -4225,7 +4160,7 @@ WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context 
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'zcu111_tengbe_inst/zcu111_tengbe_struct/tx_snapshot/ss/basic_ctrl/dram_munge/input_count/comp2.core_instance2' at clock pin 'CLK' is different from the actual clock period '3.906', this can lead to different synthesis results.
 load diablo GTM unisim library
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 2909.281 ; gain = 588.121 ; free physical = 8788 ; free virtual = 30638
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 2908.312 ; gain = 587.152 ; free physical = 4884 ; free virtual = 26032
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -4233,13 +4168,13 @@ Start Loading Part and Timing Information
 Loading part: xczu28dr-ffvg1517-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 2909.281 ; gain = 588.121 ; free physical = 8788 ; free virtual = 30638
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 2908.312 ; gain = 587.152 ; free physical = 4883 ; free virtual = 26031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst. (constraint file  /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/dont_touch.xdc, line 44).
-Applied set_property DONT_TOUCH = true for tengbaser_phy1/inst. (constraint file  /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/dont_touch.xdc, line 47).
+Applied set_property DONT_TOUCH = true for tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_gt/inst. (constraint file  /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/dont_touch.xdc, line 44).
+Applied set_property DONT_TOUCH = true for tengbaser_phy2/inst. (constraint file  /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/dont_touch.xdc, line 47).
 Applied set_property DONT_TOUCH = true for zcu111_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zcu111_inst/axi_interconnect_0/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zcu111_inst/axi_interconnect_0. (constraint file  auto generated constraint, line ).
@@ -4249,8 +4184,8 @@ Applied set_property DONT_TOUCH = true for zcu111_inst/proc_sys_reset_0. (constr
 Applied set_property DONT_TOUCH = true for zcu111_inst/zynq_ultra_ps_e_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zcu111_inst/axi_interconnect_0/m00_couplers/auto_ds. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zcu111_inst/axi_interconnect_0/m01_couplers/auto_ds. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for tengbaser_phy1. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for tengbaser_phy2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_gt. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst. (constraint file  auto generated constraint, line ).
@@ -4271,7 +4206,7 @@ Applied set_property DONT_TOUCH = true for zcu111_tengbe_inst/zcu111_tengbe_stru
 Applied set_property DONT_TOUCH = true for zcu111_tengbe_inst/zcu111_tengbe_struct/tx_snapshot/ss/basic_ctrl/dram_munge/input_count/\comp2.core_instance2 . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zcu111_tengbe_inst/zcu111_tengbe_struct/pkt_sim/counter1/\comp3.core_instance3 . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 2909.281 ; gain = 588.121 ; free physical = 8792 ; free virtual = 30642
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 2908.312 ; gain = 587.152 ; free physical = 4888 ; free virtual = 26036
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'axi4lite_axi4lite_top_ic'
 INFO: [Synth 8-4471] merging register 'axi4lite_miso_reg[bvalid]' into 'axi4lite_miso_reg[wready]' [/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.srcs/sources_1/imports/axi4_lite/axi4lite_slave_logic.vhd:80]
@@ -4509,7 +4444,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'swr_state_reg' using encod
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_axi_bridge_state_reg' using encoding 'one-hot' in module 'axi_slave_wishbone_classic_master'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 2909.281 ; gain = 588.121 ; free physical = 8775 ; free virtual = 30630
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 2908.312 ; gain = 587.152 ; free physical = 4866 ; free virtual = 26018
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'zcu111_tengbe_inst/zcu111_tengbe_struct/gbe0/rxs/ss/basic_ctrl/constant_x0' (sysgen_constant_dfe671fb2f) to 'zcu111_tengbe_inst/zcu111_tengbe_struct/gbe0/rxs/ss/basic_ctrl/constant1'
 INFO: [Synth 8-223] decloning instance 'zcu111_tengbe_inst/zcu111_tengbe_struct/gbe0/rxs/ss/basic_ctrl/constant_x0' (sysgen_constant_dfe671fb2f) to 'zcu111_tengbe_inst/zcu111_tengbe_struct/gbe0/rxs/ss/basic_ctrl/constant2'
@@ -4540,9 +4475,9 @@ Report RTL Partitions:
 +------+---------------------------+------------+----------+
 |      |RTL Partition              |Replication |Instances |
 +------+---------------------------+------------+----------+
-|1     |zcu111_infrastructure__GC0 |           1|         8|
+|1     |zcu111_infrastructure__GC0 |           1|         7|
 |2     |top__GCB0                  |           1|     32762|
-|3     |top__GCB1                  |           1|     20723|
+|3     |top__GCB1                  |           1|     20719|
 +------+---------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -5480,6 +5415,26 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
+Module xxv_ethernet_1_reset_wrapper_cdc_sync__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module xxv_ethernet_1_reset_wrapper_cdc_sync__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module xxv_ethernet_1_reset_wrapper_cdc_sync__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module xxv_ethernet_1_reset_wrapper_cdc_sync 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module tengbaser_phy_ultrascale_reset 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
 Module tengbaser_phy_ultrascale_ultrascale_tx_userclk 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -5992,26 +5947,6 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 3     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 5     
-Module xxv_ethernet_1_reset_wrapper_cdc_sync__1 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 3     
-Module xxv_ethernet_1_reset_wrapper_cdc_sync__2 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 3     
-Module xxv_ethernet_1_reset_wrapper_cdc_sync__3 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 3     
-Module xxv_ethernet_1_reset_wrapper_cdc_sync 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 3     
-Module xxv_ethernet_1_reset_wrapper 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -6249,15 +6184,15 @@ INFO: [Synth 8-3886] merging instance 'i_0/zcu111_tengbe_gbe0_rxs_ss_status/sBus
 INFO: [Synth 8-3886] merging instance 'i_0/zcu111_tengbe_gbe0_txs_ss_status/sBus_reg[29]' (FDCE) to 'i_0/zcu111_tengbe_gbe0_txs_ss_status/sBus_reg[30]'
 INFO: [Synth 8-3886] merging instance 'i_0/zcu111_tengbe_tx_snapshot_ss_status/sBus_reg[29]' (FDCE) to 'i_0/zcu111_tengbe_tx_snapshot_ss_status/sBus_reg[30]'
 WARNING: [Synth 8-3332] Sequential element (FSM_onehot_swr_state_reg[3]) is unused and will be removed from module kat_ten_gb_eth.
-INFO: [Synth 8-3886] merging instance 'i_1/tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_0_reg[2]' (FD) to 'i_1/tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_7_reg[2]'
-INFO: [Synth 8-3886] merging instance 'i_1/tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_2_reg[2]' (FD) to 'i_1/tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_7_reg[2]'
-INFO: [Synth 8-3886] merging instance 'i_1/tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_1_reg[2]' (FD) to 'i_1/tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_7_reg[2]'
-INFO: [Synth 8-3886] merging instance 'i_1/tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_4_reg[2]' (FD) to 'i_1/tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_7_reg[2]'
-INFO: [Synth 8-3886] merging instance 'i_1/tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_5_reg[2]' (FD) to 'i_1/tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_7_reg[2]'
-INFO: [Synth 8-3886] merging instance 'i_1/tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_6_reg[2]' (FD) to 'i_1/tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_7_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_0_reg[2]' (FD) to 'i_1/tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_7_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_2_reg[2]' (FD) to 'i_1/tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_7_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_1_reg[2]' (FD) to 'i_1/tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_7_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_4_reg[2]' (FD) to 'i_1/tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_7_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_5_reg[2]' (FD) to 'i_1/tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_7_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_6_reg[2]' (FD) to 'i_1/tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_top_0/i_tengbaser_phy_ultrascale_CORE/i_RX_TOP/i_RX_DESTRIPER/i_DECODER/ctrl_7_reg[2]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:06 . Memory (MB): peak = 2909.281 ; gain = 588.121 ; free physical = 8718 ; free virtual = 30606
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:09 . Memory (MB): peak = 2908.312 ; gain = 587.152 ; free physical = 4786 ; free virtual = 25972
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -6296,7 +6231,7 @@ Report RTL Partitions:
 +------+---------------------------+------------+----------+
 |1     |zcu111_infrastructure__GC0 |           1|         7|
 |2     |top__GCB0                  |           1|     18892|
-|3     |top__GCB1                  |           1|     10326|
+|3     |top__GCB1                  |           1|     10323|
 +------+---------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -6304,7 +6239,7 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'zcu111_inst/zynq_ultra_ps_e_0/pl_clk0' to pin 'zcu111_inst/zynq_ultra_ps_e_0/bbstub_pl_clk0/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:01:34 . Memory (MB): peak = 3095.797 ; gain = 774.637 ; free physical = 8277 ; free virtual = 30165
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:01:39 . Memory (MB): peak = 3095.836 ; gain = 774.676 ; free physical = 4334 ; free virtual = 25520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -6328,7 +6263,7 @@ INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 8
 INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 8 for RAM "i_0/axi4lite_interconnect/axi4lite_tx_snapshot_ss_bram_inst/ipb_tx_snapshot_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_b_wider.my_ram_reg"
 INFO: [Synth 8-3971] The signal "i_0/axi4lite_interconnect/axi4lite_tx_snapshot_ss_bram_inst/ipb_tx_snapshot_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_b_wider.my_ram_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:39 . Memory (MB): peak = 3171.977 ; gain = 850.816 ; free physical = 8232 ; free virtual = 30120
+Finished Timing Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:44 . Memory (MB): peak = 3172.016 ; gain = 850.855 ; free physical = 4296 ; free virtual = 25482
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -6353,7 +6288,7 @@ Report RTL Partitions:
 +------+---------------------------+------------+----------+
 |1     |zcu111_infrastructure__GC0 |           1|         7|
 |2     |top__GCB0                  |           1|     18892|
-|3     |top__GCB1                  |           1|     10326|
+|3     |top__GCB1                  |           1|     10323|
 +------+---------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -6371,7 +6306,7 @@ INFO: [Synth 8-6837] The timing for the instance axi4lite_interconnect/axi4lite_
 INFO: [Synth 8-6837] The timing for the instance axi4lite_interconnect/axi4lite_tx_snapshot_ss_bram_inst/ipb_tx_snapshot_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_b_wider.my_ram_reg_bram_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance axi4lite_interconnect/axi4lite_tx_snapshot_ss_bram_inst/ipb_tx_snapshot_ss_bram_dp_ram_inst/asym_bram_tdp_inst/g_b_wider.my_ram_reg_bram_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:24 ; elapsed = 00:01:44 . Memory (MB): peak = 3199.016 ; gain = 877.855 ; free physical = 8236 ; free virtual = 30124
+Finished Technology Mapping : Time (s): cpu = 00:01:28 ; elapsed = 00:01:49 . Memory (MB): peak = 3197.047 ; gain = 875.887 ; free physical = 4300 ; free virtual = 25486
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -6464,7 +6399,7 @@ WARNING: [Synth 8-3295] tying undriven pin IP_TRIGGER_inferred__19:in0 to consta
 WARNING: [Synth 8-3295] tying undriven pin IP_TRIGGER_inferred__20:in0 to constant 0
 WARNING: [Synth 8-3295] tying undriven pin IP_TRIGGER_inferred__21:in0 to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:01:46 . Memory (MB): peak = 3199.016 ; gain = 877.855 ; free physical = 8235 ; free virtual = 30123
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:51 . Memory (MB): peak = 3197.047 ; gain = 875.887 ; free physical = 4299 ; free virtual = 25485
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -6477,7 +6412,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:01:46 . Memory (MB): peak = 3199.016 ; gain = 877.855 ; free physical = 8235 ; free virtual = 30123
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:51 . Memory (MB): peak = 3197.047 ; gain = 875.887 ; free physical = 4297 ; free virtual = 25483
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -6489,25 +6424,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:27 ; elapsed = 00:01:47 . Memory (MB): peak = 3199.016 ; gain = 877.855 ; free physical = 8234 ; free virtual = 30122
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:01:52 . Memory (MB): peak = 3197.047 ; gain = 875.887 ; free physical = 4298 ; free virtual = 25484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:27 ; elapsed = 00:01:47 . Memory (MB): peak = 3199.016 ; gain = 877.855 ; free physical = 8234 ; free virtual = 30122
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:01:52 . Memory (MB): peak = 3197.047 ; gain = 875.887 ; free physical = 4298 ; free virtual = 25484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:47 . Memory (MB): peak = 3199.016 ; gain = 877.855 ; free physical = 8234 ; free virtual = 30122
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:31 ; elapsed = 00:01:53 . Memory (MB): peak = 3197.047 ; gain = 875.887 ; free physical = 4298 ; free virtual = 25484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:01:47 . Memory (MB): peak = 3199.016 ; gain = 877.855 ; free physical = 8234 ; free virtual = 30122
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:32 ; elapsed = 00:01:53 . Memory (MB): peak = 3197.047 ; gain = 875.887 ; free physical = 4297 ; free virtual = 25483
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -6591,19 +6526,19 @@ Report Cell Usage:
 |24    |zcu111_tengbe_c_counter_binary_v12_0_i5_bbox_7    |     1|
 |25    |zcu111_xbar_0_bbox_19                             |     1|
 |26    |zcu111_zynq_ultra_ps_e_0_0_bbox_23                |     1|
-|27    |BUFG                                              |     6|
-|28    |BUFG_GT                                           |     3|
+|27    |BUFG                                              |     5|
+|28    |BUFG_GT                                           |     2|
 |29    |CARRY8                                            |   104|
 |30    |GTYE4_CHANNEL                                     |     1|
 |31    |GTYE4_COMMON                                      |     1|
 |32    |IBUFDS_GTE4                                       |     1|
-|33    |LUT1                                              |   306|
+|33    |LUT1                                              |   307|
 |34    |LUT2                                              |   766|
 |35    |LUT3                                              |   643|
 |36    |LUT4                                              |   644|
 |37    |LUT5                                              |   926|
 |38    |LUT6                                              |  1910|
-|39    |MMCM_BASE                                         |     3|
+|39    |MMCM_BASE                                         |     1|
 |40    |MUXF7                                             |    61|
 |41    |RAM32M                                            |    12|
 |42    |RAMB36E2_3                                        |    12|
@@ -6624,13 +6559,13 @@ Report Instance Areas:
 +------+-----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+------+
 |      |Instance                                                                                                                           |Module                                                         |Cells |
 +------+-----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+------+
-|1     |top                                                                                                                                |                                                               | 17326|
+|1     |top                                                                                                                                |                                                               | 17323|
 |2     |  zcu111_inst                                                                                                                      |zcu111                                                         |  2232|
 |3     |    axi_interconnect_0                                                                                                             |zcu111_axi_interconnect_0_0                                    |  1558|
 |4     |      m00_couplers                                                                                                                 |m00_couplers_imp_1CG92RI                                       |   334|
 |5     |      m01_couplers                                                                                                                 |m01_couplers_imp_9O4VJ                                         |   350|
 |6     |  sys_block_counter_inst                                                                                                           |sys_block_counter                                              |    37|
-|7     |  tengbaser_phy1                                                                                                                   |tengbaser_phy_ultrascale                                       |  5632|
+|7     |  tengbaser_phy2                                                                                                                   |tengbaser_phy_ultrascale                                       |  5632|
 |8     |    inst                                                                                                                           |tengbaser_phy_ultrascale_wrapper                               |  5632|
 |9     |      i_tengbaser_phy_ultrascale_gt                                                                                                |tengbaser_phy_ultrascale_gt                                    |   354|
 |10    |        inst                                                                                                                       |tengbaser_phy_ultrascale_gt_gtwizard_top                       |   354|
@@ -6714,8 +6649,8 @@ Report Instance Areas:
 |88    |            xxv_ethernet_v3_0_3_pcs_baser_prbs_gen                                                                                 |xxv_ethernet_v3_0_3_pcs_baser_prbs_gen                         |   260|
 |89    |      i_tengbaser_phy_ultrascale_tx_2bit_retiming_sync_serdes_data0_0                                                              |tengbaser_phy_ultrascale_retiming_sync__parameterized0_283     |     4|
 |90    |      i_tengbaser_phy_ultrascale_tx_64bit_retiming_sync_serdes_data0_0                                                             |tengbaser_phy_ultrascale_retiming_sync_284                     |   128|
-|91    |  axi4lite_interconnect                                                                                                            |axi4lite_ic_wrapper                                            |  1853|
-|92    |    axi4lite_axi4lite_ic_inst                                                                                                      |axi4lite_axi4lite_top_ic                                       |   152|
+|91    |  axi4lite_interconnect                                                                                                            |axi4lite_ic_wrapper                                            |  1852|
+|92    |    axi4lite_axi4lite_ic_inst                                                                                                      |axi4lite_axi4lite_top_ic                                       |   151|
 |93    |    axi4lite_gbe0_rxs_ss_bram_inst                                                                                                 |axi4lite_gbe0_rxs_ss_bram                                      |   170|
 |94    |      axi4lite_slave_logic_inst                                                                                                    |axi4lite_slave_logic_280                                       |   136|
 |95    |      ipb_gbe0_rxs_ss_bram_dp_ram_inst                                                                                             |ipb_gbe0_rxs_ss_bram_dp_ram                                    |    34|
@@ -6732,16 +6667,16 @@ Report Instance Areas:
 |106   |      axi4lite_slave_logic_inst                                                                                                    |axi4lite_slave_logic                                           |   110|
 |107   |      ipb_tx_snapshot_ss_bram_dp_ram_inst                                                                                          |ipb_tx_snapshot_ss_bram_dp_ram                                 |    18|
 |108   |        asym_bram_tdp_inst                                                                                                         |asym_bram_tdp__parameterized0                                  |    16|
-|109   |  tengbaser_infra0_inst                                                                                                            |tengbaser_infrastructure_ultrascale                            |    20|
-|110   |    i_xxv_ethernet_1_clocking_wrapper                                                                                              |xxv_ethernet_1_clocking_wrapper                                |     4|
+|109   |  tengbaser_infra0_inst                                                                                                            |tengbaser_infrastructure_ultrascale                            |     2|
+|110   |    i_xxv_ethernet_1_clocking_wrapper                                                                                              |xxv_ethernet_1_clocking_wrapper                                |     1|
 |111   |    i_xxv_ethernet_1_common_wrapper                                                                                                |xxv_ethernet_1_common_wrapper                                  |     1|
 |112   |      xxv_ethernet_1_gt_gtye4_common_wrapper_i                                                                                     |xxv_ethernet_1_gt_gtye4_common_wrapper                         |     1|
 |113   |        common_inst                                                                                                                |gtwizard_ultrascale_v1_7_5_gtye4_common                        |     1|
-|114   |    i_xxv_ethernet_1_reset_wrapper_0                                                                                               |xxv_ethernet_1_reset_wrapper                                   |    15|
-|115   |      i_xxv_ethernet_1_cdc_sync_gt_rx_resetdone                                                                                    |xxv_ethernet_1_reset_wrapper_cdc_sync                          |     4|
-|116   |      i_xxv_ethernet_1_cdc_sync_gt_rx_resetdone_rx_core_clk                                                                        |xxv_ethernet_1_reset_wrapper_cdc_sync_274                      |     3|
-|117   |      i_xxv_ethernet_1_cdc_sync_gt_rx_serdes_resetdone                                                                             |xxv_ethernet_1_reset_wrapper_cdc_sync_275                      |     3|
-|118   |      i_xxv_ethernet_1_cdc_sync_gt_tx_resetdone                                                                                    |xxv_ethernet_1_reset_wrapper_cdc_sync_276                      |     4|
+|114   |  tengbaser_phy_reset2                                                                                                             |tengbaser_phy_ultrascale_reset                                 |    15|
+|115   |    i_xxv_ethernet_1_cdc_sync_gt_rx_resetdone                                                                                      |xxv_ethernet_1_reset_wrapper_cdc_sync                          |     4|
+|116   |    i_xxv_ethernet_1_cdc_sync_gt_rx_resetdone_rx_core_clk                                                                          |xxv_ethernet_1_reset_wrapper_cdc_sync_274                      |     3|
+|117   |    i_xxv_ethernet_1_cdc_sync_gt_rx_serdes_resetdone                                                                               |xxv_ethernet_1_reset_wrapper_cdc_sync_275                      |     3|
+|118   |    i_xxv_ethernet_1_cdc_sync_gt_tx_resetdone                                                                                      |xxv_ethernet_1_reset_wrapper_cdc_sync_276                      |     4|
 |119   |  zcu111_infr_inst                                                                                                                 |zcu111_infrastructure                                          |     8|
 |120   |  zcu111_tengbe_dest_ip                                                                                                            |cdc_synchroniser                                               |    36|
 |121   |  zcu111_tengbe_dest_port                                                                                                          |cdc_synchroniser_0                                             |    20|
@@ -6765,7 +6700,7 @@ Report Instance Areas:
 |139   |  zcu111_tengbe_gbe0_txs_ss_ctrl                                                                                                   |cdc_synchroniser_13                                            |     7|
 |140   |  zcu111_tengbe_gbe0_txs_ss_status                                                                                                 |cdc_synchroniser_14                                            |    23|
 |141   |  zcu111_tengbe_gbe0_txvldctr                                                                                                      |cdc_synchroniser_15                                            |    36|
-|142   |  zcu111_tengbe_gbe0_wb2axi4lite                                                                                                   |axi_slave_wishbone_classic_master                              |   236|
+|142   |  zcu111_tengbe_gbe0_wb2axi4lite                                                                                                   |axi_slave_wishbone_classic_master                              |   237|
 |143   |  zcu111_tengbe_inst                                                                                                               |zcu111_tengbe                                                  |  3151|
 |144   |    zcu111_tengbe_struct                                                                                                           |zcu111_tengbe_struct                                           |  3151|
 |145   |      counter2                                                                                                                     |zcu111_tengbe_xlcounter_free__parameterized1                   |    32|
@@ -6862,12 +6797,12 @@ Report Instance Areas:
 |236   |                synth_reg_inst                                                                                                     |synth_reg_w_init__parameterized7_212                           |     1|
 |237   |                  \latency_gt_0.fd_array[1].reg_comp                                                                               |single_reg_w_init__parameterized7_213                          |     1|
 |238   |            dat_del                                                                                                                |sysgen_delay_92d0526e5b_202                                    |   102|
-|239   |            status                                                                                                                 |zcu111_tengbe_status_x1                                        |    19|
+|239   |            status                                                                                                                 |zcu111_tengbe_status_x0                                        |    19|
 |240   |              cast_gw                                                                                                              |zcu111_tengbe_xlconvert_204                                    |    19|
 |241   |                \latency_test.reg                                                                                                  |synth_reg_205                                                  |    19|
 |242   |                  \partial_one.last_srlc33e                                                                                        |srlc33e_206                                                    |    19|
 |243   |            we_del                                                                                                                 |sysgen_delay_c687e54e46_203                                    |     1|
-|244   |          trig_delay                                                                                                               |zcu111_tengbe_trig_delay_x0                                    |     5|
+|244   |          trig_delay                                                                                                               |zcu111_tengbe_trig_delay                                       |     5|
 |245   |            register0                                                                                                              |zcu111_tengbe_xlregister__parameterized2_186                   |     1|
 |246   |              synth_reg_inst                                                                                                       |synth_reg_w_init__parameterized7_199                           |     1|
 |247   |                \latency_gt_0.fd_array[1].reg_comp                                                                                 |single_reg_w_init__parameterized7_200                          |     1|
@@ -6883,7 +6818,7 @@ Report Instance Areas:
 |257   |            register4                                                                                                              |zcu111_tengbe_xlregister__parameterized2_190                   |     1|
 |258   |              synth_reg_inst                                                                                                       |synth_reg_w_init__parameterized7_191                           |     1|
 |259   |                \latency_gt_0.fd_array[1].reg_comp                                                                                 |single_reg_w_init__parameterized7_192                          |     1|
-|260   |          we_delay                                                                                                                 |zcu111_tengbe_we_delay_x0                                      |     5|
+|260   |          we_delay                                                                                                                 |zcu111_tengbe_we_delay                                         |     5|
 |261   |            register0                                                                                                              |zcu111_tengbe_xlregister__parameterized2_171                   |     1|
 |262   |              synth_reg_inst                                                                                                       |synth_reg_w_init__parameterized7_184                           |     1|
 |263   |                \latency_gt_0.fd_array[1].reg_comp                                                                                 |single_reg_w_init__parameterized7_185                          |     1|
@@ -6993,7 +6928,7 @@ Report Instance Areas:
 |367   |                \latency_test.reg                                                                                                  |synth_reg_109                                                  |    19|
 |368   |                  \partial_one.last_srlc33e                                                                                        |srlc33e_110                                                    |    19|
 |369   |            we_del                                                                                                                 |sysgen_delay_c687e54e46_107                                    |     1|
-|370   |          trig_delay                                                                                                               |zcu111_tengbe_trig_delay                                       |     5|
+|370   |          trig_delay                                                                                                               |zcu111_tengbe_trig_delay_x0                                    |     5|
 |371   |            register0                                                                                                              |zcu111_tengbe_xlregister__parameterized2_91                    |     1|
 |372   |              synth_reg_inst                                                                                                       |synth_reg_w_init__parameterized7_104                           |     1|
 |373   |                \latency_gt_0.fd_array[1].reg_comp                                                                                 |single_reg_w_init__parameterized7_105                          |     1|
@@ -7009,7 +6944,7 @@ Report Instance Areas:
 |383   |            register4                                                                                                              |zcu111_tengbe_xlregister__parameterized2_95                    |     1|
 |384   |              synth_reg_inst                                                                                                       |synth_reg_w_init__parameterized7_96                            |     1|
 |385   |                \latency_gt_0.fd_array[1].reg_comp                                                                                 |single_reg_w_init__parameterized7_97                           |     1|
-|386   |          we_delay                                                                                                                 |zcu111_tengbe_we_delay                                         |     5|
+|386   |          we_delay                                                                                                                 |zcu111_tengbe_we_delay_x0                                      |     5|
 |387   |            register0                                                                                                              |zcu111_tengbe_xlregister__parameterized2_76                    |     1|
 |388   |              synth_reg_inst                                                                                                       |synth_reg_w_init__parameterized7_89                            |     1|
 |389   |                \latency_gt_0.fd_array[1].reg_comp                                                                                 |single_reg_w_init__parameterized7_90                           |     1|
@@ -7112,7 +7047,7 @@ Report Instance Areas:
 |486   |              synth_reg_inst                                                                                                       |synth_reg_w_init__parameterized7                               |     1|
 |487   |                \latency_gt_0.fd_array[1].reg_comp                                                                                 |single_reg_w_init__parameterized7                              |     1|
 |488   |          dat_del                                                                                                                  |sysgen_delay_92d0526e5b                                        |    66|
-|489   |          status                                                                                                                   |zcu111_tengbe_status_x0                                        |    18|
+|489   |          status                                                                                                                   |zcu111_tengbe_status_x1                                        |    18|
 |490   |            cast_gw                                                                                                                |zcu111_tengbe_xlconvert                                        |    18|
 |491   |              \latency_test.reg                                                                                                    |synth_reg                                                      |    18|
 |492   |                \partial_one.last_srlc33e                                                                                          |srlc33e                                                        |    18|
@@ -7127,39 +7062,36 @@ Report Instance Areas:
 |501   |  zcu111_tengbe_tx_snapshot_ss_status                                                                                              |cdc_synchroniser_22                                            |    22|
 +------+-----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:01:47 . Memory (MB): peak = 3199.016 ; gain = 877.855 ; free physical = 8233 ; free virtual = 30122
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:32 ; elapsed = 00:01:53 . Memory (MB): peak = 3197.047 ; gain = 875.887 ; free physical = 4299 ; free virtual = 25485
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 72 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:17 ; elapsed = 00:01:37 . Memory (MB): peak = 3199.016 ; gain = 793.043 ; free physical = 8271 ; free virtual = 30159
-Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:01:47 . Memory (MB): peak = 3199.023 ; gain = 877.855 ; free physical = 8285 ; free virtual = 30173
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:21 ; elapsed = 00:01:42 . Memory (MB): peak = 3197.047 ; gain = 792.043 ; free physical = 4332 ; free virtual = 25518
+Synthesis Optimization Complete : Time (s): cpu = 00:01:32 ; elapsed = 00:01:53 . Memory (MB): peak = 3197.055 ; gain = 875.887 ; free physical = 4344 ; free virtual = 25531
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 637 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 634 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Opt 31-326] The CLKFBOUT to CLKFBIN net for instance tengbaser_infra0_inst/i_xxv_ethernet_1_clocking_wrapper/clkgen_i with COMPENSATION=INTERNAL is optimized away to aid design routability
-INFO: [Opt 31-326] The CLKFBOUT to CLKFBIN net for instance zcu111_infr_inst/user_200m_mmcm_inst with COMPENSATION=INTERNAL is optimized away to aid design routability
 INFO: [Opt 31-326] The CLKFBOUT to CLKFBIN net for instance zcu111_infr_inst/user_clk_mmcm_inst with COMPENSATION=INTERNAL is optimized away to aid design routability
-INFO: [Opt 31-441] Inserted BUFG_GT_SYNC tengbaser_infra0_inst/i_xxv_ethernet_1_clocking_wrapper/BUFG_GT_SYNC for BUFG_GT tengbaser_infra0_inst/i_xxv_ethernet_1_clocking_wrapper/refclk_bufg_gt_i
-INFO: [Opt 31-441] Inserted BUFG_GT_SYNC tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC for BUFG_GT tengbaser_phy1/inst/i_core_gtwiz_userclk_rx_inst_0/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst
-INFO: [Opt 31-441] Inserted BUFG_GT_SYNC tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1 for BUFG_GT tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3247.875 ; gain = 0.000 ; free physical = 8198 ; free virtual = 30087
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC for BUFG_GT tengbaser_phy2/inst/i_core_gtwiz_userclk_rx_inst_0/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC tengbaser_phy2/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1 for BUFG_GT tengbaser_phy2/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3245.906 ; gain = 0.000 ; free physical = 4256 ; free virtual = 25443
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 472 instances were transformed.
-  BUFG => BUFGCE: 6 instances
+  A total of 469 instances were transformed.
+  BUFG => BUFGCE: 5 instances
   FD => FDRE: 2 instances
   FDE => FDRE: 448 instances
   IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances
-  MMCM_BASE => MMCME4_ADV: 3 instances
+  MMCM_BASE => MMCME4_ADV: 1 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-1197 Infos, 302 Warnings, 0 Critical Warnings and 0 Errors encountered.
+1190 Infos, 301 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:39 ; elapsed = 00:02:02 . Memory (MB): peak = 3247.875 ; gain = 1719.277 ; free physical = 8323 ; free virtual = 30212
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3247.875 ; gain = 0.000 ; free physical = 8323 ; free virtual = 30212
+synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:02:08 . Memory (MB): peak = 3245.906 ; gain = 1717.309 ; free physical = 4381 ; free virtual = 25567
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3245.906 ; gain = 0.000 ; free physical = 4383 ; free virtual = 25569
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/wei/casper/ZCU111/tengbe/zcu111_tengbe/myproj/myproj.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 13:20:15 2020...
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 22:10:35 2020...

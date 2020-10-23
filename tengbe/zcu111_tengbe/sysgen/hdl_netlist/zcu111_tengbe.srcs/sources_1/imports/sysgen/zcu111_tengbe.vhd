@@ -10,8 +10,8 @@ entity zcu111_tengbe_dest_ip is
   );
 end zcu111_tengbe_dest_ip;
 architecture structural of zcu111_tengbe_dest_ip is 
-  signal zcu111_tengbe_dest_ip_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal zcu111_tengbe_dest_ip_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
   signal slice_reg_y_net : std_logic_vector( 32-1 downto 0 );
 begin
@@ -2262,15 +2262,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_status_x1 is
+entity zcu111_tengbe_status_x0 is
   port (
     out_reg : in std_logic_vector( 32-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     zcu111_tengbe_gbe0_rxs_ss_status_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_status_x1;
-architecture structural of zcu111_tengbe_status_x1 is 
+end zcu111_tengbe_status_x0;
+architecture structural of zcu111_tengbe_status_x0 is 
   signal concat_y_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
@@ -2461,7 +2461,7 @@ begin
     out2 => reinterpret2_output_port_net,
     lsb_out1 => slice1_y_net
   );
-  status : entity xil_defaultlib.zcu111_tengbe_status_x1 
+  status : entity xil_defaultlib.zcu111_tengbe_status_x0 
   port map (
     out_reg => concat_y_net,
     clk_1 => clk_net,
@@ -2566,15 +2566,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_trig_delay_x0 is
+entity zcu111_tengbe_trig_delay is
   port (
     d : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     q : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_trig_delay_x0;
-architecture structural of zcu111_tengbe_trig_delay_x0 is 
+end zcu111_tengbe_trig_delay;
+architecture structural of zcu111_tengbe_trig_delay is 
   signal register4_q_net : std_logic_vector( 1-1 downto 0 );
   signal rxsnap_and_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -2659,15 +2659,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_we_delay_x0 is
+entity zcu111_tengbe_we_delay is
   port (
     d : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     q : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_we_delay_x0;
-architecture structural of zcu111_tengbe_we_delay_x0 is 
+end zcu111_tengbe_we_delay;
+architecture structural of zcu111_tengbe_we_delay is 
   signal register4_q_net : std_logic_vector( 1-1 downto 0 );
   signal zcu111_tengbe_gbe0_rx_valid_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -2862,14 +2862,14 @@ begin
     zcu111_tengbe_gbe0_rxs_ss_bram_we => convert_we_dout_net,
     zcu111_tengbe_gbe0_rxs_ss_status_user_data_in => cast_gw_dout_net
   );
-  trig_delay : entity xil_defaultlib.zcu111_tengbe_trig_delay_x0 
+  trig_delay : entity xil_defaultlib.zcu111_tengbe_trig_delay 
   port map (
     d => rxsnap_and_y_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     q => register4_q_net_x0
   );
-  we_delay : entity xil_defaultlib.zcu111_tengbe_we_delay_x0 
+  we_delay : entity xil_defaultlib.zcu111_tengbe_we_delay 
   port map (
     d => zcu111_tengbe_gbe0_rx_valid_net,
     clk_1 => clk_net,
@@ -4909,13 +4909,13 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_ctrl is
+entity zcu111_tengbe_ctrl_x0 is
   port (
     zcu111_tengbe_gbe0_txs_ss_ctrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
     in_reg : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_ctrl;
-architecture structural of zcu111_tengbe_ctrl is 
+end zcu111_tengbe_ctrl_x0;
+architecture structural of zcu111_tengbe_ctrl_x0 is 
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal zcu111_tengbe_gbe0_txs_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
@@ -5297,7 +5297,7 @@ begin
     zcu111_tengbe_gbe0_txs_ss_bram_data_in => convert_din1_dout_net,
     zcu111_tengbe_gbe0_txs_ss_bram_we => convert_we_dout_net
   );
-  ctrl : entity xil_defaultlib.zcu111_tengbe_ctrl 
+  ctrl : entity xil_defaultlib.zcu111_tengbe_ctrl_x0 
   port map (
     zcu111_tengbe_gbe0_txs_ss_ctrl_user_data_out => zcu111_tengbe_gbe0_txs_ss_ctrl_user_data_out_net,
     in_reg => reint1_output_port_net
@@ -5423,15 +5423,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_trig_delay is
+entity zcu111_tengbe_trig_delay_x0 is
   port (
     d : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     q : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_trig_delay;
-architecture structural of zcu111_tengbe_trig_delay is 
+end zcu111_tengbe_trig_delay_x0;
+architecture structural of zcu111_tengbe_trig_delay_x0 is 
   signal register4_q_net : std_logic_vector( 1-1 downto 0 );
   signal txsnap_and_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -5516,15 +5516,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_we_delay is
+entity zcu111_tengbe_we_delay_x0 is
   port (
     d : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     q : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_we_delay;
-architecture structural of zcu111_tengbe_we_delay is 
+end zcu111_tengbe_we_delay_x0;
+architecture structural of zcu111_tengbe_we_delay_x0 is 
   signal register4_q_net : std_logic_vector( 1-1 downto 0 );
   signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -5719,14 +5719,14 @@ begin
     zcu111_tengbe_gbe0_txs_ss_bram_we => convert_we_dout_net,
     zcu111_tengbe_gbe0_txs_ss_status_user_data_in => cast_gw_dout_net
   );
-  trig_delay : entity xil_defaultlib.zcu111_tengbe_trig_delay 
+  trig_delay : entity xil_defaultlib.zcu111_tengbe_trig_delay_x0 
   port map (
     d => txsnap_and_y_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     q => register4_q_net_x0
   );
-  we_delay : entity xil_defaultlib.zcu111_tengbe_we_delay 
+  we_delay : entity xil_defaultlib.zcu111_tengbe_we_delay_x0 
   port map (
     d => mux1_y_net,
     clk_1 => clk_net,
@@ -8922,13 +8922,13 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_ctrl_x0 is
+entity zcu111_tengbe_ctrl is
   port (
     zcu111_tengbe_tx_snapshot_ss_ctrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
     in_reg : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_ctrl_x0;
-architecture structural of zcu111_tengbe_ctrl_x0 is 
+end zcu111_tengbe_ctrl;
+architecture structural of zcu111_tengbe_ctrl is 
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal zcu111_tengbe_tx_snapshot_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
@@ -9132,15 +9132,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_status_x0 is
+entity zcu111_tengbe_status_x1 is
   port (
     out_reg : in std_logic_vector( 32-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     zcu111_tengbe_tx_snapshot_ss_status_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_status_x0;
-architecture structural of zcu111_tengbe_status_x0 is 
+end zcu111_tengbe_status_x1;
+architecture structural of zcu111_tengbe_status_x1 is 
   signal concat_y_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
@@ -9310,7 +9310,7 @@ begin
     zcu111_tengbe_tx_snapshot_ss_bram_data_in => convert_din1_dout_net,
     zcu111_tengbe_tx_snapshot_ss_bram_we => convert_we_dout_net
   );
-  ctrl : entity xil_defaultlib.zcu111_tengbe_ctrl_x0 
+  ctrl : entity xil_defaultlib.zcu111_tengbe_ctrl 
   port map (
     zcu111_tengbe_tx_snapshot_ss_ctrl_user_data_out => zcu111_tengbe_tx_snapshot_ss_ctrl_user_data_out_net,
     in_reg => reint1_output_port_net
@@ -9331,7 +9331,7 @@ begin
     out2 => reinterpret2_output_port_net,
     lsb_out1 => slice1_y_net
   );
-  status : entity xil_defaultlib.zcu111_tengbe_status_x0 
+  status : entity xil_defaultlib.zcu111_tengbe_status_x1 
   port map (
     out_reg => concat_y_net,
     clk_1 => clk_net,

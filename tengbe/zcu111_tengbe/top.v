@@ -10,15 +10,15 @@ module top (
   // gpio: led1_gbe0_up
     output [0:0] zcu111_tengbe_led1_gbe0_up_ext,
   // ten_gbe: gbe0
-    input mgt_rx_n1,
-    input mgt_rx_p1,
+    input mgt_rx_n2,
+    input mgt_rx_p2,
     input ref_clk_n0,
     input ref_clk_p0,
-    output mgt_tx_n1,
-    output mgt_tx_p1,
+    output mgt_tx_n2,
+    output mgt_tx_p2,
   // zcu111: ZCU111
-    input clk_100_n,
-    input clk_100_p
+    input clk_128_n,
+    input clk_128_p
   );
 
 
@@ -158,18 +158,12 @@ module top (
   wire [0:0] zcu111_tengbe_tx_snapshot_ss_ctrl_out_we;
   wire [0:0] zcu111_tengbe_tx_snapshot_ss_status_in_we;
   // ten_gbe: gbe0
-  wire axil_rst;
-  wire core_clk_156_0;
-  wire dclk0;
-  wire gt_reset_all_0;
-  wire gt_reset_rx_done_out_0;
-  wire gt_reset_tx_done_out_0;
-  wire gtwiz_reset_qpll0lock_in;
-  wire gtwiz_reset_qpll0reset_out;
-  wire gtwiz_reset_qpll1lock_in;
-  wire gtwiz_reset_qpll1reset_out;
-  wire gtwiz_reset_rx_datapath_out_0;
-  wire gtwiz_reset_tx_datapath_out_0;
+  wire clk_128M;
+  wire gt_reset_all2;
+  wire gt_reset_rx_done_out2;
+  wire gt_reset_tx_done_out2;
+  wire gtwiz_reset_qpll0lock_in0;
+  wire gtwiz_reset_qpll1lock_in0;
   wire [31:0] m_axi4lite_gbe0_araddr;
   wire m_axi4lite_gbe0_arready;
   wire m_axi4lite_gbe0_arvalid;
@@ -187,24 +181,25 @@ module top (
   wire m_axi4lite_gbe0_wready;
   wire [3:0] m_axi4lite_gbe0_wstrb;
   wire m_axi4lite_gbe0_wvalid;
-  wire [2:0] mgt_rxeqmix1;
-  wire [3:0] mgt_txdiffctrl1;
-  wire [4:0] mgt_txpostemphasis1;
-  wire [3:0] mgt_txpreemphasis1;
-  wire qpll0clk_in;
-  wire qpll0refclk_in;
-  wire qpll1clk_in;
-  wire qpll1refclk_in;
-  wire rx_clk_out_0;
-  wire rx_core_reset_out;
-  wire rx_serdes_reset_0;
+  wire [2:0] mgt_rxeqmix2;
+  wire [3:0] mgt_txdiffctrl2;
+  wire [4:0] mgt_txpostemphasis2;
+  wire [3:0] mgt_txpreemphasis2;
+  wire qpll0clk_in0;
+  wire qpll0refclk_in0;
+  wire qpll1clk_in0;
+  wire qpll1refclk_in0;
+  wire rx_clk_out2;
+  wire rx_core_reset_out2;
+  wire rx_serdes_reset2;
   wire stat_rx_block_lock_0;
-  wire tx_core_reset_out;
-  wire tx_mii_clk_0;
-  wire [7:0] xgmii_rxc1;
-  wire [63:0] xgmii_rxd1;
-  wire [7:0] xgmii_txc1;
-  wire [63:0] xgmii_txd1;
+  wire sys_rst;
+  wire tx_core_reset_out2;
+  wire tx_mii_clk2;
+  wire [7:0] xgmii_rxc2;
+  wire [63:0] xgmii_rxd2;
+  wire [7:0] xgmii_txc2;
+  wire [63:0] xgmii_txd2;
   wire zcu111_tengbe_gbe0_led_rx;
   wire zcu111_tengbe_gbe0_led_tx;
   wire zcu111_tengbe_gbe0_led_up;
@@ -279,12 +274,11 @@ module top (
   wire M_AXI_wready;
   wire [3:0] M_AXI_wstrb;
   wire M_AXI_wvalid;
-  wire clk_200;
+  wire axil_rst;
   wire sys_clk;
   wire sys_clk180;
   wire sys_clk270;
   wire sys_clk90;
-  wire sys_clk_rst;
 
 /*
   _____           _                            
@@ -762,38 +756,20 @@ module top (
 
   // ten_gbe: gbe0
   tengbaser_infrastructure_ultrascale  tengbaser_infra0_inst (
-    .dclk(dclk0),
     .gt_refclk_n(ref_clk_n0),
-    .gt_refclk_out(core_clk_156_0),
     .gt_refclk_p(ref_clk_p0),
-    .gt_rx_reset_in_0(gt_reset_rx_done_out_0),
-    .gt_rxusrclk2_0(rx_clk_out_0),
-    .gt_tx_reset_in_0(gt_reset_tx_done_out_0),
-    .gt_txusrclk2_0(tx_mii_clk_0),
-    .gtwiz_reset_all_0(gt_reset_all_0),
-    .gtwiz_reset_rx_datapath_out_0(gtwiz_reset_rx_datapath_out_0),
-    .gtwiz_reset_tx_datapath_out_0(gtwiz_reset_tx_datapath_out_0),
-    .qpll0lock(gtwiz_reset_qpll0lock_in),
-    .qpll0outclk(qpll0clk_in),
-    .qpll0outrefclk(qpll0refclk_in),
-    .qpll0reset(gtwiz_reset_qpll0reset_out),
-    .qpll1lock(gtwiz_reset_qpll1lock_in),
-    .qpll1outclk(qpll1clk_in),
-    .qpll1outrefclk(qpll1refclk_in),
-    .qpll1reset(gtwiz_reset_qpll1reset_out),
-    .rx_core_clk_0(rx_clk_out_0),
-    .rx_core_reset_in_0(1'b0),
-    .rx_core_reset_out_0(rx_core_reset_out),
-    .rx_serdes_reset_out_0(rx_serdes_reset_0),
-    .sys_reset(axil_rst),
-    .tx_core_reset_in_0(1'b0),
-    .tx_core_reset_out_0(tx_core_reset_out),
-    .usr_rx_reset_0(),
-    .usr_tx_reset_0()
+    .qpll0lock(gtwiz_reset_qpll0lock_in0),
+    .qpll0outclk(qpll0clk_in0),
+    .qpll0outrefclk(qpll0refclk_in0),
+    .qpll0reset(1'b0),
+    .qpll1lock(gtwiz_reset_qpll1lock_in0),
+    .qpll1outclk(qpll1clk_in0),
+    .qpll1outrefclk(qpll1refclk_in0),
+    .qpll1reset(1'b0)
   );
 
 
-  tengbaser_phy_ultrascale  tengbaser_phy1 (
+  tengbaser_phy_ultrascale  tengbaser_phy2 (
     .ctl_rx_data_pattern_select_0(1'b0),
     .ctl_rx_prbs31_test_pattern_enable_0(1'b0),
     .ctl_rx_test_pattern_0(1'b0),
@@ -805,32 +781,32 @@ module top (
     .ctl_tx_test_pattern_seed_a_0(58'b0),
     .ctl_tx_test_pattern_seed_b_0(58'b0),
     .ctl_tx_test_pattern_select_0(1'b0),
-    .dclk(dclk0),
+    .dclk(clk_128M),
     .gt_loopback_in_0(3'b000),
-    .gt_reset_all_in_0(gt_reset_all_0),
-    .gt_reset_rx_done_out_0(gt_reset_rx_done_out_0),
-    .gt_reset_tx_done_out_0(gt_reset_tx_done_out_0),
-    .gt_rx_reset_in_0(gtwiz_reset_rx_datapath_out_0),
-    .gt_rxn_in_0(mgt_rx_n1),
-    .gt_rxp_in_0(mgt_rx_p1),
-    .gt_tx_reset_in_0(gtwiz_reset_tx_datapath_out_0),
-    .gt_txn_out_0(mgt_tx_n1),
-    .gt_txp_out_0(mgt_tx_p1),
+    .gt_reset_all_in_0(gt_reset_all2),
+    .gt_reset_rx_done_out_0(gt_reset_rx_done_out2),
+    .gt_reset_tx_done_out_0(gt_reset_tx_done_out2),
+    .gt_rx_reset_in_0(1'b0),
+    .gt_rxn_in_0(mgt_rx_n2),
+    .gt_rxp_in_0(mgt_rx_p2),
+    .gt_tx_reset_in_0(1'b0),
+    .gt_txn_out_0(mgt_tx_n2),
+    .gt_txp_out_0(mgt_tx_p2),
     .gtpowergood_out_0(),
-    .gtwiz_reset_qpll0lock_in(gtwiz_reset_qpll0lock_in),
-    .gtwiz_reset_qpll0reset_out(gtwiz_reset_qpll0reset_out),
-    .gtwiz_reset_qpll1lock_in(gtwiz_reset_qpll1lock_in),
-    .gtwiz_reset_qpll1reset_out(gtwiz_reset_qpll1reset_out),
-    .qpll0clk_in(qpll0clk_in),
-    .qpll0refclk_in(qpll0refclk_in),
-    .qpll1clk_in(qpll1clk_in),
-    .qpll1refclk_in(qpll1refclk_in),
-    .rx_clk_out_0(rx_clk_out_0),
-    .rx_core_clk_0(rx_clk_out_0),
-    .rx_mii_c_0(xgmii_rxc1),
-    .rx_mii_d_0(xgmii_rxd1),
-    .rx_reset_0(rx_core_reset_out),
-    .rx_serdes_reset_0(rx_serdes_reset_0),
+    .gtwiz_reset_qpll0lock_in(gtwiz_reset_qpll0lock_in0),
+    .gtwiz_reset_qpll0reset_out(),
+    .gtwiz_reset_qpll1lock_in(gtwiz_reset_qpll1lock_in0),
+    .gtwiz_reset_qpll1reset_out(),
+    .qpll0clk_in(qpll0clk_in0),
+    .qpll0refclk_in(qpll0refclk_in0),
+    .qpll1clk_in(qpll1clk_in0),
+    .qpll1refclk_in(qpll1refclk_in0),
+    .rx_clk_out_0(rx_clk_out2),
+    .rx_core_clk_0(rx_clk_out2),
+    .rx_mii_c_0(xgmii_rxc2),
+    .rx_mii_d_0(xgmii_rxd2),
+    .rx_reset_0(rx_core_reset_out2),
+    .rx_serdes_reset_0(rx_serdes_reset2),
     .rxoutclksel_in_0(3'b101),
     .rxrecclkout_0(),
     .stat_rx_bad_code_0(),
@@ -846,12 +822,30 @@ module top (
     .stat_rx_status_0(),
     .stat_rx_valid_ctrl_code_0(),
     .stat_tx_local_fault_0(),
-    .sys_reset(axil_rst),
-    .tx_mii_c_0(xgmii_txc1),
-    .tx_mii_clk_0(tx_mii_clk_0),
-    .tx_mii_d_0(xgmii_txd1),
-    .tx_reset_0(tx_core_reset_out),
+    .sys_reset(sys_rst),
+    .tx_mii_c_0(xgmii_txc2),
+    .tx_mii_clk_0(tx_mii_clk2),
+    .tx_mii_d_0(xgmii_txd2),
+    .tx_reset_0(tx_core_reset_out2),
     .txoutclksel_in_0(3'b101)
+  );
+
+
+  tengbaser_phy_ultrascale_reset  tengbaser_phy_reset2 (
+    .gt_rx_reset_in(gt_reset_rx_done_out2),
+    .gt_rxusrclk2(rx_clk_out2),
+    .gt_tx_reset_in(gt_reset_tx_done_out2),
+    .gt_txusrclk2(tx_mii_clk2),
+    .gtwiz_reset_all(gt_reset_all2),
+    .rx_core_clk(rx_clk_out2),
+    .rx_core_reset_in(1'b0),
+    .rx_core_reset_out(rx_core_reset_out2),
+    .rx_serdes_reset_out(rx_serdes_reset2),
+    .sys_reset(sys_rst),
+    .tx_core_reset_in(1'b0),
+    .tx_core_reset_out(tx_core_reset_out2),
+    .usr_rx_reset(),
+    .usr_tx_reset()
   );
 
 
@@ -871,10 +865,10 @@ module top (
     .led_rx(zcu111_tengbe_gbe0_led_rx),
     .led_tx(zcu111_tengbe_gbe0_led_tx),
     .led_up(zcu111_tengbe_gbe0_led_up),
-    .mgt_rxeqmix(mgt_rxeqmix1),
-    .mgt_txdiffctrl(mgt_txdiffctrl1),
-    .mgt_txpostemphasis(mgt_txpostemphasis1),
-    .mgt_txpreemphasis(mgt_txpreemphasis1),
+    .mgt_rxeqmix(mgt_rxeqmix2),
+    .mgt_txdiffctrl(mgt_txdiffctrl2),
+    .mgt_txpostemphasis(mgt_txpostemphasis2),
+    .mgt_txpreemphasis(mgt_txpreemphasis2),
     .rst(zcu111_tengbe_gbe0_rst),
     .rx_ack(zcu111_tengbe_gbe0_rx_ack),
     .rx_bad_frame(zcu111_tengbe_gbe0_rx_bad_frame),
@@ -903,13 +897,13 @@ module top (
     .wb_sel_i(zcu111_tengbe_gbe0wb_sel),
     .wb_stb_i(zcu111_tengbe_gbe0_wb_stb),
     .wb_we_i(zcu111_tengbe_gbe0_wb_we),
-    .xaui_clk(tx_mii_clk_0),
+    .xaui_clk(tx_mii_clk2),
     .xaui_reset(axil_rst),
     .xaui_status({7'b0,stat_rx_block_lock_0}),
-    .xgmii_rxc(xgmii_rxc1),
-    .xgmii_rxd(xgmii_rxd1),
-    .xgmii_txc(xgmii_txc1),
-    .xgmii_txd(xgmii_txd1)
+    .xgmii_rxc(xgmii_rxc2),
+    .xgmii_rxd(xgmii_rxd2),
+    .xgmii_txc(xgmii_txc2),
+    .xgmii_txd(xgmii_txd2)
   );
 
 
@@ -986,14 +980,14 @@ module top (
     .DIVIDE(4.0),
     .MULTIPLY(8.0)
   ) zcu111_infr_inst (
-    .clk_100_n(clk_100_n),
-    .clk_100_p(clk_100_p),
-    .clk_200(clk_200),
+    .clk_128M(clk_128M),
+    .clk_128_n(clk_128_n),
+    .clk_128_p(clk_128_p),
     .sys_clk(sys_clk),
     .sys_clk180(sys_clk180),
     .sys_clk270(sys_clk270),
     .sys_clk90(sys_clk90),
-    .sys_clk_rst(sys_clk_rst)
+    .sys_clk_rst(sys_rst)
   );
 
 

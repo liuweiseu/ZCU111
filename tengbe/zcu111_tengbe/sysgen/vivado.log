@@ -2,8 +2,8 @@
 # Vivado v2019.1.3 (64-bit)
 # SW Build 2644227 on Wed Sep  4 09:44:18 MDT 2019
 # IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
-# Start of session at: Thu Oct 22 13:05:45 2020
-# Process ID: 27010
+# Start of session at: Thu Oct 22 21:55:26 2020
+# Process ID: 27606
 # Current directory: /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/sysgen
 # Command line: vivado -mode batch -source ProjectGeneration.tcl -notrace
 # Log file: /home/wei/casper/ZCU111/tengbe/zcu111_tengbe/sysgen/vivado.log
@@ -149,4 +149,4 @@ WARNING: [IP_Flow 19-4832] The IP name 'zcu111_tengbe_c_counter_binary_v12_0_i4'
 WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'zcu111_tengbe_c_counter_binary_v12_0_i4' to 'zcu111_tengbe_c_counter_binary_v12_0_i4' is not allowed and is ignored.
 WARNING: [IP_Flow 19-4832] The IP name 'zcu111_tengbe_c_counter_binary_v12_0_i5' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
 WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'zcu111_tengbe_c_counter_binary_v12_0_i5' to 'zcu111_tengbe_c_counter_binary_v12_0_i5' is not allowed and is ignored.
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 13:05:57 2020...
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 21:55:37 2020...
