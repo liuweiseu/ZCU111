@@ -1,0 +1,1053 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
+| Date              : Thu Oct 22 13:26:47 2020
+| Host              : wei-Berkeley running 64-bit Ubuntu 18.04.5 LTS
+| Command           : report_bus_skew -warn_on_violation -file top_bus_skew_postroute_physopted.rpt -pb top_bus_skew_postroute_physopted.pb -rpx top_bus_skew_postroute_physopted.rpx
+| Design            : top
+| Device            : xczu28dr-ffvg1517
+| Speed File        : -2  PRODUCTION 1.26 06-20-2019
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+Table of Contents
+-----------------
+1. Bus Skew Report Summary
+2. Bus Skew Report Per Constraint
+
+1. Bus Skew Report Summary
+--------------------------
+
+Id  Position  From                            To                              Corner  Requirement(ns)  Actual(ns)  Slack(ns)
+--  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
+1   51        [get_cells [list {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]}]]
+                                              [get_cells [list {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
+                                                                              Slow              3.906       0.523      3.383
+2   53        [get_cells [list {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]}]]
+                                              [get_cells [list {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
+                                                                              Slow              3.906       0.610      3.296
+3   55        [get_cells [list {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow              3.906       0.578      3.328
+4   57        [get_cells [list {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[7]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow              3.906       0.613      3.293
+5   59        [get_cells [list {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]}]]
+                                              [get_cells [list {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
+                                                                              Slow              3.906       0.608      3.298
+6   61        [get_cells [list {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]}]]
+                                              [get_cells [list {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
+                                                                              Slow              3.906       0.452      3.454
+7   63        [get_cells [list {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow              3.906       0.678      3.228
+8   65        [get_cells [list {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[7]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow              3.906       0.568      3.338
+
+
+2. Bus Skew Report Per Constraint
+---------------------------------
+
+Id: 1
+set_bus_skew -from [get_cells [list {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]}]] -to [get_cells [list {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]] 3.906
+Requirement: 3.906ns
+Endpoints: 4
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+user_clk_mmcm         txoutclk_out[0]       zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                            zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                                                            Slow         0.523      3.383
+
+
+Slack (MET) :             3.383ns  (requirement - actual skew)
+  Endpoint Source:        zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by user_clk_mmcm)
+  Endpoint Destination:   zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                            (rising edge-triggered cell FDRE clocked by txoutclk_out[0])
+  Reference Source:       zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by user_clk_mmcm)
+  Reference Destination:  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                            (rising edge-triggered cell FDRE clocked by txoutclk_out[0])
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            3.906ns
+  Endpoint Relative Delay:    1.631ns
+  Reference Relative Delay:   1.432ns
+  Relative CRPR:             -0.167ns
+  Uncertainty:                0.157ns
+  Actual Bus Skew:            0.523ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock user_clk_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL16                                              0.000     0.000 r  clk_100_p (IN)
+                         net (fo=0)                   0.000     0.000    zcu111_infr_inst/i_clk/I
+    HPIOBDIFFINBUF_X0Y12 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.656     0.656 r  zcu111_infr_inst/i_clk/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.706    zcu111_infr_inst/i_clk/OUT
+    AL16                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.706 r  zcu111_infr_inst/i_clk/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     1.029    zcu111_infr_inst/clk_100
+    BUFGCE_X0Y2          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.057 r  zcu111_infr_inst/clk_100_BUFGCE_inst/O
+                         net (fo=1, routed)           0.562     1.619    zcu111_infr_inst/clk_100_BUFGCE
+    MMCM_X0Y0            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     1.492 r  zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.736    zcu111_infr_inst/user_clk_mmcm
+    BUFGCE_X0Y8          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.764 r  zcu111_infr_inst/bufg_sysclk[3]/O
+    X2Y1 (CLOCK_ROOT)    net (fo=3823, routed)        1.942     3.706    zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X50Y67         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y67         FDRE (Prop_GFF_SLICEL_C_Q)
+                                                      0.079     3.785 r  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.238     4.023    zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[2]
+    SLICE_X50Y67         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock txoutclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X0Y5   GTYE4_CHANNEL                0.000     0.000 r  tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/txoutclk_out[0]
+    BUFG_GT_X0Y117       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X1Y2 (CLOCK_ROOT)    net (fo=2261, routed)        2.175     2.367    zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X50Y67         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     2.367    
+    SLICE_X50Y67         FDRE (Setup_DFF2_SLICEL_C_D)
+                                                      0.025     2.392    zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+  -------------------------------------------------------------------
+                         data arrival                           4.023    
+                         clock arrival                          2.392    
+  -------------------------------------------------------------------
+                         relative delay                         1.631    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock user_clk_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL16                                              0.000     0.000 r  clk_100_p (IN)
+                         net (fo=0)                   0.000     0.000    zcu111_infr_inst/i_clk/I
+    HPIOBDIFFINBUF_X0Y12 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.546     0.546 r  zcu111_infr_inst/i_clk/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.586    zcu111_infr_inst/i_clk/OUT
+    AL16                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.586 r  zcu111_infr_inst/i_clk/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287     0.873    zcu111_infr_inst/clk_100
+    BUFGCE_X0Y2          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     0.897 r  zcu111_infr_inst/clk_100_BUFGCE_inst/O
+                         net (fo=1, routed)           0.500     1.397    zcu111_infr_inst/clk_100_BUFGCE
+    MMCM_X0Y0            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     2.027 r  zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0
+                         net (fo=1, routed)           0.214     2.241    zcu111_infr_inst/user_clk_mmcm
+    BUFGCE_X0Y8          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     2.265 r  zcu111_infr_inst/bufg_sysclk[3]/O
+    X2Y1 (CLOCK_ROOT)    net (fo=3823, routed)        1.727     3.992    zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X49Y67         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y67         FDRE (Prop_EFF_SLICEL_C_Q)
+                                                      0.059     4.051 r  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.096     4.147    zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[3]
+    SLICE_X49Y67         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock txoutclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X0Y5   GTYE4_CHANNEL                0.000     0.000 r  tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/txoutclk_out[0]
+    BUFG_GT_X0Y117       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X1Y2 (CLOCK_ROOT)    net (fo=2261, routed)        2.438     2.653    zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X49Y67         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.000     2.653    
+    SLICE_X49Y67         FDRE (Hold_CFF2_SLICEL_C_D)
+                                                      0.062     2.715    zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+  -------------------------------------------------------------------
+                         data arrival                           4.147    
+                         clock arrival                          2.715    
+  -------------------------------------------------------------------
+                         relative delay                         1.432    
+
+
+
+Id: 2
+set_bus_skew -from [get_cells [list {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]}]] -to [get_cells [list {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]] 3.906
+Requirement: 3.906ns
+Endpoints: 4
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+txoutclk_out[0]       user_clk_mmcm         zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                            zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                                                                                                            Slow         0.610      3.296
+
+
+Slack (MET) :             3.296ns  (requirement - actual skew)
+  Endpoint Source:        zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by txoutclk_out[0])
+  Endpoint Destination:   zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                            (rising edge-triggered cell FDRE clocked by user_clk_mmcm)
+  Reference Source:       zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by txoutclk_out[0])
+  Reference Destination:  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                            (rising edge-triggered cell FDRE clocked by user_clk_mmcm)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            3.906ns
+  Endpoint Relative Delay:   -0.956ns
+  Reference Relative Delay:  -1.242ns
+  Relative CRPR:             -0.167ns
+  Uncertainty:                0.157ns
+  Actual Bus Skew:            0.610ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock txoutclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X0Y5   GTYE4_CHANNEL                0.000     0.000 r  tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/txoutclk_out[0]
+    BUFG_GT_X0Y117       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X1Y2 (CLOCK_ROOT)    net (fo=2261, routed)        2.429     2.644    zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X50Y66         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y66         FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.079     2.723 r  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.340     3.063    zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[2]
+    SLICE_X50Y66         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock user_clk_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL16                                              0.000     0.000 r  clk_100_p (IN)
+                         net (fo=0)                   0.000     0.000    zcu111_infr_inst/i_clk/I
+    HPIOBDIFFINBUF_X0Y12 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.546     0.546 r  zcu111_infr_inst/i_clk/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.586    zcu111_infr_inst/i_clk/OUT
+    AL16                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.586 r  zcu111_infr_inst/i_clk/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287     0.873    zcu111_infr_inst/clk_100
+    BUFGCE_X0Y2          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     0.897 r  zcu111_infr_inst/clk_100_BUFGCE_inst/O
+                         net (fo=1, routed)           0.500     1.397    zcu111_infr_inst/clk_100_BUFGCE
+    MMCM_X0Y0            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     2.027 r  zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0
+                         net (fo=1, routed)           0.214     2.241    zcu111_infr_inst/user_clk_mmcm
+    BUFGCE_X0Y8          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     2.265 r  zcu111_infr_inst/bufg_sysclk[3]/O
+    X2Y1 (CLOCK_ROOT)    net (fo=3823, routed)        1.729     3.994    zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X50Y66         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     3.994    
+    SLICE_X50Y66         FDRE (Setup_HFF2_SLICEL_C_D)
+                                                      0.025     4.019    zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+  -------------------------------------------------------------------
+                         data arrival                           3.063    
+                         clock arrival                          4.019    
+  -------------------------------------------------------------------
+                         relative delay                        -0.956    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock txoutclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X0Y5   GTYE4_CHANNEL                0.000     0.000 r  tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/txoutclk_out[0]
+    BUFG_GT_X0Y117       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X1Y2 (CLOCK_ROOT)    net (fo=2261, routed)        2.174     2.366    zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X49Y67         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y67         FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.059     2.425 r  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.099     2.524    zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[0]
+    SLICE_X49Y67         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock user_clk_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL16                                              0.000     0.000 r  clk_100_p (IN)
+                         net (fo=0)                   0.000     0.000    zcu111_infr_inst/i_clk/I
+    HPIOBDIFFINBUF_X0Y12 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.656     0.656 r  zcu111_infr_inst/i_clk/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.706    zcu111_infr_inst/i_clk/OUT
+    AL16                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.706 r  zcu111_infr_inst/i_clk/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     1.029    zcu111_infr_inst/clk_100
+    BUFGCE_X0Y2          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.057 r  zcu111_infr_inst/clk_100_BUFGCE_inst/O
+                         net (fo=1, routed)           0.562     1.619    zcu111_infr_inst/clk_100_BUFGCE
+    MMCM_X0Y0            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     1.492 r  zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.736    zcu111_infr_inst/user_clk_mmcm
+    BUFGCE_X0Y8          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.764 r  zcu111_infr_inst/bufg_sysclk[3]/O
+    X2Y1 (CLOCK_ROOT)    net (fo=3823, routed)        1.940     3.704    zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X49Y67         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.000     3.704    
+    SLICE_X49Y67         FDRE (Hold_HFF2_SLICEL_C_D)
+                                                      0.062     3.766    zcu111_tengbe_gbe0/tge_rx_inst/rx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
+  -------------------------------------------------------------------
+                         data arrival                           2.524    
+                         clock arrival                          3.766    
+  -------------------------------------------------------------------
+                         relative delay                        -1.242    
+
+
+
+Id: 3
+set_bus_skew -from [get_cells [list {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 3.906
+Requirement: 3.906ns
+Endpoints: 10
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+user_clk_mmcm         txoutclk_out[0]       zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                                                                            zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                                                                                                            Slow         0.578      3.328
+
+
+Slack (MET) :             3.328ns  (requirement - actual skew)
+  Endpoint Source:        zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by user_clk_mmcm)
+  Endpoint Destination:   zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                            (rising edge-triggered cell FDRE clocked by txoutclk_out[0])
+  Reference Source:       zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by user_clk_mmcm)
+  Reference Destination:  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                            (rising edge-triggered cell FDRE clocked by txoutclk_out[0])
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            3.906ns
+  Endpoint Relative Delay:    1.675ns
+  Reference Relative Delay:   1.412ns
+  Relative CRPR:             -0.158ns
+  Uncertainty:                0.157ns
+  Actual Bus Skew:            0.578ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock user_clk_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL16                                              0.000     0.000 r  clk_100_p (IN)
+                         net (fo=0)                   0.000     0.000    zcu111_infr_inst/i_clk/I
+    HPIOBDIFFINBUF_X0Y12 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.656     0.656 r  zcu111_infr_inst/i_clk/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.706    zcu111_infr_inst/i_clk/OUT
+    AL16                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.706 r  zcu111_infr_inst/i_clk/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     1.029    zcu111_infr_inst/clk_100
+    BUFGCE_X0Y2          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.057 r  zcu111_infr_inst/clk_100_BUFGCE_inst/O
+                         net (fo=1, routed)           0.562     1.619    zcu111_infr_inst/clk_100_BUFGCE
+    MMCM_X0Y0            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     1.492 r  zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.736    zcu111_infr_inst/user_clk_mmcm
+    BUFGCE_X0Y8          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.764 r  zcu111_infr_inst/bufg_sysclk[3]/O
+    X2Y1 (CLOCK_ROOT)    net (fo=3823, routed)        1.969     3.733    zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X56Y52         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X56Y52         FDRE (Prop_DFF_SLICEM_C_Q)
+                                                      0.078     3.811 r  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.275     4.086    zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[0]
+    SLICE_X56Y52         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock txoutclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X0Y5   GTYE4_CHANNEL                0.000     0.000 r  tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/txoutclk_out[0]
+    BUFG_GT_X0Y117       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X1Y2 (CLOCK_ROOT)    net (fo=2261, routed)        2.194     2.386    zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X56Y52         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.000     2.386    
+    SLICE_X56Y52         FDRE (Setup_HFF2_SLICEM_C_D)
+                                                      0.025     2.411    zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
+  -------------------------------------------------------------------
+                         data arrival                           4.086    
+                         clock arrival                          2.411    
+  -------------------------------------------------------------------
+                         relative delay                         1.675    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock user_clk_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL16                                              0.000     0.000 r  clk_100_p (IN)
+                         net (fo=0)                   0.000     0.000    zcu111_infr_inst/i_clk/I
+    HPIOBDIFFINBUF_X0Y12 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.546     0.546 r  zcu111_infr_inst/i_clk/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.586    zcu111_infr_inst/i_clk/OUT
+    AL16                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.586 r  zcu111_infr_inst/i_clk/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287     0.873    zcu111_infr_inst/clk_100
+    BUFGCE_X0Y2          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     0.897 r  zcu111_infr_inst/clk_100_BUFGCE_inst/O
+                         net (fo=1, routed)           0.500     1.397    zcu111_infr_inst/clk_100_BUFGCE
+    MMCM_X0Y0            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     2.027 r  zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0
+                         net (fo=1, routed)           0.214     2.241    zcu111_infr_inst/user_clk_mmcm
+    BUFGCE_X0Y8          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     2.265 r  zcu111_infr_inst/bufg_sysclk[3]/O
+    X2Y1 (CLOCK_ROOT)    net (fo=3823, routed)        1.748     4.013    zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X55Y54         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y54         FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.059     4.072 r  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]/Q
+                         net (fo=1, routed)           0.099     4.171    zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[6]
+    SLICE_X55Y54         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock txoutclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X0Y5   GTYE4_CHANNEL                0.000     0.000 r  tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/txoutclk_out[0]
+    BUFG_GT_X0Y117       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X1Y2 (CLOCK_ROOT)    net (fo=2261, routed)        2.482     2.697    zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X55Y54         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
+                         clock pessimism              0.000     2.697    
+    SLICE_X55Y54         FDRE (Hold_HFF2_SLICEL_C_D)
+                                                      0.062     2.759    zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
+  -------------------------------------------------------------------
+                         data arrival                           4.171    
+                         clock arrival                          2.759    
+  -------------------------------------------------------------------
+                         relative delay                         1.412    
+
+
+
+Id: 4
+set_bus_skew -from [get_cells [list {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[7]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 3.906
+Requirement: 3.906ns
+Endpoints: 10
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+txoutclk_out[0]       user_clk_mmcm         zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+                                                                            zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                                                            Slow         0.613      3.293
+
+
+Slack (MET) :             3.293ns  (requirement - actual skew)
+  Endpoint Source:        zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by txoutclk_out[0])
+  Endpoint Destination:   zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+                            (rising edge-triggered cell FDRE clocked by user_clk_mmcm)
+  Reference Source:       zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by txoutclk_out[0])
+  Reference Destination:  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                            (rising edge-triggered cell FDRE clocked by user_clk_mmcm)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            3.906ns
+  Endpoint Relative Delay:   -0.977ns
+  Reference Relative Delay:  -1.275ns
+  Relative CRPR:             -0.158ns
+  Uncertainty:                0.157ns
+  Actual Bus Skew:            0.613ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock txoutclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X0Y5   GTYE4_CHANNEL                0.000     0.000 r  tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/txoutclk_out[0]
+    BUFG_GT_X0Y117       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X1Y2 (CLOCK_ROOT)    net (fo=2261, routed)        2.459     2.674    zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X56Y49         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X56Y49         FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.079     2.753 r  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]/Q
+                         net (fo=1, routed)           0.311     3.064    zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[8]
+    SLICE_X56Y49         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock user_clk_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL16                                              0.000     0.000 r  clk_100_p (IN)
+                         net (fo=0)                   0.000     0.000    zcu111_infr_inst/i_clk/I
+    HPIOBDIFFINBUF_X0Y12 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.546     0.546 r  zcu111_infr_inst/i_clk/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.586    zcu111_infr_inst/i_clk/OUT
+    AL16                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.586 r  zcu111_infr_inst/i_clk/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287     0.873    zcu111_infr_inst/clk_100
+    BUFGCE_X0Y2          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     0.897 r  zcu111_infr_inst/clk_100_BUFGCE_inst/O
+                         net (fo=1, routed)           0.500     1.397    zcu111_infr_inst/clk_100_BUFGCE
+    MMCM_X0Y0            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     2.027 r  zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0
+                         net (fo=1, routed)           0.214     2.241    zcu111_infr_inst/user_clk_mmcm
+    BUFGCE_X0Y8          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     2.265 r  zcu111_infr_inst/bufg_sysclk[3]/O
+    X2Y1 (CLOCK_ROOT)    net (fo=3823, routed)        1.751     4.016    zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X56Y49         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/C
+                         clock pessimism              0.000     4.016    
+    SLICE_X56Y49         FDRE (Setup_DFF2_SLICEM_C_D)
+                                                      0.025     4.041    zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]
+  -------------------------------------------------------------------
+                         data arrival                           3.064    
+                         clock arrival                          4.041    
+  -------------------------------------------------------------------
+                         relative delay                        -0.977    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock txoutclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X0Y5   GTYE4_CHANNEL                0.000     0.000 r  tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/txoutclk_out[0]
+    BUFG_GT_X0Y117       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X1Y2 (CLOCK_ROOT)    net (fo=2261, routed)        2.189     2.381    zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X55Y49         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y49         FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.059     2.440 r  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.098     2.538    zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[2]
+    SLICE_X55Y49         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock user_clk_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL16                                              0.000     0.000 r  clk_100_p (IN)
+                         net (fo=0)                   0.000     0.000    zcu111_infr_inst/i_clk/I
+    HPIOBDIFFINBUF_X0Y12 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.656     0.656 r  zcu111_infr_inst/i_clk/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.706    zcu111_infr_inst/i_clk/OUT
+    AL16                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.706 r  zcu111_infr_inst/i_clk/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     1.029    zcu111_infr_inst/clk_100
+    BUFGCE_X0Y2          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.057 r  zcu111_infr_inst/clk_100_BUFGCE_inst/O
+                         net (fo=1, routed)           0.562     1.619    zcu111_infr_inst/clk_100_BUFGCE
+    MMCM_X0Y0            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     1.492 r  zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.736    zcu111_infr_inst/user_clk_mmcm
+    BUFGCE_X0Y8          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.764 r  zcu111_infr_inst/bufg_sysclk[3]/O
+    X2Y1 (CLOCK_ROOT)    net (fo=3823, routed)        1.987     3.751    zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X55Y49         FDRE                                         r  zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     3.751    
+    SLICE_X55Y49         FDRE (Hold_GFF2_SLICEL_C_D)
+                                                      0.062     3.813    zcu111_tengbe_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+  -------------------------------------------------------------------
+                         data arrival                           2.538    
+                         clock arrival                          3.813    
+  -------------------------------------------------------------------
+                         relative delay                        -1.275    
+
+
+
+Id: 5
+set_bus_skew -from [get_cells [list {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]}]] -to [get_cells [list {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]] 3.906
+Requirement: 3.906ns
+Endpoints: 4
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+txoutclk_out[0]       user_clk_mmcm         zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                            zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                                                            Slow         0.608      3.298
+
+
+Slack (MET) :             3.298ns  (requirement - actual skew)
+  Endpoint Source:        zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by txoutclk_out[0])
+  Endpoint Destination:   zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                            (rising edge-triggered cell FDRE clocked by user_clk_mmcm)
+  Reference Source:       zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by txoutclk_out[0])
+  Reference Destination:  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                            (rising edge-triggered cell FDRE clocked by user_clk_mmcm)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            3.906ns
+  Endpoint Relative Delay:   -0.927ns
+  Reference Relative Delay:  -1.269ns
+  Relative CRPR:             -0.109ns
+  Uncertainty:                0.157ns
+  Actual Bus Skew:            0.608ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock txoutclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X0Y5   GTYE4_CHANNEL                0.000     0.000 r  tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/txoutclk_out[0]
+    BUFG_GT_X0Y117       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X1Y2 (CLOCK_ROOT)    net (fo=2261, routed)        2.435     2.650    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X53Y79         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X53Y79         FDRE (Prop_DFF_SLICEM_C_Q)
+                                                      0.078     2.728 r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.362     3.090    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[2]
+    SLICE_X53Y79         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock user_clk_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL16                                              0.000     0.000 r  clk_100_p (IN)
+                         net (fo=0)                   0.000     0.000    zcu111_infr_inst/i_clk/I
+    HPIOBDIFFINBUF_X0Y12 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.546     0.546 r  zcu111_infr_inst/i_clk/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.586    zcu111_infr_inst/i_clk/OUT
+    AL16                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.586 r  zcu111_infr_inst/i_clk/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287     0.873    zcu111_infr_inst/clk_100
+    BUFGCE_X0Y2          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     0.897 r  zcu111_infr_inst/clk_100_BUFGCE_inst/O
+                         net (fo=1, routed)           0.500     1.397    zcu111_infr_inst/clk_100_BUFGCE
+    MMCM_X0Y0            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     2.027 r  zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0
+                         net (fo=1, routed)           0.214     2.241    zcu111_infr_inst/user_clk_mmcm
+    BUFGCE_X0Y8          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     2.265 r  zcu111_infr_inst/bufg_sysclk[3]/O
+    X2Y1 (CLOCK_ROOT)    net (fo=3823, routed)        1.727     3.992    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X53Y79         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     3.992    
+    SLICE_X53Y79         FDRE (Setup_HFF2_SLICEM_C_D)
+                                                      0.025     4.017    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+  -------------------------------------------------------------------
+                         data arrival                           3.090    
+                         clock arrival                          4.017    
+  -------------------------------------------------------------------
+                         relative delay                        -0.927    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock txoutclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X0Y5   GTYE4_CHANNEL                0.000     0.000 r  tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/txoutclk_out[0]
+    BUFG_GT_X0Y117       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X1Y2 (CLOCK_ROOT)    net (fo=2261, routed)        2.170     2.362    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X53Y82         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X53Y82         FDRE (Prop_HFF2_SLICEM_C_Q)
+                                                      0.059     2.421 r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.077     2.498    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[1]
+    SLICE_X52Y82         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock user_clk_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL16                                              0.000     0.000 r  clk_100_p (IN)
+                         net (fo=0)                   0.000     0.000    zcu111_infr_inst/i_clk/I
+    HPIOBDIFFINBUF_X0Y12 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.656     0.656 r  zcu111_infr_inst/i_clk/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.706    zcu111_infr_inst/i_clk/OUT
+    AL16                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.706 r  zcu111_infr_inst/i_clk/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     1.029    zcu111_infr_inst/clk_100
+    BUFGCE_X0Y2          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.057 r  zcu111_infr_inst/clk_100_BUFGCE_inst/O
+                         net (fo=1, routed)           0.562     1.619    zcu111_infr_inst/clk_100_BUFGCE
+    MMCM_X0Y0            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     1.492 r  zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.736    zcu111_infr_inst/user_clk_mmcm
+    BUFGCE_X0Y8          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.764 r  zcu111_infr_inst/bufg_sysclk[3]/O
+    X2Y1 (CLOCK_ROOT)    net (fo=3823, routed)        1.941     3.705    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X52Y82         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000     3.705    
+    SLICE_X52Y82         FDRE (Hold_CFF2_SLICEL_C_D)
+                                                      0.062     3.767    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+  -------------------------------------------------------------------
+                         data arrival                           2.498    
+                         clock arrival                          3.767    
+  -------------------------------------------------------------------
+                         relative delay                        -1.269    
+
+
+
+Id: 6
+set_bus_skew -from [get_cells [list {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]}]] -to [get_cells [list {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]] 3.906
+Requirement: 3.906ns
+Endpoints: 4
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+user_clk_mmcm         txoutclk_out[0]       zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                                                            Slow         0.452      3.454
+
+
+Slack (MET) :             3.454ns  (requirement - actual skew)
+  Endpoint Source:        zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by user_clk_mmcm)
+  Endpoint Destination:   zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                            (rising edge-triggered cell FDRE clocked by txoutclk_out[0])
+  Reference Source:       zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by user_clk_mmcm)
+  Reference Destination:  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                            (rising edge-triggered cell FDRE clocked by txoutclk_out[0])
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            3.906ns
+  Endpoint Relative Delay:    1.669ns
+  Reference Relative Delay:   1.431ns
+  Relative CRPR:             -0.057ns
+  Uncertainty:                0.157ns
+  Actual Bus Skew:            0.452ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock user_clk_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL16                                              0.000     0.000 r  clk_100_p (IN)
+                         net (fo=0)                   0.000     0.000    zcu111_infr_inst/i_clk/I
+    HPIOBDIFFINBUF_X0Y12 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.656     0.656 r  zcu111_infr_inst/i_clk/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.706    zcu111_infr_inst/i_clk/OUT
+    AL16                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.706 r  zcu111_infr_inst/i_clk/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     1.029    zcu111_infr_inst/clk_100
+    BUFGCE_X0Y2          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.057 r  zcu111_infr_inst/clk_100_BUFGCE_inst/O
+                         net (fo=1, routed)           0.562     1.619    zcu111_infr_inst/clk_100_BUFGCE
+    MMCM_X0Y0            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     1.492 r  zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.736    zcu111_infr_inst/user_clk_mmcm
+    BUFGCE_X0Y8          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.764 r  zcu111_infr_inst/bufg_sysclk[3]/O
+    X2Y1 (CLOCK_ROOT)    net (fo=3823, routed)        1.933     3.697    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X54Y85         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y85         FDRE (Prop_EFF_SLICEM_C_Q)
+                                                      0.076     3.773 r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.294     4.067    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[3]
+    SLICE_X54Y85         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock txoutclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X0Y5   GTYE4_CHANNEL                0.000     0.000 r  tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/txoutclk_out[0]
+    BUFG_GT_X0Y117       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X1Y2 (CLOCK_ROOT)    net (fo=2261, routed)        2.181     2.373    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X54Y85         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.000     2.373    
+    SLICE_X54Y85         FDRE (Setup_CFF2_SLICEM_C_D)
+                                                      0.025     2.398    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+  -------------------------------------------------------------------
+                         data arrival                           4.067    
+                         clock arrival                          2.398    
+  -------------------------------------------------------------------
+                         relative delay                         1.669    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock user_clk_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL16                                              0.000     0.000 r  clk_100_p (IN)
+                         net (fo=0)                   0.000     0.000    zcu111_infr_inst/i_clk/I
+    HPIOBDIFFINBUF_X0Y12 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.546     0.546 r  zcu111_infr_inst/i_clk/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.586    zcu111_infr_inst/i_clk/OUT
+    AL16                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.586 r  zcu111_infr_inst/i_clk/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287     0.873    zcu111_infr_inst/clk_100
+    BUFGCE_X0Y2          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     0.897 r  zcu111_infr_inst/clk_100_BUFGCE_inst/O
+                         net (fo=1, routed)           0.500     1.397    zcu111_infr_inst/clk_100_BUFGCE
+    MMCM_X0Y0            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     2.027 r  zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0
+                         net (fo=1, routed)           0.214     2.241    zcu111_infr_inst/user_clk_mmcm
+    BUFGCE_X0Y8          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     2.265 r  zcu111_infr_inst/bufg_sysclk[3]/O
+    X2Y1 (CLOCK_ROOT)    net (fo=3823, routed)        1.728     3.993    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X54Y79         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y79         FDRE (Prop_HFF2_SLICEM_C_Q)
+                                                      0.059     4.052 r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.120     4.172    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[1]
+    SLICE_X54Y79         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock txoutclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X0Y5   GTYE4_CHANNEL                0.000     0.000 r  tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/txoutclk_out[0]
+    BUFG_GT_X0Y117       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X1Y2 (CLOCK_ROOT)    net (fo=2261, routed)        2.464     2.679    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X54Y79         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000     2.679    
+    SLICE_X54Y79         FDRE (Hold_CFF2_SLICEM_C_D)
+                                                      0.062     2.741    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+  -------------------------------------------------------------------
+                         data arrival                           4.172    
+                         clock arrival                          2.741    
+  -------------------------------------------------------------------
+                         relative delay                         1.431    
+
+
+
+Id: 7
+set_bus_skew -from [get_cells [list {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 3.906
+Requirement: 3.906ns
+Endpoints: 10
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+txoutclk_out[0]       user_clk_mmcm         zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                                                                            zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]/D
+                                                                                                            Slow         0.678      3.228
+
+
+Slack (MET) :             3.228ns  (requirement - actual skew)
+  Endpoint Source:        zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by txoutclk_out[0])
+  Endpoint Destination:   zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                            (rising edge-triggered cell FDRE clocked by user_clk_mmcm)
+  Reference Source:       zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by txoutclk_out[0])
+  Reference Destination:  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]/D
+                            (rising edge-triggered cell FDRE clocked by user_clk_mmcm)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            3.906ns
+  Endpoint Relative Delay:   -0.918ns
+  Reference Relative Delay:  -1.281ns
+  Relative CRPR:             -0.158ns
+  Uncertainty:                0.157ns
+  Actual Bus Skew:            0.678ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock txoutclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X0Y5   GTYE4_CHANNEL                0.000     0.000 r  tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/txoutclk_out[0]
+    BUFG_GT_X0Y117       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X1Y2 (CLOCK_ROOT)    net (fo=2261, routed)        2.464     2.679    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X52Y56         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X52Y56         FDRE (Prop_CFF_SLICEL_C_Q)
+                                                      0.079     2.758 r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]/Q
+                         net (fo=1, routed)           0.364     3.122    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[6]
+    SLICE_X53Y56         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock user_clk_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL16                                              0.000     0.000 r  clk_100_p (IN)
+                         net (fo=0)                   0.000     0.000    zcu111_infr_inst/i_clk/I
+    HPIOBDIFFINBUF_X0Y12 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.546     0.546 r  zcu111_infr_inst/i_clk/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.586    zcu111_infr_inst/i_clk/OUT
+    AL16                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.586 r  zcu111_infr_inst/i_clk/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287     0.873    zcu111_infr_inst/clk_100
+    BUFGCE_X0Y2          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     0.897 r  zcu111_infr_inst/clk_100_BUFGCE_inst/O
+                         net (fo=1, routed)           0.500     1.397    zcu111_infr_inst/clk_100_BUFGCE
+    MMCM_X0Y0            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     2.027 r  zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0
+                         net (fo=1, routed)           0.214     2.241    zcu111_infr_inst/user_clk_mmcm
+    BUFGCE_X0Y8          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     2.265 r  zcu111_infr_inst/bufg_sysclk[3]/O
+    X2Y1 (CLOCK_ROOT)    net (fo=3823, routed)        1.750     4.015    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X53Y56         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
+                         clock pessimism              0.000     4.015    
+    SLICE_X53Y56         FDRE (Setup_HFF2_SLICEM_C_D)
+                                                      0.025     4.040    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
+  -------------------------------------------------------------------
+                         data arrival                           3.122    
+                         clock arrival                          4.040    
+  -------------------------------------------------------------------
+                         relative delay                        -0.918    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock txoutclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X0Y5   GTYE4_CHANNEL                0.000     0.000 r  tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/txoutclk_out[0]
+    BUFG_GT_X0Y117       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X1Y2 (CLOCK_ROOT)    net (fo=2261, routed)        2.182     2.374    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X50Y56         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y56         FDRE (Prop_AFF_SLICEL_C_Q)
+                                                      0.058     2.432 r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[9]/Q
+                         net (fo=1, routed)           0.096     2.528    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[9]
+    SLICE_X50Y56         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock user_clk_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL16                                              0.000     0.000 r  clk_100_p (IN)
+                         net (fo=0)                   0.000     0.000    zcu111_infr_inst/i_clk/I
+    HPIOBDIFFINBUF_X0Y12 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.656     0.656 r  zcu111_infr_inst/i_clk/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.706    zcu111_infr_inst/i_clk/OUT
+    AL16                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.706 r  zcu111_infr_inst/i_clk/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     1.029    zcu111_infr_inst/clk_100
+    BUFGCE_X0Y2          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.057 r  zcu111_infr_inst/clk_100_BUFGCE_inst/O
+                         net (fo=1, routed)           0.562     1.619    zcu111_infr_inst/clk_100_BUFGCE
+    MMCM_X0Y0            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     1.492 r  zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.736    zcu111_infr_inst/user_clk_mmcm
+    BUFGCE_X0Y8          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.764 r  zcu111_infr_inst/bufg_sysclk[3]/O
+    X2Y1 (CLOCK_ROOT)    net (fo=3823, routed)        1.983     3.747    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X50Y56         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]/C
+                         clock pessimism              0.000     3.747    
+    SLICE_X50Y56         FDRE (Hold_GFF2_SLICEL_C_D)
+                                                      0.062     3.809    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]
+  -------------------------------------------------------------------
+                         data arrival                           2.528    
+                         clock arrival                          3.809    
+  -------------------------------------------------------------------
+                         relative delay                        -1.281    
+
+
+
+Id: 8
+set_bus_skew -from [get_cells [list {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[7]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 3.906
+Requirement: 3.906ns
+Endpoints: 10
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+user_clk_mmcm         txoutclk_out[0]       zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+                                                                            zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                                                                                                            Slow         0.568      3.338
+
+
+Slack (MET) :             3.338ns  (requirement - actual skew)
+  Endpoint Source:        zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by user_clk_mmcm)
+  Endpoint Destination:   zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+                            (rising edge-triggered cell FDRE clocked by txoutclk_out[0])
+  Reference Source:       zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by user_clk_mmcm)
+  Reference Destination:  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                            (rising edge-triggered cell FDRE clocked by txoutclk_out[0])
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            3.906ns
+  Endpoint Relative Delay:    1.711ns
+  Reference Relative Delay:   1.410ns
+  Relative CRPR:             -0.110ns
+  Uncertainty:                0.157ns
+  Actual Bus Skew:            0.568ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock user_clk_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL16                                              0.000     0.000 r  clk_100_p (IN)
+                         net (fo=0)                   0.000     0.000    zcu111_infr_inst/i_clk/I
+    HPIOBDIFFINBUF_X0Y12 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.656     0.656 r  zcu111_infr_inst/i_clk/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.706    zcu111_infr_inst/i_clk/OUT
+    AL16                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.706 r  zcu111_infr_inst/i_clk/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.323     1.029    zcu111_infr_inst/clk_100
+    BUFGCE_X0Y2          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.057 r  zcu111_infr_inst/clk_100_BUFGCE_inst/O
+                         net (fo=1, routed)           0.562     1.619    zcu111_infr_inst/clk_100_BUFGCE
+    MMCM_X0Y0            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     1.492 r  zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.736    zcu111_infr_inst/user_clk_mmcm
+    BUFGCE_X0Y8          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.764 r  zcu111_infr_inst/bufg_sysclk[3]/O
+    X2Y1 (CLOCK_ROOT)    net (fo=3823, routed)        1.983     3.747    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X50Y56         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y56         FDRE (Prop_HFF_SLICEL_C_Q)
+                                                      0.079     3.826 r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]/Q
+                         net (fo=1, routed)           0.284     4.110    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[8]
+    SLICE_X50Y56         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock txoutclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X0Y5   GTYE4_CHANNEL                0.000     0.000 r  tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/txoutclk_out[0]
+    BUFG_GT_X0Y117       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X1Y2 (CLOCK_ROOT)    net (fo=2261, routed)        2.182     2.374    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X50Y56         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/C
+                         clock pessimism              0.000     2.374    
+    SLICE_X50Y56         FDRE (Setup_DFF2_SLICEL_C_D)
+                                                      0.025     2.399    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]
+  -------------------------------------------------------------------
+                         data arrival                           4.110    
+                         clock arrival                          2.399    
+  -------------------------------------------------------------------
+                         relative delay                         1.711    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock user_clk_mmcm rise edge)
+                                                      0.000     0.000 r  
+    AL16                                              0.000     0.000 r  clk_100_p (IN)
+                         net (fo=0)                   0.000     0.000    zcu111_infr_inst/i_clk/I
+    HPIOBDIFFINBUF_X0Y12 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.546     0.546 r  zcu111_infr_inst/i_clk/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.586    zcu111_infr_inst/i_clk/OUT
+    AL16                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.586 r  zcu111_infr_inst/i_clk/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.287     0.873    zcu111_infr_inst/clk_100
+    BUFGCE_X0Y2          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     0.897 r  zcu111_infr_inst/clk_100_BUFGCE_inst/O
+                         net (fo=1, routed)           0.500     1.397    zcu111_infr_inst/clk_100_BUFGCE
+    MMCM_X0Y0            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     2.027 r  zcu111_infr_inst/user_clk_mmcm_inst/CLKOUT0
+                         net (fo=1, routed)           0.214     2.241    zcu111_infr_inst/user_clk_mmcm
+    BUFGCE_X0Y8          BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     2.265 r  zcu111_infr_inst/bufg_sysclk[3]/O
+    X2Y1 (CLOCK_ROOT)    net (fo=3823, routed)        1.741     4.006    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X50Y52         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y52         FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.059     4.065 r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.075     4.140    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[0]
+    SLICE_X49Y52         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock txoutclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X0Y5   GTYE4_CHANNEL                0.000     0.000 r  tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/txoutclk_out[0]
+    BUFG_GT_X0Y117       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  tengbaser_phy1/inst/i_core_gtwiz_userclk_tx_inst_0/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X1Y2 (CLOCK_ROOT)    net (fo=2261, routed)        2.453     2.668    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X49Y52         FDRE                                         r  zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.000     2.668    
+    SLICE_X49Y52         FDRE (Hold_DFF2_SLICEL_C_D)
+                                                      0.062     2.730    zcu111_tengbe_gbe0/tge_tx_inst/tx_packet_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
+  -------------------------------------------------------------------
+                         data arrival                           4.140    
+                         clock arrival                          2.730    
+  -------------------------------------------------------------------
+                         relative delay                         1.410    
+
+
+
