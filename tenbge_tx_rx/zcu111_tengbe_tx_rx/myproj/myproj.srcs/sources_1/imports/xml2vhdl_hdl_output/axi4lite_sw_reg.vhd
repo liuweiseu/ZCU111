@@ -143,6 +143,8 @@ begin
          axi4lite_sw_reg_int.gbe1_txvldctr <= axi4lite_sw_reg_in.gbe1_txvldctr;
          axi4lite_sw_reg_int.gbe1_linkup <= axi4lite_sw_reg_in.gbe1_linkup;
          axi4lite_sw_reg_int.gbe1_rx_frame_cnt <= axi4lite_sw_reg_in.gbe1_rx_frame_cnt;
+         axi4lite_sw_reg_int.rx_source_ip <= axi4lite_sw_reg_in.rx_source_ip;
+         axi4lite_sw_reg_int.rx_source_port <= axi4lite_sw_reg_in.rx_source_port;
          axi4lite_sw_reg_int.tx_snapshot_ss_status <= axi4lite_sw_reg_in.tx_snapshot_ss_status;
 
       end if;

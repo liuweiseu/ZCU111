@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
--- Date        : Fri Oct 23 14:36:48 2020
+-- Date        : Sun Oct 25 00:01:33 2020
 -- Host        : wei-Berkeley running 64-bit Ubuntu 18.04.5 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_zynq_ultra_ps_e_0_0/zcu111_zynq_ultra_ps_e_0_0_sim_netlist.vhdl

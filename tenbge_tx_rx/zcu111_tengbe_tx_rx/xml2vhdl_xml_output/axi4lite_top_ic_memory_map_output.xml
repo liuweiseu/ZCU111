@@ -55,8 +55,10 @@
       <node absolute_id="axi4lite_top.sw_reg.pkt_sim_payload_len" absolute_offset="a00b0084" address="0x00000084" description="sw_reg_pkt_sim_payload_len" hw_rst="0" id="pkt_sim_payload_len" mask="0xffffffff" permission="rw" size="1"/>
       <node absolute_id="axi4lite_top.sw_reg.pkt_sim_period" absolute_offset="a00b0088" address="0x00000088" description="sw_reg_pkt_sim_period" hw_rst="0" id="pkt_sim_period" mask="0xffffffff" permission="rw" size="1"/>
       <node absolute_id="axi4lite_top.sw_reg.rst" absolute_offset="a00b008c" address="0x0000008c" description="sw_reg_rst" hw_rst="0" id="rst" mask="0xffffffff" permission="rw" size="1"/>
-      <node absolute_id="axi4lite_top.sw_reg.tx_snapshot_ss_ctrl" absolute_offset="a00b0090" address="0x00000090" description="sw_reg_tx_snapshot_ss_ctrl" hw_rst="0" id="tx_snapshot_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
-      <node absolute_id="axi4lite_top.sw_reg.tx_snapshot_ss_status" absolute_offset="a00b0094" address="0x00000094" description="sw_reg_tx_snapshot_ss_status" hw_rst="0x0" id="tx_snapshot_ss_status" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.rx_source_ip" absolute_offset="a00b0090" address="0x00000090" description="sw_reg_rx_source_ip" hw_rst="0x0" id="rx_source_ip" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.rx_source_port" absolute_offset="a00b0094" address="0x00000094" description="sw_reg_rx_source_port" hw_rst="0x0" id="rx_source_port" mask="0xffffffff" permission="r" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.tx_snapshot_ss_ctrl" absolute_offset="a00b0098" address="0x00000098" description="sw_reg_tx_snapshot_ss_ctrl" hw_rst="0" id="tx_snapshot_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+      <node absolute_id="axi4lite_top.sw_reg.tx_snapshot_ss_status" absolute_offset="a00b009c" address="0x0000009c" description="sw_reg_tx_snapshot_ss_status" hw_rst="0x0" id="tx_snapshot_ss_status" mask="0xffffffff" permission="r" size="1"/>
    </node>
    <node absolute_id="axi4lite_top.sys_block" absolute_offset="a00b0100" address="0x000b0100" byte_size="32" id="sys_block" link_done="sys_block_memory_map_output.xml">
       <node absolute_id="axi4lite_top.sys_block.sys_board_id" absolute_offset="a00b0100" address="0x00000000" description="sys_block_sys_board_id" hw_rst="3" id="sys_board_id" mask="0xffffffff" permission="r" size="1"/>

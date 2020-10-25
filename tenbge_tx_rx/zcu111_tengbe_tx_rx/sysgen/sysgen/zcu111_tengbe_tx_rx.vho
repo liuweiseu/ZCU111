@@ -99,6 +99,8 @@
     zcu111_tengbe_tx_rx_led1_gbe0_up_gateway => zcu111_tengbe_tx_rx_led1_gbe0_up_gateway,
     zcu111_tengbe_tx_rx_led2_gbe1_pulse_rx_gateway => zcu111_tengbe_tx_rx_led2_gbe1_pulse_rx_gateway,
     zcu111_tengbe_tx_rx_led3_gbe1_up_gateway => zcu111_tengbe_tx_rx_led3_gbe1_up_gateway,
+    zcu111_tengbe_tx_rx_rx_source_ip_user_data_in => zcu111_tengbe_tx_rx_rx_source_ip_user_data_in,
+    zcu111_tengbe_tx_rx_rx_source_port_user_data_in => zcu111_tengbe_tx_rx_rx_source_port_user_data_in,
     zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_addr => zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_addr,
     zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_in => zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_in,
     zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_we => zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_we,

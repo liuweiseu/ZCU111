@@ -159,6 +159,12 @@ module top (
   // sw_reg: rst
   wire [31:0] zcu111_tengbe_tx_rx_rst_out;
   wire [31:0] zcu111_tengbe_tx_rx_rst_user_data_out;
+  // sw_reg: rx_source_ip
+  wire [31:0] zcu111_tengbe_tx_rx_rx_source_ip_in;
+  wire [31:0] zcu111_tengbe_tx_rx_rx_source_ip_user_data_in;
+  // sw_reg: rx_source_port
+  wire [31:0] zcu111_tengbe_tx_rx_rx_source_port_in;
+  wire [31:0] zcu111_tengbe_tx_rx_rx_source_port_user_data_in;
   // sw_reg: tx_snapshot/ss/ctrl
   wire [31:0] zcu111_tengbe_tx_rx_tx_snapshot_ss_ctrl_out;
   wire [31:0] zcu111_tengbe_tx_rx_tx_snapshot_ss_ctrl_user_data_out;
@@ -221,6 +227,8 @@ module top (
   wire [0:0] zcu111_tengbe_tx_rx_pkt_sim_payload_len_out_we;
   wire [0:0] zcu111_tengbe_tx_rx_pkt_sim_period_out_we;
   wire [0:0] zcu111_tengbe_tx_rx_rst_out_we;
+  wire [0:0] zcu111_tengbe_tx_rx_rx_source_ip_in_we;
+  wire [0:0] zcu111_tengbe_tx_rx_rx_source_port_in_we;
   wire [31:0] zcu111_tengbe_tx_rx_sys_board_id_in;
   wire [0:0] zcu111_tengbe_tx_rx_sys_board_id_in_we;
   wire [31:0] zcu111_tengbe_tx_rx_sys_clkcounter_in;
@@ -882,6 +890,28 @@ module top (
     .OP_BUS(zcu111_tengbe_tx_rx_rst_user_data_out)
   );
 
+  // sw_reg: rx_source_ip
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) zcu111_tengbe_tx_rx_rx_source_ip (
+    .IP_BUS(zcu111_tengbe_tx_rx_rx_source_ip_user_data_in),
+    .IP_BUS_VALID(1'b01),
+    .IP_CLK(axil_clk),
+    .IP_RESET(axil_rst),
+    .OP_BUS(zcu111_tengbe_tx_rx_rx_source_ip_in)
+  );
+
+  // sw_reg: rx_source_port
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) zcu111_tengbe_tx_rx_rx_source_port (
+    .IP_BUS(zcu111_tengbe_tx_rx_rx_source_port_user_data_in),
+    .IP_BUS_VALID(1'b01),
+    .IP_CLK(axil_clk),
+    .IP_RESET(axil_rst),
+    .OP_BUS(zcu111_tengbe_tx_rx_rx_source_port_in)
+  );
+
   // sw_reg: tx_snapshot/ss/ctrl
   cdc_synchroniser #(
     .G_BUS_WIDTH(32)
@@ -1004,6 +1034,10 @@ module top (
     .axi4lite_sw_reg_pkt_sim_period_out_we(zcu111_tengbe_tx_rx_pkt_sim_period_out_we),
     .axi4lite_sw_reg_rst_out(zcu111_tengbe_tx_rx_rst_out),
     .axi4lite_sw_reg_rst_out_we(zcu111_tengbe_tx_rx_rst_out_we),
+    .axi4lite_sw_reg_rx_source_ip_in(zcu111_tengbe_tx_rx_rx_source_ip_in),
+    .axi4lite_sw_reg_rx_source_ip_in_we(zcu111_tengbe_tx_rx_rx_source_ip_in_we),
+    .axi4lite_sw_reg_rx_source_port_in(zcu111_tengbe_tx_rx_rx_source_port_in),
+    .axi4lite_sw_reg_rx_source_port_in_we(zcu111_tengbe_tx_rx_rx_source_port_in_we),
     .axi4lite_sw_reg_tx_snapshot_ss_ctrl_out(zcu111_tengbe_tx_rx_tx_snapshot_ss_ctrl_out),
     .axi4lite_sw_reg_tx_snapshot_ss_ctrl_out_we(zcu111_tengbe_tx_rx_tx_snapshot_ss_ctrl_out_we),
     .axi4lite_sw_reg_tx_snapshot_ss_status_in(zcu111_tengbe_tx_rx_tx_snapshot_ss_status_in),
@@ -1187,6 +1221,8 @@ module top (
     .zcu111_tengbe_tx_rx_pkt_sim_payload_len_user_data_out(zcu111_tengbe_tx_rx_pkt_sim_payload_len_user_data_out),
     .zcu111_tengbe_tx_rx_pkt_sim_period_user_data_out(zcu111_tengbe_tx_rx_pkt_sim_period_user_data_out),
     .zcu111_tengbe_tx_rx_rst_user_data_out(zcu111_tengbe_tx_rx_rst_user_data_out),
+    .zcu111_tengbe_tx_rx_rx_source_ip_user_data_in(zcu111_tengbe_tx_rx_rx_source_ip_user_data_in),
+    .zcu111_tengbe_tx_rx_rx_source_port_user_data_in(zcu111_tengbe_tx_rx_rx_source_port_user_data_in),
     .zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_addr(zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_addr),
     .zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_in(zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_in),
     .zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_out(zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_out),
@@ -1243,7 +1279,7 @@ module top (
     .qpll1clk_in(qpll1clk_in0),
     .qpll1refclk_in(qpll1refclk_in0),
     .rx_clk_out_0(rx_clk_out1),
-    .rx_core_clk_0(rx_clk_out1),
+    .rx_core_clk_0(tx_mii_clk1),
     .rx_mii_c_0(xgmii_rxc1),
     .rx_mii_d_0(xgmii_rxd1),
     .rx_reset_0(rx_core_reset_out1),
@@ -1449,7 +1485,7 @@ module top (
     .qpll1clk_in(qpll1clk_in0),
     .qpll1refclk_in(qpll1refclk_in0),
     .rx_clk_out_0(rx_clk_out2),
-    .rx_core_clk_0(rx_clk_out2),
+    .rx_core_clk_0(tx_mii_clk2),
     .rx_mii_c_0(xgmii_rxc2),
     .rx_mii_d_0(xgmii_rxd2),
     .rx_reset_0(rx_core_reset_out2),

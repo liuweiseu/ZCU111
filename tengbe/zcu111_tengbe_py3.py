@@ -137,4 +137,4 @@ try:
     fpga.write_int('pkt_sim_enable', 0)   
     print('done')    
 except:
-    pass
+    raise

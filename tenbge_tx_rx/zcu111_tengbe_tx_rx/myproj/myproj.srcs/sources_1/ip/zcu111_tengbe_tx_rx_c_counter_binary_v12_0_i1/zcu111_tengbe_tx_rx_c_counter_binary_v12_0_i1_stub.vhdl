@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
--- Date        : Fri Oct 23 14:34:35 2020
+-- Date        : Sat Oct 24 23:59:00 2020
 -- Host        : wei-Berkeley running 64-bit Ubuntu 18.04.5 LTS
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_tx_rx_c_counter_binary_v12_0_i1/zcu111_tengbe_tx_rx_c_counter_binary_v12_0_i1_stub.vhdl
