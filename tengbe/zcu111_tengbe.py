@@ -69,7 +69,7 @@ try:
     time.sleep(1)
 
     if fpga.is_connected():
-        print 'ok\n'
+        print 'ok'
     else:
         print 'ERROR connecting to server %s.\n'%(snap)
         exit_fail()
@@ -83,10 +83,10 @@ try:
         print 'ok'
 
     print '---------------------------'    
-    print 'Disabling output...',
+    print 'Disabling output...'
     sys.stdout.flush()
     fpga.write_int('pkt_sim_enable', 0)
-    print '---------------------------'    
+    print '---------------------------'   
     print 'Port 0 linkup: ',
     sys.stdout.flush()
     gbe0_link=bool(fpga.read_int('gbe0_linkup'))
@@ -98,8 +98,10 @@ try:
     sys.stdout.flush()
     #Set IP address of snap and set arp-table
     gbe_tx = fpga.gbes[tx_core_name]
-    gbe_tx.set_arp_table(mac_base+numpy.arange(256))
-    gbe_tx.setup(mac_base+16,ip_base+16,fabric_port)
+    macs=mac_base+numpy.arange(256)
+    #Set mac address 
+    macs[90] = 0x54ee7556b3c5
+    gbe_tx.set_arp_table(macs)
     fpga.write(tx_core_name, gbe_tx.mac.packed(), mac_location)
     fpga.write(tx_core_name, gbe_tx.ip_address.packed(), ip_location)
     value = (fpga.read_int(tx_core_name, word_offset = port_location) & 0xffff0000) | (gbe_tx.port & 0xffff)
@@ -109,6 +111,7 @@ try:
 
     print 'Setting-up destination addresses...',
     sys.stdout.flush()
+    #Set IP address
     fpga.write_int('dest_ip',ip_base+90)
     fpga.write_int('dest_port',fabric_port)
     print 'done'
@@ -130,3 +133,10 @@ try:
     sys.stdout.flush()
     fpga.write_int('pkt_sim_enable', 1)
     print 'done'
+    time.sleep(5)
+    print 'Disabling output...',
+    sys.stdout.flush()
+    fpga.write_int('pkt_sim_enable', 0)   
+    print 'done'    
+except:
+    raise
