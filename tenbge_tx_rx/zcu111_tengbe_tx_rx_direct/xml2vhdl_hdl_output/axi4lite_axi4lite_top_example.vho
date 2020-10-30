@@ -102,6 +102,30 @@ begin
       axi4lite_miso => axi4lite_miso_arr(axi4lite_mmap_get_id(id_gbe1_txs_ss_bram))
    );
    
+   axi4lite_gbe2_inst: entity work.axi4lite_gbe2
+   port map(
+      axi4lite_aclk => axi4lite_aclk,
+      axi4lite_aresetn => axi4lite_aresetn,
+      axi4lite_mosi => axi4lite_mosi_arr(axi4lite_mmap_get_id(id_gbe2)),
+      axi4lite_miso => axi4lite_miso_arr(axi4lite_mmap_get_id(id_gbe2))
+   );
+   
+   axi4lite_gbe2_rxs_ss_bram_inst: entity work.axi4lite_gbe2_rxs_ss_bram
+   port map(
+      axi4lite_aclk => axi4lite_aclk,
+      axi4lite_aresetn => axi4lite_aresetn,
+      axi4lite_mosi => axi4lite_mosi_arr(axi4lite_mmap_get_id(id_gbe2_rxs_ss_bram)),
+      axi4lite_miso => axi4lite_miso_arr(axi4lite_mmap_get_id(id_gbe2_rxs_ss_bram))
+   );
+   
+   axi4lite_gbe2_txs_ss_bram_inst: entity work.axi4lite_gbe2_txs_ss_bram
+   port map(
+      axi4lite_aclk => axi4lite_aclk,
+      axi4lite_aresetn => axi4lite_aresetn,
+      axi4lite_mosi => axi4lite_mosi_arr(axi4lite_mmap_get_id(id_gbe2_txs_ss_bram)),
+      axi4lite_miso => axi4lite_miso_arr(axi4lite_mmap_get_id(id_gbe2_txs_ss_bram))
+   );
+   
    axi4lite_sw_reg_inst: entity work.axi4lite_sw_reg
    port map(
       axi4lite_aclk => axi4lite_aclk,

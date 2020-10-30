@@ -61,6 +61,20 @@ package axi4lite_sw_reg_pkg is
       gbe1_txvldctr: std_logic_vector(31 downto 0);
       gbe1_linkup: std_logic_vector(31 downto 0);
       gbe1_rx_frame_cnt: std_logic_vector(31 downto 0);
+      gbe2_rxbadctr: std_logic_vector(31 downto 0);
+      gbe2_rxctr: std_logic_vector(31 downto 0);
+      gbe2_rxeofctr: std_logic_vector(31 downto 0);
+      gbe2_rxofctr: std_logic_vector(31 downto 0);
+      gbe2_rxs_ss_ctrl: std_logic_vector(31 downto 0);
+      gbe2_rxs_ss_status: std_logic_vector(31 downto 0);
+      gbe2_rxvldctr: std_logic_vector(31 downto 0);
+      gbe2_txctr: std_logic_vector(31 downto 0);
+      gbe2_txfullctr: std_logic_vector(31 downto 0);
+      gbe2_txofctr: std_logic_vector(31 downto 0);
+      gbe2_txs_ss_ctrl: std_logic_vector(31 downto 0);
+      gbe2_txs_ss_status: std_logic_vector(31 downto 0);
+      gbe2_txvldctr: std_logic_vector(31 downto 0);
+      gbe2_linkup: std_logic_vector(31 downto 0);
       pkt_sim_enable: std_logic_vector(31 downto 0);
       pkt_sim_payload_len: std_logic_vector(31 downto 0);
       pkt_sim_period: std_logic_vector(31 downto 0);
@@ -111,6 +125,20 @@ package axi4lite_sw_reg_pkg is
       gbe1_txvldctr: std_logic;
       gbe1_linkup: std_logic;
       gbe1_rx_frame_cnt: std_logic;
+      gbe2_rxbadctr: std_logic;
+      gbe2_rxctr: std_logic;
+      gbe2_rxeofctr: std_logic;
+      gbe2_rxofctr: std_logic;
+      gbe2_rxs_ss_ctrl: std_logic;
+      gbe2_rxs_ss_status: std_logic;
+      gbe2_rxvldctr: std_logic;
+      gbe2_txctr: std_logic;
+      gbe2_txfullctr: std_logic;
+      gbe2_txofctr: std_logic;
+      gbe2_txs_ss_ctrl: std_logic;
+      gbe2_txs_ss_status: std_logic;
+      gbe2_txvldctr: std_logic;
+      gbe2_linkup: std_logic;
       pkt_sim_enable: std_logic;
       pkt_sim_payload_len: std_logic;
       pkt_sim_period: std_logic;
@@ -174,6 +202,20 @@ package axi4lite_sw_reg_pkg is
       gbe1_txvldctr: t_reg_descr;
       gbe1_linkup: t_reg_descr;
       gbe1_rx_frame_cnt: t_reg_descr;
+      gbe2_rxbadctr: t_reg_descr;
+      gbe2_rxctr: t_reg_descr;
+      gbe2_rxeofctr: t_reg_descr;
+      gbe2_rxofctr: t_reg_descr;
+      gbe2_rxs_ss_ctrl: t_reg_descr;
+      gbe2_rxs_ss_status: t_reg_descr;
+      gbe2_rxvldctr: t_reg_descr;
+      gbe2_txctr: t_reg_descr;
+      gbe2_txfullctr: t_reg_descr;
+      gbe2_txofctr: t_reg_descr;
+      gbe2_txs_ss_ctrl: t_reg_descr;
+      gbe2_txs_ss_status: t_reg_descr;
+      gbe2_txvldctr: t_reg_descr;
+      gbe2_linkup: t_reg_descr;
       pkt_sim_enable: t_reg_descr;
       pkt_sim_payload_len: t_reg_descr;
       pkt_sim_period: t_reg_descr;
@@ -188,8 +230,8 @@ package axi4lite_sw_reg_pkg is
 
    
    constant axi4lite_sw_reg_descr: t_axi4lite_sw_reg_descr := (
-      dest_ip                => (X"00000000",31, 0,X"00000000",async_reset,X"000000fc",rw),
-      dest_port              => (X"00000004",31, 0,X"00000000",async_reset,X"000000fc",rw),
+      dest_ip                => (X"00000000",31, 0,X"c0a80115",async_reset,X"000000fc",rw),
+      dest_port              => (X"00000004",31, 0,X"0000ea60",async_reset,X"000000fc",rw),
       gbe0_rxbadctr          => (X"00000008",31, 0,X"00000000",async_reset,X"000000fc",r),
       gbe0_rxctr             => (X"0000000c",31, 0,X"00000000",async_reset,X"000000fc",r),
       gbe0_rxeofctr          => (X"00000010",31, 0,X"00000000",async_reset,X"000000fc",r),
@@ -220,16 +262,30 @@ package axi4lite_sw_reg_pkg is
       gbe1_txvldctr          => (X"00000074",31, 0,X"00000000",async_reset,X"000000fc",r),
       gbe1_linkup            => (X"00000078",31, 0,X"00000000",async_reset,X"000000fc",r),
       gbe1_rx_frame_cnt      => (X"0000007c",31, 0,X"00000000",async_reset,X"000000fc",r),
-      pkt_sim_enable         => (X"00000080",31, 0,X"00000000",async_reset,X"000000bc",rw),
-      pkt_sim_payload_len    => (X"00000084",31, 0,X"00000000",async_reset,X"000000bc",rw),
-      pkt_sim_period         => (X"00000088",31, 0,X"00000000",async_reset,X"000000bc",rw),
-      rst                    => (X"0000008c",31, 0,X"00000000",async_reset,X"000000bc",rw),
-      rx_bad_frame           => (X"00000090",31, 0,X"00000000",async_reset,X"000000bc",r),
-      rx_end_of_frame        => (X"00000094",31, 0,X"00000000",async_reset,X"000000bc",r),
-      rx_source_ip           => (X"00000098",31, 0,X"00000000",async_reset,X"000000bc",r),
-      rx_source_port         => (X"0000009c",31, 0,X"00000000",async_reset,X"000000bc",r),
-      tx_snapshot_ss_ctrl    => (X"000000a0",31, 0,X"00000000",async_reset,X"000000a4",rw),
-      tx_snapshot_ss_status  => (X"000000a4",31, 0,X"00000000",async_reset,X"000000a4",r)
+      gbe2_rxbadctr          => (X"00000080",31, 0,X"00000000",async_reset,X"000000fc",r),
+      gbe2_rxctr             => (X"00000084",31, 0,X"00000000",async_reset,X"000000fc",r),
+      gbe2_rxeofctr          => (X"00000088",31, 0,X"00000000",async_reset,X"000000fc",r),
+      gbe2_rxofctr           => (X"0000008c",31, 0,X"00000000",async_reset,X"000000fc",r),
+      gbe2_rxs_ss_ctrl       => (X"00000090",31, 0,X"00000000",async_reset,X"000000fc",rw),
+      gbe2_rxs_ss_status     => (X"00000094",31, 0,X"00000000",async_reset,X"000000fc",r),
+      gbe2_rxvldctr          => (X"00000098",31, 0,X"00000000",async_reset,X"000000fc",r),
+      gbe2_txctr             => (X"0000009c",31, 0,X"00000000",async_reset,X"000000fc",r),
+      gbe2_txfullctr         => (X"000000a0",31, 0,X"00000000",async_reset,X"000000fc",r),
+      gbe2_txofctr           => (X"000000a4",31, 0,X"00000000",async_reset,X"000000fc",r),
+      gbe2_txs_ss_ctrl       => (X"000000a8",31, 0,X"00000000",async_reset,X"000000fc",rw),
+      gbe2_txs_ss_status     => (X"000000ac",31, 0,X"00000000",async_reset,X"000000fc",r),
+      gbe2_txvldctr          => (X"000000b0",31, 0,X"00000000",async_reset,X"000000fc",r),
+      gbe2_linkup            => (X"000000b4",31, 0,X"00000000",async_reset,X"000000fc",r),
+      pkt_sim_enable         => (X"000000b8",31, 0,X"00000001",async_reset,X"000000fc",rw),
+      pkt_sim_payload_len    => (X"000000bc",31, 0,X"00000080",async_reset,X"000000fc",rw),
+      pkt_sim_period         => (X"000000c0",31, 0,X"00004000",async_reset,X"000000dc",rw),
+      rst                    => (X"000000c4",31, 0,X"00000000",async_reset,X"000000dc",rw),
+      rx_bad_frame           => (X"000000c8",31, 0,X"00000000",async_reset,X"000000dc",r),
+      rx_end_of_frame        => (X"000000cc",31, 0,X"00000000",async_reset,X"000000dc",r),
+      rx_source_ip           => (X"000000d0",31, 0,X"00000000",async_reset,X"000000dc",r),
+      rx_source_port         => (X"000000d4",31, 0,X"00000000",async_reset,X"000000dc",r),
+      tx_snapshot_ss_ctrl    => (X"000000d8",31, 0,X"00000000",async_reset,X"000000dc",rw),
+      tx_snapshot_ss_status  => (X"000000dc",31, 0,X"00000000",async_reset,X"000000dc",r)
    );
 
    --##########################################################################
@@ -449,6 +505,76 @@ package body axi4lite_sw_reg_pkg is
          sw_reg_decoded.gbe1_rx_frame_cnt := '1';
       end if;
       
+      sw_reg_decoded.gbe2_rxbadctr := '0';
+      if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.gbe2_rxbadctr,addr) = true and en = '1' then
+         sw_reg_decoded.gbe2_rxbadctr := '1';
+      end if;
+      
+      sw_reg_decoded.gbe2_rxctr := '0';
+      if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.gbe2_rxctr,addr) = true and en = '1' then
+         sw_reg_decoded.gbe2_rxctr := '1';
+      end if;
+      
+      sw_reg_decoded.gbe2_rxeofctr := '0';
+      if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.gbe2_rxeofctr,addr) = true and en = '1' then
+         sw_reg_decoded.gbe2_rxeofctr := '1';
+      end if;
+      
+      sw_reg_decoded.gbe2_rxofctr := '0';
+      if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.gbe2_rxofctr,addr) = true and en = '1' then
+         sw_reg_decoded.gbe2_rxofctr := '1';
+      end if;
+      
+      sw_reg_decoded.gbe2_rxs_ss_ctrl := '0';
+      if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.gbe2_rxs_ss_ctrl,addr) = true and en = '1' then
+         sw_reg_decoded.gbe2_rxs_ss_ctrl := '1';
+      end if;
+      
+      sw_reg_decoded.gbe2_rxs_ss_status := '0';
+      if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.gbe2_rxs_ss_status,addr) = true and en = '1' then
+         sw_reg_decoded.gbe2_rxs_ss_status := '1';
+      end if;
+      
+      sw_reg_decoded.gbe2_rxvldctr := '0';
+      if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.gbe2_rxvldctr,addr) = true and en = '1' then
+         sw_reg_decoded.gbe2_rxvldctr := '1';
+      end if;
+      
+      sw_reg_decoded.gbe2_txctr := '0';
+      if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.gbe2_txctr,addr) = true and en = '1' then
+         sw_reg_decoded.gbe2_txctr := '1';
+      end if;
+      
+      sw_reg_decoded.gbe2_txfullctr := '0';
+      if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.gbe2_txfullctr,addr) = true and en = '1' then
+         sw_reg_decoded.gbe2_txfullctr := '1';
+      end if;
+      
+      sw_reg_decoded.gbe2_txofctr := '0';
+      if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.gbe2_txofctr,addr) = true and en = '1' then
+         sw_reg_decoded.gbe2_txofctr := '1';
+      end if;
+      
+      sw_reg_decoded.gbe2_txs_ss_ctrl := '0';
+      if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.gbe2_txs_ss_ctrl,addr) = true and en = '1' then
+         sw_reg_decoded.gbe2_txs_ss_ctrl := '1';
+      end if;
+      
+      sw_reg_decoded.gbe2_txs_ss_status := '0';
+      if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.gbe2_txs_ss_status,addr) = true and en = '1' then
+         sw_reg_decoded.gbe2_txs_ss_status := '1';
+      end if;
+      
+      sw_reg_decoded.gbe2_txvldctr := '0';
+      if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.gbe2_txvldctr,addr) = true and en = '1' then
+         sw_reg_decoded.gbe2_txvldctr := '1';
+      end if;
+      
+      sw_reg_decoded.gbe2_linkup := '0';
+      if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.gbe2_linkup,addr) = true and en = '1' then
+         sw_reg_decoded.gbe2_linkup := '1';
+      end if;
+      
       sw_reg_decoded.pkt_sim_enable := '0';
       if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.pkt_sim_enable,addr) = true and en = '1' then
          sw_reg_decoded.pkt_sim_enable := '1';
@@ -538,6 +664,20 @@ package body axi4lite_sw_reg_pkg is
       sw_reg.gbe1_txvldctr <= axi4lite_sw_reg_descr.gbe1_txvldctr.rst_val(31 downto 0);
       sw_reg.gbe1_linkup <= axi4lite_sw_reg_descr.gbe1_linkup.rst_val(31 downto 0);
       sw_reg.gbe1_rx_frame_cnt <= axi4lite_sw_reg_descr.gbe1_rx_frame_cnt.rst_val(31 downto 0);
+      sw_reg.gbe2_rxbadctr <= axi4lite_sw_reg_descr.gbe2_rxbadctr.rst_val(31 downto 0);
+      sw_reg.gbe2_rxctr <= axi4lite_sw_reg_descr.gbe2_rxctr.rst_val(31 downto 0);
+      sw_reg.gbe2_rxeofctr <= axi4lite_sw_reg_descr.gbe2_rxeofctr.rst_val(31 downto 0);
+      sw_reg.gbe2_rxofctr <= axi4lite_sw_reg_descr.gbe2_rxofctr.rst_val(31 downto 0);
+      sw_reg.gbe2_rxs_ss_ctrl <= axi4lite_sw_reg_descr.gbe2_rxs_ss_ctrl.rst_val(31 downto 0);
+      sw_reg.gbe2_rxs_ss_status <= axi4lite_sw_reg_descr.gbe2_rxs_ss_status.rst_val(31 downto 0);
+      sw_reg.gbe2_rxvldctr <= axi4lite_sw_reg_descr.gbe2_rxvldctr.rst_val(31 downto 0);
+      sw_reg.gbe2_txctr <= axi4lite_sw_reg_descr.gbe2_txctr.rst_val(31 downto 0);
+      sw_reg.gbe2_txfullctr <= axi4lite_sw_reg_descr.gbe2_txfullctr.rst_val(31 downto 0);
+      sw_reg.gbe2_txofctr <= axi4lite_sw_reg_descr.gbe2_txofctr.rst_val(31 downto 0);
+      sw_reg.gbe2_txs_ss_ctrl <= axi4lite_sw_reg_descr.gbe2_txs_ss_ctrl.rst_val(31 downto 0);
+      sw_reg.gbe2_txs_ss_status <= axi4lite_sw_reg_descr.gbe2_txs_ss_status.rst_val(31 downto 0);
+      sw_reg.gbe2_txvldctr <= axi4lite_sw_reg_descr.gbe2_txvldctr.rst_val(31 downto 0);
+      sw_reg.gbe2_linkup <= axi4lite_sw_reg_descr.gbe2_linkup.rst_val(31 downto 0);
       sw_reg.pkt_sim_enable <= axi4lite_sw_reg_descr.pkt_sim_enable.rst_val(31 downto 0);
       sw_reg.pkt_sim_payload_len <= axi4lite_sw_reg_descr.pkt_sim_payload_len.rst_val(31 downto 0);
       sw_reg.pkt_sim_period <= axi4lite_sw_reg_descr.pkt_sim_period.rst_val(31 downto 0);
@@ -587,6 +727,20 @@ package body axi4lite_sw_reg_pkg is
       sw_reg_rst.gbe1_txvldctr := '1';
       sw_reg_rst.gbe1_linkup := '1';
       sw_reg_rst.gbe1_rx_frame_cnt := '1';
+      sw_reg_rst.gbe2_rxbadctr := '1';
+      sw_reg_rst.gbe2_rxctr := '1';
+      sw_reg_rst.gbe2_rxeofctr := '1';
+      sw_reg_rst.gbe2_rxofctr := '1';
+      sw_reg_rst.gbe2_rxs_ss_ctrl := '1';
+      sw_reg_rst.gbe2_rxs_ss_status := '1';
+      sw_reg_rst.gbe2_rxvldctr := '1';
+      sw_reg_rst.gbe2_txctr := '1';
+      sw_reg_rst.gbe2_txfullctr := '1';
+      sw_reg_rst.gbe2_txofctr := '1';
+      sw_reg_rst.gbe2_txs_ss_ctrl := '1';
+      sw_reg_rst.gbe2_txs_ss_status := '1';
+      sw_reg_rst.gbe2_txvldctr := '1';
+      sw_reg_rst.gbe2_linkup := '1';
       sw_reg_rst.pkt_sim_enable := '1';
       sw_reg_rst.pkt_sim_payload_len := '1';
       sw_reg_rst.pkt_sim_period := '1';
@@ -636,6 +790,20 @@ package body axi4lite_sw_reg_pkg is
       sw_reg.gbe1_txvldctr <= '0';
       sw_reg.gbe1_linkup <= '0';
       sw_reg.gbe1_rx_frame_cnt <= '0';
+      sw_reg.gbe2_rxbadctr <= '0';
+      sw_reg.gbe2_rxctr <= '0';
+      sw_reg.gbe2_rxeofctr <= '0';
+      sw_reg.gbe2_rxofctr <= '0';
+      sw_reg.gbe2_rxs_ss_ctrl <= '0';
+      sw_reg.gbe2_rxs_ss_status <= '0';
+      sw_reg.gbe2_rxvldctr <= '0';
+      sw_reg.gbe2_txctr <= '0';
+      sw_reg.gbe2_txfullctr <= '0';
+      sw_reg.gbe2_txofctr <= '0';
+      sw_reg.gbe2_txs_ss_ctrl <= '0';
+      sw_reg.gbe2_txs_ss_status <= '0';
+      sw_reg.gbe2_txvldctr <= '0';
+      sw_reg.gbe2_linkup <= '0';
       sw_reg.pkt_sim_enable <= '0';
       sw_reg.pkt_sim_payload_len <= '0';
       sw_reg.pkt_sim_period <= '0';
@@ -676,6 +844,14 @@ package body axi4lite_sw_reg_pkg is
       
       if sw_reg_decoded.gbe1_txs_ss_ctrl = '1' then
          sw_reg.gbe1_txs_ss_ctrl <= data(31 downto 0);
+      end if;
+      
+      if sw_reg_decoded.gbe2_rxs_ss_ctrl = '1' then
+         sw_reg.gbe2_rxs_ss_ctrl <= data(31 downto 0);
+      end if;
+      
+      if sw_reg_decoded.gbe2_txs_ss_ctrl = '1' then
+         sw_reg.gbe2_txs_ss_ctrl <= data(31 downto 0);
       end if;
       
       if sw_reg_decoded.pkt_sim_enable = '1' then
@@ -833,6 +1009,62 @@ package body axi4lite_sw_reg_pkg is
       
       if sw_reg_decoded.gbe1_rx_frame_cnt = '1' then
          ret(31 downto 0) := sw_reg.gbe1_rx_frame_cnt;
+      end if;
+      
+      if sw_reg_decoded.gbe2_rxbadctr = '1' then
+         ret(31 downto 0) := sw_reg.gbe2_rxbadctr;
+      end if;
+      
+      if sw_reg_decoded.gbe2_rxctr = '1' then
+         ret(31 downto 0) := sw_reg.gbe2_rxctr;
+      end if;
+      
+      if sw_reg_decoded.gbe2_rxeofctr = '1' then
+         ret(31 downto 0) := sw_reg.gbe2_rxeofctr;
+      end if;
+      
+      if sw_reg_decoded.gbe2_rxofctr = '1' then
+         ret(31 downto 0) := sw_reg.gbe2_rxofctr;
+      end if;
+      
+      if sw_reg_decoded.gbe2_rxs_ss_ctrl = '1' then
+         ret(31 downto 0) := sw_reg.gbe2_rxs_ss_ctrl;
+      end if;
+      
+      if sw_reg_decoded.gbe2_rxs_ss_status = '1' then
+         ret(31 downto 0) := sw_reg.gbe2_rxs_ss_status;
+      end if;
+      
+      if sw_reg_decoded.gbe2_rxvldctr = '1' then
+         ret(31 downto 0) := sw_reg.gbe2_rxvldctr;
+      end if;
+      
+      if sw_reg_decoded.gbe2_txctr = '1' then
+         ret(31 downto 0) := sw_reg.gbe2_txctr;
+      end if;
+      
+      if sw_reg_decoded.gbe2_txfullctr = '1' then
+         ret(31 downto 0) := sw_reg.gbe2_txfullctr;
+      end if;
+      
+      if sw_reg_decoded.gbe2_txofctr = '1' then
+         ret(31 downto 0) := sw_reg.gbe2_txofctr;
+      end if;
+      
+      if sw_reg_decoded.gbe2_txs_ss_ctrl = '1' then
+         ret(31 downto 0) := sw_reg.gbe2_txs_ss_ctrl;
+      end if;
+      
+      if sw_reg_decoded.gbe2_txs_ss_status = '1' then
+         ret(31 downto 0) := sw_reg.gbe2_txs_ss_status;
+      end if;
+      
+      if sw_reg_decoded.gbe2_txvldctr = '1' then
+         ret(31 downto 0) := sw_reg.gbe2_txvldctr;
+      end if;
+      
+      if sw_reg_decoded.gbe2_linkup = '1' then
+         ret(31 downto 0) := sw_reg.gbe2_linkup;
       end if;
       
       if sw_reg_decoded.pkt_sim_enable = '1' then

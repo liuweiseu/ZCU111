@@ -9,8 +9,11 @@ use xil_defaultlib.axi4lite_gbe0_rxs_ss_bram_pkg.all;
 use xil_defaultlib.axi4lite_gbe0_txs_ss_bram_pkg.all;
 use xil_defaultlib.axi4lite_gbe1_rxs_ss_bram_pkg.all;
 use xil_defaultlib.axi4lite_gbe1_txs_ss_bram_pkg.all;
+use xil_defaultlib.axi4lite_gbe2_rxs_ss_bram_pkg.all;
+use xil_defaultlib.axi4lite_gbe2_txs_ss_bram_pkg.all;
 use xil_defaultlib.axi4lite_gbe0_pkg.all;
 use xil_defaultlib.axi4lite_gbe1_pkg.all;
+use xil_defaultlib.axi4lite_gbe2_pkg.all;
 use xil_defaultlib.axi4lite_tx_snapshot_ss_bram_pkg.all;
 use xil_defaultlib.axi4lite_sw_reg_pkg.all;
 use xil_defaultlib.axi4lite_sys_block_pkg.all;
@@ -70,6 +73,23 @@ entity axi4lite_ic_wrapper is
 		m_axi4lite_gbe1_arvalid : out std_logic;
 		m_axi4lite_gbe1_rready : out std_logic;
 		m_axi4lite_gbe1_bready : out std_logic;
+		m_axi4lite_gbe2_awready : in std_logic;
+		m_axi4lite_gbe2_wready : in std_logic;
+		m_axi4lite_gbe2_bresp : in std_logic_vector(1 downto 0);
+		m_axi4lite_gbe2_bvalid : in std_logic;
+		m_axi4lite_gbe2_arready : in std_logic;
+		m_axi4lite_gbe2_rresp : in std_logic_vector(1 downto 0);
+		m_axi4lite_gbe2_rdata : in std_logic_vector(31 downto 0);
+		m_axi4lite_gbe2_rvalid : in std_logic;
+		m_axi4lite_gbe2_awaddr : out std_logic_vector(31 downto 0);
+		m_axi4lite_gbe2_awvalid : out std_logic;
+		m_axi4lite_gbe2_wdata : out std_logic_vector(31 downto 0);
+		m_axi4lite_gbe2_wvalid : out std_logic;
+		m_axi4lite_gbe2_wstrb : out std_logic_vector(3 downto 0);
+		m_axi4lite_gbe2_araddr : out std_logic_vector(31 downto 0);
+		m_axi4lite_gbe2_arvalid : out std_logic;
+		m_axi4lite_gbe2_rready : out std_logic;
+		m_axi4lite_gbe2_bready : out std_logic;
 		axi4lite_gbe0_rxs_ss_bram_gbe0_rxs_ss_bram_add : in std_logic_vector(12 downto 0);
 		axi4lite_gbe0_rxs_ss_bram_gbe0_rxs_ss_bram_data_in : in std_logic_vector(127 downto 0);
 		axi4lite_gbe0_rxs_ss_bram_gbe0_rxs_ss_bram_data_out : out std_logic_vector(127 downto 0);
@@ -94,6 +114,18 @@ entity axi4lite_ic_wrapper is
 		axi4lite_gbe1_txs_ss_bram_gbe1_txs_ss_bram_we : in std_logic;
 		axi4lite_gbe1_txs_ss_bram_gbe1_txs_ss_bram_en : in std_logic;
 		axi4lite_gbe1_txs_ss_bram_gbe1_txs_ss_bram_clk : in std_logic;
+		axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_add : in std_logic_vector(12 downto 0);
+		axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_data_in : in std_logic_vector(127 downto 0);
+		axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_data_out : out std_logic_vector(127 downto 0);
+		axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_we : in std_logic;
+		axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_en : in std_logic;
+		axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_clk : in std_logic;
+		axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_add : in std_logic_vector(12 downto 0);
+		axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_data_in : in std_logic_vector(127 downto 0);
+		axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_data_out : out std_logic_vector(127 downto 0);
+		axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_we : in std_logic;
+		axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_en : in std_logic;
+		axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_clk : in std_logic;
 		axi4lite_tx_snapshot_ss_bram_tx_snapshot_ss_bram_add : in std_logic_vector(11 downto 0);
 		axi4lite_tx_snapshot_ss_bram_tx_snapshot_ss_bram_data_in : in std_logic_vector(127 downto 0);
 		axi4lite_tx_snapshot_ss_bram_tx_snapshot_ss_bram_data_out : out std_logic_vector(127 downto 0);
@@ -164,6 +196,34 @@ entity axi4lite_ic_wrapper is
 		axi4lite_sw_reg_gbe1_linkup_in_we : in std_logic;
 		axi4lite_sw_reg_gbe1_rx_frame_cnt_in : in std_logic_vector(31 downto 0);
 		axi4lite_sw_reg_gbe1_rx_frame_cnt_in_we : in std_logic;
+		axi4lite_sw_reg_gbe2_rxbadctr_in : in std_logic_vector(31 downto 0);
+		axi4lite_sw_reg_gbe2_rxbadctr_in_we : in std_logic;
+		axi4lite_sw_reg_gbe2_rxctr_in : in std_logic_vector(31 downto 0);
+		axi4lite_sw_reg_gbe2_rxctr_in_we : in std_logic;
+		axi4lite_sw_reg_gbe2_rxeofctr_in : in std_logic_vector(31 downto 0);
+		axi4lite_sw_reg_gbe2_rxeofctr_in_we : in std_logic;
+		axi4lite_sw_reg_gbe2_rxofctr_in : in std_logic_vector(31 downto 0);
+		axi4lite_sw_reg_gbe2_rxofctr_in_we : in std_logic;
+		axi4lite_sw_reg_gbe2_rxs_ss_ctrl_out : out std_logic_vector(31 downto 0);
+		axi4lite_sw_reg_gbe2_rxs_ss_ctrl_out_we : out std_logic;
+		axi4lite_sw_reg_gbe2_rxs_ss_status_in : in std_logic_vector(31 downto 0);
+		axi4lite_sw_reg_gbe2_rxs_ss_status_in_we : in std_logic;
+		axi4lite_sw_reg_gbe2_rxvldctr_in : in std_logic_vector(31 downto 0);
+		axi4lite_sw_reg_gbe2_rxvldctr_in_we : in std_logic;
+		axi4lite_sw_reg_gbe2_txctr_in : in std_logic_vector(31 downto 0);
+		axi4lite_sw_reg_gbe2_txctr_in_we : in std_logic;
+		axi4lite_sw_reg_gbe2_txfullctr_in : in std_logic_vector(31 downto 0);
+		axi4lite_sw_reg_gbe2_txfullctr_in_we : in std_logic;
+		axi4lite_sw_reg_gbe2_txofctr_in : in std_logic_vector(31 downto 0);
+		axi4lite_sw_reg_gbe2_txofctr_in_we : in std_logic;
+		axi4lite_sw_reg_gbe2_txs_ss_ctrl_out : out std_logic_vector(31 downto 0);
+		axi4lite_sw_reg_gbe2_txs_ss_ctrl_out_we : out std_logic;
+		axi4lite_sw_reg_gbe2_txs_ss_status_in : in std_logic_vector(31 downto 0);
+		axi4lite_sw_reg_gbe2_txs_ss_status_in_we : in std_logic;
+		axi4lite_sw_reg_gbe2_txvldctr_in : in std_logic_vector(31 downto 0);
+		axi4lite_sw_reg_gbe2_txvldctr_in_we : in std_logic;
+		axi4lite_sw_reg_gbe2_linkup_in : in std_logic_vector(31 downto 0);
+		axi4lite_sw_reg_gbe2_linkup_in_we : in std_logic;
 		axi4lite_sw_reg_pkt_sim_enable_out : out std_logic_vector(31 downto 0);
 		axi4lite_sw_reg_pkt_sim_enable_out_we : out std_logic;
 		axi4lite_sw_reg_pkt_sim_payload_len_out : out std_logic_vector(31 downto 0);
@@ -279,6 +339,34 @@ begin
 		gbe1_txs_ss_bram_gbe1_txs_ss_bram_we => axi4lite_gbe1_txs_ss_bram_gbe1_txs_ss_bram_we
 	);
 
+	axi4lite_gbe2_rxs_ss_bram_inst: entity xil_defaultlib.axi4lite_gbe2_rxs_ss_bram
+	port map(
+		axi4lite_aclk => axi4lite_aclk,
+		axi4lite_aresetn => axi4lite_aresetn,
+		axi4lite_mosi => axi4lite_mosi_arr(axi4lite_mmap_get_id(id_gbe2_rxs_ss_bram)),
+		axi4lite_miso => axi4lite_miso_arr(axi4lite_mmap_get_id(id_gbe2_rxs_ss_bram)),
+		gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_add => axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_add,
+		gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_wdat => axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_data_in,
+		gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_rdat => axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_data_out,
+		gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_clk => axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_clk,
+		gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_en => axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_en,
+		gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_we => axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_we
+	);
+
+	axi4lite_gbe2_txs_ss_bram_inst: entity xil_defaultlib.axi4lite_gbe2_txs_ss_bram
+	port map(
+		axi4lite_aclk => axi4lite_aclk,
+		axi4lite_aresetn => axi4lite_aresetn,
+		axi4lite_mosi => axi4lite_mosi_arr(axi4lite_mmap_get_id(id_gbe2_txs_ss_bram)),
+		axi4lite_miso => axi4lite_miso_arr(axi4lite_mmap_get_id(id_gbe2_txs_ss_bram)),
+		gbe2_txs_ss_bram_gbe2_txs_ss_bram_add => axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_add,
+		gbe2_txs_ss_bram_gbe2_txs_ss_bram_wdat => axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_data_in,
+		gbe2_txs_ss_bram_gbe2_txs_ss_bram_rdat => axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_data_out,
+		gbe2_txs_ss_bram_gbe2_txs_ss_bram_clk => axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_clk,
+		gbe2_txs_ss_bram_gbe2_txs_ss_bram_en => axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_en,
+		gbe2_txs_ss_bram_gbe2_txs_ss_bram_we => axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_we
+	);
+
 	axi4lite_tx_snapshot_ss_bram_inst: entity xil_defaultlib.axi4lite_tx_snapshot_ss_bram
 	port map(
 		axi4lite_aclk => axi4lite_aclk,
@@ -382,6 +470,34 @@ begin
 	axi4lite_sw_reg_in_we.gbe1_linkup <= axi4lite_sw_reg_gbe1_linkup_in_we;
 	axi4lite_sw_reg_in.gbe1_rx_frame_cnt <= axi4lite_sw_reg_gbe1_rx_frame_cnt_in;
 	axi4lite_sw_reg_in_we.gbe1_rx_frame_cnt <= axi4lite_sw_reg_gbe1_rx_frame_cnt_in_we;
+	axi4lite_sw_reg_in.gbe2_rxbadctr <= axi4lite_sw_reg_gbe2_rxbadctr_in;
+	axi4lite_sw_reg_in_we.gbe2_rxbadctr <= axi4lite_sw_reg_gbe2_rxbadctr_in_we;
+	axi4lite_sw_reg_in.gbe2_rxctr <= axi4lite_sw_reg_gbe2_rxctr_in;
+	axi4lite_sw_reg_in_we.gbe2_rxctr <= axi4lite_sw_reg_gbe2_rxctr_in_we;
+	axi4lite_sw_reg_in.gbe2_rxeofctr <= axi4lite_sw_reg_gbe2_rxeofctr_in;
+	axi4lite_sw_reg_in_we.gbe2_rxeofctr <= axi4lite_sw_reg_gbe2_rxeofctr_in_we;
+	axi4lite_sw_reg_in.gbe2_rxofctr <= axi4lite_sw_reg_gbe2_rxofctr_in;
+	axi4lite_sw_reg_in_we.gbe2_rxofctr <= axi4lite_sw_reg_gbe2_rxofctr_in_we;
+	axi4lite_sw_reg_gbe2_rxs_ss_ctrl_out <= axi4lite_sw_reg_out.gbe2_rxs_ss_ctrl;
+	axi4lite_sw_reg_gbe2_rxs_ss_ctrl_out_we <= axi4lite_sw_reg_out_we.gbe2_rxs_ss_ctrl;
+	axi4lite_sw_reg_in.gbe2_rxs_ss_status <= axi4lite_sw_reg_gbe2_rxs_ss_status_in;
+	axi4lite_sw_reg_in_we.gbe2_rxs_ss_status <= axi4lite_sw_reg_gbe2_rxs_ss_status_in_we;
+	axi4lite_sw_reg_in.gbe2_rxvldctr <= axi4lite_sw_reg_gbe2_rxvldctr_in;
+	axi4lite_sw_reg_in_we.gbe2_rxvldctr <= axi4lite_sw_reg_gbe2_rxvldctr_in_we;
+	axi4lite_sw_reg_in.gbe2_txctr <= axi4lite_sw_reg_gbe2_txctr_in;
+	axi4lite_sw_reg_in_we.gbe2_txctr <= axi4lite_sw_reg_gbe2_txctr_in_we;
+	axi4lite_sw_reg_in.gbe2_txfullctr <= axi4lite_sw_reg_gbe2_txfullctr_in;
+	axi4lite_sw_reg_in_we.gbe2_txfullctr <= axi4lite_sw_reg_gbe2_txfullctr_in_we;
+	axi4lite_sw_reg_in.gbe2_txofctr <= axi4lite_sw_reg_gbe2_txofctr_in;
+	axi4lite_sw_reg_in_we.gbe2_txofctr <= axi4lite_sw_reg_gbe2_txofctr_in_we;
+	axi4lite_sw_reg_gbe2_txs_ss_ctrl_out <= axi4lite_sw_reg_out.gbe2_txs_ss_ctrl;
+	axi4lite_sw_reg_gbe2_txs_ss_ctrl_out_we <= axi4lite_sw_reg_out_we.gbe2_txs_ss_ctrl;
+	axi4lite_sw_reg_in.gbe2_txs_ss_status <= axi4lite_sw_reg_gbe2_txs_ss_status_in;
+	axi4lite_sw_reg_in_we.gbe2_txs_ss_status <= axi4lite_sw_reg_gbe2_txs_ss_status_in_we;
+	axi4lite_sw_reg_in.gbe2_txvldctr <= axi4lite_sw_reg_gbe2_txvldctr_in;
+	axi4lite_sw_reg_in_we.gbe2_txvldctr <= axi4lite_sw_reg_gbe2_txvldctr_in_we;
+	axi4lite_sw_reg_in.gbe2_linkup <= axi4lite_sw_reg_gbe2_linkup_in;
+	axi4lite_sw_reg_in_we.gbe2_linkup <= axi4lite_sw_reg_gbe2_linkup_in_we;
 	axi4lite_sw_reg_pkt_sim_enable_out <= axi4lite_sw_reg_out.pkt_sim_enable;
 	axi4lite_sw_reg_pkt_sim_enable_out_we <= axi4lite_sw_reg_out_we.pkt_sim_enable;
 	axi4lite_sw_reg_pkt_sim_payload_len_out <= axi4lite_sw_reg_out.pkt_sim_payload_len;
@@ -463,4 +579,21 @@ begin
 	m_axi4lite_gbe1_wdata <= axi4lite_mosi_arr(axi4lite_mmap_get_id(id_gbe1)).wdata;
 	m_axi4lite_gbe1_wstrb <= axi4lite_mosi_arr(axi4lite_mmap_get_id(id_gbe1)).wstrb;
 	m_axi4lite_gbe1_wvalid <= axi4lite_mosi_arr(axi4lite_mmap_get_id(id_gbe1)).wvalid;
+	axi4lite_miso_arr(axi4lite_mmap_get_id(id_gbe2)).arready <= m_axi4lite_gbe2_arready;
+	axi4lite_miso_arr(axi4lite_mmap_get_id(id_gbe2)).awready <= m_axi4lite_gbe2_awready;
+	axi4lite_miso_arr(axi4lite_mmap_get_id(id_gbe2)).bresp <= m_axi4lite_gbe2_bresp;
+	axi4lite_miso_arr(axi4lite_mmap_get_id(id_gbe2)).bvalid <= m_axi4lite_gbe2_bvalid;
+	axi4lite_miso_arr(axi4lite_mmap_get_id(id_gbe2)).rdata <= m_axi4lite_gbe2_rdata;
+	axi4lite_miso_arr(axi4lite_mmap_get_id(id_gbe2)).rresp <= m_axi4lite_gbe2_rresp;
+	axi4lite_miso_arr(axi4lite_mmap_get_id(id_gbe2)).rvalid <= m_axi4lite_gbe2_rvalid;
+	axi4lite_miso_arr(axi4lite_mmap_get_id(id_gbe2)).wready <= m_axi4lite_gbe2_wready;
+	m_axi4lite_gbe2_araddr <= axi4lite_mosi_arr(axi4lite_mmap_get_id(id_gbe2)).araddr;
+	m_axi4lite_gbe2_arvalid <= axi4lite_mosi_arr(axi4lite_mmap_get_id(id_gbe2)).arvalid;
+	m_axi4lite_gbe2_awaddr <= axi4lite_mosi_arr(axi4lite_mmap_get_id(id_gbe2)).awaddr;
+	m_axi4lite_gbe2_awvalid <= axi4lite_mosi_arr(axi4lite_mmap_get_id(id_gbe2)).awvalid;
+	m_axi4lite_gbe2_bready <= axi4lite_mosi_arr(axi4lite_mmap_get_id(id_gbe2)).bready;
+	m_axi4lite_gbe2_rready <= axi4lite_mosi_arr(axi4lite_mmap_get_id(id_gbe2)).rready;
+	m_axi4lite_gbe2_wdata <= axi4lite_mosi_arr(axi4lite_mmap_get_id(id_gbe2)).wdata;
+	m_axi4lite_gbe2_wstrb <= axi4lite_mosi_arr(axi4lite_mmap_get_id(id_gbe2)).wstrb;
+	m_axi4lite_gbe2_wvalid <= axi4lite_mosi_arr(axi4lite_mmap_get_id(id_gbe2)).wvalid;
 end architecture;

@@ -2,105 +2,139 @@
 design_name: top
 ips: []
 mm_slaves:
-- !!python/object:castro.mm_slave {base_address: 2685075456, high_address: 2685075460,
+- !!python/object:castro.mm_slave {base_address: 2685403136, high_address: 2685403140,
   mode: 3, name: dest_ip, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075460, high_address: 2685075464,
+- !!python/object:castro.mm_slave {base_address: 2685403140, high_address: 2685403144,
   mode: 3, name: dest_port, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2684878848, high_address: 2684940288,
+- !!python/object:castro.mm_slave {base_address: 2685140992, high_address: 2685202432,
   mode: 3, name: gbe0, span: 61440}
-- !!python/object:castro.mm_slave {base_address: 2685075464, high_address: 2685075468,
+- !!python/object:castro.mm_slave {base_address: 2685403144, high_address: 2685403148,
   mode: 1, name: gbe0_rxbadctr, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075468, high_address: 2685075472,
+- !!python/object:castro.mm_slave {base_address: 2685403148, high_address: 2685403152,
   mode: 1, name: gbe0_rxctr, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075472, high_address: 2685075476,
+- !!python/object:castro.mm_slave {base_address: 2685403152, high_address: 2685403156,
   mode: 1, name: gbe0_rxeofctr, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075476, high_address: 2685075480,
+- !!python/object:castro.mm_slave {base_address: 2685403156, high_address: 2685403160,
   mode: 1, name: gbe0_rxofctr, span: 4}
 - !!python/object:castro.mm_slave {base_address: 2684354560, high_address: 2684485632,
   mode: 3, name: gbe0_rxs_ss_bram, span: 131072}
-- !!python/object:castro.mm_slave {base_address: 2685075480, high_address: 2685075484,
+- !!python/object:castro.mm_slave {base_address: 2685403160, high_address: 2685403164,
   mode: 3, name: gbe0_rxs_ss_ctrl, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075484, high_address: 2685075488,
+- !!python/object:castro.mm_slave {base_address: 2685403164, high_address: 2685403168,
   mode: 1, name: gbe0_rxs_ss_status, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075488, high_address: 2685075492,
+- !!python/object:castro.mm_slave {base_address: 2685403168, high_address: 2685403172,
   mode: 1, name: gbe0_rxvldctr, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075492, high_address: 2685075496,
+- !!python/object:castro.mm_slave {base_address: 2685403172, high_address: 2685403176,
   mode: 1, name: gbe0_txctr, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075496, high_address: 2685075500,
+- !!python/object:castro.mm_slave {base_address: 2685403176, high_address: 2685403180,
   mode: 1, name: gbe0_txfullctr, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075500, high_address: 2685075504,
+- !!python/object:castro.mm_slave {base_address: 2685403180, high_address: 2685403184,
   mode: 1, name: gbe0_txofctr, span: 4}
 - !!python/object:castro.mm_slave {base_address: 2684485632, high_address: 2684616704,
   mode: 3, name: gbe0_txs_ss_bram, span: 131072}
-- !!python/object:castro.mm_slave {base_address: 2685075504, high_address: 2685075508,
+- !!python/object:castro.mm_slave {base_address: 2685403184, high_address: 2685403188,
   mode: 3, name: gbe0_txs_ss_ctrl, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075508, high_address: 2685075512,
+- !!python/object:castro.mm_slave {base_address: 2685403188, high_address: 2685403192,
   mode: 1, name: gbe0_txs_ss_status, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075512, high_address: 2685075516,
+- !!python/object:castro.mm_slave {base_address: 2685403192, high_address: 2685403196,
   mode: 1, name: gbe0_txvldctr, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075516, high_address: 2685075520,
+- !!python/object:castro.mm_slave {base_address: 2685403196, high_address: 2685403200,
   mode: 1, name: gbe0_linkup, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075520, high_address: 2685075524,
+- !!python/object:castro.mm_slave {base_address: 2685403200, high_address: 2685403204,
   mode: 1, name: gbe0_tx_cnt, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2684944384, high_address: 2685005824,
+- !!python/object:castro.mm_slave {base_address: 2685206528, high_address: 2685267968,
   mode: 3, name: gbe1, span: 61440}
-- !!python/object:castro.mm_slave {base_address: 2685075524, high_address: 2685075528,
+- !!python/object:castro.mm_slave {base_address: 2685403204, high_address: 2685403208,
   mode: 1, name: gbe1_rxbadctr, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075528, high_address: 2685075532,
+- !!python/object:castro.mm_slave {base_address: 2685403208, high_address: 2685403212,
   mode: 1, name: gbe1_rxctr, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075532, high_address: 2685075536,
+- !!python/object:castro.mm_slave {base_address: 2685403212, high_address: 2685403216,
   mode: 1, name: gbe1_rxeofctr, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075536, high_address: 2685075540,
+- !!python/object:castro.mm_slave {base_address: 2685403216, high_address: 2685403220,
   mode: 1, name: gbe1_rxofctr, span: 4}
 - !!python/object:castro.mm_slave {base_address: 2684616704, high_address: 2684747776,
   mode: 3, name: gbe1_rxs_ss_bram, span: 131072}
-- !!python/object:castro.mm_slave {base_address: 2685075540, high_address: 2685075544,
+- !!python/object:castro.mm_slave {base_address: 2685403220, high_address: 2685403224,
   mode: 3, name: gbe1_rxs_ss_ctrl, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075544, high_address: 2685075548,
+- !!python/object:castro.mm_slave {base_address: 2685403224, high_address: 2685403228,
   mode: 1, name: gbe1_rxs_ss_status, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075548, high_address: 2685075552,
+- !!python/object:castro.mm_slave {base_address: 2685403228, high_address: 2685403232,
   mode: 1, name: gbe1_rxvldctr, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075552, high_address: 2685075556,
+- !!python/object:castro.mm_slave {base_address: 2685403232, high_address: 2685403236,
   mode: 1, name: gbe1_txctr, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075556, high_address: 2685075560,
+- !!python/object:castro.mm_slave {base_address: 2685403236, high_address: 2685403240,
   mode: 1, name: gbe1_txfullctr, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075560, high_address: 2685075564,
+- !!python/object:castro.mm_slave {base_address: 2685403240, high_address: 2685403244,
   mode: 1, name: gbe1_txofctr, span: 4}
 - !!python/object:castro.mm_slave {base_address: 2684747776, high_address: 2684878848,
   mode: 3, name: gbe1_txs_ss_bram, span: 131072}
-- !!python/object:castro.mm_slave {base_address: 2685075564, high_address: 2685075568,
+- !!python/object:castro.mm_slave {base_address: 2685403244, high_address: 2685403248,
   mode: 3, name: gbe1_txs_ss_ctrl, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075568, high_address: 2685075572,
+- !!python/object:castro.mm_slave {base_address: 2685403248, high_address: 2685403252,
   mode: 1, name: gbe1_txs_ss_status, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075572, high_address: 2685075576,
+- !!python/object:castro.mm_slave {base_address: 2685403252, high_address: 2685403256,
   mode: 1, name: gbe1_txvldctr, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075576, high_address: 2685075580,
+- !!python/object:castro.mm_slave {base_address: 2685403256, high_address: 2685403260,
   mode: 1, name: gbe1_linkup, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075580, high_address: 2685075584,
+- !!python/object:castro.mm_slave {base_address: 2685403260, high_address: 2685403264,
   mode: 1, name: gbe1_rx_frame_cnt, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075584, high_address: 2685075588,
+- !!python/object:castro.mm_slave {base_address: 2685272064, high_address: 2685333504,
+  mode: 3, name: gbe2, span: 61440}
+- !!python/object:castro.mm_slave {base_address: 2685403264, high_address: 2685403268,
+  mode: 1, name: gbe2_rxbadctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2685403268, high_address: 2685403272,
+  mode: 1, name: gbe2_rxctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2685403272, high_address: 2685403276,
+  mode: 1, name: gbe2_rxeofctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2685403276, high_address: 2685403280,
+  mode: 1, name: gbe2_rxofctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2684878848, high_address: 2685009920,
+  mode: 3, name: gbe2_rxs_ss_bram, span: 131072}
+- !!python/object:castro.mm_slave {base_address: 2685403280, high_address: 2685403284,
+  mode: 3, name: gbe2_rxs_ss_ctrl, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2685403284, high_address: 2685403288,
+  mode: 1, name: gbe2_rxs_ss_status, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2685403288, high_address: 2685403292,
+  mode: 1, name: gbe2_rxvldctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2685403292, high_address: 2685403296,
+  mode: 1, name: gbe2_txctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2685403296, high_address: 2685403300,
+  mode: 1, name: gbe2_txfullctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2685403300, high_address: 2685403304,
+  mode: 1, name: gbe2_txofctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2685009920, high_address: 2685140992,
+  mode: 3, name: gbe2_txs_ss_bram, span: 131072}
+- !!python/object:castro.mm_slave {base_address: 2685403304, high_address: 2685403308,
+  mode: 3, name: gbe2_txs_ss_ctrl, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2685403308, high_address: 2685403312,
+  mode: 1, name: gbe2_txs_ss_status, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2685403312, high_address: 2685403316,
+  mode: 1, name: gbe2_txvldctr, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2685403316, high_address: 2685403320,
+  mode: 1, name: gbe2_linkup, span: 4}
+- !!python/object:castro.mm_slave {base_address: 2685403320, high_address: 2685403324,
   mode: 3, name: pkt_sim_enable, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075588, high_address: 2685075592,
+- !!python/object:castro.mm_slave {base_address: 2685403324, high_address: 2685403328,
   mode: 3, name: pkt_sim_payload_len, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075592, high_address: 2685075596,
+- !!python/object:castro.mm_slave {base_address: 2685403328, high_address: 2685403332,
   mode: 3, name: pkt_sim_period, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075596, high_address: 2685075600,
+- !!python/object:castro.mm_slave {base_address: 2685403332, high_address: 2685403336,
   mode: 3, name: rst, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075600, high_address: 2685075604,
+- !!python/object:castro.mm_slave {base_address: 2685403336, high_address: 2685403340,
   mode: 1, name: rx_bad_frame, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075604, high_address: 2685075608,
+- !!python/object:castro.mm_slave {base_address: 2685403340, high_address: 2685403344,
   mode: 1, name: rx_end_of_frame, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075608, high_address: 2685075612,
+- !!python/object:castro.mm_slave {base_address: 2685403344, high_address: 2685403348,
   mode: 1, name: rx_source_ip, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075612, high_address: 2685075616,
+- !!python/object:castro.mm_slave {base_address: 2685403348, high_address: 2685403352,
   mode: 1, name: rx_source_port, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685009920, high_address: 2685075456,
+- !!python/object:castro.mm_slave {base_address: 2685337600, high_address: 2685403136,
   mode: 3, name: tx_snapshot_ss_bram, span: 65536}
-- !!python/object:castro.mm_slave {base_address: 2685075616, high_address: 2685075620,
+- !!python/object:castro.mm_slave {base_address: 2685403352, high_address: 2685403356,
   mode: 3, name: tx_snapshot_ss_ctrl, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075620, high_address: 2685075624,
+- !!python/object:castro.mm_slave {base_address: 2685403356, high_address: 2685403360,
   mode: 1, name: tx_snapshot_ss_status, span: 4}
-- !!python/object:castro.mm_slave {base_address: 2685075712, high_address: 2685075744,
+- !!python/object:castro.mm_slave {base_address: 2685403392, high_address: 2685403424,
   mode: 1, name: sys_block, span: 32}
 src_files: [/home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/top.v,
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
@@ -108,6 +142,7 @@ src_files: [/home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/top.
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tge_tx.v,
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tx_fifo_ext.xci,
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/kat_ten_gb_eth.v,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tge_rx.v.bak,
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tb,
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/ten_gig_eth_mac_UCB.vhd,
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/arp_cache.xci,
@@ -146,6 +181,7 @@ src_files: [/home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/top.
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tge_tx.v,
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tx_fifo_ext.xci,
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/kat_ten_gb_eth.v,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tge_rx.v.bak,
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tb,
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/ten_gig_eth_mac_UCB.vhd,
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/arp_cache.xci,
@@ -181,6 +217,45 @@ src_files: [/home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/top.
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tge_tx.v,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tx_fifo_ext.xci,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/kat_ten_gb_eth.v,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tge_rx.v.bak,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tb,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/ten_gig_eth_mac_UCB.vhd,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/arp_cache.xci,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tx_packet_ctrl_fifo.xci,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/rx_packet_ctrl_fifo.xci,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/wb_attach.v,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tx_packet_fifo.xci,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/tge_rx.v,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/rx_packet_fifo_bram.xci,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/cpu_buffer.xci,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/kat_ten_gb_eth/rx_packet_fifo_dist.xci,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/tengbaser_phy_ultrascale/tengbaser_phy_ultrascale.xci,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/tengbaser_phy_ultrascale_reset.v,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_gt_gtye4_common_wrapper.v,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/tengbaser_infrastructure_ultrascale.v,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_clocking_wrapper.v,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/gtwizard_ultrascale_v1_7_gtye4_common.v,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/xxv_ethernet_1_common_wrapper.v,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/AXI4LITE2AXI4_axi_protocol_convert_0_0.xci,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/tengbaser_infrastructure_ultrascale/axi_slave_wishbone_classic_master.vhd,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/wb_register_simulink2ppc,
+  /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/gpio_simulink2ext,
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/gpio_simulink2ext,
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/gpio_simulink2ext,
   /home/wei/casper/ZCU111/mlib_devel/jasper_library/hdl_sources/gpio_simulink2ext,
@@ -212,6 +287,9 @@ synthesis: !!python/object:castro.Synthesis
   - !!python/object:castro.ClkConstraint {clkname: ethclk0, freq_mhz: 156.25, period_ns: 6.4,
     port_en: true, portname: ref_clk_p0, virtual_en: false, waveform_max_ns: 3.2,
     waveform_min_ns: 0.0}
+  - !!python/object:castro.ClkConstraint {clkname: ethclk0, freq_mhz: 156.25, period_ns: 6.4,
+    port_en: true, portname: ref_clk_p0, virtual_en: false, waveform_max_ns: 3.2,
+    waveform_min_ns: 0.0}
   - !!python/object:castro.ClkConstraint {clkname: clk_128_p, freq_mhz: 128.0, period_ns: 7.8125,
     port_en: true, portname: clk_128_p, virtual_en: false, waveform_max_ns: 3.90625,
     waveform_min_ns: 0.0}
@@ -231,6 +309,8 @@ synthesis: !!python/object:castro.Synthesis
     sourcepath: null}
   - !!python/object:castro.FalsePthConstraint {destpath: '[get_ports {zcu111_tengbe_tx_rx_direct_led3_gbe1_up_ext[*]}]',
     sourcepath: null}
+  - !!python/object:castro.FalsePthConstraint {destpath: '[get_ports {zcu111_tengbe_tx_rx_direct_led4_gbe0_up_ext[*]}]',
+    sourcepath: null}
   fpga_manufacturer: Xilinx
   fpga_model: xczu28dr-ffvg1517-2-e
   gen_clk_constraints: []
@@ -244,6 +324,8 @@ synthesis: !!python/object:castro.Synthesis
       {zcu111_tengbe_tx_rx_direct_led2_gbe1_pulse_rx_ext[*]}]', sourcepath: null}
   - !!python/object:castro.MaxDelayConstraint {constdelay_ns: 1.0, destpath: '[get_ports
       {zcu111_tengbe_tx_rx_direct_led3_gbe1_up_ext[*]}]', sourcepath: null}
+  - !!python/object:castro.MaxDelayConstraint {constdelay_ns: 1.0, destpath: '[get_ports
+      {zcu111_tengbe_tx_rx_direct_led4_gbe0_up_ext[*]}]', sourcepath: null}
   min_delay_constraints:
   - !!python/object:castro.MinDelayConstraint {constdelay_ns: 1.0, destpath: '[get_ports
       {zcu111_tengbe_tx_rx_direct_led0_gbe0_pulse_tx_ext[*]}]', sourcepath: null}
@@ -253,6 +335,8 @@ synthesis: !!python/object:castro.Synthesis
       {zcu111_tengbe_tx_rx_direct_led2_gbe1_pulse_rx_ext[*]}]', sourcepath: null}
   - !!python/object:castro.MinDelayConstraint {constdelay_ns: 1.0, destpath: '[get_ports
       {zcu111_tengbe_tx_rx_direct_led3_gbe1_up_ext[*]}]', sourcepath: null}
+  - !!python/object:castro.MinDelayConstraint {constdelay_ns: 1.0, destpath: '[get_ports
+      {zcu111_tengbe_tx_rx_direct_led4_gbe0_up_ext[*]}]', sourcepath: null}
   multi_cycle_constraints: []
   output_delay_constraints: []
   pin_constraints:
@@ -378,6 +462,66 @@ synthesis: !!python/object:castro.Synthesis
     termination: ''
   - !!python/object:castro.PinConstraint
     drive_strength: 0
+    io_standard: [null]
+    location: [Y31]
+    portname: ref_clk_p0
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: [0]
+    symbolic_name: eth_clk_p
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [Y32]
+    portname: ref_clk_n0
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: [0]
+    symbolic_name: eth_clk_n
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [V35]
+    portname: mgt_tx_p1
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: [1]
+    symbolic_name: mgt_tx_p
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [V36]
+    portname: mgt_tx_n1
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: [1]
+    symbolic_name: mgt_tx_n
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [W38]
+    portname: mgt_rx_p1
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: [1]
+    symbolic_name: mgt_rx_p
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [W39]
+    portname: mgt_rx_n1
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: [1]
+    symbolic_name: mgt_rx_n
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
     io_standard: [LVCMOS18]
     location: [AR13]
     portname: zcu111_tengbe_tx_rx_direct_led0_gbe0_pulse_tx_ext
@@ -414,6 +558,16 @@ synthesis: !!python/object:castro.Synthesis
     portname_indices: [0]
     slew_rate: 0
     symbolic_indices: [3]
+    symbolic_name: led
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVCMOS18]
+    location: [AP15]
+    portname: zcu111_tengbe_tx_rx_direct_led4_gbe0_up_ext
+    portname_indices: [0]
+    slew_rate: 0
+    symbolic_indices: [4]
     symbolic_name: led
     termination: ''
   - !!python/object:castro.PinConstraint
@@ -475,6 +629,21 @@ synthesis: !!python/object:castro.Synthesis
     - !!python/object:casper_platform.Pin {iostd: LVCMOS12, loc: J7}
   platform_name: zcu111
   raw_constraints:
+  - !!python/object:castro.RawConstraint {raw: 'set_clock_groups -name asyncclocks_eth0
+      -asynchronous -group [get_clocks -include_generated_clocks clk_128_p] -group
+      [get_clocks -include_generated_clocks ethclk0]
+
+      '}
+  - !!python/object:castro.RawConstraint {raw: 'set_clock_groups -name asyncclocks_eth1
+      -asynchronous -group [get_clocks -of_objects [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]]
+      -group [get_clocks -include_generated_clocks ethclk0]
+
+      '}
+  - !!python/object:castro.RawConstraint {raw: 'set_clock_groups -name asyncclocks_eth2
+      -asynchronous -group [get_clocks -of_objects [get_pins zcu111_inst/zynq_ultra_ps_e_0/U0/PS8_i/PLCLK[0]]]
+      -group [get_clocks -include_generated_clocks clk_128_p]
+
+      '}
   - !!python/object:castro.RawConstraint {raw: 'set_clock_groups -name asyncclocks_eth0
       -asynchronous -group [get_clocks -include_generated_clocks clk_128_p] -group
       [get_clocks -include_generated_clocks ethclk0]

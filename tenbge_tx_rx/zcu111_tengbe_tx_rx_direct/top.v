@@ -13,6 +13,8 @@ module top (
     output [0:0] zcu111_tengbe_tx_rx_direct_led2_gbe1_pulse_rx_ext,
   // gpio: led3_gbe1_up
     output [0:0] zcu111_tengbe_tx_rx_direct_led3_gbe1_up_ext,
+  // gpio: led4_gbe0_up
+    output [0:0] zcu111_tengbe_tx_rx_direct_led4_gbe0_up_ext,
   // ten_gbe: gbe0
     input mgt_rx_n0,
     input mgt_rx_p0,
@@ -25,6 +27,11 @@ module top (
     input mgt_rx_p3,
     output mgt_tx_n3,
     output mgt_tx_p3,
+  // ten_gbe: gbe2
+    input mgt_rx_n1,
+    input mgt_rx_p1,
+    output mgt_tx_n1,
+    output mgt_tx_p1,
   // zcu111: ZCU111
     input clk_128_n,
     input clk_128_p
@@ -51,6 +58,8 @@ module top (
   wire [0:0] zcu111_tengbe_tx_rx_direct_led2_gbe1_pulse_rx_gateway;
   // gpio: led3_gbe1_up
   wire [0:0] zcu111_tengbe_tx_rx_direct_led3_gbe1_up_gateway;
+  // gpio: led4_gbe0_up
+  wire [0:0] zcu111_tengbe_tx_rx_direct_led4_gbe0_up_gateway;
   // sw_reg: dest_ip
   wire [31:0] zcu111_tengbe_tx_rx_direct_dest_ip_out;
   wire [31:0] zcu111_tengbe_tx_rx_direct_dest_ip_user_data_out;
@@ -147,6 +156,48 @@ module top (
   // sw_reg: gbe1_rx_frame_cnt
   wire [31:0] zcu111_tengbe_tx_rx_direct_gbe1_rx_frame_cnt_in;
   wire [31:0] zcu111_tengbe_tx_rx_direct_gbe1_rx_frame_cnt_user_data_in;
+  // sw_reg: gbe2/rxbadctr
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_rxbadctr_in;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_rxbadctr_user_data_in;
+  // sw_reg: gbe2/rxctr
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_rxctr_in;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_rxctr_user_data_in;
+  // sw_reg: gbe2/rxeofctr
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_rxeofctr_in;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_rxeofctr_user_data_in;
+  // sw_reg: gbe2/rxofctr
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_rxofctr_in;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_rxofctr_user_data_in;
+  // sw_reg: gbe2/rxs/ss/ctrl
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_ctrl_out;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_ctrl_user_data_out;
+  // sw_reg: gbe2/rxs/ss/status
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_status_in;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_status_user_data_in;
+  // sw_reg: gbe2/rxvldctr
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_rxvldctr_in;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_rxvldctr_user_data_in;
+  // sw_reg: gbe2/txctr
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_txctr_in;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_txctr_user_data_in;
+  // sw_reg: gbe2/txfullctr
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_txfullctr_in;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_txfullctr_user_data_in;
+  // sw_reg: gbe2/txofctr
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_txofctr_in;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_txofctr_user_data_in;
+  // sw_reg: gbe2/txs/ss/ctrl
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_ctrl_out;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_ctrl_user_data_out;
+  // sw_reg: gbe2/txs/ss/status
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_status_in;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_status_user_data_in;
+  // sw_reg: gbe2/txvldctr
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_txvldctr_in;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_txvldctr_user_data_in;
+  // sw_reg: gbe2_linkup
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_linkup_in;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_linkup_user_data_in;
   // sw_reg: pkt_sim/enable
   wire [31:0] zcu111_tengbe_tx_rx_direct_pkt_sim_enable_out;
   wire [31:0] zcu111_tengbe_tx_rx_direct_pkt_sim_enable_user_data_out;
@@ -229,6 +280,28 @@ module top (
   wire [0:0] zcu111_tengbe_tx_rx_direct_gbe1_txs_ss_ctrl_out_we;
   wire [0:0] zcu111_tengbe_tx_rx_direct_gbe1_txs_ss_status_in_we;
   wire [0:0] zcu111_tengbe_tx_rx_direct_gbe1_txvldctr_in_we;
+  wire [0:0] zcu111_tengbe_tx_rx_direct_gbe2_linkup_in_we;
+  wire [0:0] zcu111_tengbe_tx_rx_direct_gbe2_rxbadctr_in_we;
+  wire [0:0] zcu111_tengbe_tx_rx_direct_gbe2_rxctr_in_we;
+  wire [0:0] zcu111_tengbe_tx_rx_direct_gbe2_rxeofctr_in_we;
+  wire [0:0] zcu111_tengbe_tx_rx_direct_gbe2_rxofctr_in_we;
+  wire [12:0] zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_bram_addr;
+  wire [127:0] zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_bram_data_in;
+  wire [127:0] zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_bram_data_out;
+  wire [0:0] zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_bram_we;
+  wire [0:0] zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_ctrl_out_we;
+  wire [0:0] zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_status_in_we;
+  wire [0:0] zcu111_tengbe_tx_rx_direct_gbe2_rxvldctr_in_we;
+  wire [0:0] zcu111_tengbe_tx_rx_direct_gbe2_txctr_in_we;
+  wire [0:0] zcu111_tengbe_tx_rx_direct_gbe2_txfullctr_in_we;
+  wire [0:0] zcu111_tengbe_tx_rx_direct_gbe2_txofctr_in_we;
+  wire [12:0] zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_bram_addr;
+  wire [127:0] zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_bram_data_in;
+  wire [127:0] zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_bram_data_out;
+  wire [0:0] zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_bram_we;
+  wire [0:0] zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_ctrl_out_we;
+  wire [0:0] zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_status_in_we;
+  wire [0:0] zcu111_tengbe_tx_rx_direct_gbe2_txvldctr_in_we;
   wire [0:0] zcu111_tengbe_tx_rx_direct_pkt_sim_enable_out_we;
   wire [0:0] zcu111_tengbe_tx_rx_direct_pkt_sim_payload_len_out_we;
   wire [0:0] zcu111_tengbe_tx_rx_direct_pkt_sim_period_out_we;
@@ -392,6 +465,71 @@ module top (
   wire zcu111_tengbe_tx_rx_direct_gbe1wb_err;
   wire zcu111_tengbe_tx_rx_direct_gbe1wb_rst;
   wire [3:0] zcu111_tengbe_tx_rx_direct_gbe1wb_sel;
+  // ten_gbe: gbe2
+  wire gt_reset_all1;
+  wire gt_reset_rx_done_out1;
+  wire gt_reset_tx_done_out1;
+  wire [31:0] m_axi4lite_gbe2_araddr;
+  wire m_axi4lite_gbe2_arready;
+  wire m_axi4lite_gbe2_arvalid;
+  wire [31:0] m_axi4lite_gbe2_awaddr;
+  wire m_axi4lite_gbe2_awready;
+  wire m_axi4lite_gbe2_awvalid;
+  wire m_axi4lite_gbe2_bready;
+  wire [1:0] m_axi4lite_gbe2_bresp;
+  wire m_axi4lite_gbe2_bvalid;
+  wire [31:0] m_axi4lite_gbe2_rdata;
+  wire m_axi4lite_gbe2_rready;
+  wire [1:0] m_axi4lite_gbe2_rresp;
+  wire m_axi4lite_gbe2_rvalid;
+  wire [31:0] m_axi4lite_gbe2_wdata;
+  wire m_axi4lite_gbe2_wready;
+  wire [3:0] m_axi4lite_gbe2_wstrb;
+  wire m_axi4lite_gbe2_wvalid;
+  wire [2:0] mgt_rxeqmix1;
+  wire [3:0] mgt_txdiffctrl1;
+  wire [4:0] mgt_txpostemphasis1;
+  wire [3:0] mgt_txpreemphasis1;
+  wire rx_clk_out1;
+  wire rx_core_reset_out1;
+  wire rx_serdes_reset1;
+  wire stat_rx_block_lock1;
+  wire tx_core_reset_out1;
+  wire tx_mii_clk1;
+  wire [7:0] xgmii_rxc1;
+  wire [63:0] xgmii_rxd1;
+  wire [7:0] xgmii_txc1;
+  wire [63:0] xgmii_txd1;
+  wire zcu111_tengbe_tx_rx_direct_gbe2_led_rx;
+  wire zcu111_tengbe_tx_rx_direct_gbe2_led_tx;
+  wire zcu111_tengbe_tx_rx_direct_gbe2_led_up;
+  wire zcu111_tengbe_tx_rx_direct_gbe2_rst;
+  wire zcu111_tengbe_tx_rx_direct_gbe2_rx_ack;
+  wire zcu111_tengbe_tx_rx_direct_gbe2_rx_bad_frame;
+  wire [63:0] zcu111_tengbe_tx_rx_direct_gbe2_rx_data;
+  wire zcu111_tengbe_tx_rx_direct_gbe2_rx_end_of_frame;
+  wire zcu111_tengbe_tx_rx_direct_gbe2_rx_overrun;
+  wire zcu111_tengbe_tx_rx_direct_gbe2_rx_overrun_ack;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_rx_source_ip;
+  wire [15:0] zcu111_tengbe_tx_rx_direct_gbe2_rx_source_port;
+  wire zcu111_tengbe_tx_rx_direct_gbe2_rx_valid;
+  wire zcu111_tengbe_tx_rx_direct_gbe2_tx_afull;
+  wire [63:0] zcu111_tengbe_tx_rx_direct_gbe2_tx_data;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2_tx_dest_ip;
+  wire [15:0] zcu111_tengbe_tx_rx_direct_gbe2_tx_dest_port;
+  wire zcu111_tengbe_tx_rx_direct_gbe2_tx_end_of_frame;
+  wire zcu111_tengbe_tx_rx_direct_gbe2_tx_overflow;
+  wire zcu111_tengbe_tx_rx_direct_gbe2_tx_valid;
+  wire zcu111_tengbe_tx_rx_direct_gbe2_wb_cyc;
+  wire zcu111_tengbe_tx_rx_direct_gbe2_wb_stb;
+  wire zcu111_tengbe_tx_rx_direct_gbe2_wb_we;
+  wire zcu111_tengbe_tx_rx_direct_gbe2wb_ack;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2wb_adr;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2wb_dat_i;
+  wire [31:0] zcu111_tengbe_tx_rx_direct_gbe2wb_dat_o;
+  wire zcu111_tengbe_tx_rx_direct_gbe2wb_err;
+  wire zcu111_tengbe_tx_rx_direct_gbe2wb_rst;
+  wire [3:0] zcu111_tengbe_tx_rx_direct_gbe2wb_sel;
   // xsg: ZCU111
   wire user_clk;
   wire user_clk180;
@@ -500,6 +638,19 @@ module top (
     .clk90(user_clk90),
     .gateway(zcu111_tengbe_tx_rx_direct_led3_gbe1_up_gateway),
     .io_pad(zcu111_tengbe_tx_rx_direct_led3_gbe1_up_ext)
+  );
+
+  // gpio: led4_gbe0_up
+  gpio_simulink2ext #(
+    .CLK_PHASE(0),
+    .DDR(0),
+    .REG_IOB("true"),
+    .WIDTH(1)
+  ) zcu111_tengbe_tx_rx_direct_led4_gbe0_up (
+    .clk(user_clk),
+    .clk90(user_clk90),
+    .gateway(zcu111_tengbe_tx_rx_direct_led4_gbe0_up_gateway),
+    .io_pad(zcu111_tengbe_tx_rx_direct_led4_gbe0_up_ext)
   );
 
   // sw_reg: dest_ip
@@ -854,6 +1005,160 @@ module top (
     .OP_BUS(zcu111_tengbe_tx_rx_direct_gbe1_rx_frame_cnt_in)
   );
 
+  // sw_reg: gbe2/rxbadctr
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) zcu111_tengbe_tx_rx_direct_gbe2_rxbadctr (
+    .IP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_rxbadctr_user_data_in),
+    .IP_BUS_VALID(1'b01),
+    .IP_CLK(axil_clk),
+    .IP_RESET(axil_rst),
+    .OP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_rxbadctr_in)
+  );
+
+  // sw_reg: gbe2/rxctr
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) zcu111_tengbe_tx_rx_direct_gbe2_rxctr (
+    .IP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_rxctr_user_data_in),
+    .IP_BUS_VALID(1'b01),
+    .IP_CLK(axil_clk),
+    .IP_RESET(axil_rst),
+    .OP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_rxctr_in)
+  );
+
+  // sw_reg: gbe2/rxeofctr
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) zcu111_tengbe_tx_rx_direct_gbe2_rxeofctr (
+    .IP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_rxeofctr_user_data_in),
+    .IP_BUS_VALID(1'b01),
+    .IP_CLK(axil_clk),
+    .IP_RESET(axil_rst),
+    .OP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_rxeofctr_in)
+  );
+
+  // sw_reg: gbe2/rxofctr
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) zcu111_tengbe_tx_rx_direct_gbe2_rxofctr (
+    .IP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_rxofctr_user_data_in),
+    .IP_BUS_VALID(1'b01),
+    .IP_CLK(axil_clk),
+    .IP_RESET(axil_rst),
+    .OP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_rxofctr_in)
+  );
+
+  // sw_reg: gbe2/rxs/ss/ctrl
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_ctrl (
+    .IP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_ctrl_out),
+    .IP_BUS_VALID(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_ctrl_out_we),
+    .IP_CLK(user_clk),
+    .IP_RESET(user_rst),
+    .OP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_ctrl_user_data_out)
+  );
+
+  // sw_reg: gbe2/rxs/ss/status
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_status (
+    .IP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_status_user_data_in),
+    .IP_BUS_VALID(1'b01),
+    .IP_CLK(axil_clk),
+    .IP_RESET(axil_rst),
+    .OP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_status_in)
+  );
+
+  // sw_reg: gbe2/rxvldctr
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) zcu111_tengbe_tx_rx_direct_gbe2_rxvldctr (
+    .IP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_rxvldctr_user_data_in),
+    .IP_BUS_VALID(1'b01),
+    .IP_CLK(axil_clk),
+    .IP_RESET(axil_rst),
+    .OP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_rxvldctr_in)
+  );
+
+  // sw_reg: gbe2/txctr
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) zcu111_tengbe_tx_rx_direct_gbe2_txctr (
+    .IP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_txctr_user_data_in),
+    .IP_BUS_VALID(1'b01),
+    .IP_CLK(axil_clk),
+    .IP_RESET(axil_rst),
+    .OP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_txctr_in)
+  );
+
+  // sw_reg: gbe2/txfullctr
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) zcu111_tengbe_tx_rx_direct_gbe2_txfullctr (
+    .IP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_txfullctr_user_data_in),
+    .IP_BUS_VALID(1'b01),
+    .IP_CLK(axil_clk),
+    .IP_RESET(axil_rst),
+    .OP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_txfullctr_in)
+  );
+
+  // sw_reg: gbe2/txofctr
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) zcu111_tengbe_tx_rx_direct_gbe2_txofctr (
+    .IP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_txofctr_user_data_in),
+    .IP_BUS_VALID(1'b01),
+    .IP_CLK(axil_clk),
+    .IP_RESET(axil_rst),
+    .OP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_txofctr_in)
+  );
+
+  // sw_reg: gbe2/txs/ss/ctrl
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_ctrl (
+    .IP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_ctrl_out),
+    .IP_BUS_VALID(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_ctrl_out_we),
+    .IP_CLK(user_clk),
+    .IP_RESET(user_rst),
+    .OP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_ctrl_user_data_out)
+  );
+
+  // sw_reg: gbe2/txs/ss/status
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_status (
+    .IP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_status_user_data_in),
+    .IP_BUS_VALID(1'b01),
+    .IP_CLK(axil_clk),
+    .IP_RESET(axil_rst),
+    .OP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_status_in)
+  );
+
+  // sw_reg: gbe2/txvldctr
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) zcu111_tengbe_tx_rx_direct_gbe2_txvldctr (
+    .IP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_txvldctr_user_data_in),
+    .IP_BUS_VALID(1'b01),
+    .IP_CLK(axil_clk),
+    .IP_RESET(axil_rst),
+    .OP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_txvldctr_in)
+  );
+
+  // sw_reg: gbe2_linkup
+  cdc_synchroniser #(
+    .G_BUS_WIDTH(32)
+  ) zcu111_tengbe_tx_rx_direct_gbe2_linkup (
+    .IP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_linkup_user_data_in),
+    .IP_BUS_VALID(1'b01),
+    .IP_CLK(axil_clk),
+    .IP_RESET(axil_rst),
+    .OP_BUS(zcu111_tengbe_tx_rx_direct_gbe2_linkup_in)
+  );
+
   // sw_reg: pkt_sim/enable
   cdc_synchroniser #(
     .G_BUS_WIDTH(32)
@@ -992,6 +1297,18 @@ module top (
     .axi4lite_gbe1_txs_ss_bram_gbe1_txs_ss_bram_data_out(zcu111_tengbe_tx_rx_direct_gbe1_txs_ss_bram_data_out),
     .axi4lite_gbe1_txs_ss_bram_gbe1_txs_ss_bram_en(1'b1),
     .axi4lite_gbe1_txs_ss_bram_gbe1_txs_ss_bram_we(zcu111_tengbe_tx_rx_direct_gbe1_txs_ss_bram_we),
+    .axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_add(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_bram_addr),
+    .axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_clk(user_clk),
+    .axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_data_in(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_bram_data_in),
+    .axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_data_out(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_bram_data_out),
+    .axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_en(1'b1),
+    .axi4lite_gbe2_rxs_ss_bram_gbe2_rxs_ss_bram_we(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_bram_we),
+    .axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_add(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_bram_addr),
+    .axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_clk(user_clk),
+    .axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_data_in(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_bram_data_in),
+    .axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_data_out(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_bram_data_out),
+    .axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_en(1'b1),
+    .axi4lite_gbe2_txs_ss_bram_gbe2_txs_ss_bram_we(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_bram_we),
     .axi4lite_sw_reg_dest_ip_out(zcu111_tengbe_tx_rx_direct_dest_ip_out),
     .axi4lite_sw_reg_dest_ip_out_we(zcu111_tengbe_tx_rx_direct_dest_ip_out_we),
     .axi4lite_sw_reg_dest_port_out(zcu111_tengbe_tx_rx_direct_dest_port_out),
@@ -1056,6 +1373,34 @@ module top (
     .axi4lite_sw_reg_gbe1_txs_ss_status_in_we(zcu111_tengbe_tx_rx_direct_gbe1_txs_ss_status_in_we),
     .axi4lite_sw_reg_gbe1_txvldctr_in(zcu111_tengbe_tx_rx_direct_gbe1_txvldctr_in),
     .axi4lite_sw_reg_gbe1_txvldctr_in_we(zcu111_tengbe_tx_rx_direct_gbe1_txvldctr_in_we),
+    .axi4lite_sw_reg_gbe2_linkup_in(zcu111_tengbe_tx_rx_direct_gbe2_linkup_in),
+    .axi4lite_sw_reg_gbe2_linkup_in_we(zcu111_tengbe_tx_rx_direct_gbe2_linkup_in_we),
+    .axi4lite_sw_reg_gbe2_rxbadctr_in(zcu111_tengbe_tx_rx_direct_gbe2_rxbadctr_in),
+    .axi4lite_sw_reg_gbe2_rxbadctr_in_we(zcu111_tengbe_tx_rx_direct_gbe2_rxbadctr_in_we),
+    .axi4lite_sw_reg_gbe2_rxctr_in(zcu111_tengbe_tx_rx_direct_gbe2_rxctr_in),
+    .axi4lite_sw_reg_gbe2_rxctr_in_we(zcu111_tengbe_tx_rx_direct_gbe2_rxctr_in_we),
+    .axi4lite_sw_reg_gbe2_rxeofctr_in(zcu111_tengbe_tx_rx_direct_gbe2_rxeofctr_in),
+    .axi4lite_sw_reg_gbe2_rxeofctr_in_we(zcu111_tengbe_tx_rx_direct_gbe2_rxeofctr_in_we),
+    .axi4lite_sw_reg_gbe2_rxofctr_in(zcu111_tengbe_tx_rx_direct_gbe2_rxofctr_in),
+    .axi4lite_sw_reg_gbe2_rxofctr_in_we(zcu111_tengbe_tx_rx_direct_gbe2_rxofctr_in_we),
+    .axi4lite_sw_reg_gbe2_rxs_ss_ctrl_out(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_ctrl_out),
+    .axi4lite_sw_reg_gbe2_rxs_ss_ctrl_out_we(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_ctrl_out_we),
+    .axi4lite_sw_reg_gbe2_rxs_ss_status_in(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_status_in),
+    .axi4lite_sw_reg_gbe2_rxs_ss_status_in_we(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_status_in_we),
+    .axi4lite_sw_reg_gbe2_rxvldctr_in(zcu111_tengbe_tx_rx_direct_gbe2_rxvldctr_in),
+    .axi4lite_sw_reg_gbe2_rxvldctr_in_we(zcu111_tengbe_tx_rx_direct_gbe2_rxvldctr_in_we),
+    .axi4lite_sw_reg_gbe2_txctr_in(zcu111_tengbe_tx_rx_direct_gbe2_txctr_in),
+    .axi4lite_sw_reg_gbe2_txctr_in_we(zcu111_tengbe_tx_rx_direct_gbe2_txctr_in_we),
+    .axi4lite_sw_reg_gbe2_txfullctr_in(zcu111_tengbe_tx_rx_direct_gbe2_txfullctr_in),
+    .axi4lite_sw_reg_gbe2_txfullctr_in_we(zcu111_tengbe_tx_rx_direct_gbe2_txfullctr_in_we),
+    .axi4lite_sw_reg_gbe2_txofctr_in(zcu111_tengbe_tx_rx_direct_gbe2_txofctr_in),
+    .axi4lite_sw_reg_gbe2_txofctr_in_we(zcu111_tengbe_tx_rx_direct_gbe2_txofctr_in_we),
+    .axi4lite_sw_reg_gbe2_txs_ss_ctrl_out(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_ctrl_out),
+    .axi4lite_sw_reg_gbe2_txs_ss_ctrl_out_we(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_ctrl_out_we),
+    .axi4lite_sw_reg_gbe2_txs_ss_status_in(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_status_in),
+    .axi4lite_sw_reg_gbe2_txs_ss_status_in_we(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_status_in_we),
+    .axi4lite_sw_reg_gbe2_txvldctr_in(zcu111_tengbe_tx_rx_direct_gbe2_txvldctr_in),
+    .axi4lite_sw_reg_gbe2_txvldctr_in_we(zcu111_tengbe_tx_rx_direct_gbe2_txvldctr_in_we),
     .axi4lite_sw_reg_pkt_sim_enable_out(zcu111_tengbe_tx_rx_direct_pkt_sim_enable_out),
     .axi4lite_sw_reg_pkt_sim_enable_out_we(zcu111_tengbe_tx_rx_direct_pkt_sim_enable_out_we),
     .axi4lite_sw_reg_pkt_sim_payload_len_out(zcu111_tengbe_tx_rx_direct_pkt_sim_payload_len_out),
@@ -1126,6 +1471,23 @@ module top (
     .m_axi4lite_gbe1_wready(m_axi4lite_gbe1_wready),
     .m_axi4lite_gbe1_wstrb(m_axi4lite_gbe1_wstrb),
     .m_axi4lite_gbe1_wvalid(m_axi4lite_gbe1_wvalid),
+    .m_axi4lite_gbe2_araddr(m_axi4lite_gbe2_araddr),
+    .m_axi4lite_gbe2_arready(m_axi4lite_gbe2_arready),
+    .m_axi4lite_gbe2_arvalid(m_axi4lite_gbe2_arvalid),
+    .m_axi4lite_gbe2_awaddr(m_axi4lite_gbe2_awaddr),
+    .m_axi4lite_gbe2_awready(m_axi4lite_gbe2_awready),
+    .m_axi4lite_gbe2_awvalid(m_axi4lite_gbe2_awvalid),
+    .m_axi4lite_gbe2_bready(m_axi4lite_gbe2_bready),
+    .m_axi4lite_gbe2_bresp(m_axi4lite_gbe2_bresp),
+    .m_axi4lite_gbe2_bvalid(m_axi4lite_gbe2_bvalid),
+    .m_axi4lite_gbe2_rdata(m_axi4lite_gbe2_rdata),
+    .m_axi4lite_gbe2_rready(m_axi4lite_gbe2_rready),
+    .m_axi4lite_gbe2_rresp(m_axi4lite_gbe2_rresp),
+    .m_axi4lite_gbe2_rvalid(m_axi4lite_gbe2_rvalid),
+    .m_axi4lite_gbe2_wdata(m_axi4lite_gbe2_wdata),
+    .m_axi4lite_gbe2_wready(m_axi4lite_gbe2_wready),
+    .m_axi4lite_gbe2_wstrb(m_axi4lite_gbe2_wstrb),
+    .m_axi4lite_gbe2_wvalid(m_axi4lite_gbe2_wvalid),
     .s_axi4lite_araddr(M_AXI_araddr),
     .s_axi4lite_arready(M_AXI_arready),
     .s_axi4lite_arvalid(M_AXI_arvalid),
@@ -1247,10 +1609,53 @@ module top (
     .zcu111_tengbe_tx_rx_direct_gbe1_txs_ss_ctrl_user_data_out(zcu111_tengbe_tx_rx_direct_gbe1_txs_ss_ctrl_user_data_out),
     .zcu111_tengbe_tx_rx_direct_gbe1_txs_ss_status_user_data_in(zcu111_tengbe_tx_rx_direct_gbe1_txs_ss_status_user_data_in),
     .zcu111_tengbe_tx_rx_direct_gbe1_txvldctr_user_data_in(zcu111_tengbe_tx_rx_direct_gbe1_txvldctr_user_data_in),
+    .zcu111_tengbe_tx_rx_direct_gbe2_led_rx(zcu111_tengbe_tx_rx_direct_gbe2_led_rx),
+    .zcu111_tengbe_tx_rx_direct_gbe2_led_tx(zcu111_tengbe_tx_rx_direct_gbe2_led_tx),
+    .zcu111_tengbe_tx_rx_direct_gbe2_led_up(zcu111_tengbe_tx_rx_direct_gbe2_led_up),
+    .zcu111_tengbe_tx_rx_direct_gbe2_linkup_user_data_in(zcu111_tengbe_tx_rx_direct_gbe2_linkup_user_data_in),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rst(zcu111_tengbe_tx_rx_direct_gbe2_rst),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rx_ack(zcu111_tengbe_tx_rx_direct_gbe2_rx_ack),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rx_bad_frame(zcu111_tengbe_tx_rx_direct_gbe2_rx_bad_frame),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rx_data(zcu111_tengbe_tx_rx_direct_gbe2_rx_data),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rx_end_of_frame(zcu111_tengbe_tx_rx_direct_gbe2_rx_end_of_frame),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rx_overrun(zcu111_tengbe_tx_rx_direct_gbe2_rx_overrun),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rx_overrun_ack(zcu111_tengbe_tx_rx_direct_gbe2_rx_overrun_ack),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rx_source_ip(zcu111_tengbe_tx_rx_direct_gbe2_rx_source_ip),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rx_source_port(zcu111_tengbe_tx_rx_direct_gbe2_rx_source_port),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rx_valid(zcu111_tengbe_tx_rx_direct_gbe2_rx_valid),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rxbadctr_user_data_in(zcu111_tengbe_tx_rx_direct_gbe2_rxbadctr_user_data_in),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rxctr_user_data_in(zcu111_tengbe_tx_rx_direct_gbe2_rxctr_user_data_in),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rxeofctr_user_data_in(zcu111_tengbe_tx_rx_direct_gbe2_rxeofctr_user_data_in),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rxofctr_user_data_in(zcu111_tengbe_tx_rx_direct_gbe2_rxofctr_user_data_in),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_bram_addr(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_bram_addr),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_bram_data_in(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_bram_data_in),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_bram_data_out(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_bram_data_out),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_bram_we(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_bram_we),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_ctrl_user_data_out(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_ctrl_user_data_out),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_status_user_data_in(zcu111_tengbe_tx_rx_direct_gbe2_rxs_ss_status_user_data_in),
+    .zcu111_tengbe_tx_rx_direct_gbe2_rxvldctr_user_data_in(zcu111_tengbe_tx_rx_direct_gbe2_rxvldctr_user_data_in),
+    .zcu111_tengbe_tx_rx_direct_gbe2_tx_afull(zcu111_tengbe_tx_rx_direct_gbe2_tx_afull),
+    .zcu111_tengbe_tx_rx_direct_gbe2_tx_data(zcu111_tengbe_tx_rx_direct_gbe2_tx_data),
+    .zcu111_tengbe_tx_rx_direct_gbe2_tx_dest_ip(zcu111_tengbe_tx_rx_direct_gbe2_tx_dest_ip),
+    .zcu111_tengbe_tx_rx_direct_gbe2_tx_dest_port(zcu111_tengbe_tx_rx_direct_gbe2_tx_dest_port),
+    .zcu111_tengbe_tx_rx_direct_gbe2_tx_end_of_frame(zcu111_tengbe_tx_rx_direct_gbe2_tx_end_of_frame),
+    .zcu111_tengbe_tx_rx_direct_gbe2_tx_overflow(zcu111_tengbe_tx_rx_direct_gbe2_tx_overflow),
+    .zcu111_tengbe_tx_rx_direct_gbe2_tx_valid(zcu111_tengbe_tx_rx_direct_gbe2_tx_valid),
+    .zcu111_tengbe_tx_rx_direct_gbe2_txctr_user_data_in(zcu111_tengbe_tx_rx_direct_gbe2_txctr_user_data_in),
+    .zcu111_tengbe_tx_rx_direct_gbe2_txfullctr_user_data_in(zcu111_tengbe_tx_rx_direct_gbe2_txfullctr_user_data_in),
+    .zcu111_tengbe_tx_rx_direct_gbe2_txofctr_user_data_in(zcu111_tengbe_tx_rx_direct_gbe2_txofctr_user_data_in),
+    .zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_bram_addr(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_bram_addr),
+    .zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_bram_data_in(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_bram_data_in),
+    .zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_bram_data_out(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_bram_data_out),
+    .zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_bram_we(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_bram_we),
+    .zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_ctrl_user_data_out(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_ctrl_user_data_out),
+    .zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_status_user_data_in(zcu111_tengbe_tx_rx_direct_gbe2_txs_ss_status_user_data_in),
+    .zcu111_tengbe_tx_rx_direct_gbe2_txvldctr_user_data_in(zcu111_tengbe_tx_rx_direct_gbe2_txvldctr_user_data_in),
     .zcu111_tengbe_tx_rx_direct_led0_gbe0_pulse_tx_gateway(zcu111_tengbe_tx_rx_direct_led0_gbe0_pulse_tx_gateway),
     .zcu111_tengbe_tx_rx_direct_led1_gbe0_up_gateway(zcu111_tengbe_tx_rx_direct_led1_gbe0_up_gateway),
     .zcu111_tengbe_tx_rx_direct_led2_gbe1_pulse_rx_gateway(zcu111_tengbe_tx_rx_direct_led2_gbe1_pulse_rx_gateway),
     .zcu111_tengbe_tx_rx_direct_led3_gbe1_up_gateway(zcu111_tengbe_tx_rx_direct_led3_gbe1_up_gateway),
+    .zcu111_tengbe_tx_rx_direct_led4_gbe0_up_gateway(zcu111_tengbe_tx_rx_direct_led4_gbe0_up_gateway),
     .zcu111_tengbe_tx_rx_direct_pkt_sim_enable_user_data_out(zcu111_tengbe_tx_rx_direct_pkt_sim_enable_user_data_out),
     .zcu111_tengbe_tx_rx_direct_pkt_sim_payload_len_user_data_out(zcu111_tengbe_tx_rx_direct_pkt_sim_payload_len_user_data_out),
     .zcu111_tengbe_tx_rx_direct_pkt_sim_period_user_data_out(zcu111_tengbe_tx_rx_direct_pkt_sim_period_user_data_out),
@@ -1411,7 +1816,7 @@ module top (
     .wb_stb_i(zcu111_tengbe_tx_rx_direct_gbe0_wb_stb),
     .wb_we_i(zcu111_tengbe_tx_rx_direct_gbe0_wb_we),
     .xaui_clk(tx_mii_clk0),
-    .xaui_reset(axil_rst),
+    .xaui_reset(sys_rst),
     .xaui_status({7'b0,stat_rx_block_lock0}),
     .xgmii_rxc(xgmii_rxc0),
     .xgmii_rxd(xgmii_rxd0),
@@ -1617,7 +2022,7 @@ module top (
     .wb_stb_i(zcu111_tengbe_tx_rx_direct_gbe1_wb_stb),
     .wb_we_i(zcu111_tengbe_tx_rx_direct_gbe1_wb_we),
     .xaui_clk(tx_mii_clk3),
-    .xaui_reset(axil_rst),
+    .xaui_reset(sys_rst),
     .xaui_status({7'b0,stat_rx_block_lock3}),
     .xgmii_rxc(xgmii_rxc3),
     .xgmii_rxd(xgmii_rxd3),
@@ -1691,6 +2096,212 @@ module top (
     .S_AXI_WUSER(0),
     .S_AXI_WVALID(m_axi4lite_gbe1_wvalid),
     .WE_O(zcu111_tengbe_tx_rx_direct_gbe1_wb_we)
+  );
+
+  // ten_gbe: gbe2
+  tengbaser_phy_ultrascale  tengbaser_phy1 (
+    .ctl_rx_data_pattern_select_0(1'b0),
+    .ctl_rx_prbs31_test_pattern_enable_0(1'b0),
+    .ctl_rx_test_pattern_0(1'b0),
+    .ctl_rx_test_pattern_enable_0(1'b0),
+    .ctl_tx_data_pattern_select_0(1'b0),
+    .ctl_tx_prbs31_test_pattern_enable_0(1'b0),
+    .ctl_tx_test_pattern_0(1'b0),
+    .ctl_tx_test_pattern_enable_0(1'b0),
+    .ctl_tx_test_pattern_seed_a_0(58'b0),
+    .ctl_tx_test_pattern_seed_b_0(58'b0),
+    .ctl_tx_test_pattern_select_0(1'b0),
+    .dclk(clk_128M),
+    .gt_loopback_in_0(3'b000),
+    .gt_reset_all_in_0(gt_reset_all1),
+    .gt_reset_rx_done_out_0(gt_reset_rx_done_out1),
+    .gt_reset_tx_done_out_0(gt_reset_tx_done_out1),
+    .gt_rx_reset_in_0(sys_rst),
+    .gt_rxn_in_0(mgt_rx_n1),
+    .gt_rxp_in_0(mgt_rx_p1),
+    .gt_tx_reset_in_0(sys_rst),
+    .gt_txn_out_0(mgt_tx_n1),
+    .gt_txp_out_0(mgt_tx_p1),
+    .gtpowergood_out_0(),
+    .gtwiz_reset_qpll0lock_in(gtwiz_reset_qpll0lock_in0),
+    .gtwiz_reset_qpll0reset_out(),
+    .gtwiz_reset_qpll1lock_in(gtwiz_reset_qpll1lock_in0),
+    .gtwiz_reset_qpll1reset_out(),
+    .qpll0clk_in(qpll0clk_in0),
+    .qpll0refclk_in(qpll0refclk_in0),
+    .qpll1clk_in(qpll1clk_in0),
+    .qpll1refclk_in(qpll1refclk_in0),
+    .rx_clk_out_0(rx_clk_out1),
+    .rx_core_clk_0(tx_mii_clk1),
+    .rx_mii_c_0(xgmii_rxc1),
+    .rx_mii_d_0(xgmii_rxd1),
+    .rx_reset_0(rx_core_reset_out1),
+    .rx_serdes_reset_0(rx_serdes_reset1),
+    .rxoutclksel_in_0(3'b101),
+    .rxrecclkout_0(),
+    .stat_rx_bad_code_0(),
+    .stat_rx_bad_code_valid_0(),
+    .stat_rx_block_lock_0(stat_rx_block_lock1),
+    .stat_rx_error_0(),
+    .stat_rx_error_valid_0(),
+    .stat_rx_fifo_error_0(),
+    .stat_rx_framing_err_0(),
+    .stat_rx_framing_err_valid_0(),
+    .stat_rx_hi_ber_0(),
+    .stat_rx_local_fault_0(),
+    .stat_rx_status_0(),
+    .stat_rx_valid_ctrl_code_0(),
+    .stat_tx_local_fault_0(),
+    .sys_reset(sys_rst),
+    .tx_mii_c_0(xgmii_txc1),
+    .tx_mii_clk_0(tx_mii_clk1),
+    .tx_mii_d_0(xgmii_txd1),
+    .tx_reset_0(tx_core_reset_out1),
+    .txoutclksel_in_0(3'b101)
+  );
+
+
+  tengbaser_phy_ultrascale_reset  tengbaser_phy_reset1 (
+    .gt_rx_reset_in(gt_reset_rx_done_out1),
+    .gt_rxusrclk2(rx_clk_out1),
+    .gt_tx_reset_in(gt_reset_tx_done_out1),
+    .gt_txusrclk2(tx_mii_clk1),
+    .gtwiz_reset_all(gt_reset_all1),
+    .rx_core_clk(rx_clk_out1),
+    .rx_core_reset_in(1'b0),
+    .rx_core_reset_out(rx_core_reset_out1),
+    .rx_serdes_reset_out(rx_serdes_reset1),
+    .sys_reset(sys_rst),
+    .tx_core_reset_in(1'b0),
+    .tx_core_reset_out(tx_core_reset_out1),
+    .usr_rx_reset(),
+    .usr_tx_reset()
+  );
+
+
+  kat_ten_gb_eth #(
+    .CPU_RX_ENABLE(1),
+    .CPU_TX_ENABLE(1),
+    .FABRIC_ENABLE(1),
+    .FABRIC_GATEWAY(8'h1),
+    .FABRIC_IP(32'hc0a80114),
+    .FABRIC_MAC(48'h123456780000),
+    .FABRIC_PORT(10000),
+    .LARGE_PACKETS(1),
+    .RX_DIST_RAM(0),
+    .TTL(255)
+  ) zcu111_tengbe_tx_rx_direct_gbe2 (
+    .clk(user_clk),
+    .led_rx(zcu111_tengbe_tx_rx_direct_gbe2_led_rx),
+    .led_tx(zcu111_tengbe_tx_rx_direct_gbe2_led_tx),
+    .led_up(zcu111_tengbe_tx_rx_direct_gbe2_led_up),
+    .mgt_rxeqmix(mgt_rxeqmix1),
+    .mgt_txdiffctrl(mgt_txdiffctrl1),
+    .mgt_txpostemphasis(mgt_txpostemphasis1),
+    .mgt_txpreemphasis(mgt_txpreemphasis1),
+    .rst(zcu111_tengbe_tx_rx_direct_gbe2_rst),
+    .rx_ack(zcu111_tengbe_tx_rx_direct_gbe2_rx_ack),
+    .rx_bad_frame(zcu111_tengbe_tx_rx_direct_gbe2_rx_bad_frame),
+    .rx_data(zcu111_tengbe_tx_rx_direct_gbe2_rx_data),
+    .rx_end_of_frame(zcu111_tengbe_tx_rx_direct_gbe2_rx_end_of_frame),
+    .rx_overrun(zcu111_tengbe_tx_rx_direct_gbe2_rx_overrun),
+    .rx_overrun_ack(zcu111_tengbe_tx_rx_direct_gbe2_rx_overrun_ack),
+    .rx_source_ip(zcu111_tengbe_tx_rx_direct_gbe2_rx_source_ip),
+    .rx_source_port(zcu111_tengbe_tx_rx_direct_gbe2_rx_source_port),
+    .rx_valid(zcu111_tengbe_tx_rx_direct_gbe2_rx_valid),
+    .tx_afull(zcu111_tengbe_tx_rx_direct_gbe2_tx_afull),
+    .tx_data(zcu111_tengbe_tx_rx_direct_gbe2_tx_data),
+    .tx_dest_ip(zcu111_tengbe_tx_rx_direct_gbe2_tx_dest_ip),
+    .tx_dest_port(zcu111_tengbe_tx_rx_direct_gbe2_tx_dest_port),
+    .tx_end_of_frame(zcu111_tengbe_tx_rx_direct_gbe2_tx_end_of_frame),
+    .tx_overflow(zcu111_tengbe_tx_rx_direct_gbe2_tx_overflow),
+    .tx_valid(zcu111_tengbe_tx_rx_direct_gbe2_tx_valid),
+    .wb_ack_o(zcu111_tengbe_tx_rx_direct_gbe2wb_ack),
+    .wb_adr_i(zcu111_tengbe_tx_rx_direct_gbe2wb_adr),
+    .wb_clk_i(axil_clk),
+    .wb_cyc_i(zcu111_tengbe_tx_rx_direct_gbe2_wb_cyc),
+    .wb_dat_i(zcu111_tengbe_tx_rx_direct_gbe2wb_dat_i),
+    .wb_dat_o(zcu111_tengbe_tx_rx_direct_gbe2wb_dat_o),
+    .wb_err_o(zcu111_tengbe_tx_rx_direct_gbe2wb_err),
+    .wb_rst_i(zcu111_tengbe_tx_rx_direct_gbe2wb_rst),
+    .wb_sel_i(zcu111_tengbe_tx_rx_direct_gbe2wb_sel),
+    .wb_stb_i(zcu111_tengbe_tx_rx_direct_gbe2_wb_stb),
+    .wb_we_i(zcu111_tengbe_tx_rx_direct_gbe2_wb_we),
+    .xaui_clk(tx_mii_clk1),
+    .xaui_reset(sys_rst),
+    .xaui_status({7'b0,stat_rx_block_lock1}),
+    .xgmii_rxc(xgmii_rxc1),
+    .xgmii_rxd(xgmii_rxd1),
+    .xgmii_txc(xgmii_txc1),
+    .xgmii_txd(xgmii_txd1)
+  );
+
+
+  axi_slave_wishbone_classic_master #(
+    .C_S_AXI_ADDR_WIDTH(32),
+    .C_S_AXI_ARUSER_WIDTH(1),
+    .C_S_AXI_AWUSER_WIDTH(1),
+    .C_S_AXI_BUSER_WIDTH(1),
+    .C_S_AXI_DATA_WIDTH(32),
+    .C_S_AXI_ID_WIDTH(1),
+    .C_S_AXI_RUSER_WIDTH(1),
+    .C_S_AXI_WUSER_WIDTH(1)
+  ) zcu111_tengbe_tx_rx_direct_gbe2_wb2axi4lite (
+    .ACK_I(zcu111_tengbe_tx_rx_direct_gbe2wb_ack),
+    .ADR_O(zcu111_tengbe_tx_rx_direct_gbe2wb_adr),
+    .CYC_O(zcu111_tengbe_tx_rx_direct_gbe2_wb_cyc),
+    .DAT_I(zcu111_tengbe_tx_rx_direct_gbe2wb_dat_o),
+    .DAT_O(zcu111_tengbe_tx_rx_direct_gbe2wb_dat_i),
+    .RST_O(zcu111_tengbe_tx_rx_direct_gbe2wb_rst),
+    .SEL_O(zcu111_tengbe_tx_rx_direct_gbe2wb_sel),
+    .STB_O(zcu111_tengbe_tx_rx_direct_gbe2_wb_stb),
+    .S_AXI_ACLK(axil_clk),
+    .S_AXI_ARADDR(m_axi4lite_gbe2_araddr),
+    .S_AXI_ARBURST(2'b01),
+    .S_AXI_ARCACHE(0),
+    .S_AXI_ARESETN(axil_rst_n),
+    .S_AXI_ARID(0),
+    .S_AXI_ARLEN(0),
+    .S_AXI_ARLOCK(0),
+    .S_AXI_ARPROT(0),
+    .S_AXI_ARQOS(0),
+    .S_AXI_ARREADY(m_axi4lite_gbe2_arready),
+    .S_AXI_ARREGION(0),
+    .S_AXI_ARSIZE(3'b010),
+    .S_AXI_ARUSER(0),
+    .S_AXI_ARVALID(m_axi4lite_gbe2_arvalid),
+    .S_AXI_AWADDR(m_axi4lite_gbe2_awaddr),
+    .S_AXI_AWBURST(2'b01),
+    .S_AXI_AWCACHE(0),
+    .S_AXI_AWID(0),
+    .S_AXI_AWLEN(0),
+    .S_AXI_AWLOCK(0),
+    .S_AXI_AWPROT(0),
+    .S_AXI_AWQOS(0),
+    .S_AXI_AWREADY(m_axi4lite_gbe2_awready),
+    .S_AXI_AWREGION(0),
+    .S_AXI_AWSIZE(3'b010),
+    .S_AXI_AWUSER(0),
+    .S_AXI_AWVALID(m_axi4lite_gbe2_awvalid),
+    .S_AXI_BID(),
+    .S_AXI_BREADY(m_axi4lite_gbe2_bready),
+    .S_AXI_BRESP(m_axi4lite_gbe2_bresp),
+    .S_AXI_BUSER(),
+    .S_AXI_BVALID(m_axi4lite_gbe2_bvalid),
+    .S_AXI_RDATA(m_axi4lite_gbe2_rdata),
+    .S_AXI_RID(),
+    .S_AXI_RLAST(),
+    .S_AXI_RREADY(m_axi4lite_gbe2_rready),
+    .S_AXI_RRESP(m_axi4lite_gbe2_rresp),
+    .S_AXI_RUSER(),
+    .S_AXI_RVALID(m_axi4lite_gbe2_rvalid),
+    .S_AXI_WDATA(m_axi4lite_gbe2_wdata),
+    .S_AXI_WLAST(1'b1),
+    .S_AXI_WREADY(m_axi4lite_gbe2_wready),
+    .S_AXI_WSTRB(m_axi4lite_gbe2_wstrb),
+    .S_AXI_WUSER(0),
+    .S_AXI_WVALID(m_axi4lite_gbe2_wvalid),
+    .WE_O(zcu111_tengbe_tx_rx_direct_gbe2_wb_we)
   );
 
   // zcu111: ZCU111

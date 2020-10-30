@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
---Date        : Sun Oct 25 16:18:46 2020
+--Date        : Thu Oct 29 20:14:47 2020
 --Host        : wei-Berkeley running 64-bit Ubuntu 18.04.5 LTS
 --Command     : generate_target zcu111_wrapper.bd
 --Design      : zcu111_wrapper

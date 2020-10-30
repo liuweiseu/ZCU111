@@ -70,6 +70,15 @@ read_vhdl -library xil_defaultlib {
   /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_gbe1_txs_ss_bram_muxdemux.vhd
   /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/ipb_gbe1_txs_ss_bram_dp_ram.vhd
   /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_gbe1_txs_ss_bram.vhd
+  /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_gbe2_pkg.vhd
+  /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_gbe2_rxs_ss_bram_pkg.vhd
+  /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_gbe2_rxs_ss_bram_muxdemux.vhd
+  /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/ipb_gbe2_rxs_ss_bram_dp_ram.vhd
+  /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_gbe2_rxs_ss_bram.vhd
+  /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_gbe2_txs_ss_bram_pkg.vhd
+  /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_gbe2_txs_ss_bram_muxdemux.vhd
+  /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/ipb_gbe2_txs_ss_bram_dp_ram.vhd
+  /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_gbe2_txs_ss_bram.vhd
   /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_tx_snapshot_ss_bram_pkg.vhd
   /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sw_reg_pkg.vhd
   /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/imports/xml2vhdl_hdl_output/axi4lite_sys_block_pkg.vhd
@@ -135,13 +144,13 @@ set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU11
 set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/tx_packet_fifo/tx_packet_fifo_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/tx_packet_fifo/tx_packet_fifo_ooc.xdc]
 
-read_ip -quiet /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/cpu_buffer/cpu_buffer.xci
-set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/cpu_buffer/cpu_buffer_ooc.xdc]
-
 read_ip -quiet /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/rx_packet_fifo_bram/rx_packet_fifo_bram.xci
 set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/rx_packet_fifo_bram/rx_packet_fifo_bram.xdc]
 set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/rx_packet_fifo_bram/rx_packet_fifo_bram_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/rx_packet_fifo_bram/rx_packet_fifo_bram_ooc.xdc]
+
+read_ip -quiet /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/cpu_buffer/cpu_buffer.xci
+set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/cpu_buffer/cpu_buffer_ooc.xdc]
 
 read_ip -quiet /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/tx_fifo_ext/tx_fifo_ext.xci
 set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/tx_fifo_ext/tx_fifo_ext.xdc]
@@ -150,19 +159,8 @@ set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU11
 read_ip -quiet /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/arp_cache/arp_cache.xci
 set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/arp_cache/arp_cache_ooc.xdc]
 
-read_ip -quiet /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/rx_packet_fifo_dist/rx_packet_fifo_dist.xci
-set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/rx_packet_fifo_dist/rx_packet_fifo_dist.xdc]
-set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/rx_packet_fifo_dist/rx_packet_fifo_dist_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/rx_packet_fifo_dist/rx_packet_fifo_dist_ooc.xdc]
-
 read_ip -quiet /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i2/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i2.xci
 set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i2/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i2_ooc.xdc]
-
-read_ip -quiet /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i5/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i5.xci
-set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i5/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i5_ooc.xdc]
-
-read_ip -quiet /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i0/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i0.xci
-set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i0/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i0_ooc.xdc]
 
 read_ip -quiet /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i3/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i3.xci
 set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i3/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i3_ooc.xdc]
@@ -172,6 +170,17 @@ set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU11
 
 read_ip -quiet /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i1/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i1.xci
 set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i1/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i1_ooc.xdc]
+
+read_ip -quiet /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/rx_packet_fifo_dist/rx_packet_fifo_dist.xci
+set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/rx_packet_fifo_dist/rx_packet_fifo_dist.xdc]
+set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/rx_packet_fifo_dist/rx_packet_fifo_dist_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/rx_packet_fifo_dist/rx_packet_fifo_dist_ooc.xdc]
+
+read_ip -quiet /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i5/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i5.xci
+set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i5/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i5_ooc.xdc]
+
+read_ip -quiet /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i0/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i0.xci
+set_property used_in_implementation false [get_files -all /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.srcs/sources_1/ip/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i0/zcu111_tengbe_tx_rx_direct_c_counter_binary_v12_0_i0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

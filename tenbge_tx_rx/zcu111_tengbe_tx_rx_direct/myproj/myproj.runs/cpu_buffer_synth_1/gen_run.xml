@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="cpu_buffer_synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1603667969">
+<GenRun Id="cpu_buffer_synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1604027732">
   <File Type="VDS-TIMINGSUMMARY" Name="cpu_buffer_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="cpu_buffer.dcp"/>
   <File Type="RDS-UTIL-PB" Name="cpu_buffer_utilization_synth.pb"/>

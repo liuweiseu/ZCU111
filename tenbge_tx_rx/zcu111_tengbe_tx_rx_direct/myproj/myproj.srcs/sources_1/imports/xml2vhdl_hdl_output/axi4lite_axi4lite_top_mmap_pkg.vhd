@@ -42,8 +42,11 @@ package axi4lite_axi4lite_top_mmap_pkg is
       id_gbe0_txs_ss_bram    ,
       id_gbe1_rxs_ss_bram    ,
       id_gbe1_txs_ss_bram    ,
+      id_gbe2_rxs_ss_bram    ,
+      id_gbe2_txs_ss_bram    ,
       id_gbe0                ,
       id_gbe1                ,
+      id_gbe2                ,
       id_tx_snapshot_ss_bram ,
       id_sw_reg              ,
       id_sys_block           
@@ -99,7 +102,7 @@ package body axi4lite_axi4lite_top_mmap_pkg is
       return slave_hit;
    end function;
    
-   constant c_axi4lite_mmap_baddr: t_axi4lite_mmap_addr_arr := (X"00000000",X"00020000",X"00040000",X"00060000",X"00080000",X"00090000",X"000a0000",X"000b0000",X"000b0100");
-   constant c_axi4lite_mmap_mask: t_axi4lite_mmap_addr_arr := (X"000e0000",X"000e0000",X"000e0000",X"000e0000",X"000b0000",X"000b0000",X"000b0000",X"000b0100",X"000b0100");
+   constant c_axi4lite_mmap_baddr: t_axi4lite_mmap_addr_arr := (X"00000000",X"00020000",X"00040000",X"00060000",X"00080000",X"000a0000",X"000c0000",X"000d0000",X"000e0000",X"000f0000",X"00100000",X"00100100");
+   constant c_axi4lite_mmap_mask: t_axi4lite_mmap_addr_arr := (X"001e0000",X"001e0000",X"001e0000",X"001e0000",X"001e0000",X"001e0000",X"001f0000",X"001f0000",X"001f0000",X"001f0000",X"00100100",X"00100100");
 
 end package body;

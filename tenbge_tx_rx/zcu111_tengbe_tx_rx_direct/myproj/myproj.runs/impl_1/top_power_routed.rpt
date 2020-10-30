@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
-| Date             : Sun Oct 25 16:40:27 2020
+| Date             : Thu Oct 29 20:39:32 2020
 | Host             : wei-Berkeley running 64-bit Ubuntu 18.04.5 LTS
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 4.824        |
+| Total On-Chip Power (W)  | 5.290        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 3.541        |
-| Device Static (W)        | 1.282        |
+| Dynamic (W)              | 4.002        |
+| Device Static (W)        | 1.288        |
 | Effective TJA (C/W)      | 0.8          |
-| Max Ambient (C)          | 95.9         |
-| Junction Temperature (C) | 29.1         |
+| Max Ambient (C)          | 95.5         |
+| Junction Temperature (C) | 29.5         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,27 +52,27 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.156 |       14 |       --- |             --- |
-| CLB Logic                |     0.060 |    34678 |       --- |             --- |
-|   LUT as Logic           |     0.048 |    10349 |    425280 |            2.43 |
-|   Register               |     0.008 |    19073 |    850560 |            2.24 |
-|   LUT as Shift Register  |     0.002 |      301 |    213600 |            0.14 |
-|   LUT as Distributed RAM |     0.001 |      640 |    213600 |            0.30 |
-|   CARRY8                 |    <0.001 |      227 |     53160 |            0.43 |
-|   BUFG                   |    <0.001 |        2 |        64 |            3.13 |
-|   Others                 |     0.000 |     1365 |       --- |             --- |
-|   F7/F8 Muxes            |     0.000 |      122 |    425280 |            0.03 |
-| Signals                  |     0.087 |    35172 |       --- |             --- |
-| Block RAM                |     0.175 |      163 |      1080 |           15.09 |
+| Clocks                   |     0.202 |       17 |       --- |             --- |
+| CLB Logic                |     0.091 |    48446 |       --- |             --- |
+|   LUT as Logic           |     0.074 |    14236 |    425280 |            3.35 |
+|   Register               |     0.011 |    26904 |    850560 |            3.16 |
+|   LUT as Shift Register  |     0.003 |      445 |    213600 |            0.21 |
+|   LUT as Distributed RAM |     0.002 |      912 |    213600 |            0.43 |
+|   CARRY8                 |     0.001 |      328 |     53160 |            0.62 |
+|   BUFG                   |    <0.001 |        3 |        64 |            4.69 |
+|   Others                 |     0.000 |     1901 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |      189 |    425280 |            0.04 |
+| Signals                  |     0.122 |    49542 |       --- |             --- |
+| Block RAM                |     0.251 |    236.5 |      1080 |           21.90 |
 | MMCM                     |     0.089 |        0 |       --- |             --- |
-| DSPs                     |     0.001 |        5 |      4272 |            0.12 |
-| I/O                      |     0.010 |        6 |       347 |            1.73 |
-| GTY                      |     0.646 |        2 |        16 |           12.50 |
+| DSPs                     |     0.002 |        7 |      4272 |            0.16 |
+| I/O                      |     0.011 |        7 |       347 |            2.02 |
+| GTY                      |     0.917 |        3 |        16 |           18.75 |
 | PS8                      |     2.317 |        1 |       --- |             --- |
-| Static Power             |     1.282 |          |           |                 |
-|   PS Static              |     0.098 |          |           |                 |
-|   PL Static              |     1.184 |          |           |                 |
-| Total                    |     4.824 |          |           |                 |
+| Static Power             |     1.288 |          |           |                 |
+|   PS Static              |     0.099 |          |           |                 |
+|   PL Static              |     1.190 |          |           |                 |
+| Total                    |     5.290 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -82,20 +82,20 @@ Table of Contents
 +-----------------+-------------+-----------+-------------+------------+
 | Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------------+-------------+-----------+-------------+------------+
-| Vccint          |       0.850 |     0.955 |       0.641 |      0.313 |
-| Vccint_io       |       0.850 |     0.073 |       0.002 |      0.071 |
-| Vccbram         |       0.850 |     0.011 |       0.007 |      0.005 |
+| Vccint          |       0.850 |     1.222 |       0.903 |      0.319 |
+| Vccint_io       |       0.850 |     0.074 |       0.003 |      0.071 |
+| Vccbram         |       0.850 |     0.014 |       0.009 |      0.005 |
 | Vccaux          |       1.800 |     0.328 |       0.049 |      0.279 |
 | Vccaux_io       |       1.800 |     0.062 |       0.005 |      0.058 |
 | Vcco33          |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25          |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18          |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco18          |       1.800 |     0.001 |       0.001 |      0.000 |
 | Vcco15          |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135         |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12          |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vcco10          |       1.000 |     0.000 |       0.000 |      0.000 |
 | Vccadc          |       1.800 |     0.008 |       0.000 |      0.008 |
-| VCC_PSINTFP     |       0.850 |     0.644 |       0.610 |      0.034 |
+| VCC_PSINTFP     |       0.850 |     0.645 |       0.610 |      0.034 |
 | VCC_PSINTLP     |       0.850 |     0.275 |       0.268 |      0.007 |
 | VPS_MGTRAVCC    |       0.850 |     0.139 |       0.138 |      0.001 |
 | VCC_PSINTFP_DDR |       0.850 |     0.730 |       0.726 |      0.004 |
@@ -116,10 +116,10 @@ Table of Contents
 | DACAVTT         |       2.500 |     0.005 |       0.000 |      0.005 |
 | ADCAVCC         |       0.925 |     0.012 |       0.000 |      0.012 |
 | ADCAVCCAUX      |       1.800 |     0.049 |       0.000 |      0.049 |
-| VCCSDFEC        |       0.850 |     0.030 |       0.000 |      0.030 |
-| MGTYAVcc        |       0.900 |     0.181 |       0.132 |      0.049 |
-| MGTYAVtt        |       1.200 |     0.372 |       0.348 |      0.024 |
-| MGTYVccaux      |       1.800 |     0.024 |       0.021 |      0.003 |
+| VCCSDFEC        |       0.850 |     0.031 |       0.000 |      0.031 |
+| MGTYAVcc        |       0.900 |     0.240 |       0.190 |      0.050 |
+| MGTYAVtt        |       1.200 |     0.522 |       0.498 |      0.024 |
+| MGTYVccaux      |       1.800 |     0.025 |       0.022 |      0.003 |
 +-----------------+-------------+-----------+-------------+------------+
 
 
@@ -169,11 +169,14 @@ Table of Contents
 | qpll0outclk[0]       | tengbaser_infra0_inst/i_xxv_ethernet_1_common_wrapper/xxv_ethernet_1_gt_gtye4_common_wrapper_i/common_inst/qpll0outclk[0]                                                                                                                                |             0.2 |
 | qpll0outrefclk[0]    | tengbaser_infra0_inst/i_xxv_ethernet_1_common_wrapper/xxv_ethernet_1_gt_gtye4_common_wrapper_i/common_inst/qpll0outrefclk[0]                                                                                                                             |             6.4 |
 | rxoutclk_out[0]      | tengbaser_phy0/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/rxoutclk_out[0]    |             6.4 |
-| rxoutclk_out[0]_1    | tengbaser_phy3/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/rxoutclk_out[0]    |             6.4 |
+| rxoutclk_out[0]_1    | tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/rxoutclk_out[0]    |             6.4 |
+| rxoutclk_out[0]_2    | tengbaser_phy3/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/rxoutclk_out[0]    |             6.4 |
 | txoutclk_out[0]      | tengbaser_phy0/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/txoutclk_out[0]    |             6.4 |
-| txoutclk_out[0]_1    | tengbaser_phy3/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/txoutclk_out[0]    |             6.4 |
+| txoutclk_out[0]_1    | tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/txoutclk_out[0]    |             6.4 |
+| txoutclk_out[0]_2    | tengbaser_phy3/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/txoutclk_out[0]    |             6.4 |
 | txoutclkpcs_out[0]   | tengbaser_phy0/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/txoutclkpcs_out[0] |             6.2 |
-| txoutclkpcs_out[0]_1 | tengbaser_phy3/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/txoutclkpcs_out[0] |             6.2 |
+| txoutclkpcs_out[0]_1 | tengbaser_phy1/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/txoutclkpcs_out[0] |             6.2 |
+| txoutclkpcs_out[0]_2 | tengbaser_phy3/inst/i_tengbaser_phy_ultrascale_gt/inst/gen_gtwizard_gtye4_top.tengbaser_phy_ultrascale_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/txoutclkpcs_out[0] |             6.2 |
 | user_clk_mmcm        | zcu111_infr_inst/user_clk_mmcm                                                                                                                                                                                                                           |             3.9 |
 +----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 
@@ -187,77 +190,101 @@ Table of Contents
 +------------------------------------------------------------------------+-----------+
 | Name                                                                   | Power (W) |
 +------------------------------------------------------------------------+-----------+
-| top                                                                    |     3.541 |
-|   axi4lite_interconnect                                                |     0.153 |
+| top                                                                    |     4.002 |
+|   axi4lite_interconnect                                                |     0.218 |
 |     axi4lite_gbe0_rxs_ss_bram_inst                                     |     0.032 |
 |       ipb_gbe0_rxs_ss_bram_dp_ram_inst                                 |     0.031 |
 |     axi4lite_gbe0_txs_ss_bram_inst                                     |     0.032 |
+|       axi4lite_slave_logic_inst                                        |     0.001 |
 |       ipb_gbe0_txs_ss_bram_dp_ram_inst                                 |     0.031 |
 |     axi4lite_gbe1_rxs_ss_bram_inst                                     |     0.031 |
 |       ipb_gbe1_rxs_ss_bram_dp_ram_inst                                 |     0.031 |
 |     axi4lite_gbe1_txs_ss_bram_inst                                     |     0.031 |
 |       ipb_gbe1_txs_ss_bram_dp_ram_inst                                 |     0.031 |
-|     axi4lite_sw_reg_inst                                               |     0.005 |
+|     axi4lite_gbe2_rxs_ss_bram_inst                                     |     0.031 |
+|       ipb_gbe2_rxs_ss_bram_dp_ram_inst                                 |     0.031 |
+|     axi4lite_gbe2_txs_ss_bram_inst                                     |     0.031 |
+|       ipb_gbe2_txs_ss_bram_dp_ram_inst                                 |     0.031 |
+|     axi4lite_sw_reg_inst                                               |     0.007 |
 |     axi4lite_tx_snapshot_ss_bram_inst                                  |     0.021 |
 |       ipb_tx_snapshot_ss_bram_dp_ram_inst                              |     0.021 |
 |   tengbaser_infra0_inst                                                |     0.006 |
 |     i_xxv_ethernet_1_clocking_wrapper                                  |     0.006 |
-|   tengbaser_phy0                                                       |     0.370 |
-|     inst                                                               |     0.370 |
-|       i_tengbaser_phy_ultrascale_gt                                    |     0.327 |
-|       i_tengbaser_phy_ultrascale_rx_64bit_retiming_sync_serdes_data0_0 |     0.002 |
-|       i_tengbaser_phy_ultrascale_top_0                                 |     0.036 |
-|       i_tengbaser_phy_ultrascale_tx_64bit_retiming_sync_serdes_data0_0 |     0.004 |
-|   tengbaser_phy3                                                       |     0.367 |
-|     inst                                                               |     0.367 |
-|       i_tengbaser_phy_ultrascale_gt                                    |     0.327 |
-|       i_tengbaser_phy_ultrascale_rx_64bit_retiming_sync_serdes_data0_0 |     0.002 |
-|       i_tengbaser_phy_ultrascale_top_0                                 |     0.034 |
-|       i_tengbaser_phy_ultrascale_tx_64bit_retiming_sync_serdes_data0_0 |     0.003 |
+|   tengbaser_phy0                                                       |     0.344 |
+|     inst                                                               |     0.344 |
+|       i_tengbaser_phy_ultrascale_gt                                    |     0.308 |
+|       i_tengbaser_phy_ultrascale_rx_64bit_retiming_sync_serdes_data0_0 |     0.001 |
+|       i_tengbaser_phy_ultrascale_top_0                                 |     0.032 |
+|       i_tengbaser_phy_ultrascale_tx_64bit_retiming_sync_serdes_data0_0 |     0.002 |
+|   tengbaser_phy1                                                       |     0.343 |
+|     inst                                                               |     0.343 |
+|       i_tengbaser_phy_ultrascale_gt                                    |     0.308 |
+|       i_tengbaser_phy_ultrascale_top_0                                 |     0.031 |
+|       i_tengbaser_phy_ultrascale_tx_64bit_retiming_sync_serdes_data0_0 |     0.002 |
+|   tengbaser_phy3                                                       |     0.342 |
+|     inst                                                               |     0.342 |
+|       i_tengbaser_phy_ultrascale_gt                                    |     0.308 |
+|       i_tengbaser_phy_ultrascale_top_0                                 |     0.030 |
+|       i_tengbaser_phy_ultrascale_tx_64bit_retiming_sync_serdes_data0_0 |     0.002 |
 |   zcu111_infr_inst                                                     |     0.091 |
 |     i_clk                                                              |     0.002 |
-|   zcu111_inst                                                          |     2.342 |
-|     axi_interconnect_0                                                 |     0.018 |
+|   zcu111_inst                                                          |     2.344 |
+|     axi_interconnect_0                                                 |     0.020 |
 |       m00_couplers                                                     |     0.003 |
-|       m01_couplers                                                     |     0.008 |
+|       m01_couplers                                                     |     0.009 |
 |       xbar                                                             |     0.007 |
-|     axi_protocol_convert_2                                             |     0.004 |
-|       inst                                                             |     0.004 |
+|     axi_protocol_convert_2                                             |     0.005 |
+|       inst                                                             |     0.005 |
 |     zynq_ultra_ps_e_0                                                  |     2.318 |
 |       U0                                                               |     2.318 |
-|   zcu111_tengbe_tx_rx_direct_gbe0                                      |     0.069 |
-|     ten_gig_eth_mac_inst                                               |     0.020 |
-|     tge_rx_inst                                                        |     0.017 |
+|   zcu111_tengbe_tx_rx_direct_gbe0                                      |     0.066 |
+|     ten_gig_eth_mac_inst                                               |     0.021 |
+|     tge_rx_inst                                                        |     0.014 |
 |       rx_cpu_enabled.cpu_rx_buffer                                     |     0.003 |
-|       rx_packet_ctrl_fifo_inst                                         |     0.003 |
-|       use_bram.rx_packet_fifo_bram_inst                                |     0.007 |
-|     tge_tx_inst                                                        |     0.029 |
+|       rx_packet_ctrl_fifo_inst                                         |     0.002 |
+|       use_bram.rx_packet_fifo_bram_inst                                |     0.006 |
+|     tge_tx_inst                                                        |     0.028 |
 |       arp_cache_inst                                                   |     0.004 |
-|       large_packet_gen.tx_ctrl_fifo_ext                                |     0.003 |
-|       large_packet_gen.tx_data_fifo_ext                                |     0.003 |
+|       large_packet_gen.tx_ctrl_fifo_ext                                |     0.002 |
+|       large_packet_gen.tx_data_fifo_ext                                |     0.002 |
 |       tx_cpu_enabled.cpu_tx_buffer                                     |     0.005 |
 |       tx_packet_ctrl_fifo_inst                                         |     0.004 |
-|       tx_packet_fifo_inst                                              |     0.006 |
-|     wb_attach_inst                                                     |     0.002 |
-|   zcu111_tengbe_tx_rx_direct_gbe0_wb2axi4lite                          |     0.001 |
+|       tx_packet_fifo_inst                                              |     0.005 |
+|     wb_attach_inst                                                     |     0.001 |
 |   zcu111_tengbe_tx_rx_direct_gbe1                                      |     0.062 |
-|     ten_gig_eth_mac_inst                                               |     0.019 |
-|     tge_rx_inst                                                        |     0.016 |
-|       rx_cpu_enabled.cpu_rx_buffer                                     |     0.003 |
+|     ten_gig_eth_mac_inst                                               |     0.021 |
+|     tge_rx_inst                                                        |     0.015 |
+|       rx_cpu_enabled.cpu_rx_buffer                                     |     0.002 |
 |       rx_packet_ctrl_fifo_inst                                         |     0.003 |
 |       use_bram.rx_packet_fifo_bram_inst                                |     0.006 |
-|     tge_tx_inst                                                        |     0.025 |
+|     tge_tx_inst                                                        |     0.024 |
 |       arp_cache_inst                                                   |     0.004 |
 |       large_packet_gen.tx_ctrl_fifo_ext                                |     0.002 |
 |       large_packet_gen.tx_data_fifo_ext                                |     0.002 |
 |       tx_cpu_enabled.cpu_tx_buffer                                     |     0.005 |
 |       tx_packet_ctrl_fifo_inst                                         |     0.003 |
-|       tx_packet_fifo_inst                                              |     0.005 |
+|       tx_packet_fifo_inst                                              |     0.004 |
 |     wb_attach_inst                                                     |     0.001 |
-|   zcu111_tengbe_tx_rx_direct_inst                                      |     0.072 |
-|     zcu111_tengbe_tx_rx_direct_struct                                  |     0.072 |
+|   zcu111_tengbe_tx_rx_direct_gbe2                                      |     0.063 |
+|     ten_gig_eth_mac_inst                                               |     0.020 |
+|     tge_rx_inst                                                        |     0.014 |
+|       rx_cpu_enabled.cpu_rx_buffer                                     |     0.002 |
+|       rx_packet_ctrl_fifo_inst                                         |     0.003 |
+|       use_bram.rx_packet_fifo_bram_inst                                |     0.006 |
+|     tge_tx_inst                                                        |     0.026 |
+|       arp_cache_inst                                                   |     0.004 |
+|       large_packet_gen.tx_ctrl_fifo_ext                                |     0.002 |
+|       large_packet_gen.tx_data_fifo_ext                                |     0.002 |
+|       tx_cpu_enabled.cpu_tx_buffer                                     |     0.005 |
+|       tx_packet_ctrl_fifo_inst                                         |     0.004 |
+|       tx_packet_fifo_inst                                              |     0.006 |
+|     wb_attach_inst                                                     |     0.001 |
+|   zcu111_tengbe_tx_rx_direct_gbe2_wb2axi4lite                          |     0.002 |
+|   zcu111_tengbe_tx_rx_direct_inst                                      |     0.107 |
+|     zcu111_tengbe_tx_rx_direct_struct                                  |     0.107 |
 |       gbe0                                                             |     0.036 |
 |       gbe1                                                             |     0.025 |
+|       gbe2                                                             |     0.035 |
 |       pkt_sim                                                          |     0.004 |
 |       tx_snapshot                                                      |     0.004 |
 +------------------------------------------------------------------------+-----------+
