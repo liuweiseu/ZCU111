@@ -2,8 +2,8 @@
 # Vivado v2019.1.3 (64-bit)
 # SW Build 2644227 on Wed Sep  4 09:44:18 MDT 2019
 # IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
-# Start of session at: Fri Oct 23 14:33:56 2020
-# Process ID: 24344
+# Start of session at: Sat Oct 24 23:58:16 2020
+# Process ID: 16572
 # Current directory: /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx/myproj/myproj.runs/zcu111_axi_protocol_convert_2_0_synth_1
 # Command line: vivado -log zcu111_axi_protocol_convert_2_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zcu111_axi_protocol_convert_2_0.tcl
 # Log file: /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx/myproj/myproj.runs/zcu111_axi_protocol_convert_2_0_synth_1/zcu111_axi_protocol_convert_2_0.vds
@@ -136,14 +136,14 @@ Command: synth_design -top zcu111_axi_protocol_convert_2_0 -part xczu28dr-ffvg15
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28dr'
-INFO: [Common 17-86] Your Synthesis license expires in 27 day(s)
+INFO: [Common 17-86] Your Synthesis license expires in 26 day(s)
 INFO: [Common 17-1686] The version limit for your license is '2020.10' and will not allow you to run Xilinx software released after that date (year & month). A version limit expiration means that while you will be able to continue to use the current version of tools or IP with this license, you will not be able to use any updates or new releases.
 INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 24482 
+INFO: Helper process launched with PID 16838 
 load diablo GTM unisim library
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2415.570 ; gain = 143.715 ; free physical = 2927 ; free virtual = 24499
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 2416.238 ; gain = 143.684 ; free physical = 813 ; free virtual = 19697
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'zcu111_axi_protocol_convert_2_0' [/home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx/myproj/myproj.srcs/sources_1/bd/zcu111/ip/zcu111_axi_protocol_convert_2_0/synth/zcu111_axi_protocol_convert_2_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_19_axi_protocol_converter' [/home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx/myproj/myproj.srcs/sources_1/bd/zcu111/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
@@ -1019,7 +1019,7 @@ WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_19_axi_protocol_conve
 WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_19_axi_protocol_converter has unconnected port s_axi_awcache[2]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 2563.258 ; gain = 291.402 ; free physical = 3836 ; free virtual = 25408
+Finished RTL Elaboration : Time (s): cpu = 00:00:30 ; elapsed = 00:00:43 . Memory (MB): peak = 2563.926 ; gain = 291.371 ; free physical = 1646 ; free virtual = 20526
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1032,10 +1032,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 2566.227 ; gain = 294.371 ; free physical = 3822 ; free virtual = 25394
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:43 . Memory (MB): peak = 2566.895 ; gain = 294.340 ; free physical = 1409 ; free virtual = 20288
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 2566.227 ; gain = 294.371 ; free physical = 3822 ; free virtual = 25394
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:43 . Memory (MB): peak = 2566.895 ; gain = 294.340 ; free physical = 1408 ; free virtual = 20287
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -1047,14 +1047,14 @@ Parsing XDC File [/home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx/mypro
 Finished Parsing XDC File [/home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx/myproj/myproj.runs/zcu111_axi_protocol_convert_2_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2732.883 ; gain = 0.000 ; free physical = 2852 ; free virtual = 24428
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2732.582 ; gain = 0.000 ; free physical = 877 ; free virtual = 19761
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2732.883 ; gain = 0.000 ; free physical = 2872 ; free virtual = 24448
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2732.582 ; gain = 0.000 ; free physical = 886 ; free virtual = 19770
 load diablo GTM unisim library
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:49 . Memory (MB): peak = 2732.883 ; gain = 461.027 ; free physical = 2887 ; free virtual = 24463
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:55 . Memory (MB): peak = 2732.582 ; gain = 460.027 ; free physical = 746 ; free virtual = 19630
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -1062,14 +1062,14 @@ Start Loading Part and Timing Information
 Loading part: xczu28dr-ffvg1517-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:49 . Memory (MB): peak = 2732.883 ; gain = 461.027 ; free physical = 2886 ; free virtual = 24462
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:55 . Memory (MB): peak = 2732.582 ; gain = 460.027 ; free physical = 745 ; free virtual = 19629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx/myproj/myproj.runs/zcu111_axi_protocol_convert_2_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:49 . Memory (MB): peak = 2732.883 ; gain = 461.027 ; free physical = 2886 ; free virtual = 24462
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:55 . Memory (MB): peak = 2732.582 ; gain = 460.027 ; free physical = 747 ; free virtual = 19631
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_19_b2s_rd_cmd_fsm'
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx/myproj/myproj.srcs/sources_1/bd/zcu111/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2870]
@@ -1084,7 +1084,7 @@ INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To p
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_19_b2s_rd_cmd_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 2732.883 ; gain = 461.027 ; free physical = 2852 ; free virtual = 24429
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:56 . Memory (MB): peak = 2732.582 ; gain = 460.027 ; free physical = 712 ; free virtual = 19596
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1294,7 +1294,7 @@ INFO: [Synth 8-3886] merging instance 'inst/gen_axilite.gen_b2s_conv.axilite_b2s
 INFO: [Synth 8-3886] merging instance 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/aresetn_d_reg[0]' (FDR) to 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/aresetn_d_reg[0]'
 INFO: [Synth 8-3886] merging instance 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/aresetn_d_reg[1]' (FDR) to 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/aresetn_d_reg[1]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:52 . Memory (MB): peak = 2732.883 ; gain = 461.027 ; free physical = 2792 ; free virtual = 24371
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 2732.582 ; gain = 460.027 ; free physical = 679 ; free virtual = 19571
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1306,13 +1306,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:25 . Memory (MB): peak = 2945.234 ; gain = 673.379 ; free physical = 2461 ; free virtual = 24045
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:35 . Memory (MB): peak = 2945.934 ; gain = 673.379 ; free physical = 2331 ; free virtual = 21229
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:26 . Memory (MB): peak = 3004.273 ; gain = 732.418 ; free physical = 3926 ; free virtual = 25506
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:37 . Memory (MB): peak = 3004.973 ; gain = 732.418 ; free physical = 1963 ; free virtual = 20862
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1324,7 +1324,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:27 . Memory (MB): peak = 3012.281 ; gain = 740.426 ; free physical = 3886 ; free virtual = 25466
+Finished Technology Mapping : Time (s): cpu = 00:01:07 ; elapsed = 00:01:37 . Memory (MB): peak = 3004.973 ; gain = 732.418 ; free physical = 1903 ; free virtual = 20801
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1348,7 +1348,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:28 . Memory (MB): peak = 3012.281 ; gain = 740.426 ; free physical = 3811 ; free virtual = 25392
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:39 . Memory (MB): peak = 3007.941 ; gain = 735.387 ; free physical = 1857 ; free virtual = 20755
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1361,7 +1361,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:28 . Memory (MB): peak = 3012.281 ; gain = 740.426 ; free physical = 3811 ; free virtual = 25391
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:39 . Memory (MB): peak = 3007.941 ; gain = 735.387 ; free physical = 1856 ; free virtual = 20754
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1373,25 +1373,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:28 . Memory (MB): peak = 3012.281 ; gain = 740.426 ; free physical = 3798 ; free virtual = 25378
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:39 . Memory (MB): peak = 3007.941 ; gain = 735.387 ; free physical = 1846 ; free virtual = 20744
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:28 . Memory (MB): peak = 3012.281 ; gain = 740.426 ; free physical = 3798 ; free virtual = 25378
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:39 . Memory (MB): peak = 3007.941 ; gain = 735.387 ; free physical = 1845 ; free virtual = 20743
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:28 . Memory (MB): peak = 3012.281 ; gain = 740.426 ; free physical = 3793 ; free virtual = 25373
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:39 . Memory (MB): peak = 3007.941 ; gain = 735.387 ; free physical = 1843 ; free virtual = 20741
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:28 . Memory (MB): peak = 3012.281 ; gain = 740.426 ; free physical = 3793 ; free virtual = 25373
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:39 . Memory (MB): peak = 3007.941 ; gain = 735.387 ; free physical = 1843 ; free virtual = 20741
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1466,32 +1466,32 @@ Report Instance Areas:
 |24    |        bresp_fifo_0                       |axi_protocol_converter_v2_1_19_b2s_simple_fifo__parameterized0 |    11|
 +------+-------------------------------------------+---------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:28 . Memory (MB): peak = 3012.281 ; gain = 740.426 ; free physical = 3792 ; free virtual = 25372
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:39 . Memory (MB): peak = 3007.941 ; gain = 735.387 ; free physical = 1842 ; free virtual = 20740
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 36 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:01:21 . Memory (MB): peak = 3012.281 ; gain = 573.770 ; free physical = 3825 ; free virtual = 25405
-Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:28 . Memory (MB): peak = 3012.289 ; gain = 740.426 ; free physical = 3825 ; free virtual = 25405
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:01 ; elapsed = 00:01:31 . Memory (MB): peak = 3007.941 ; gain = 569.699 ; free physical = 1871 ; free virtual = 20770
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:39 . Memory (MB): peak = 3007.949 ; gain = 735.387 ; free physical = 1871 ; free virtual = 20770
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3079.047 ; gain = 0.000 ; free physical = 3784 ; free virtual = 25365
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3079.676 ; gain = 0.000 ; free physical = 1496 ; free virtual = 20390
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 87 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:11 ; elapsed = 00:01:44 . Memory (MB): peak = 3079.047 ; gain = 1602.762 ; free physical = 3887 ; free virtual = 25468
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3079.047 ; gain = 0.000 ; free physical = 3887 ; free virtual = 25468
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:56 . Memory (MB): peak = 3079.676 ; gain = 1603.418 ; free physical = 1664 ; free virtual = 20559
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3079.676 ; gain = 0.000 ; free physical = 1664 ; free virtual = 20559
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx/myproj/myproj.runs/zcu111_axi_protocol_convert_2_0_synth_1/zcu111_axi_protocol_convert_2_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP zcu111_axi_protocol_convert_2_0, cache-ID = 875a64a07a11c639
 INFO: [Coretcl 2-1174] Renamed 23 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3103.059 ; gain = 0.000 ; free physical = 3803 ; free virtual = 25386
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3103.688 ; gain = 0.000 ; free physical = 1618 ; free virtual = 20515
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx/myproj/myproj.runs/zcu111_axi_protocol_convert_2_0_synth_1/zcu111_axi_protocol_convert_2_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file zcu111_axi_protocol_convert_2_0_utilization_synth.rpt -pb zcu111_axi_protocol_convert_2_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Oct 23 14:35:52 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 25 00:00:28 2020...

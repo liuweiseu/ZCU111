@@ -1,0 +1,1017 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.3 (64-bit)
+# SW Build 2644227 on Wed Sep  4 09:44:18 MDT 2019
+# IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+# Start of session at: Thu Oct 29 20:30:43 2020
+# Process ID: 13549
+# Current directory: /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/impl_1
+# Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/impl_1/top.vdi
+# Journal file: /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Implementation Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExplorePostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExploreWithRemap' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacementFanoutOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_EarlyBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Retiming' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExtraTimingOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_RefinePlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_SpreadSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_BalanceSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_BalanceSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_HighUtilSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SSI_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SSI_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_ExploreSequential' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_ExploreWithRemap' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_DefaultOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_ExploreArea' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_Quick' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Synthesis Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaOptimized_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaOptimized_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaMultThresholdDSP' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AlternateRoutability' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_PerfOptimized_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_PerfThresholdCarry' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Implementation Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExplorePostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExploreWithRemap' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacementFanoutOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_EarlyBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Retiming' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExtraTimingOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_RefinePlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_SpreadSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_BalanceSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_BalanceSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_HighUtilSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SSI_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SSI_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_ExploreSequential' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_ExploreWithRemap' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_DefaultOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_ExploreArea' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_Quick' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Implementation Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExplorePostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_RefinePlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacementFanoutOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_LateBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExploreSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Retiming' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_DefaultOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_Quick' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogicSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_BalanceSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_BalanceSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_CompressSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Synthesis Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2012.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2012.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Synthesis Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2013.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2013.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2013.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2013.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Synthesis Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaOptimized_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaOptimized_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaMultThresholdDSP' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg'
+INFO: [Common 17-14] Message 'Runs 36-547' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Synthesis Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Synthesis Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Implementation Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'UltraFast Design Methodology Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Performance Explore Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Timing Closure Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Synthesis Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Implementation Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'UltraFast Design Methodology Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Performance Explore Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Timing Closure Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Implementation Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'UltraFast Design Methodology Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Performance Explore Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Timing Closure Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+source top.tcl -notrace
+Command: open_checkpoint /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/impl_1/top.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1401.551 ; gain = 0.000 ; free physical = 8415 ; free virtual = 29309
+INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
+INFO: [Netlist 29-17] Analyzing 708 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2842.371 ; gain = 0.000 ; free physical = 6898 ; free virtual = 27793
+Restored from archive | CPU: 0.150000 secs | Memory: 1.231071 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2842.371 ; gain = 0.000 ; free physical = 6898 ; free virtual = 27793
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2846.340 ; gain = 0.000 ; free physical = 6908 ; free virtual = 27803
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 145 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 7 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 36 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 41 instances
+  RAM64M8 => RAM64M8 (RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 60 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2019.1.3 (64-bit) build 2644227
+open_checkpoint: Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 2846.340 ; gain = 1444.789 ; free physical = 6907 ; free virtual = 27803
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu28dr'
+INFO: [Common 17-86] Your Implementation license expires in 21 day(s)
+INFO: [Common 17-1686] The version limit for your license is '2020.10' and will not allow you to run Xilinx software released after that date (year & month). A version limit expiration means that while you will be able to continue to use the current version of tools or IP with this license, you will not be able to use any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2957.031 ; gain = 102.688 ; free physical = 6893 ; free virtual = 27789
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 177108d65
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:02 . Memory (MB): peak = 3063.031 ; gain = 106.000 ; free physical = 6800 ; free virtual = 27696
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 33 inverter(s) to 4266 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 18f2a26c2
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3244.840 ; gain = 56.027 ; free physical = 6753 ; free virtual = 27649
+INFO: [Opt 31-389] Phase Retarget created 809 cells and removed 1421 cells
+INFO: [Opt 31-1021] In phase Retarget, 63 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 5 load pin(s).
+Phase 2 Constant propagation | Checksum: 1cdd0f35a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3244.840 ; gain = 56.027 ; free physical = 6750 ; free virtual = 27646
+INFO: [Opt 31-389] Phase Constant propagation created 358 cells and removed 3481 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 34 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1cc0a249c
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3244.840 ; gain = 56.027 ; free physical = 6746 ; free virtual = 27642
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 3205 cells
+INFO: [Opt 31-1021] In phase Sweep, 601 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1cc0a249c
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3244.840 ; gain = 56.027 ; free physical = 6748 ; free virtual = 27644
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1cc0a249c
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3244.840 ; gain = 56.027 ; free physical = 6746 ; free virtual = 27642
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1cc0a249c
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3244.840 ; gain = 56.027 ; free physical = 6746 ; free virtual = 27642
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 122 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             809  |            1421  |                                             63  |
+|  Constant propagation         |             358  |            3481  |                                             34  |
+|  Sweep                        |               0  |            3205  |                                            601  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            122  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3244.840 ; gain = 0.000 ; free physical = 6746 ; free virtual = 27642
+Ending Logic Optimization Task | Checksum: 16dffe429
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 3244.840 ; gain = 56.027 ; free physical = 6746 ; free virtual = 27642
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=2.405 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 46 BRAM(s) out of a total of 238 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 34 WE to EN ports
+Number of BRAM Ports augmented: 12 newly gated: 214 Total Ports: 476
+Ending PowerOpt Patch Enables Task | Checksum: 20decddbd
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 4906.645 ; gain = 0.000 ; free physical = 5695 ; free virtual = 26591
+Ending Power Optimization Task | Checksum: 20decddbd
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:57 . Memory (MB): peak = 4906.645 ; gain = 1661.805 ; free physical = 5754 ; free virtual = 26650
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 20decddbd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4906.645 ; gain = 0.000 ; free physical = 5754 ; free virtual = 26650
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 4906.645 ; gain = 0.000 ; free physical = 5754 ; free virtual = 26650
+Ending Netlist Obfuscation Task | Checksum: 2638074e2
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 4906.645 ; gain = 0.000 ; free physical = 5754 ; free virtual = 26650
+INFO: [Common 17-83] Releasing license: Implementation
+41 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:46 ; elapsed = 00:01:12 . Memory (MB): peak = 4906.645 ; gain = 2060.305 ; free physical = 5753 ; free virtual = 26650
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4906.645 ; gain = 0.000 ; free physical = 5753 ; free virtual = 26650
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4906.645 ; gain = 0.000 ; free physical = 5751 ; free virtual = 26651
+INFO: [Common 17-1381] The checkpoint '/home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/impl_1/top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 4906.645 ; gain = 0.000 ; free physical = 5736 ; free virtual = 26645
+INFO: [runtcl-4] Executing : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
+Command: report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/impl_1/top_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu28dr'
+INFO: [Common 17-86] Your Implementation license expires in 21 day(s)
+INFO: [Common 17-1686] The version limit for your license is '2020.10' and will not allow you to run Xilinx software released after that date (year & month). A version limit expiration means that while you will be able to continue to use the current version of tools or IP with this license, you will not be able to use any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5728 ; free virtual = 26637
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 17e8b75af
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5728 ; free virtual = 26637
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5728 ; free virtual = 26637
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 8fdc8d17
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5655 ; free virtual = 26564
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: b88ed24c
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5575 ; free virtual = 26485
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: b88ed24c
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5575 ; free virtual = 26485
+Phase 1 Placer Initialization | Checksum: b88ed24c
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:12 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5577 ; free virtual = 26486
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 140abbedf
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:27 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5436 ; free virtual = 26346
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5546 ; free virtual = 26456
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: f0f5c6e8
+
+Time (s): cpu = 00:02:29 ; elapsed = 00:00:58 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5546 ; free virtual = 26456
+Phase 2.2 Global Placement Core | Checksum: c4c4f334
+
+Time (s): cpu = 00:02:33 ; elapsed = 00:00:59 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5538 ; free virtual = 26447
+Phase 2 Global Placement | Checksum: c4c4f334
+
+Time (s): cpu = 00:02:33 ; elapsed = 00:00:59 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5565 ; free virtual = 26474
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 14de38fc5
+
+Time (s): cpu = 00:02:37 ; elapsed = 00:01:00 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5560 ; free virtual = 26469
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1933f07ae
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:02 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5554 ; free virtual = 26464
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: bf74b5d3
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:03 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5554 ; free virtual = 26464
+
+Phase 3.4 Small Shape Clustering
+Phase 3.4 Small Shape Clustering | Checksum: 16553708e
+
+Time (s): cpu = 00:02:46 ; elapsed = 00:01:06 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5512 ; free virtual = 26421
+
+Phase 3.5 Flow Legalize Slice Clusters
+Phase 3.5 Flow Legalize Slice Clusters | Checksum: db891fe0
+
+Time (s): cpu = 00:02:46 ; elapsed = 00:01:06 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5508 ; free virtual = 26417
+
+Phase 3.6 Slice Area Swap
+Phase 3.6 Slice Area Swap | Checksum: 125e3e051
+
+Time (s): cpu = 00:02:49 ; elapsed = 00:01:08 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5469 ; free virtual = 26379
+
+Phase 3.7 Commit Slice Clusters
+Phase 3.7 Commit Slice Clusters | Checksum: 192e79e83
+
+Time (s): cpu = 00:02:57 ; elapsed = 00:01:10 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5485 ; free virtual = 26395
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 20ce0c602
+
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:12 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5483 ; free virtual = 26392
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 15011c9fd
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:01:14 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5494 ; free virtual = 26403
+Phase 3 Detail Placement | Checksum: 15011c9fd
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:01:14 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5494 ; free virtual = 26403
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 145feff44
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-35] Processed net zcu111_inst/proc_sys_reset_0/U0/peripheral_aresetn[0], inserted BUFG to drive 2020 loads.
+INFO: [Place 46-45] Replicated bufg driver zcu111_inst/proc_sys_reset_0/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_bufg_rep
+INFO: [Place 46-35] Processed net zcu111_infr_inst/user_mmcm_lock, inserted BUFG to drive 1254 loads.
+INFO: [Place 46-35] Processed net zcu111_inst/proc_sys_reset_0/U0/peripheral_reset[0], inserted BUFG to drive 1131 loads.
+INFO: [Place 46-45] Replicated bufg driver zcu111_inst/proc_sys_reset_0/U0/PR_OUT_DFF[0].FDRE_PER_bufg_rep
+INFO: [Place 46-56] BUFG insertion identified 3 candidate nets. Inserted BUFG: 3, Replicated BUFG Driver: 2, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1bcbb8ed1
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:01:21 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5506 ; free virtual = 26416
+INFO: [Place 30-746] Post Placement Timing Summary WNS=1.480. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 280a86d41
+
+Time (s): cpu = 00:03:28 ; elapsed = 00:01:22 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5505 ; free virtual = 26415
+Phase 4.1 Post Commit Optimization | Checksum: 280a86d41
+
+Time (s): cpu = 00:03:28 ; elapsed = 00:01:22 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5505 ; free virtual = 26415
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 280a86d41
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:01:22 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5523 ; free virtual = 26433
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5666 ; free virtual = 26576
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 2f8c8db85
+
+Time (s): cpu = 00:03:39 ; elapsed = 00:01:32 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5671 ; free virtual = 26580
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5671 ; free virtual = 26580
+Phase 4.4 Final Placement Cleanup | Checksum: 2f7c14b74
+
+Time (s): cpu = 00:03:39 ; elapsed = 00:01:32 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5670 ; free virtual = 26580
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2f7c14b74
+
+Time (s): cpu = 00:03:39 ; elapsed = 00:01:33 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5670 ; free virtual = 26580
+Ending Placer Task | Checksum: 224a8f8ef
+
+Time (s): cpu = 00:03:39 ; elapsed = 00:01:33 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5670 ; free virtual = 26580
+INFO: [Common 17-83] Releasing license: Implementation
+77 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:45 ; elapsed = 00:01:35 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5817 ; free virtual = 26726
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5817 ; free virtual = 26727
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5733 ; free virtual = 26707
+INFO: [Common 17-1381] The checkpoint '/home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/impl_1/top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5795 ; free virtual = 26724
+INFO: [runtcl-4] Executing : report_io -file top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.34 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5761 ; free virtual = 26691
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.75 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5792 ; free virtual = 26724
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu28dr'
+INFO: [Common 17-86] Your Implementation license expires in 21 day(s)
+INFO: [Common 17-1686] The version limit for your license is '2020.10' and will not allow you to run Xilinx software released after that date (year & month). A version limit expiration means that while you will be able to continue to use the current version of tools or IP with this license, you will not be able to use any updates or new releases.
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.250 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+88 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5796 ; free virtual = 26727
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5698 ; free virtual = 26694
+INFO: [Common 17-1381] The checkpoint '/home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/impl_1/top_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 4978.680 ; gain = 0.000 ; free physical = 5770 ; free virtual = 26721
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu28dr'
+INFO: [Common 17-86] Your Implementation license expires in 21 day(s)
+INFO: [Common 17-1686] The version limit for your license is '2020.10' and will not allow you to run Xilinx software released after that date (year & month). A version limit expiration means that while you will be able to continue to use the current version of tools or IP with this license, you will not be able to use any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: c770125f ConstDB: 0 ShapeSum: e518784c RouteDB: 78206e44
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: efc386cf
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:02:08 . Memory (MB): peak = 5077.645 ; gain = 98.965 ; free physical = 5432 ; free virtual = 26383
+Post Restoration Checksum: NetGraph: bf77b948 NumContArr: b1fb18f2 Constraints: 8e5616e9 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1ffc8e923
+
+Time (s): cpu = 00:02:29 ; elapsed = 00:02:08 . Memory (MB): peak = 5077.645 ; gain = 98.965 ; free physical = 5439 ; free virtual = 26390
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1ffc8e923
+
+Time (s): cpu = 00:02:29 ; elapsed = 00:02:09 . Memory (MB): peak = 5077.645 ; gain = 98.965 ; free physical = 5354 ; free virtual = 26306
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1ffc8e923
+
+Time (s): cpu = 00:02:29 ; elapsed = 00:02:09 . Memory (MB): peak = 5077.645 ; gain = 98.965 ; free physical = 5354 ; free virtual = 26306
+
+Phase 2.4 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.4 Global Clock Net Routing | Checksum: 19146ce8b
+
+Time (s): cpu = 00:02:37 ; elapsed = 00:02:17 . Memory (MB): peak = 5239.109 ; gain = 260.430 ; free physical = 5347 ; free virtual = 26298
+
+Phase 2.5 Update Timing
+Phase 2.5 Update Timing | Checksum: 22c5f6b3c
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:02:23 . Memory (MB): peak = 5239.109 ; gain = 260.430 ; free physical = 5342 ; free virtual = 26294
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.542  | TNS=0.000  | WHS=-0.769 | THS=-149.273|
+
+
+Phase 2.6 Update Timing for Bus Skew
+
+Phase 2.6.1 Update Timing
+Phase 2.6.1 Update Timing | Checksum: 20e8f06ba
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:02:30 . Memory (MB): peak = 5239.109 ; gain = 260.430 ; free physical = 5322 ; free virtual = 26274
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.542  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.6 Update Timing for Bus Skew | Checksum: 1dde51be6
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:02:30 . Memory (MB): peak = 5239.109 ; gain = 260.430 ; free physical = 5322 ; free virtual = 26273
+Phase 2 Router Initialization | Checksum: 1a9ace602
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:02:30 . Memory (MB): peak = 5239.109 ; gain = 260.430 ; free physical = 5321 ; free virtual = 26273
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 49556
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 42242
+  Number of Partially Routed Nets     = 7314
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1f5af7b8a
+
+Time (s): cpu = 00:03:51 ; elapsed = 00:02:38 . Memory (MB): peak = 5239.109 ; gain = 260.430 ; free physical = 5283 ; free virtual = 26235
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 6904
+ Number of Nodes with overlaps = 576
+ Number of Nodes with overlaps = 46
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.855  | TNS=0.000  | WHS=-0.101 | THS=-3.082 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1e4feb6e8
+
+Time (s): cpu = 00:08:28 ; elapsed = 00:03:47 . Memory (MB): peak = 6246.109 ; gain = 1267.430 ; free physical = 4917 ; free virtual = 25869
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 22f719368
+
+Time (s): cpu = 00:08:28 ; elapsed = 00:03:47 . Memory (MB): peak = 6246.109 ; gain = 1267.430 ; free physical = 4918 ; free virtual = 25870
+Phase 4 Rip-up And Reroute | Checksum: 22f719368
+
+Time (s): cpu = 00:08:28 ; elapsed = 00:03:48 . Memory (MB): peak = 6246.109 ; gain = 1267.430 ; free physical = 4919 ; free virtual = 25870
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 2cfe54d51
+
+Time (s): cpu = 00:08:38 ; elapsed = 00:03:50 . Memory (MB): peak = 6246.109 ; gain = 1267.430 ; free physical = 4938 ; free virtual = 25889
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.855  | TNS=0.000  | WHS=0.004  | THS=0.000  |
+
+Phase 5.1 Delay CleanUp | Checksum: 2ee4977c6
+
+Time (s): cpu = 00:08:38 ; elapsed = 00:03:50 . Memory (MB): peak = 6246.109 ; gain = 1267.430 ; free physical = 4937 ; free virtual = 25889
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 2ee4977c6
+
+Time (s): cpu = 00:08:38 ; elapsed = 00:03:51 . Memory (MB): peak = 6246.109 ; gain = 1267.430 ; free physical = 4937 ; free virtual = 25889
+Phase 5 Delay and Skew Optimization | Checksum: 2ee4977c6
+
+Time (s): cpu = 00:08:38 ; elapsed = 00:03:51 . Memory (MB): peak = 6246.109 ; gain = 1267.430 ; free physical = 4937 ; free virtual = 25889
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 320435025
+
+Time (s): cpu = 00:08:45 ; elapsed = 00:03:53 . Memory (MB): peak = 6246.109 ; gain = 1267.430 ; free physical = 4931 ; free virtual = 25882
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.855  | TNS=0.000  | WHS=0.004  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 2b7f6ac1f
+
+Time (s): cpu = 00:08:45 ; elapsed = 00:03:53 . Memory (MB): peak = 6246.109 ; gain = 1267.430 ; free physical = 4930 ; free virtual = 25882
+Phase 6 Post Hold Fix | Checksum: 2b7f6ac1f
+
+Time (s): cpu = 00:08:45 ; elapsed = 00:03:53 . Memory (MB): peak = 6246.109 ; gain = 1267.430 ; free physical = 4930 ; free virtual = 25882
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.70921 %
+  Global Horizontal Routing Utilization  = 1.54235 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 2cf30ddab
+
+Time (s): cpu = 00:08:47 ; elapsed = 00:03:54 . Memory (MB): peak = 6246.109 ; gain = 1267.430 ; free physical = 4924 ; free virtual = 25876
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 2cf30ddab
+
+Time (s): cpu = 00:08:47 ; elapsed = 00:03:54 . Memory (MB): peak = 6246.109 ; gain = 1267.430 ; free physical = 4924 ; free virtual = 25876
+
+Phase 9 Depositing Routes
+INFO: [Route 35-467] Router swapped GT pin tengbaser_infra0_inst/i_xxv_ethernet_1_common_wrapper/xxv_ethernet_1_gt_gtye4_common_wrapper_i/common_inst/gtye4_common_gen.GTYE4_COMMON_PRIM_INST/GTREFCLK00 to physical pin GTYE4_COMMON_X0Y1/COM0_REFCLKOUT1
+Phase 9 Depositing Routes | Checksum: 2cf30ddab
+
+Time (s): cpu = 00:08:49 ; elapsed = 00:03:57 . Memory (MB): peak = 6246.109 ; gain = 1267.430 ; free physical = 4923 ; free virtual = 25875
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.855  | TNS=0.000  | WHS=0.004  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 2cf30ddab
+
+Time (s): cpu = 00:08:50 ; elapsed = 00:03:57 . Memory (MB): peak = 6246.109 ; gain = 1267.430 ; free physical = 4928 ; free virtual = 25880
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:08:50 ; elapsed = 00:03:57 . Memory (MB): peak = 6246.109 ; gain = 1267.430 ; free physical = 5389 ; free virtual = 26340
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+107 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:08:56 ; elapsed = 00:03:59 . Memory (MB): peak = 6246.109 ; gain = 1267.430 ; free physical = 5389 ; free virtual = 26340
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 6246.109 ; gain = 0.000 ; free physical = 5393 ; free virtual = 26344
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 6246.109 ; gain = 0.000 ; free physical = 5282 ; free virtual = 26319
+INFO: [Common 17-1381] The checkpoint '/home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/impl_1/top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 6246.109 ; gain = 0.000 ; free physical = 5361 ; free virtual = 26337
+INFO: [runtcl-4] Executing : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+Command: report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/impl_1/top_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 6326.148 ; gain = 80.039 ; free physical = 5343 ; free virtual = 26319
+INFO: [runtcl-4] Executing : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+Command: report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/impl_1/top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:35 ; elapsed = 00:00:08 . Memory (MB): peak = 6326.148 ; gain = 0.000 ; free physical = 5336 ; free virtual = 26313
+INFO: [runtcl-4] Executing : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+Command: report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+119 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:32 ; elapsed = 00:00:22 . Memory (MB): peak = 6326.148 ; gain = 0.000 ; free physical = 5230 ; free virtual = 26220
+INFO: [runtcl-4] Executing : report_route_status -file top_route_status.rpt -pb top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file top_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6326.148 ; gain = 0.000 ; free physical = 5199 ; free virtual = 26195
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_bus_skew_routed.rpt -pb top_bus_skew_routed.pb -rpx top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu28dr'
+INFO: [Common 17-86] Your Implementation license expires in 21 day(s)
+INFO: [Common 17-1686] The version limit for your license is '2020.10' and will not allow you to run Xilinx software released after that date (year & month). A version limit expiration means that while you will be able to continue to use the current version of tools or IP with this license, you will not be able to use any updates or new releases.
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+136 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 6326.148 ; gain = 0.000 ; free physical = 5200 ; free virtual = 26197
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 6326.148 ; gain = 0.000 ; free physical = 5080 ; free virtual = 26163
+INFO: [Common 17-1381] The checkpoint '/home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/impl_1/top_postroute_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 6326.148 ; gain = 0.000 ; free physical = 5162 ; free virtual = 26184
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -warn_on_violation -file top_timing_summary_postroute_physopted.rpt -pb top_timing_summary_postroute_physopted.pb -rpx top_timing_summary_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_bus_skew_postroute_physopted.rpt -pb top_bus_skew_postroute_physopted.pb -rpx top_bus_skew_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 29 20:39:53 2020...
+#-----------------------------------------------------------
+# Vivado v2019.1.3 (64-bit)
+# SW Build 2644227 on Wed Sep  4 09:44:18 MDT 2019
+# IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+# Start of session at: Thu Oct 29 20:40:13 2020
+# Process ID: 19066
+# Current directory: /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/impl_1
+# Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/impl_1/top.vdi
+# Journal file: /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Implementation Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExplorePostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExploreWithRemap' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacementFanoutOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_EarlyBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Retiming' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExtraTimingOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_RefinePlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_SpreadSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_BalanceSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_BalanceSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_HighUtilSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SSI_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SSI_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_ExploreSequential' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_ExploreWithRemap' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_DefaultOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_ExploreArea' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_Quick' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Synthesis Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaOptimized_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaOptimized_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaMultThresholdDSP' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AlternateRoutability' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_PerfOptimized_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_PerfThresholdCarry' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Implementation Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExplorePostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExploreWithRemap' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacementFanoutOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_EarlyBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Retiming' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExtraTimingOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_RefinePlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_SpreadSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_BalanceSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_BalanceSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_HighUtilSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SSI_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SSI_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_ExploreSequential' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_ExploreWithRemap' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_DefaultOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_ExploreArea' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_Quick' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Implementation Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExplorePostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_RefinePlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacementFanoutOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_LateBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExploreSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Retiming' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_DefaultOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_Quick' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogicSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_BalanceSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_BalanceSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_CompressSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Synthesis Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2012.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2012.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Synthesis Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2013.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2013.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2013.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2013.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Synthesis Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaOptimized_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaOptimized_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaMultThresholdDSP' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg'
+INFO: [Common 17-14] Message 'Runs 36-547' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Synthesis Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Synthesis Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Implementation Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'UltraFast Design Methodology Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Performance Explore Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Timing Closure Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Synthesis Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Implementation Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'UltraFast Design Methodology Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Performance Explore Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Timing Closure Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Implementation Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'UltraFast Design Methodology Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Performance Explore Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Timing Closure Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+source top.tcl -notrace
+Command: open_checkpoint top_postroute_physopt.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1401.555 ; gain = 0.000 ; free physical = 7984 ; free virtual = 29013
+INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
+INFO: [Netlist 29-17] Analyzing 658 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3103.344 ; gain = 64.719 ; free physical = 6302 ; free virtual = 27331
+Restored from archive | CPU: 3.020000 secs | Memory: 51.166283 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3103.344 ; gain = 64.719 ; free physical = 6302 ; free virtual = 27331
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3103.344 ; gain = 0.000 ; free physical = 6308 ; free virtual = 27338
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 142 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 7 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 36 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 36 instances
+  RAM64M8 => RAM64M8 (RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 60 instances
+  SRLC32E => SRL16E: 2 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2019.1.3 (64-bit) build 2644227
+open_checkpoint: Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 3103.344 ; gain = 1701.789 ; free physical = 6307 ; free virtual = 27337
+Command: write_bitstream -force top.bit -bin_file
+Attempting to get a license for feature 'Implementation' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu28dr'
+INFO: [Common 17-86] Your Implementation license expires in 21 day(s)
+INFO: [Common 17-1686] The version limit for your license is '2020.10' and will not allow you to run Xilinx software released after that date (year & month). A version limit expiration means that while you will be able to continue to use the current version of tools or IP with this license, you will not be able to use any updates or new releases.
+CRITICAL WARNING: [Vivado 12-1790] Evaluation License Warning: This design contains one or more IP cores that use separately licensed features. If the design has been configured to make use of evaluation features, please note that these features will cease to function after a certain period of time. Please consult the core datasheet to determine whether the core which you have configured will be affected. Evaluation features should NOT be used in production systems.
+
+Evaluation cores found in this design:
+    IP core 'tengbaser_phy_ultrascale' (xxv_ethernet_v3_0_3) was generated with multiple features:
+        IP feature 'x_eth_mac@2019.04' was enabled using a hardware_evaluation license.
+        IP feature 'xxv_eth_basekr@2019.04' was enabled using a hardware_evaluation license.
+        IP feature 'xxv_eth_mac_pcs@2019.04' was enabled using a hardware_evaluation license.
+        IP feature 'xxv_tsn_802d1cm@2019.04' was enabled using a hardware_evaluation license.
+
+Resolution: If a new IP Core license was added, in order for the new license to be picked up, the current netlist needs to be updated by resetting and re-generating the IP output products before bitstream generation.
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC RTSTAT-10] No routable loads: 121 net(s) have no routable loads. The problem bus(es) and/or net(s) are zcu111_tengbe_tx_rx_direct_gbe0/tge_tx_inst/large_packet_gen.tx_data_fifo_ext/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu111_inst/axi_interconnect_0/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu111_tengbe_tx_rx_direct_gbe2/tge_tx_inst/large_packet_gen.tx_data_fifo_ext/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu111_tengbe_tx_rx_direct_gbe1/tge_tx_inst/large_packet_gen.tx_ctrl_fifo_ext/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu111_tengbe_tx_rx_direct_gbe2/tge_tx_inst/large_packet_gen.tx_ctrl_fifo_ext/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu111_tengbe_tx_rx_direct_gbe1/tge_tx_inst/large_packet_gen.tx_data_fifo_ext/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu111_inst/axi_interconnect_0/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu111_tengbe_tx_rx_direct_gbe0/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu111_tengbe_tx_rx_direct_gbe0/tge_tx_inst/large_packet_gen.tx_ctrl_fifo_ext/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu111_tengbe_tx_rx_direct_gbe1/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu111_inst/axi_interconnect_0/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu111_tengbe_tx_rx_direct_gbe2/tge_rx_inst/use_bram.rx_packet_fifo_bram_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu111_inst/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu111_inst/axi_interconnect_0/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu111_tengbe_tx_rx_direct_gbe0/tge_tx_inst/tx_packet_ctrl_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i... and (the first 15 of 121 listed).
+INFO: [DRC AVAL-156] enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zcu111_tengbe_tx_rx_direct_inst/zcu111_tengbe_tx_rx_direct_struct/gbe0/rxs/ss/add_gen/add_gen/comp1.core_instance1/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-156] enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zcu111_tengbe_tx_rx_direct_inst/zcu111_tengbe_tx_rx_direct_struct/gbe0/txs/ss/add_gen/add_gen/comp1.core_instance1/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-156] enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zcu111_tengbe_tx_rx_direct_inst/zcu111_tengbe_tx_rx_direct_struct/gbe1/rxs/ss/add_gen/add_gen/comp1.core_instance1/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-156] enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zcu111_tengbe_tx_rx_direct_inst/zcu111_tengbe_tx_rx_direct_struct/gbe1/txs/ss/add_gen/add_gen/comp1.core_instance1/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-156] enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zcu111_tengbe_tx_rx_direct_inst/zcu111_tengbe_tx_rx_direct_struct/gbe2/rxs/ss/add_gen/add_gen/comp1.core_instance1/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-156] enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zcu111_tengbe_tx_rx_direct_inst/zcu111_tengbe_tx_rx_direct_struct/gbe2/txs/ss/add_gen/add_gen/comp1.core_instance1/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-156] enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zcu111_tengbe_tx_rx_direct_inst/zcu111_tengbe_tx_rx_direct_struct/tx_snapshot/ss/add_gen/add_gen/comp5.core_instance5/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings, 7 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./top.bit...
+Writing bitstream ./top.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Oct 29 20:41:35 2020. For additional details about this file, please refer to the WebTalk help file at /home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+32 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:59 ; elapsed = 00:00:38 . Memory (MB): peak = 3788.680 ; gain = 685.336 ; free physical = 6130 ; free virtual = 27227
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 29 20:41:36 2020...

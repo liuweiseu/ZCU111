@@ -97,15 +97,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_rxbadctr_x0 is
+entity zcu111_tengbe_tx_rx_rxbadctr is
   port (
     out_reg : in std_logic_vector( 32-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     zcu111_tengbe_tx_rx_gbe0_rxbadctr_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_rxbadctr_x0;
-architecture structural of zcu111_tengbe_tx_rx_rxbadctr_x0 is 
+end zcu111_tengbe_tx_rx_rxbadctr;
+architecture structural of zcu111_tengbe_tx_rx_rxbadctr is 
   signal rxbadctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
@@ -170,15 +170,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_rxctr_x0 is
+entity zcu111_tengbe_tx_rx_rxctr is
   port (
     out_reg : in std_logic_vector( 32-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     zcu111_tengbe_tx_rx_gbe0_rxctr_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_rxctr_x0;
-architecture structural of zcu111_tengbe_tx_rx_rxctr_x0 is 
+end zcu111_tengbe_tx_rx_rxctr;
+architecture structural of zcu111_tengbe_tx_rx_rxctr is 
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
   signal rxctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
@@ -243,15 +243,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_rxctr_ed_x0 is
+entity zcu111_tengbe_tx_rx_rxctr_ed is
   port (
     in_x0 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_rxctr_ed_x0;
-architecture structural of zcu111_tengbe_tx_rx_rxctr_ed_x0 is 
+end zcu111_tengbe_tx_rx_rxctr_ed;
+architecture structural of zcu111_tengbe_tx_rx_rxctr_ed is 
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal rxctr_and_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -301,15 +301,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_rxeofctr_x0 is
+entity zcu111_tengbe_tx_rx_rxeofctr is
   port (
     out_reg : in std_logic_vector( 32-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     zcu111_tengbe_tx_rx_gbe0_rxeofctr_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_rxeofctr_x0;
-architecture structural of zcu111_tengbe_tx_rx_rxeofctr_x0 is 
+end zcu111_tengbe_tx_rx_rxeofctr;
+architecture structural of zcu111_tengbe_tx_rx_rxeofctr is 
   signal rxeofctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
@@ -374,15 +374,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_rxofctr_x0 is
+entity zcu111_tengbe_tx_rx_rxofctr is
   port (
     out_reg : in std_logic_vector( 32-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     zcu111_tengbe_tx_rx_gbe0_rxofctr_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_rxofctr_x0;
-architecture structural of zcu111_tengbe_tx_rx_rxofctr_x0 is 
+end zcu111_tengbe_tx_rx_rxofctr;
+architecture structural of zcu111_tengbe_tx_rx_rxofctr is 
   signal rxofctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
@@ -447,7 +447,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_buscreate_x1 is
+entity zcu111_tengbe_tx_rx_buscreate_x2 is
   port (
     in1 : in std_logic_vector( 1-1 downto 0 );
     in2 : in std_logic_vector( 1-1 downto 0 );
@@ -459,8 +459,8 @@ entity zcu111_tengbe_tx_rx_buscreate_x1 is
     in8 : in std_logic_vector( 1-1 downto 0 );
     bus_out : out std_logic_vector( 102-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_buscreate_x1;
-architecture structural of zcu111_tengbe_tx_rx_buscreate_x1 is 
+end zcu111_tengbe_tx_rx_buscreate_x2;
+architecture structural of zcu111_tengbe_tx_rx_buscreate_x2 is 
   signal concatenate_y_net : std_logic_vector( 102-1 downto 0 );
   signal assert_led_up_dout_net : std_logic_vector( 1-1 downto 0 );
   signal assert_led_rx_dout_net : std_logic_vector( 1-1 downto 0 );
@@ -573,18 +573,18 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_io_delay_x2 is
+entity zcu111_tengbe_tx_rx_io_delay_x0 is
   port (
     d : in std_logic_vector( 102-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     q : out std_logic_vector( 102-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_io_delay_x2;
-architecture structural of zcu111_tengbe_tx_rx_io_delay_x2 is 
+end zcu111_tengbe_tx_rx_io_delay_x0;
+architecture structural of zcu111_tengbe_tx_rx_io_delay_x0 is 
   signal register4_q_net : std_logic_vector( 102-1 downto 0 );
-  signal register3_q_net : std_logic_vector( 102-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 102-1 downto 0 );
+  signal register3_q_net : std_logic_vector( 102-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
   signal register0_q_net : std_logic_vector( 102-1 downto 0 );
@@ -666,15 +666,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_edge_detect_x5 is
+entity zcu111_tengbe_tx_rx_edge_detect_x4 is
   port (
     in_x0 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_edge_detect_x5;
-architecture structural of zcu111_tengbe_tx_rx_edge_detect_x5 is 
+end zcu111_tengbe_tx_rx_edge_detect_x4;
+architecture structural of zcu111_tengbe_tx_rx_edge_detect_x4 is 
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -778,7 +778,7 @@ begin
   edge_op_y_net <= init;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect_x5 
+  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect_x4 
   port map (
     in_x0 => slice3_y_net,
     clk_1 => clk_net,
@@ -1290,15 +1290,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_edge_detect_x3 is
+entity zcu111_tengbe_tx_rx_edge_detect_x5 is
   port (
     in_x0 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_edge_detect_x3;
-architecture structural of zcu111_tengbe_tx_rx_edge_detect_x3 is 
+end zcu111_tengbe_tx_rx_edge_detect_x5;
+architecture structural of zcu111_tengbe_tx_rx_edge_detect_x5 is 
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -1348,7 +1348,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_basic_ctrl_x1 is
+entity zcu111_tengbe_tx_rx_basic_ctrl_x2 is
   port (
     din : in std_logic_vector( 128-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -1362,8 +1362,8 @@ entity zcu111_tengbe_tx_rx_basic_ctrl_x1 is
     go : out std_logic_vector( 1-1 downto 0 );
     init : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_basic_ctrl_x1;
-architecture structural of zcu111_tengbe_tx_rx_basic_ctrl_x1 is 
+end zcu111_tengbe_tx_rx_basic_ctrl_x2;
+architecture structural of zcu111_tengbe_tx_rx_basic_ctrl_x2 is 
   signal data_choice_y_net : std_logic_vector( 128-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
@@ -1411,7 +1411,7 @@ begin
     dout => data_choice_y_net,
     we_o => we_choice_y_net
   );
-  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect_x3 
+  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect_x5 
   port map (
     in_x0 => delay1_q_net,
     clk_1 => clk_net,
@@ -1702,7 +1702,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_join_x1 is
+entity zcu111_tengbe_tx_rx_join_x2 is
   port (
     in1 : in std_logic_vector( 32-1 downto 0 );
     in2 : in std_logic_vector( 32-1 downto 0 );
@@ -1710,8 +1710,8 @@ entity zcu111_tengbe_tx_rx_join_x1 is
     in4 : in std_logic_vector( 32-1 downto 0 );
     bus_out : out std_logic_vector( 128-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_join_x1;
-architecture structural of zcu111_tengbe_tx_rx_join_x1 is 
+end zcu111_tengbe_tx_rx_join_x2;
+architecture structural of zcu111_tengbe_tx_rx_join_x2 is 
   signal concatenate_y_net : std_logic_vector( 128-1 downto 0 );
   signal reinterpret1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 32-1 downto 0 );
@@ -1776,7 +1776,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_split_x1 is
+entity zcu111_tengbe_tx_rx_split_x2 is
   port (
     bus_in : in std_logic_vector( 128-1 downto 0 );
     msb_out4 : out std_logic_vector( 32-1 downto 0 );
@@ -1784,8 +1784,8 @@ entity zcu111_tengbe_tx_rx_split_x1 is
     out2 : out std_logic_vector( 32-1 downto 0 );
     lsb_out1 : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_split_x1;
-architecture structural of zcu111_tengbe_tx_rx_split_x1 is 
+end zcu111_tengbe_tx_rx_split_x2;
+architecture structural of zcu111_tengbe_tx_rx_split_x2 is 
   signal reinterpret4_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret3_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 32-1 downto 0 );
@@ -1901,7 +1901,7 @@ architecture structural of zcu111_tengbe_tx_rx_munge_in_x1 is
 begin
   dout <= reinterpret_out_output_port_net;
   dat_del_q_net <= din;
-  join_x4 : entity xil_defaultlib.zcu111_tengbe_tx_rx_join_x1 
+  join_x4 : entity xil_defaultlib.zcu111_tengbe_tx_rx_join_x2 
   port map (
     in1 => reinterpret1_output_port_net,
     in2 => reinterpret2_output_port_net,
@@ -1909,7 +1909,7 @@ begin
     in4 => reinterpret4_output_port_net,
     bus_out => concatenate_y_net
   );
-  split_x4 : entity xil_defaultlib.zcu111_tengbe_tx_rx_split_x1 
+  split_x4 : entity xil_defaultlib.zcu111_tengbe_tx_rx_split_x2 
   port map (
     bus_in => reinterpret_output_port_net,
     msb_out4 => reinterpret4_output_port_net,
@@ -2052,13 +2052,13 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_ctrl_x2 is
+entity zcu111_tengbe_tx_rx_ctrl_x1 is
   port (
     zcu111_tengbe_tx_rx_gbe0_rxs_ss_ctrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
     in_reg : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_ctrl_x2;
-architecture structural of zcu111_tengbe_tx_rx_ctrl_x2 is 
+end zcu111_tengbe_tx_rx_ctrl_x1;
+architecture structural of zcu111_tengbe_tx_rx_ctrl_x1 is 
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe0_rxs_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
@@ -2099,7 +2099,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_ctrl_combine_x2 is
+entity zcu111_tengbe_tx_rx_ctrl_combine_x1 is
   port (
     in1 : in std_logic_vector( 28-1 downto 0 );
     in2 : in std_logic_vector( 1-1 downto 0 );
@@ -2107,8 +2107,8 @@ entity zcu111_tengbe_tx_rx_ctrl_combine_x2 is
     in4 : in std_logic_vector( 1-1 downto 0 );
     bus_out : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_ctrl_combine_x2;
-architecture structural of zcu111_tengbe_tx_rx_ctrl_combine_x2 is 
+end zcu111_tengbe_tx_rx_ctrl_combine_x1;
+architecture structural of zcu111_tengbe_tx_rx_ctrl_combine_x1 is 
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret4_output_port_net_x0 : std_logic_vector( 28-1 downto 0 );
   signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
@@ -2173,7 +2173,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_ctrl_split_x2 is
+entity zcu111_tengbe_tx_rx_ctrl_split_x1 is
   port (
     bus_in : in std_logic_vector( 32-1 downto 0 );
     msb_out4 : out std_logic_vector( 28-1 downto 0 );
@@ -2181,8 +2181,8 @@ entity zcu111_tengbe_tx_rx_ctrl_split_x2 is
     out2 : out std_logic_vector( 2-1 downto 0 );
     lsb_out1 : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_ctrl_split_x2;
-architecture structural of zcu111_tengbe_tx_rx_ctrl_split_x2 is 
+end zcu111_tengbe_tx_rx_ctrl_split_x1;
+architecture structural of zcu111_tengbe_tx_rx_ctrl_split_x1 is 
   signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
@@ -2415,7 +2415,7 @@ begin
     we_o => logical6_y_net,
     status => concat_y_net
   );
-  basic_ctrl : entity xil_defaultlib.zcu111_tengbe_tx_rx_basic_ctrl_x1 
+  basic_ctrl : entity xil_defaultlib.zcu111_tengbe_tx_rx_basic_ctrl_x2 
   port map (
     din => cast_dout_net,
     we => register4_q_net_x1,
@@ -2440,12 +2440,12 @@ begin
     zcu111_tengbe_tx_rx_gbe0_rxs_ss_bram_data_in => convert_din1_dout_net,
     zcu111_tengbe_tx_rx_gbe0_rxs_ss_bram_we => convert_we_dout_net
   );
-  ctrl : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl_x2 
+  ctrl : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl_x1 
   port map (
     zcu111_tengbe_tx_rx_gbe0_rxs_ss_ctrl_user_data_out => zcu111_tengbe_tx_rx_gbe0_rxs_ss_ctrl_user_data_out_net,
     in_reg => reint1_output_port_net
   );
-  ctrl_combine : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl_combine_x2 
+  ctrl_combine : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl_combine_x1 
   port map (
     in1 => reinterpret4_output_port_net,
     in2 => circ_or_y_net,
@@ -2453,7 +2453,7 @@ begin
     in4 => arm_or_y_net,
     bus_out => concatenate_y_net
   );
-  ctrl_split : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl_split_x2 
+  ctrl_split : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl_split_x1 
   port map (
     bus_in => reint1_output_port_net,
     msb_out4 => reinterpret4_output_port_net,
@@ -2566,15 +2566,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_trig_delay is
+entity zcu111_tengbe_tx_rx_trig_delay_x0 is
   port (
     d : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     q : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_trig_delay;
-architecture structural of zcu111_tengbe_tx_rx_trig_delay is 
+end zcu111_tengbe_tx_rx_trig_delay_x0;
+architecture structural of zcu111_tengbe_tx_rx_trig_delay_x0 is 
   signal register4_q_net : std_logic_vector( 1-1 downto 0 );
   signal rxsnap_and_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -2659,15 +2659,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_we_delay_x2 is
+entity zcu111_tengbe_tx_rx_we_delay_x0 is
   port (
     d : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     q : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_we_delay_x2;
-architecture structural of zcu111_tengbe_tx_rx_we_delay_x2 is 
+end zcu111_tengbe_tx_rx_we_delay_x0;
+architecture structural of zcu111_tengbe_tx_rx_we_delay_x0 is 
   signal register4_q_net : std_logic_vector( 1-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe0_rx_valid_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -2827,7 +2827,7 @@ begin
   goto_116913907_we4 <= logical6_y_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  buscreate : entity xil_defaultlib.zcu111_tengbe_tx_rx_buscreate_x1 
+  buscreate : entity xil_defaultlib.zcu111_tengbe_tx_rx_buscreate_x2 
   port map (
     in1 => assert_led_up_dout_net,
     in2 => assert_led_rx_dout_net,
@@ -2839,7 +2839,7 @@ begin
     in8 => assert_overrun_dout_net,
     bus_out => concatenate_y_net
   );
-  io_delay : entity xil_defaultlib.zcu111_tengbe_tx_rx_io_delay_x2 
+  io_delay : entity xil_defaultlib.zcu111_tengbe_tx_rx_io_delay_x0 
   port map (
     d => concatenate_y_net,
     clk_1 => clk_net,
@@ -2862,14 +2862,14 @@ begin
     zcu111_tengbe_tx_rx_gbe0_rxs_ss_bram_we => convert_we_dout_net,
     zcu111_tengbe_tx_rx_gbe0_rxs_ss_status_user_data_in => cast_gw_dout_net
   );
-  trig_delay : entity xil_defaultlib.zcu111_tengbe_tx_rx_trig_delay 
+  trig_delay : entity xil_defaultlib.zcu111_tengbe_tx_rx_trig_delay_x0 
   port map (
     d => rxsnap_and_y_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     q => register4_q_net_x0
   );
-  we_delay : entity xil_defaultlib.zcu111_tengbe_tx_rx_we_delay_x2 
+  we_delay : entity xil_defaultlib.zcu111_tengbe_tx_rx_we_delay_x0 
   port map (
     d => zcu111_tengbe_tx_rx_gbe0_rx_valid_net,
     clk_1 => clk_net,
@@ -3430,15 +3430,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_io_delay_x1 is
+entity zcu111_tengbe_tx_rx_io_delay is
   port (
     d : in std_logic_vector( 102-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     q : out std_logic_vector( 102-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_io_delay_x1;
-architecture structural of zcu111_tengbe_tx_rx_io_delay_x1 is 
+end zcu111_tengbe_tx_rx_io_delay;
+architecture structural of zcu111_tengbe_tx_rx_io_delay is 
   signal register4_q_net : std_logic_vector( 102-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 102-1 downto 0 );
   signal clk_net : std_logic;
@@ -3523,15 +3523,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_edge_detect_x4 is
+entity zcu111_tengbe_tx_rx_edge_detect_x3 is
   port (
     in_x0 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_edge_detect_x4;
-architecture structural of zcu111_tengbe_tx_rx_edge_detect_x4 is 
+end zcu111_tengbe_tx_rx_edge_detect_x3;
+architecture structural of zcu111_tengbe_tx_rx_edge_detect_x3 is 
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -3635,7 +3635,7 @@ begin
   edge_op_y_net <= init;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect_x4 
+  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect_x3 
   port map (
     in_x0 => slice3_y_net,
     clk_1 => clk_net,
@@ -4205,7 +4205,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_basic_ctrl_x2 is
+entity zcu111_tengbe_tx_rx_basic_ctrl_x1 is
   port (
     din : in std_logic_vector( 128-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -4219,8 +4219,8 @@ entity zcu111_tengbe_tx_rx_basic_ctrl_x2 is
     go : out std_logic_vector( 1-1 downto 0 );
     init : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_basic_ctrl_x2;
-architecture structural of zcu111_tengbe_tx_rx_basic_ctrl_x2 is 
+end zcu111_tengbe_tx_rx_basic_ctrl_x1;
+architecture structural of zcu111_tengbe_tx_rx_basic_ctrl_x1 is 
   signal data_choice_y_net : std_logic_vector( 128-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
@@ -4559,7 +4559,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_join is
+entity zcu111_tengbe_tx_rx_join_x1 is
   port (
     in1 : in std_logic_vector( 32-1 downto 0 );
     in2 : in std_logic_vector( 32-1 downto 0 );
@@ -4567,8 +4567,8 @@ entity zcu111_tengbe_tx_rx_join is
     in4 : in std_logic_vector( 32-1 downto 0 );
     bus_out : out std_logic_vector( 128-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_join;
-architecture structural of zcu111_tengbe_tx_rx_join is 
+end zcu111_tengbe_tx_rx_join_x1;
+architecture structural of zcu111_tengbe_tx_rx_join_x1 is 
   signal concatenate_y_net : std_logic_vector( 128-1 downto 0 );
   signal reinterpret1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 32-1 downto 0 );
@@ -4633,7 +4633,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_split is
+entity zcu111_tengbe_tx_rx_split_x1 is
   port (
     bus_in : in std_logic_vector( 128-1 downto 0 );
     msb_out4 : out std_logic_vector( 32-1 downto 0 );
@@ -4641,8 +4641,8 @@ entity zcu111_tengbe_tx_rx_split is
     out2 : out std_logic_vector( 32-1 downto 0 );
     lsb_out1 : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_split;
-architecture structural of zcu111_tengbe_tx_rx_split is 
+end zcu111_tengbe_tx_rx_split_x1;
+architecture structural of zcu111_tengbe_tx_rx_split_x1 is 
   signal reinterpret4_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret3_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 32-1 downto 0 );
@@ -4758,7 +4758,7 @@ architecture structural of zcu111_tengbe_tx_rx_munge_in_x3 is
 begin
   dout <= reinterpret_out_output_port_net;
   dat_del_q_net <= din;
-  join_x4 : entity xil_defaultlib.zcu111_tengbe_tx_rx_join 
+  join_x4 : entity xil_defaultlib.zcu111_tengbe_tx_rx_join_x1 
   port map (
     in1 => reinterpret1_output_port_net,
     in2 => reinterpret2_output_port_net,
@@ -4766,7 +4766,7 @@ begin
     in4 => reinterpret4_output_port_net,
     bus_out => concatenate_y_net
   );
-  split_x4 : entity xil_defaultlib.zcu111_tengbe_tx_rx_split 
+  split_x4 : entity xil_defaultlib.zcu111_tengbe_tx_rx_split_x1 
   port map (
     bus_in => reinterpret_output_port_net,
     msb_out4 => reinterpret4_output_port_net,
@@ -5272,7 +5272,7 @@ begin
     we_o => logical6_y_net,
     status => concat_y_net
   );
-  basic_ctrl : entity xil_defaultlib.zcu111_tengbe_tx_rx_basic_ctrl_x2 
+  basic_ctrl : entity xil_defaultlib.zcu111_tengbe_tx_rx_basic_ctrl_x1 
   port map (
     din => cast_dout_net,
     we => register4_q_net_x1,
@@ -5423,15 +5423,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_trig_delay_x0 is
+entity zcu111_tengbe_tx_rx_trig_delay is
   port (
     d : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     q : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_trig_delay_x0;
-architecture structural of zcu111_tengbe_tx_rx_trig_delay_x0 is 
+end zcu111_tengbe_tx_rx_trig_delay;
+architecture structural of zcu111_tengbe_tx_rx_trig_delay is 
   signal register4_q_net : std_logic_vector( 1-1 downto 0 );
   signal txsnap_and_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -5609,7 +5609,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_txs_x0 is
+entity zcu111_tengbe_tx_rx_txs is
   port (
     in_link_up : in std_logic_vector( 1-1 downto 0 );
     in_led_tx : in std_logic_vector( 1-1 downto 0 );
@@ -5631,8 +5631,8 @@ entity zcu111_tengbe_tx_rx_txs_x0 is
     goto_39954481_we1 : out std_logic_vector( 1-1 downto 0 );
     goto_39954481_we4 : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_txs_x0;
-architecture structural of zcu111_tengbe_tx_rx_txs_x0 is 
+end zcu111_tengbe_tx_rx_txs;
+architecture structural of zcu111_tengbe_tx_rx_txs is 
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe0_led_up_net : std_logic_vector( 1-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe0_led_tx_net : std_logic_vector( 1-1 downto 0 );
@@ -5696,7 +5696,7 @@ begin
     in8 => assert_ip_dout_net,
     bus_out => concatenate_y_net
   );
-  io_delay : entity xil_defaultlib.zcu111_tengbe_tx_rx_io_delay_x1 
+  io_delay : entity xil_defaultlib.zcu111_tengbe_tx_rx_io_delay 
   port map (
     d => concatenate_y_net,
     clk_1 => clk_net,
@@ -5719,7 +5719,7 @@ begin
     zcu111_tengbe_tx_rx_gbe0_txs_ss_bram_we => convert_we_dout_net,
     zcu111_tengbe_tx_rx_gbe0_txs_ss_status_user_data_in => cast_gw_dout_net
   );
-  trig_delay : entity xil_defaultlib.zcu111_tengbe_tx_rx_trig_delay_x0 
+  trig_delay : entity xil_defaultlib.zcu111_tengbe_tx_rx_trig_delay 
   port map (
     d => txsnap_and_y_net,
     clk_1 => clk_net,
@@ -6084,35 +6084,35 @@ begin
   goto_39954481_we4 <= logical6_y_net_x0;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  rxbadctr : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxbadctr_x0 
+  rxbadctr : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxbadctr 
   port map (
     out_reg => rxbadctr_del2_q_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     zcu111_tengbe_tx_rx_gbe0_rxbadctr_user_data_in => cast_gw_dout_net
   );
-  rxctr : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxctr_x0 
+  rxctr : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxctr 
   port map (
     out_reg => rxctr_del2_q_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     zcu111_tengbe_tx_rx_gbe0_rxctr_user_data_in => cast_gw_dout_net_x0
   );
-  rxctr_ed : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxctr_ed_x0 
+  rxctr_ed : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxctr_ed 
   port map (
     in_x0 => rxctr_and_y_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     out_x0 => edge_op_y_net
   );
-  rxeofctr : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxeofctr_x0 
+  rxeofctr : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxeofctr 
   port map (
     out_reg => rxeofctr_del2_q_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     zcu111_tengbe_tx_rx_gbe0_rxeofctr_user_data_in => cast_gw_dout_net_x1
   );
-  rxofctr : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxofctr_x0 
+  rxofctr : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxofctr 
   port map (
     out_reg => rxofctr_del2_q_net,
     clk_1 => clk_net,
@@ -6176,7 +6176,7 @@ begin
     ce_1 => ce_net,
     zcu111_tengbe_tx_rx_gbe0_txofctr_user_data_in => cast_gw_dout_net_x8
   );
-  txs : entity xil_defaultlib.zcu111_tengbe_tx_rx_txs_x0 
+  txs : entity xil_defaultlib.zcu111_tengbe_tx_rx_txs 
   port map (
     in_link_up => zcu111_tengbe_tx_rx_gbe0_led_up_net,
     in_led_tx => zcu111_tengbe_tx_rx_gbe0_led_tx_net,
@@ -6786,15 +6786,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_rxbadctr is
+entity zcu111_tengbe_tx_rx_rxbadctr_x0 is
   port (
     out_reg : in std_logic_vector( 32-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     zcu111_tengbe_tx_rx_gbe1_rxbadctr_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_rxbadctr;
-architecture structural of zcu111_tengbe_tx_rx_rxbadctr is 
+end zcu111_tengbe_tx_rx_rxbadctr_x0;
+architecture structural of zcu111_tengbe_tx_rx_rxbadctr_x0 is 
   signal rxbadctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
@@ -6859,15 +6859,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_rxctr is
+entity zcu111_tengbe_tx_rx_rxctr_x0 is
   port (
     out_reg : in std_logic_vector( 32-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     zcu111_tengbe_tx_rx_gbe1_rxctr_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_rxctr;
-architecture structural of zcu111_tengbe_tx_rx_rxctr is 
+end zcu111_tengbe_tx_rx_rxctr_x0;
+architecture structural of zcu111_tengbe_tx_rx_rxctr_x0 is 
   signal rxctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
@@ -6932,15 +6932,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_rxctr_ed is
+entity zcu111_tengbe_tx_rx_rxctr_ed_x0 is
   port (
     in_x0 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_rxctr_ed;
-architecture structural of zcu111_tengbe_tx_rx_rxctr_ed is 
+end zcu111_tengbe_tx_rx_rxctr_ed_x0;
+architecture structural of zcu111_tengbe_tx_rx_rxctr_ed_x0 is 
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal rxctr_and_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -6990,15 +6990,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_rxeofctr is
+entity zcu111_tengbe_tx_rx_rxeofctr_x0 is
   port (
     out_reg : in std_logic_vector( 32-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     zcu111_tengbe_tx_rx_gbe1_rxeofctr_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_rxeofctr;
-architecture structural of zcu111_tengbe_tx_rx_rxeofctr is 
+end zcu111_tengbe_tx_rx_rxeofctr_x0;
+architecture structural of zcu111_tengbe_tx_rx_rxeofctr_x0 is 
   signal rxeofctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
@@ -7063,15 +7063,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_rxofctr is
+entity zcu111_tengbe_tx_rx_rxofctr_x0 is
   port (
     out_reg : in std_logic_vector( 32-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     zcu111_tengbe_tx_rx_gbe1_rxofctr_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_rxofctr;
-architecture structural of zcu111_tengbe_tx_rx_rxofctr is 
+end zcu111_tengbe_tx_rx_rxofctr_x0;
+architecture structural of zcu111_tengbe_tx_rx_rxofctr_x0 is 
   signal rxofctr_del2_q_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
@@ -7262,15 +7262,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_io_delay_x0 is
+entity zcu111_tengbe_tx_rx_io_delay_x1 is
   port (
     d : in std_logic_vector( 102-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     q : out std_logic_vector( 102-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_io_delay_x0;
-architecture structural of zcu111_tengbe_tx_rx_io_delay_x0 is 
+end zcu111_tengbe_tx_rx_io_delay_x1;
+architecture structural of zcu111_tengbe_tx_rx_io_delay_x1 is 
   signal register4_q_net : std_logic_vector( 102-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 102-1 downto 0 );
   signal clk_net : std_logic;
@@ -7355,15 +7355,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_edge_detect_x1 is
+entity zcu111_tengbe_tx_rx_edge_detect_x6 is
   port (
     in_x0 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_edge_detect_x1;
-architecture structural of zcu111_tengbe_tx_rx_edge_detect_x1 is 
+end zcu111_tengbe_tx_rx_edge_detect_x6;
+architecture structural of zcu111_tengbe_tx_rx_edge_detect_x6 is 
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -7413,7 +7413,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_add_gen_x0 is
+entity zcu111_tengbe_tx_rx_add_gen_x3 is
   port (
     din : in std_logic_vector( 128-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -7427,8 +7427,8 @@ entity zcu111_tengbe_tx_rx_add_gen_x0 is
     we_o : out std_logic_vector( 1-1 downto 0 );
     status : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_add_gen_x0;
-architecture structural of zcu111_tengbe_tx_rx_add_gen_x0 is 
+end zcu111_tengbe_tx_rx_add_gen_x3;
+architecture structural of zcu111_tengbe_tx_rx_add_gen_x3 is 
   signal slice2_y_net : std_logic_vector( 13-1 downto 0 );
   signal delay6_q_net : std_logic_vector( 128-1 downto 0 );
   signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
@@ -7467,7 +7467,7 @@ begin
   edge_op_y_net <= init;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect_x1 
+  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect_x6 
   port map (
     in_x0 => slice3_y_net,
     clk_1 => clk_net,
@@ -7670,7 +7670,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_dram_munge is
+entity zcu111_tengbe_tx_rx_dram_munge_x2 is
   port (
     din : in std_logic_vector( 128-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -7680,8 +7680,8 @@ entity zcu111_tengbe_tx_rx_dram_munge is
     dout : out std_logic_vector( 128-1 downto 0 );
     we_o : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_dram_munge;
-architecture structural of zcu111_tengbe_tx_rx_dram_munge is 
+end zcu111_tengbe_tx_rx_dram_munge_x2;
+architecture structural of zcu111_tengbe_tx_rx_dram_munge_x2 is 
   signal data_choice_y_net : std_logic_vector( 128-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal cast_dout_net : std_logic_vector( 128-1 downto 0 );
@@ -7979,15 +7979,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_edge_detect_x0 is
+entity zcu111_tengbe_tx_rx_edge_detect_x7 is
   port (
     in_x0 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_edge_detect_x0;
-architecture structural of zcu111_tengbe_tx_rx_edge_detect_x0 is 
+end zcu111_tengbe_tx_rx_edge_detect_x7;
+architecture structural of zcu111_tengbe_tx_rx_edge_detect_x7 is 
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -8037,7 +8037,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_basic_ctrl is
+entity zcu111_tengbe_tx_rx_basic_ctrl_x3 is
   port (
     din : in std_logic_vector( 128-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -8051,8 +8051,8 @@ entity zcu111_tengbe_tx_rx_basic_ctrl is
     go : out std_logic_vector( 1-1 downto 0 );
     init : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_basic_ctrl;
-architecture structural of zcu111_tengbe_tx_rx_basic_ctrl is 
+end zcu111_tengbe_tx_rx_basic_ctrl_x3;
+architecture structural of zcu111_tengbe_tx_rx_basic_ctrl_x3 is 
   signal data_choice_y_net : std_logic_vector( 128-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
@@ -8090,7 +8090,7 @@ begin
   never_op_net <= stopi;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  dram_munge : entity xil_defaultlib.zcu111_tengbe_tx_rx_dram_munge 
+  dram_munge : entity xil_defaultlib.zcu111_tengbe_tx_rx_dram_munge_x2 
   port map (
     din => cast_dout_net,
     we => mux1_y_net,
@@ -8100,7 +8100,7 @@ begin
     dout => data_choice_y_net,
     we_o => we_choice_y_net
   );
-  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect_x0 
+  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect_x7 
   port map (
     in_x0 => delay1_q_net,
     clk_1 => clk_net,
@@ -8275,15 +8275,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_calc_add is
+entity zcu111_tengbe_tx_rx_calc_add_x2 is
   port (
     in_x0 : in std_logic_vector( 13-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 13-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_calc_add;
-architecture structural of zcu111_tengbe_tx_rx_calc_add is 
+end zcu111_tengbe_tx_rx_calc_add_x2;
+architecture structural of zcu111_tengbe_tx_rx_calc_add_x2 is 
   signal mux_y_net : std_logic_vector( 13-1 downto 0 );
   signal add_del_q_net : std_logic_vector( 13-1 downto 0 );
   signal clk_net : std_logic;
@@ -8572,13 +8572,13 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_munge_in is
+entity zcu111_tengbe_tx_rx_munge_in_x2 is
   port (
     din : in std_logic_vector( 128-1 downto 0 );
     dout : out std_logic_vector( 128-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_munge_in;
-architecture structural of zcu111_tengbe_tx_rx_munge_in is 
+end zcu111_tengbe_tx_rx_munge_in_x2;
+architecture structural of zcu111_tengbe_tx_rx_munge_in_x2 is 
   signal reinterpret_out_output_port_net : std_logic_vector( 128-1 downto 0 );
   signal dat_del_q_net : std_logic_vector( 128-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 128-1 downto 0 );
@@ -8628,7 +8628,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_bram is
+entity zcu111_tengbe_tx_rx_bram_x2 is
   port (
     addr : in std_logic_vector( 13-1 downto 0 );
     data_in : in std_logic_vector( 128-1 downto 0 );
@@ -8639,8 +8639,8 @@ entity zcu111_tengbe_tx_rx_bram is
     zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_data_in : out std_logic_vector( 128-1 downto 0 );
     zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_we : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_bram;
-architecture structural of zcu111_tengbe_tx_rx_bram is 
+end zcu111_tengbe_tx_rx_bram_x2;
+architecture structural of zcu111_tengbe_tx_rx_bram_x2 is 
   signal add_del_q_net : std_logic_vector( 13-1 downto 0 );
   signal dat_del_q_net : std_logic_vector( 128-1 downto 0 );
   signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
@@ -8660,14 +8660,14 @@ begin
   zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_we <= convert_we_dout_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  calc_add : entity xil_defaultlib.zcu111_tengbe_tx_rx_calc_add 
+  calc_add : entity xil_defaultlib.zcu111_tengbe_tx_rx_calc_add_x2 
   port map (
     in_x0 => add_del_q_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     out_x0 => mux_y_net
   );
-  munge_in : entity xil_defaultlib.zcu111_tengbe_tx_rx_munge_in 
+  munge_in : entity xil_defaultlib.zcu111_tengbe_tx_rx_munge_in_x2 
   port map (
     din => dat_del_q_net,
     dout => reinterpret_out_output_port_net
@@ -8741,13 +8741,13 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_ctrl is
+entity zcu111_tengbe_tx_rx_ctrl_x2 is
   port (
     zcu111_tengbe_tx_rx_gbe1_rxs_ss_ctrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
     in_reg : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_ctrl;
-architecture structural of zcu111_tengbe_tx_rx_ctrl is 
+end zcu111_tengbe_tx_rx_ctrl_x2;
+architecture structural of zcu111_tengbe_tx_rx_ctrl_x2 is 
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe1_rxs_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
@@ -8788,7 +8788,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_ctrl_combine is
+entity zcu111_tengbe_tx_rx_ctrl_combine_x2 is
   port (
     in1 : in std_logic_vector( 28-1 downto 0 );
     in2 : in std_logic_vector( 1-1 downto 0 );
@@ -8796,8 +8796,8 @@ entity zcu111_tengbe_tx_rx_ctrl_combine is
     in4 : in std_logic_vector( 1-1 downto 0 );
     bus_out : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_ctrl_combine;
-architecture structural of zcu111_tengbe_tx_rx_ctrl_combine is 
+end zcu111_tengbe_tx_rx_ctrl_combine_x2;
+architecture structural of zcu111_tengbe_tx_rx_ctrl_combine_x2 is 
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret4_output_port_net_x0 : std_logic_vector( 28-1 downto 0 );
   signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
@@ -8862,7 +8862,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_ctrl_split is
+entity zcu111_tengbe_tx_rx_ctrl_split_x2 is
   port (
     bus_in : in std_logic_vector( 32-1 downto 0 );
     msb_out4 : out std_logic_vector( 28-1 downto 0 );
@@ -8870,8 +8870,8 @@ entity zcu111_tengbe_tx_rx_ctrl_split is
     out2 : out std_logic_vector( 2-1 downto 0 );
     lsb_out1 : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_ctrl_split;
-architecture structural of zcu111_tengbe_tx_rx_ctrl_split is 
+end zcu111_tengbe_tx_rx_ctrl_split_x2;
+architecture structural of zcu111_tengbe_tx_rx_ctrl_split_x2 is 
   signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
@@ -8951,15 +8951,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_status is
+entity zcu111_tengbe_tx_rx_status_x0 is
   port (
     out_reg : in std_logic_vector( 32-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     zcu111_tengbe_tx_rx_gbe1_rxs_ss_status_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_status;
-architecture structural of zcu111_tengbe_tx_rx_status is 
+end zcu111_tengbe_tx_rx_status_x0;
+architecture structural of zcu111_tengbe_tx_rx_status_x0 is 
   signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
   signal concat_y_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
@@ -9024,7 +9024,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_ss_x0 is
+entity zcu111_tengbe_tx_rx_ss_x3 is
   port (
     din : in std_logic_vector( 102-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -9040,8 +9040,8 @@ entity zcu111_tengbe_tx_rx_ss_x0 is
     zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_we : out std_logic_vector( 1-1 downto 0 );
     zcu111_tengbe_tx_rx_gbe1_rxs_ss_status_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_ss_x0;
-architecture structural of zcu111_tengbe_tx_rx_ss_x0 is 
+end zcu111_tengbe_tx_rx_ss_x3;
+architecture structural of zcu111_tengbe_tx_rx_ss_x3 is 
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal register4_q_net_x0 : std_logic_vector( 102-1 downto 0 );
   signal register4_q_net_x1 : std_logic_vector( 1-1 downto 0 );
@@ -9090,7 +9090,7 @@ begin
   zcu111_tengbe_tx_rx_gbe1_rxs_ss_status_user_data_in <= cast_gw_dout_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  add_gen : entity xil_defaultlib.zcu111_tengbe_tx_rx_add_gen_x0 
+  add_gen : entity xil_defaultlib.zcu111_tengbe_tx_rx_add_gen_x3 
   port map (
     din => data_choice_y_net,
     we => we_choice_y_net,
@@ -9104,7 +9104,7 @@ begin
     we_o => logical6_y_net,
     status => concat_y_net
   );
-  basic_ctrl : entity xil_defaultlib.zcu111_tengbe_tx_rx_basic_ctrl 
+  basic_ctrl : entity xil_defaultlib.zcu111_tengbe_tx_rx_basic_ctrl_x3 
   port map (
     din => cast_dout_net,
     we => register4_q_net_x1,
@@ -9118,7 +9118,7 @@ begin
     go => register6_q_net,
     init => edge_op_y_net_x0
   );
-  bram : entity xil_defaultlib.zcu111_tengbe_tx_rx_bram 
+  bram : entity xil_defaultlib.zcu111_tengbe_tx_rx_bram_x2 
   port map (
     addr => add_del_q_net,
     data_in => dat_del_q_net,
@@ -9129,12 +9129,12 @@ begin
     zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_data_in => convert_din1_dout_net,
     zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_we => convert_we_dout_net
   );
-  ctrl : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl 
+  ctrl : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl_x2 
   port map (
     zcu111_tengbe_tx_rx_gbe1_rxs_ss_ctrl_user_data_out => zcu111_tengbe_tx_rx_gbe1_rxs_ss_ctrl_user_data_out_net,
     in_reg => reint1_output_port_net
   );
-  ctrl_combine : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl_combine 
+  ctrl_combine : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl_combine_x2 
   port map (
     in1 => reinterpret4_output_port_net,
     in2 => circ_or_y_net,
@@ -9142,7 +9142,7 @@ begin
     in4 => arm_or_y_net,
     bus_out => concatenate_y_net
   );
-  ctrl_split : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl_split 
+  ctrl_split : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl_split_x2 
   port map (
     bus_in => reint1_output_port_net,
     msb_out4 => reinterpret4_output_port_net,
@@ -9150,7 +9150,7 @@ begin
     out2 => reinterpret2_output_port_net,
     lsb_out1 => slice1_y_net
   );
-  status : entity xil_defaultlib.zcu111_tengbe_tx_rx_status 
+  status : entity xil_defaultlib.zcu111_tengbe_tx_rx_status_x0 
   port map (
     out_reg => concat_y_net,
     clk_1 => clk_net,
@@ -9348,15 +9348,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_we_delay_x0 is
+entity zcu111_tengbe_tx_rx_we_delay_x2 is
   port (
     d : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     q : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_we_delay_x0;
-architecture structural of zcu111_tengbe_tx_rx_we_delay_x0 is 
+end zcu111_tengbe_tx_rx_we_delay_x2;
+architecture structural of zcu111_tengbe_tx_rx_we_delay_x2 is 
   signal register4_q_net : std_logic_vector( 1-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe1_rx_valid_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -9528,14 +9528,14 @@ begin
     in8 => assert_overrun_dout_net,
     bus_out => concatenate_y_net
   );
-  io_delay : entity xil_defaultlib.zcu111_tengbe_tx_rx_io_delay_x0 
+  io_delay : entity xil_defaultlib.zcu111_tengbe_tx_rx_io_delay_x1 
   port map (
     d => concatenate_y_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     q => register4_q_net_x1
   );
-  ss : entity xil_defaultlib.zcu111_tengbe_tx_rx_ss_x0 
+  ss : entity xil_defaultlib.zcu111_tengbe_tx_rx_ss_x3 
   port map (
     din => register4_q_net_x1,
     we => register4_q_net,
@@ -9558,7 +9558,7 @@ begin
     ce_1 => ce_net,
     q => register4_q_net_x0
   );
-  we_delay : entity xil_defaultlib.zcu111_tengbe_tx_rx_we_delay_x0 
+  we_delay : entity xil_defaultlib.zcu111_tengbe_tx_rx_we_delay_x2 
   port map (
     d => zcu111_tengbe_tx_rx_gbe1_rx_valid_net,
     clk_1 => clk_net,
@@ -9993,7 +9993,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_buscreate is
+entity zcu111_tengbe_tx_rx_buscreate_x1 is
   port (
     in1 : in std_logic_vector( 1-1 downto 0 );
     in2 : in std_logic_vector( 1-1 downto 0 );
@@ -10005,8 +10005,8 @@ entity zcu111_tengbe_tx_rx_buscreate is
     in8 : in std_logic_vector( 32-1 downto 0 );
     bus_out : out std_logic_vector( 102-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_buscreate;
-architecture structural of zcu111_tengbe_tx_rx_buscreate is 
+end zcu111_tengbe_tx_rx_buscreate_x1;
+architecture structural of zcu111_tengbe_tx_rx_buscreate_x1 is 
   signal concatenate_y_net : std_logic_vector( 102-1 downto 0 );
   signal assert_link_up_dout_net : std_logic_vector( 1-1 downto 0 );
   signal assert_led_tx_dout_net : std_logic_vector( 1-1 downto 0 );
@@ -10119,15 +10119,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_io_delay is
+entity zcu111_tengbe_tx_rx_io_delay_x2 is
   port (
     d : in std_logic_vector( 102-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     q : out std_logic_vector( 102-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_io_delay;
-architecture structural of zcu111_tengbe_tx_rx_io_delay is 
+end zcu111_tengbe_tx_rx_io_delay_x2;
+architecture structural of zcu111_tengbe_tx_rx_io_delay_x2 is 
   signal register4_q_net : std_logic_vector( 102-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 102-1 downto 0 );
   signal clk_net : std_logic;
@@ -10212,15 +10212,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_edge_detect is
+entity zcu111_tengbe_tx_rx_edge_detect_x0 is
   port (
     in_x0 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_edge_detect;
-architecture structural of zcu111_tengbe_tx_rx_edge_detect is 
+end zcu111_tengbe_tx_rx_edge_detect_x0;
+architecture structural of zcu111_tengbe_tx_rx_edge_detect_x0 is 
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -10270,7 +10270,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_add_gen is
+entity zcu111_tengbe_tx_rx_add_gen_x0 is
   port (
     din : in std_logic_vector( 128-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -10284,8 +10284,8 @@ entity zcu111_tengbe_tx_rx_add_gen is
     we_o : out std_logic_vector( 1-1 downto 0 );
     status : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_add_gen;
-architecture structural of zcu111_tengbe_tx_rx_add_gen is 
+end zcu111_tengbe_tx_rx_add_gen_x0;
+architecture structural of zcu111_tengbe_tx_rx_add_gen_x0 is 
   signal convert_dout_net : std_logic_vector( 14-1 downto 0 );
   signal register5_q_net : std_logic_vector( 1-1 downto 0 );
   signal delay_q_net : std_logic_vector( 1-1 downto 0 );
@@ -10324,7 +10324,7 @@ begin
   edge_op_y_net <= init;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect 
+  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect_x0 
   port map (
     in_x0 => slice3_y_net,
     clk_1 => clk_net,
@@ -10527,7 +10527,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_dram_munge_x0 is
+entity zcu111_tengbe_tx_rx_dram_munge is
   port (
     din : in std_logic_vector( 128-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -10537,8 +10537,8 @@ entity zcu111_tengbe_tx_rx_dram_munge_x0 is
     dout : out std_logic_vector( 128-1 downto 0 );
     we_o : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_dram_munge_x0;
-architecture structural of zcu111_tengbe_tx_rx_dram_munge_x0 is 
+end zcu111_tengbe_tx_rx_dram_munge;
+architecture structural of zcu111_tengbe_tx_rx_dram_munge is 
   signal data_choice_y_net : std_logic_vector( 128-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal cast_dout_net : std_logic_vector( 128-1 downto 0 );
@@ -10836,15 +10836,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_edge_detect_x2 is
+entity zcu111_tengbe_tx_rx_edge_detect_x1 is
   port (
     in_x0 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_edge_detect_x2;
-architecture structural of zcu111_tengbe_tx_rx_edge_detect_x2 is 
+end zcu111_tengbe_tx_rx_edge_detect_x1;
+architecture structural of zcu111_tengbe_tx_rx_edge_detect_x1 is 
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -10894,7 +10894,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_basic_ctrl_x0 is
+entity zcu111_tengbe_tx_rx_basic_ctrl is
   port (
     din : in std_logic_vector( 128-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -10908,8 +10908,8 @@ entity zcu111_tengbe_tx_rx_basic_ctrl_x0 is
     go : out std_logic_vector( 1-1 downto 0 );
     init : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_basic_ctrl_x0;
-architecture structural of zcu111_tengbe_tx_rx_basic_ctrl_x0 is 
+end zcu111_tengbe_tx_rx_basic_ctrl;
+architecture structural of zcu111_tengbe_tx_rx_basic_ctrl is 
   signal data_choice_y_net : std_logic_vector( 128-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
@@ -10947,7 +10947,7 @@ begin
   never_op_net <= stopi;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  dram_munge : entity xil_defaultlib.zcu111_tengbe_tx_rx_dram_munge_x0 
+  dram_munge : entity xil_defaultlib.zcu111_tengbe_tx_rx_dram_munge 
   port map (
     din => cast_dout_net,
     we => mux1_y_net,
@@ -10957,7 +10957,7 @@ begin
     dout => data_choice_y_net,
     we_o => we_choice_y_net
   );
-  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect_x2 
+  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect_x1 
   port map (
     in_x0 => delay1_q_net,
     clk_1 => clk_net,
@@ -11132,15 +11132,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_calc_add_x0 is
+entity zcu111_tengbe_tx_rx_calc_add is
   port (
     in_x0 : in std_logic_vector( 13-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 13-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_calc_add_x0;
-architecture structural of zcu111_tengbe_tx_rx_calc_add_x0 is 
+end zcu111_tengbe_tx_rx_calc_add;
+architecture structural of zcu111_tengbe_tx_rx_calc_add is 
   signal mux_y_net : std_logic_vector( 13-1 downto 0 );
   signal add_del_q_net : std_logic_vector( 13-1 downto 0 );
   signal clk_net : std_logic;
@@ -11248,7 +11248,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_join_x2 is
+entity zcu111_tengbe_tx_rx_join is
   port (
     in1 : in std_logic_vector( 32-1 downto 0 );
     in2 : in std_logic_vector( 32-1 downto 0 );
@@ -11256,8 +11256,8 @@ entity zcu111_tengbe_tx_rx_join_x2 is
     in4 : in std_logic_vector( 32-1 downto 0 );
     bus_out : out std_logic_vector( 128-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_join_x2;
-architecture structural of zcu111_tengbe_tx_rx_join_x2 is 
+end zcu111_tengbe_tx_rx_join;
+architecture structural of zcu111_tengbe_tx_rx_join is 
   signal concatenate_y_net : std_logic_vector( 128-1 downto 0 );
   signal reinterpret1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 32-1 downto 0 );
@@ -11322,7 +11322,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_split_x2 is
+entity zcu111_tengbe_tx_rx_split is
   port (
     bus_in : in std_logic_vector( 128-1 downto 0 );
     msb_out4 : out std_logic_vector( 32-1 downto 0 );
@@ -11330,8 +11330,8 @@ entity zcu111_tengbe_tx_rx_split_x2 is
     out2 : out std_logic_vector( 32-1 downto 0 );
     lsb_out1 : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_split_x2;
-architecture structural of zcu111_tengbe_tx_rx_split_x2 is 
+end zcu111_tengbe_tx_rx_split;
+architecture structural of zcu111_tengbe_tx_rx_split is 
   signal reinterpret4_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret3_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 32-1 downto 0 );
@@ -11429,13 +11429,13 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_munge_in_x0 is
+entity zcu111_tengbe_tx_rx_munge_in is
   port (
     din : in std_logic_vector( 128-1 downto 0 );
     dout : out std_logic_vector( 128-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_munge_in_x0;
-architecture structural of zcu111_tengbe_tx_rx_munge_in_x0 is 
+end zcu111_tengbe_tx_rx_munge_in;
+architecture structural of zcu111_tengbe_tx_rx_munge_in is 
   signal reinterpret_out_output_port_net : std_logic_vector( 128-1 downto 0 );
   signal dat_del_q_net : std_logic_vector( 128-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 128-1 downto 0 );
@@ -11447,7 +11447,7 @@ architecture structural of zcu111_tengbe_tx_rx_munge_in_x0 is
 begin
   dout <= reinterpret_out_output_port_net;
   dat_del_q_net <= din;
-  join_x4 : entity xil_defaultlib.zcu111_tengbe_tx_rx_join_x2 
+  join_x4 : entity xil_defaultlib.zcu111_tengbe_tx_rx_join 
   port map (
     in1 => reinterpret1_output_port_net,
     in2 => reinterpret2_output_port_net,
@@ -11455,7 +11455,7 @@ begin
     in4 => reinterpret4_output_port_net,
     bus_out => concatenate_y_net
   );
-  split_x4 : entity xil_defaultlib.zcu111_tengbe_tx_rx_split_x2 
+  split_x4 : entity xil_defaultlib.zcu111_tengbe_tx_rx_split 
   port map (
     bus_in => reinterpret_output_port_net,
     msb_out4 => reinterpret4_output_port_net,
@@ -11485,7 +11485,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_bram_x0 is
+entity zcu111_tengbe_tx_rx_bram is
   port (
     addr : in std_logic_vector( 13-1 downto 0 );
     data_in : in std_logic_vector( 128-1 downto 0 );
@@ -11496,8 +11496,8 @@ entity zcu111_tengbe_tx_rx_bram_x0 is
     zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_data_in : out std_logic_vector( 128-1 downto 0 );
     zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_we : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_bram_x0;
-architecture structural of zcu111_tengbe_tx_rx_bram_x0 is 
+end zcu111_tengbe_tx_rx_bram;
+architecture structural of zcu111_tengbe_tx_rx_bram is 
   signal add_del_q_net : std_logic_vector( 13-1 downto 0 );
   signal dat_del_q_net : std_logic_vector( 128-1 downto 0 );
   signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
@@ -11517,14 +11517,14 @@ begin
   zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_we <= convert_we_dout_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  calc_add : entity xil_defaultlib.zcu111_tengbe_tx_rx_calc_add_x0 
+  calc_add : entity xil_defaultlib.zcu111_tengbe_tx_rx_calc_add 
   port map (
     in_x0 => add_del_q_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     out_x0 => mux_y_net
   );
-  munge_in : entity xil_defaultlib.zcu111_tengbe_tx_rx_munge_in_x0 
+  munge_in : entity xil_defaultlib.zcu111_tengbe_tx_rx_munge_in 
   port map (
     din => dat_del_q_net,
     dout => reinterpret_out_output_port_net
@@ -11598,13 +11598,13 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_ctrl_x1 is
+entity zcu111_tengbe_tx_rx_ctrl is
   port (
     zcu111_tengbe_tx_rx_gbe1_txs_ss_ctrl_user_data_out : in std_logic_vector( 32-1 downto 0 );
     in_reg : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_ctrl_x1;
-architecture structural of zcu111_tengbe_tx_rx_ctrl_x1 is 
+end zcu111_tengbe_tx_rx_ctrl;
+architecture structural of zcu111_tengbe_tx_rx_ctrl is 
   signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe1_txs_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
@@ -11645,7 +11645,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_ctrl_combine_x1 is
+entity zcu111_tengbe_tx_rx_ctrl_combine is
   port (
     in1 : in std_logic_vector( 28-1 downto 0 );
     in2 : in std_logic_vector( 1-1 downto 0 );
@@ -11653,8 +11653,8 @@ entity zcu111_tengbe_tx_rx_ctrl_combine_x1 is
     in4 : in std_logic_vector( 1-1 downto 0 );
     bus_out : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_ctrl_combine_x1;
-architecture structural of zcu111_tengbe_tx_rx_ctrl_combine_x1 is 
+end zcu111_tengbe_tx_rx_ctrl_combine;
+architecture structural of zcu111_tengbe_tx_rx_ctrl_combine is 
   signal concatenate_y_net : std_logic_vector( 32-1 downto 0 );
   signal reinterpret4_output_port_net_x0 : std_logic_vector( 28-1 downto 0 );
   signal circ_or_y_net : std_logic_vector( 1-1 downto 0 );
@@ -11719,7 +11719,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_ctrl_split_x1 is
+entity zcu111_tengbe_tx_rx_ctrl_split is
   port (
     bus_in : in std_logic_vector( 32-1 downto 0 );
     msb_out4 : out std_logic_vector( 28-1 downto 0 );
@@ -11727,8 +11727,8 @@ entity zcu111_tengbe_tx_rx_ctrl_split_x1 is
     out2 : out std_logic_vector( 2-1 downto 0 );
     lsb_out1 : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_ctrl_split_x1;
-architecture structural of zcu111_tengbe_tx_rx_ctrl_split_x1 is 
+end zcu111_tengbe_tx_rx_ctrl_split;
+architecture structural of zcu111_tengbe_tx_rx_ctrl_split is 
   signal reinterpret4_output_port_net : std_logic_vector( 28-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal reinterpret2_output_port_net : std_logic_vector( 2-1 downto 0 );
@@ -11881,7 +11881,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_ss is
+entity zcu111_tengbe_tx_rx_ss_x0 is
   port (
     din : in std_logic_vector( 102-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -11897,8 +11897,8 @@ entity zcu111_tengbe_tx_rx_ss is
     zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_we : out std_logic_vector( 1-1 downto 0 );
     zcu111_tengbe_tx_rx_gbe1_txs_ss_status_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_ss;
-architecture structural of zcu111_tengbe_tx_rx_ss is 
+end zcu111_tengbe_tx_rx_ss_x0;
+architecture structural of zcu111_tengbe_tx_rx_ss_x0 is 
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal register4_q_net_x0 : std_logic_vector( 102-1 downto 0 );
   signal register4_q_net_x1 : std_logic_vector( 1-1 downto 0 );
@@ -11947,7 +11947,7 @@ begin
   zcu111_tengbe_tx_rx_gbe1_txs_ss_status_user_data_in <= cast_gw_dout_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  add_gen : entity xil_defaultlib.zcu111_tengbe_tx_rx_add_gen 
+  add_gen : entity xil_defaultlib.zcu111_tengbe_tx_rx_add_gen_x0 
   port map (
     din => data_choice_y_net,
     we => we_choice_y_net,
@@ -11961,7 +11961,7 @@ begin
     we_o => logical6_y_net,
     status => concat_y_net
   );
-  basic_ctrl : entity xil_defaultlib.zcu111_tengbe_tx_rx_basic_ctrl_x0 
+  basic_ctrl : entity xil_defaultlib.zcu111_tengbe_tx_rx_basic_ctrl 
   port map (
     din => cast_dout_net,
     we => register4_q_net_x1,
@@ -11975,7 +11975,7 @@ begin
     go => register6_q_net,
     init => edge_op_y_net_x0
   );
-  bram : entity xil_defaultlib.zcu111_tengbe_tx_rx_bram_x0 
+  bram : entity xil_defaultlib.zcu111_tengbe_tx_rx_bram 
   port map (
     addr => add_del_q_net,
     data_in => dat_del_q_net,
@@ -11986,12 +11986,12 @@ begin
     zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_data_in => convert_din1_dout_net,
     zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_we => convert_we_dout_net
   );
-  ctrl : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl_x1 
+  ctrl : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl 
   port map (
     zcu111_tengbe_tx_rx_gbe1_txs_ss_ctrl_user_data_out => zcu111_tengbe_tx_rx_gbe1_txs_ss_ctrl_user_data_out_net,
     in_reg => reint1_output_port_net
   );
-  ctrl_combine : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl_combine_x1 
+  ctrl_combine : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl_combine 
   port map (
     in1 => reinterpret4_output_port_net,
     in2 => circ_or_y_net,
@@ -11999,7 +11999,7 @@ begin
     in4 => arm_or_y_net,
     bus_out => concatenate_y_net
   );
-  ctrl_split : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl_split_x1 
+  ctrl_split : entity xil_defaultlib.zcu111_tengbe_tx_rx_ctrl_split 
   port map (
     bus_in => reint1_output_port_net,
     msb_out4 => reinterpret4_output_port_net,
@@ -12298,7 +12298,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_txs is
+entity zcu111_tengbe_tx_rx_txs_x0 is
   port (
     in_link_up : in std_logic_vector( 1-1 downto 0 );
     in_led_tx : in std_logic_vector( 1-1 downto 0 );
@@ -12320,8 +12320,8 @@ entity zcu111_tengbe_tx_rx_txs is
     goto_37934352_we1 : out std_logic_vector( 1-1 downto 0 );
     goto_37934352_we4 : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_txs;
-architecture structural of zcu111_tengbe_tx_rx_txs is 
+end zcu111_tengbe_tx_rx_txs_x0;
+architecture structural of zcu111_tengbe_tx_rx_txs_x0 is 
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe1_led_up_net : std_logic_vector( 1-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe1_led_tx_net : std_logic_vector( 1-1 downto 0 );
@@ -12373,7 +12373,7 @@ begin
   goto_37934352_we4 <= logical6_y_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  buscreate : entity xil_defaultlib.zcu111_tengbe_tx_rx_buscreate 
+  buscreate : entity xil_defaultlib.zcu111_tengbe_tx_rx_buscreate_x1 
   port map (
     in1 => assert_link_up_dout_net,
     in2 => assert_led_tx_dout_net,
@@ -12385,14 +12385,14 @@ begin
     in8 => assert_ip_dout_net,
     bus_out => concatenate_y_net
   );
-  io_delay : entity xil_defaultlib.zcu111_tengbe_tx_rx_io_delay 
+  io_delay : entity xil_defaultlib.zcu111_tengbe_tx_rx_io_delay_x2 
   port map (
     d => concatenate_y_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     q => register4_q_net_x1
   );
-  ss : entity xil_defaultlib.zcu111_tengbe_tx_rx_ss 
+  ss : entity xil_defaultlib.zcu111_tengbe_tx_rx_ss_x0 
   port map (
     din => register4_q_net_x1,
     we => register4_q_net,
@@ -12592,6 +12592,7 @@ entity zcu111_tengbe_tx_rx_gbe1 is
     zcu111_tengbe_tx_rx_gbe1_rx_end_of_frame : in std_logic_vector( 1-1 downto 0 );
     zcu111_tengbe_tx_rx_gbe1_rx_overrun : in std_logic_vector( 1-1 downto 0 );
     zcu111_tengbe_tx_rx_gbe1_rx_source_ip : in std_logic_vector( 32-1 downto 0 );
+    zcu111_tengbe_tx_rx_gbe1_rx_source_port : in std_logic_vector( 16-1 downto 0 );
     zcu111_tengbe_tx_rx_gbe1_rx_valid : in std_logic_vector( 1-1 downto 0 );
     zcu111_tengbe_tx_rx_gbe1_tx_afull : in std_logic_vector( 1-1 downto 0 );
     zcu111_tengbe_tx_rx_gbe1_tx_overflow : in std_logic_vector( 1-1 downto 0 );
@@ -12651,6 +12652,7 @@ architecture structural of zcu111_tengbe_tx_rx_gbe1 is
   signal zcu111_tengbe_tx_rx_gbe1_rx_overrun_net : std_logic_vector( 1-1 downto 0 );
   signal convert_rx_overrun_ack_dout_net : std_logic_vector( 1-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe1_rx_source_ip_net : std_logic_vector( 32-1 downto 0 );
+  signal zcu111_tengbe_tx_rx_gbe1_rx_source_port_net : std_logic_vector( 16-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe1_rx_valid_net : std_logic_vector( 1-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe1_tx_afull_net : std_logic_vector( 1-1 downto 0 );
   signal convert_tx_data_dout_net : std_logic_vector( 64-1 downto 0 );
@@ -12740,6 +12742,7 @@ begin
   zcu111_tengbe_tx_rx_gbe1_rx_overrun_net <= zcu111_tengbe_tx_rx_gbe1_rx_overrun;
   zcu111_tengbe_tx_rx_gbe1_rx_overrun_ack <= convert_rx_overrun_ack_dout_net;
   zcu111_tengbe_tx_rx_gbe1_rx_source_ip_net <= zcu111_tengbe_tx_rx_gbe1_rx_source_ip;
+  zcu111_tengbe_tx_rx_gbe1_rx_source_port_net <= zcu111_tengbe_tx_rx_gbe1_rx_source_port;
   zcu111_tengbe_tx_rx_gbe1_rx_valid_net <= zcu111_tengbe_tx_rx_gbe1_rx_valid;
   zcu111_tengbe_tx_rx_gbe1_tx_afull_net <= zcu111_tengbe_tx_rx_gbe1_tx_afull;
   zcu111_tengbe_tx_rx_gbe1_tx_data <= convert_tx_data_dout_net;
@@ -12773,35 +12776,35 @@ begin
   goto_37934352_we4 <= logical6_y_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  rxbadctr : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxbadctr 
+  rxbadctr : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxbadctr_x0 
   port map (
     out_reg => rxbadctr_del2_q_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     zcu111_tengbe_tx_rx_gbe1_rxbadctr_user_data_in => cast_gw_dout_net
   );
-  rxctr : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxctr 
+  rxctr : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxctr_x0 
   port map (
     out_reg => rxctr_del2_q_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     zcu111_tengbe_tx_rx_gbe1_rxctr_user_data_in => cast_gw_dout_net_x0
   );
-  rxctr_ed : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxctr_ed 
+  rxctr_ed : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxctr_ed_x0 
   port map (
     in_x0 => rxctr_and_y_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     out_x0 => edge_op_y_net_x0
   );
-  rxeofctr : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxeofctr 
+  rxeofctr : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxeofctr_x0 
   port map (
     out_reg => rxeofctr_del2_q_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     zcu111_tengbe_tx_rx_gbe1_rxeofctr_user_data_in => cast_gw_dout_net_x5
   );
-  rxofctr : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxofctr 
+  rxofctr : entity xil_defaultlib.zcu111_tengbe_tx_rx_rxofctr_x0 
   port map (
     out_reg => rxofctr_del2_q_net,
     clk_1 => clk_net,
@@ -12865,7 +12868,7 @@ begin
     ce_1 => ce_net,
     zcu111_tengbe_tx_rx_gbe1_txofctr_user_data_in => cast_gw_dout_net_x6
   );
-  txs : entity xil_defaultlib.zcu111_tengbe_tx_rx_txs 
+  txs : entity xil_defaultlib.zcu111_tengbe_tx_rx_txs_x0 
   port map (
     in_link_up => zcu111_tengbe_tx_rx_gbe1_led_up_net,
     in_led_tx => zcu111_tengbe_tx_rx_gbe1_led_tx_net,
@@ -14249,20 +14252,166 @@ begin
     y => slice_cnt_rst_y_net
   );
 end structural;
+-- Generated from Simulink block zcu111_tengbe_tx_rx/rx_source_ip
+library IEEE;
+use IEEE.std_logic_1164.all;
+library xil_defaultlib;
+use xil_defaultlib.conv_pkg.all;
+entity zcu111_tengbe_tx_rx_rx_source_ip is
+  port (
+    out_reg : in std_logic_vector( 32-1 downto 0 );
+    clk_1 : in std_logic;
+    ce_1 : in std_logic;
+    zcu111_tengbe_tx_rx_rx_source_ip_user_data_in : out std_logic_vector( 32-1 downto 0 )
+  );
+end zcu111_tengbe_tx_rx_rx_source_ip;
+architecture structural of zcu111_tengbe_tx_rx_rx_source_ip is 
+  signal zcu111_tengbe_tx_rx_gbe1_rx_source_ip_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal io_delay_q_net : std_logic_vector( 32-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 32-1 downto 0 );
+begin
+  zcu111_tengbe_tx_rx_gbe1_rx_source_ip_net <= out_reg;
+  zcu111_tengbe_tx_rx_rx_source_ip_user_data_in <= cast_gw_dout_net;
+  clk_net <= clk_1;
+  ce_net <= ce_1;
+  io_delay : entity xil_defaultlib.sysgen_delay_c9363b1637 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    d => reint1_output_port_net,
+    q => io_delay_q_net
+  );
+  cast_gw : entity xil_defaultlib.zcu111_tengbe_tx_rx_xlconvert 
+  generic map (
+    bool_conversion => 0,
+    din_arith => 1,
+    din_bin_pt => 0,
+    din_width => 32,
+    dout_arith => 1,
+    dout_bin_pt => 0,
+    dout_width => 32,
+    latency => 1,
+    overflow => xlWrap,
+    quantization => xlTruncate
+  )
+  port map (
+    clr => '0',
+    en => "1",
+    din => io_delay_q_net,
+    clk => clk_net,
+    ce => ce_net,
+    dout => cast_gw_dout_net
+  );
+  assert_reg : entity xil_defaultlib.xlpassthrough 
+  generic map (
+    din_width => 32,
+    dout_width => 32
+  )
+  port map (
+    din => zcu111_tengbe_tx_rx_gbe1_rx_source_ip_net,
+    dout => assert_reg_dout_net
+  );
+  reint1 : entity xil_defaultlib.sysgen_reinterpret_6441629219 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    input_port => assert_reg_dout_net,
+    output_port => reint1_output_port_net
+  );
+end structural;
+-- Generated from Simulink block zcu111_tengbe_tx_rx/rx_source_port
+library IEEE;
+use IEEE.std_logic_1164.all;
+library xil_defaultlib;
+use xil_defaultlib.conv_pkg.all;
+entity zcu111_tengbe_tx_rx_rx_source_port is
+  port (
+    out_reg : in std_logic_vector( 16-1 downto 0 );
+    clk_1 : in std_logic;
+    ce_1 : in std_logic;
+    zcu111_tengbe_tx_rx_rx_source_port_user_data_in : out std_logic_vector( 32-1 downto 0 )
+  );
+end zcu111_tengbe_tx_rx_rx_source_port;
+architecture structural of zcu111_tengbe_tx_rx_rx_source_port is 
+  signal zcu111_tengbe_tx_rx_gbe1_rx_source_port_net : std_logic_vector( 16-1 downto 0 );
+  signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal io_delay_q_net : std_logic_vector( 16-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 16-1 downto 0 );
+  signal assert_reg_dout_net : std_logic_vector( 16-1 downto 0 );
+begin
+  zcu111_tengbe_tx_rx_gbe1_rx_source_port_net <= out_reg;
+  zcu111_tengbe_tx_rx_rx_source_port_user_data_in <= cast_gw_dout_net;
+  clk_net <= clk_1;
+  ce_net <= ce_1;
+  io_delay : entity xil_defaultlib.sysgen_delay_18b97ea090 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    d => reint1_output_port_net,
+    q => io_delay_q_net
+  );
+  cast_gw : entity xil_defaultlib.zcu111_tengbe_tx_rx_xlconvert 
+  generic map (
+    bool_conversion => 0,
+    din_arith => 1,
+    din_bin_pt => 0,
+    din_width => 16,
+    dout_arith => 1,
+    dout_bin_pt => 0,
+    dout_width => 32,
+    latency => 1,
+    overflow => xlWrap,
+    quantization => xlTruncate
+  )
+  port map (
+    clr => '0',
+    en => "1",
+    din => io_delay_q_net,
+    clk => clk_net,
+    ce => ce_net,
+    dout => cast_gw_dout_net
+  );
+  assert_reg : entity xil_defaultlib.xlpassthrough 
+  generic map (
+    din_width => 16,
+    dout_width => 16
+  )
+  port map (
+    din => zcu111_tengbe_tx_rx_gbe1_rx_source_port_net,
+    dout => assert_reg_dout_net
+  );
+  reint1 : entity xil_defaultlib.sysgen_reinterpret_807aefbf2c 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    input_port => assert_reg_dout_net,
+    output_port => reint1_output_port_net
+  );
+end structural;
 -- Generated from Simulink block zcu111_tengbe_tx_rx/tx_snapshot/buscreate
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_buscreate_x2 is
+entity zcu111_tengbe_tx_rx_buscreate is
   port (
     in1 : in std_logic_vector( 64-1 downto 0 );
     in2 : in std_logic_vector( 1-1 downto 0 );
     in3 : in std_logic_vector( 1-1 downto 0 );
     bus_out : out std_logic_vector( 66-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_buscreate_x2;
-architecture structural of zcu111_tengbe_tx_rx_buscreate_x2 is 
+end zcu111_tengbe_tx_rx_buscreate;
+architecture structural of zcu111_tengbe_tx_rx_buscreate is 
   signal concatenate_y_net : std_logic_vector( 66-1 downto 0 );
   signal assert_data_dout_net : std_logic_vector( 64-1 downto 0 );
   signal assert_valid_dout_net : std_logic_vector( 1-1 downto 0 );
@@ -14315,15 +14464,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_edge_detect_x6 is
+entity zcu111_tengbe_tx_rx_edge_detect is
   port (
     in_x0 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_edge_detect_x6;
-architecture structural of zcu111_tengbe_tx_rx_edge_detect_x6 is 
+end zcu111_tengbe_tx_rx_edge_detect;
+architecture structural of zcu111_tengbe_tx_rx_edge_detect is 
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice3_y_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -14373,7 +14522,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_add_gen_x3 is
+entity zcu111_tengbe_tx_rx_add_gen is
   port (
     din : in std_logic_vector( 128-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -14387,8 +14536,8 @@ entity zcu111_tengbe_tx_rx_add_gen_x3 is
     we_o : out std_logic_vector( 1-1 downto 0 );
     status : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_add_gen_x3;
-architecture structural of zcu111_tengbe_tx_rx_add_gen_x3 is 
+end zcu111_tengbe_tx_rx_add_gen;
+architecture structural of zcu111_tengbe_tx_rx_add_gen is 
   signal slice2_y_net : std_logic_vector( 12-1 downto 0 );
   signal delay6_q_net : std_logic_vector( 128-1 downto 0 );
   signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
@@ -14427,7 +14576,7 @@ begin
   edge_op_y_net <= init;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect_x6 
+  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect 
   port map (
     in_x0 => slice3_y_net,
     clk_1 => clk_net,
@@ -14630,7 +14779,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_dram_munge_x2 is
+entity zcu111_tengbe_tx_rx_dram_munge_x0 is
   port (
     din : in std_logic_vector( 128-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -14640,8 +14789,8 @@ entity zcu111_tengbe_tx_rx_dram_munge_x2 is
     dout : out std_logic_vector( 128-1 downto 0 );
     we_o : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_dram_munge_x2;
-architecture structural of zcu111_tengbe_tx_rx_dram_munge_x2 is 
+end zcu111_tengbe_tx_rx_dram_munge_x0;
+architecture structural of zcu111_tengbe_tx_rx_dram_munge_x0 is 
   signal data_choice_y_net : std_logic_vector( 128-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal cast_dout_net : std_logic_vector( 128-1 downto 0 );
@@ -14939,15 +15088,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_edge_detect_x7 is
+entity zcu111_tengbe_tx_rx_edge_detect_x2 is
   port (
     in_x0 : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_edge_detect_x7;
-architecture structural of zcu111_tengbe_tx_rx_edge_detect_x7 is 
+end zcu111_tengbe_tx_rx_edge_detect_x2;
+architecture structural of zcu111_tengbe_tx_rx_edge_detect_x2 is 
   signal edge_op_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal clk_net : std_logic;
@@ -14997,7 +15146,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_basic_ctrl_x3 is
+entity zcu111_tengbe_tx_rx_basic_ctrl_x0 is
   port (
     din : in std_logic_vector( 128-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -15011,8 +15160,8 @@ entity zcu111_tengbe_tx_rx_basic_ctrl_x3 is
     go : out std_logic_vector( 1-1 downto 0 );
     init : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_basic_ctrl_x3;
-architecture structural of zcu111_tengbe_tx_rx_basic_ctrl_x3 is 
+end zcu111_tengbe_tx_rx_basic_ctrl_x0;
+architecture structural of zcu111_tengbe_tx_rx_basic_ctrl_x0 is 
   signal data_choice_y_net : std_logic_vector( 128-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal register6_q_net : std_logic_vector( 1-1 downto 0 );
@@ -15050,7 +15199,7 @@ begin
   never_op_net <= stopi;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  dram_munge : entity xil_defaultlib.zcu111_tengbe_tx_rx_dram_munge_x2 
+  dram_munge : entity xil_defaultlib.zcu111_tengbe_tx_rx_dram_munge_x0 
   port map (
     din => cast_dout_net,
     we => mux1_y_net_x0,
@@ -15060,7 +15209,7 @@ begin
     dout => data_choice_y_net,
     we_o => we_choice_y_net
   );
-  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect_x7 
+  edge_detect : entity xil_defaultlib.zcu111_tengbe_tx_rx_edge_detect_x2 
   port map (
     in_x0 => delay1_q_net,
     clk_1 => clk_net,
@@ -15235,15 +15384,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_calc_add_x2 is
+entity zcu111_tengbe_tx_rx_calc_add_x0 is
   port (
     in_x0 : in std_logic_vector( 12-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out_x0 : out std_logic_vector( 12-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_calc_add_x2;
-architecture structural of zcu111_tengbe_tx_rx_calc_add_x2 is 
+end zcu111_tengbe_tx_rx_calc_add_x0;
+architecture structural of zcu111_tengbe_tx_rx_calc_add_x0 is 
   signal mux_y_net : std_logic_vector( 12-1 downto 0 );
   signal add_del_q_net : std_logic_vector( 12-1 downto 0 );
   signal clk_net : std_logic;
@@ -15532,13 +15681,13 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_munge_in_x2 is
+entity zcu111_tengbe_tx_rx_munge_in_x0 is
   port (
     din : in std_logic_vector( 128-1 downto 0 );
     dout : out std_logic_vector( 128-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_munge_in_x2;
-architecture structural of zcu111_tengbe_tx_rx_munge_in_x2 is 
+end zcu111_tengbe_tx_rx_munge_in_x0;
+architecture structural of zcu111_tengbe_tx_rx_munge_in_x0 is 
   signal reinterpret_out_output_port_net : std_logic_vector( 128-1 downto 0 );
   signal dat_del_q_net : std_logic_vector( 128-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 128-1 downto 0 );
@@ -15588,7 +15737,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_bram_x2 is
+entity zcu111_tengbe_tx_rx_bram_x0 is
   port (
     addr : in std_logic_vector( 12-1 downto 0 );
     data_in : in std_logic_vector( 128-1 downto 0 );
@@ -15599,8 +15748,8 @@ entity zcu111_tengbe_tx_rx_bram_x2 is
     zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_in : out std_logic_vector( 128-1 downto 0 );
     zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_we : out std_logic_vector( 1-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_bram_x2;
-architecture structural of zcu111_tengbe_tx_rx_bram_x2 is 
+end zcu111_tengbe_tx_rx_bram_x0;
+architecture structural of zcu111_tengbe_tx_rx_bram_x0 is 
   signal add_del_q_net : std_logic_vector( 12-1 downto 0 );
   signal dat_del_q_net : std_logic_vector( 128-1 downto 0 );
   signal we_del_q_net : std_logic_vector( 1-1 downto 0 );
@@ -15620,14 +15769,14 @@ begin
   zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_we <= convert_we_dout_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  calc_add : entity xil_defaultlib.zcu111_tengbe_tx_rx_calc_add_x2 
+  calc_add : entity xil_defaultlib.zcu111_tengbe_tx_rx_calc_add_x0 
   port map (
     in_x0 => add_del_q_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     out_x0 => mux_y_net
   );
-  munge_in : entity xil_defaultlib.zcu111_tengbe_tx_rx_munge_in_x2 
+  munge_in : entity xil_defaultlib.zcu111_tengbe_tx_rx_munge_in_x0 
   port map (
     din => dat_del_q_net,
     dout => reinterpret_out_output_port_net
@@ -15911,15 +16060,15 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_status_x0 is
+entity zcu111_tengbe_tx_rx_status is
   port (
     out_reg : in std_logic_vector( 32-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     zcu111_tengbe_tx_rx_tx_snapshot_ss_status_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_status_x0;
-architecture structural of zcu111_tengbe_tx_rx_status_x0 is 
+end zcu111_tengbe_tx_rx_status;
+architecture structural of zcu111_tengbe_tx_rx_status is 
   signal concat_y_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
@@ -15984,7 +16133,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity zcu111_tengbe_tx_rx_ss_x3 is
+entity zcu111_tengbe_tx_rx_ss is
   port (
     din : in std_logic_vector( 66-1 downto 0 );
     we : in std_logic_vector( 1-1 downto 0 );
@@ -16000,8 +16149,8 @@ entity zcu111_tengbe_tx_rx_ss_x3 is
     zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_we : out std_logic_vector( 1-1 downto 0 );
     zcu111_tengbe_tx_rx_tx_snapshot_ss_status_user_data_in : out std_logic_vector( 32-1 downto 0 )
   );
-end zcu111_tengbe_tx_rx_ss_x3;
-architecture structural of zcu111_tengbe_tx_rx_ss_x3 is 
+end zcu111_tengbe_tx_rx_ss;
+architecture structural of zcu111_tengbe_tx_rx_ss is 
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
   signal concatenate_y_net : std_logic_vector( 66-1 downto 0 );
   signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
@@ -16050,7 +16199,7 @@ begin
   zcu111_tengbe_tx_rx_tx_snapshot_ss_status_user_data_in <= cast_gw_dout_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  add_gen : entity xil_defaultlib.zcu111_tengbe_tx_rx_add_gen_x3 
+  add_gen : entity xil_defaultlib.zcu111_tengbe_tx_rx_add_gen 
   port map (
     din => data_choice_y_net,
     we => we_choice_y_net,
@@ -16064,7 +16213,7 @@ begin
     we_o => logical6_y_net,
     status => concat_y_net
   );
-  basic_ctrl : entity xil_defaultlib.zcu111_tengbe_tx_rx_basic_ctrl_x3 
+  basic_ctrl : entity xil_defaultlib.zcu111_tengbe_tx_rx_basic_ctrl_x0 
   port map (
     din => cast_dout_net,
     we => mux1_y_net,
@@ -16078,7 +16227,7 @@ begin
     go => register6_q_net,
     init => edge_op_y_net_x0
   );
-  bram : entity xil_defaultlib.zcu111_tengbe_tx_rx_bram_x2 
+  bram : entity xil_defaultlib.zcu111_tengbe_tx_rx_bram_x0 
   port map (
     addr => add_del_q_net,
     data_in => dat_del_q_net,
@@ -16110,7 +16259,7 @@ begin
     out2 => reinterpret2_output_port_net,
     lsb_out1 => slice1_y_net
   );
-  status : entity xil_defaultlib.zcu111_tengbe_tx_rx_status_x0 
+  status : entity xil_defaultlib.zcu111_tengbe_tx_rx_status 
   port map (
     out_reg => concat_y_net,
     clk_1 => clk_net,
@@ -16264,14 +16413,14 @@ begin
   goto_44864968_we4 <= logical6_y_net;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  buscreate : entity xil_defaultlib.zcu111_tengbe_tx_rx_buscreate_x2 
+  buscreate : entity xil_defaultlib.zcu111_tengbe_tx_rx_buscreate 
   port map (
     in1 => assert_data_dout_net,
     in2 => assert_valid_dout_net,
     in3 => assert_eof_dout_net,
     bus_out => concatenate_y_net
   );
-  ss : entity xil_defaultlib.zcu111_tengbe_tx_rx_ss_x3 
+  ss : entity xil_defaultlib.zcu111_tengbe_tx_rx_ss 
   port map (
     din => concatenate_y_net,
     we => mux1_y_net,
@@ -16422,6 +16571,8 @@ entity zcu111_tengbe_tx_rx_struct is
     zcu111_tengbe_tx_rx_led1_gbe0_up_gateway : out std_logic_vector( 1-1 downto 0 );
     zcu111_tengbe_tx_rx_led2_gbe1_pulse_rx_gateway : out std_logic_vector( 1-1 downto 0 );
     zcu111_tengbe_tx_rx_led3_gbe1_up_gateway : out std_logic_vector( 1-1 downto 0 );
+    zcu111_tengbe_tx_rx_rx_source_ip_user_data_in : out std_logic_vector( 32-1 downto 0 );
+    zcu111_tengbe_tx_rx_rx_source_port_user_data_in : out std_logic_vector( 32-1 downto 0 );
     zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_addr : out std_logic_vector( 12-1 downto 0 );
     zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_in : out std_logic_vector( 128-1 downto 0 );
     zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_we : out std_logic_vector( 1-1 downto 0 );
@@ -16451,29 +16602,29 @@ architecture structural of zcu111_tengbe_tx_rx_struct is
   signal convert_tx_end_of_frame_dout_net : std_logic_vector( 1-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe0_tx_overflow_net : std_logic_vector( 1-1 downto 0 );
   signal convert_tx_valid_dout_net : std_logic_vector( 1-1 downto 0 );
-  signal cast_gw_dout_net_x2 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x1 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x0 : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x7 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x6 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x5 : std_logic_vector( 32-1 downto 0 );
   signal convert_addr_dout_net : std_logic_vector( 13-1 downto 0 );
   signal convert_din1_dout_net : std_logic_vector( 128-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe0_rxs_ss_bram_data_out_net : std_logic_vector( 128-1 downto 0 );
   signal convert_we_dout_net : std_logic_vector( 1-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe0_rxs_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x3 : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net_x4 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x5 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x6 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x7 : std_logic_vector( 32-1 downto 0 );
-  signal convert_addr_dout_net_x0 : std_logic_vector( 13-1 downto 0 );
-  signal convert_din1_dout_net_x0 : std_logic_vector( 128-1 downto 0 );
+  signal cast_gw_dout_net_x3 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x2 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x1 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal convert_addr_dout_net_x3 : std_logic_vector( 13-1 downto 0 );
+  signal convert_din1_dout_net_x3 : std_logic_vector( 128-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe0_txs_ss_bram_data_out_net : std_logic_vector( 128-1 downto 0 );
-  signal convert_we_dout_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal convert_we_dout_net_x3 : std_logic_vector( 1-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe0_txs_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x9 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x18 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x17 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x16 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x21 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x22 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x27 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x26 : std_logic_vector( 32-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe1_led_rx_net : std_logic_vector( 1-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe1_led_tx_net : std_logic_vector( 1-1 downto 0 );
   signal zcu111_tengbe_tx_rx_gbe1_led_up_net : std_logic_vector( 1-1 downto 0 );
@@ -16497,44 +16648,46 @@ architecture structural of zcu111_tengbe_tx_rx_struct is
   signal cast_gw_dout_net_x25 : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net_x24 : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net_x23 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x22 : std_logic_vector( 32-1 downto 0 );
-  signal convert_addr_dout_net_x3 : std_logic_vector( 13-1 downto 0 );
-  signal convert_din1_dout_net_x3 : std_logic_vector( 128-1 downto 0 );
-  signal zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_data_out_net : std_logic_vector( 128-1 downto 0 );
-  signal convert_we_dout_net_x3 : std_logic_vector( 1-1 downto 0 );
-  signal zcu111_tengbe_tx_rx_gbe1_rxs_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x21 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x20 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x19 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x13 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x12 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x18 : std_logic_vector( 32-1 downto 0 );
   signal convert_addr_dout_net_x2 : std_logic_vector( 13-1 downto 0 );
   signal convert_din1_dout_net_x2 : std_logic_vector( 128-1 downto 0 );
-  signal zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_data_out_net : std_logic_vector( 128-1 downto 0 );
+  signal zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_data_out_net : std_logic_vector( 128-1 downto 0 );
   signal convert_we_dout_net_x2 : std_logic_vector( 1-1 downto 0 );
-  signal zcu111_tengbe_tx_rx_gbe1_txs_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x11 : std_logic_vector( 32-1 downto 0 );
-  signal cast_gw_dout_net_x10 : std_logic_vector( 32-1 downto 0 );
+  signal zcu111_tengbe_tx_rx_gbe1_rxs_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x17 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x16 : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net_x15 : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net_x14 : std_logic_vector( 32-1 downto 0 );
-  signal convert_dout_net_x2 : std_logic_vector( 1-1 downto 0 );
-  signal convert_dout_net_x1 : std_logic_vector( 1-1 downto 0 );
+  signal cast_gw_dout_net_x13 : std_logic_vector( 32-1 downto 0 );
+  signal convert_addr_dout_net_x1 : std_logic_vector( 13-1 downto 0 );
+  signal convert_din1_dout_net_x1 : std_logic_vector( 128-1 downto 0 );
+  signal zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_data_out_net : std_logic_vector( 128-1 downto 0 );
+  signal convert_we_dout_net_x1 : std_logic_vector( 1-1 downto 0 );
+  signal zcu111_tengbe_tx_rx_gbe1_txs_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x20 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x19 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x11 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x12 : std_logic_vector( 32-1 downto 0 );
   signal convert_dout_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal convert_dout_net_x1 : std_logic_vector( 1-1 downto 0 );
   signal convert_dout_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_dout_net_x2 : std_logic_vector( 1-1 downto 0 );
   signal zcu111_tengbe_tx_rx_pkt_sim_enable_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal zcu111_tengbe_tx_rx_pkt_sim_payload_len_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal zcu111_tengbe_tx_rx_pkt_sim_period_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal zcu111_tengbe_tx_rx_rst_user_data_out_net : std_logic_vector( 32-1 downto 0 );
-  signal convert_addr_dout_net_x1 : std_logic_vector( 12-1 downto 0 );
-  signal convert_din1_dout_net_x1 : std_logic_vector( 128-1 downto 0 );
-  signal zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_out_net : std_logic_vector( 128-1 downto 0 );
-  signal convert_we_dout_net_x1 : std_logic_vector( 1-1 downto 0 );
-  signal zcu111_tengbe_tx_rx_tx_snapshot_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
   signal cast_gw_dout_net_x8 : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x9 : std_logic_vector( 32-1 downto 0 );
+  signal convert_addr_dout_net_x0 : std_logic_vector( 12-1 downto 0 );
+  signal convert_din1_dout_net_x0 : std_logic_vector( 128-1 downto 0 );
+  signal zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_out_net : std_logic_vector( 128-1 downto 0 );
+  signal convert_we_dout_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal zcu111_tengbe_tx_rx_tx_snapshot_ss_ctrl_user_data_out_net : std_logic_vector( 32-1 downto 0 );
+  signal cast_gw_dout_net_x10 : std_logic_vector( 32-1 downto 0 );
   signal clk_net : std_logic;
   signal ce_net : std_logic;
-  signal reint1_output_port_net : std_logic_vector( 32-1 downto 0 );
-  signal reint1_output_port_net_x0 : std_logic_vector( 16-1 downto 0 );
+  signal reint1_output_port_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal reint1_output_port_net : std_logic_vector( 16-1 downto 0 );
   signal slice_core_rst_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay3_q_net : std_logic_vector( 64-1 downto 0 );
   signal mux1_y_net : std_logic_vector( 1-1 downto 0 );
@@ -16544,8 +16697,8 @@ architecture structural of zcu111_tengbe_tx_rx_struct is
   signal slice_cnt_rst_y_net : std_logic_vector( 1-1 downto 0 );
   signal we_choice_y_net : std_logic_vector( 1-1 downto 0 );
   signal logical6_y_net : std_logic_vector( 1-1 downto 0 );
-  signal we_choice_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net_x3 : std_logic_vector( 1-1 downto 0 );
+  signal logical6_y_net_x1 : std_logic_vector( 1-1 downto 0 );
   signal counter2_op_net : std_logic_vector( 32-1 downto 0 );
   signal constant6_op_net : std_logic_vector( 64-1 downto 0 );
   signal constant_op_net : std_logic_vector( 1-1 downto 0 );
@@ -16554,16 +16707,16 @@ architecture structural of zcu111_tengbe_tx_rx_struct is
   signal constant1_op_net : std_logic_vector( 1-1 downto 0 );
   signal constant9_op_net : std_logic_vector( 1-1 downto 0 );
   signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal we_choice_y_net_x3 : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net_x3 : std_logic_vector( 1-1 downto 0 );
   signal we_choice_y_net_x2 : std_logic_vector( 1-1 downto 0 );
+  signal logical6_y_net_x3 : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net_x1 : std_logic_vector( 1-1 downto 0 );
   signal logical6_y_net_x2 : std_logic_vector( 1-1 downto 0 );
   signal payload_cnt6_op_net : std_logic_vector( 32-1 downto 0 );
   signal spulse_y_net : std_logic_vector( 1-1 downto 0 );
   signal slice2_y_net : std_logic_vector( 1-1 downto 0 );
   signal arm_or_y_net : std_logic_vector( 1-1 downto 0 );
-  signal we_choice_y_net_x1 : std_logic_vector( 1-1 downto 0 );
-  signal logical6_y_net_x1 : std_logic_vector( 1-1 downto 0 );
+  signal we_choice_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal logical6_y_net_x0 : std_logic_vector( 1-1 downto 0 );
 begin
   zcu111_tengbe_tx_rx_dest_ip_user_data_out_net <= zcu111_tengbe_tx_rx_dest_ip_user_data_out;
   zcu111_tengbe_tx_rx_dest_port_user_data_out_net <= zcu111_tengbe_tx_rx_dest_port_user_data_out;
@@ -16587,29 +16740,29 @@ begin
   zcu111_tengbe_tx_rx_gbe0_tx_end_of_frame <= convert_tx_end_of_frame_dout_net;
   zcu111_tengbe_tx_rx_gbe0_tx_overflow_net <= zcu111_tengbe_tx_rx_gbe0_tx_overflow;
   zcu111_tengbe_tx_rx_gbe0_tx_valid <= convert_tx_valid_dout_net;
-  zcu111_tengbe_tx_rx_gbe0_rxbadctr_user_data_in <= cast_gw_dout_net_x2;
-  zcu111_tengbe_tx_rx_gbe0_rxctr_user_data_in <= cast_gw_dout_net_x1;
-  zcu111_tengbe_tx_rx_gbe0_rxeofctr_user_data_in <= cast_gw_dout_net_x0;
-  zcu111_tengbe_tx_rx_gbe0_rxofctr_user_data_in <= cast_gw_dout_net;
+  zcu111_tengbe_tx_rx_gbe0_rxbadctr_user_data_in <= cast_gw_dout_net;
+  zcu111_tengbe_tx_rx_gbe0_rxctr_user_data_in <= cast_gw_dout_net_x7;
+  zcu111_tengbe_tx_rx_gbe0_rxeofctr_user_data_in <= cast_gw_dout_net_x6;
+  zcu111_tengbe_tx_rx_gbe0_rxofctr_user_data_in <= cast_gw_dout_net_x5;
   zcu111_tengbe_tx_rx_gbe0_rxs_ss_bram_addr <= convert_addr_dout_net;
   zcu111_tengbe_tx_rx_gbe0_rxs_ss_bram_data_in <= convert_din1_dout_net;
   zcu111_tengbe_tx_rx_gbe0_rxs_ss_bram_data_out_net <= zcu111_tengbe_tx_rx_gbe0_rxs_ss_bram_data_out;
   zcu111_tengbe_tx_rx_gbe0_rxs_ss_bram_we <= convert_we_dout_net;
   zcu111_tengbe_tx_rx_gbe0_rxs_ss_ctrl_user_data_out_net <= zcu111_tengbe_tx_rx_gbe0_rxs_ss_ctrl_user_data_out;
-  zcu111_tengbe_tx_rx_gbe0_rxs_ss_status_user_data_in <= cast_gw_dout_net_x3;
-  zcu111_tengbe_tx_rx_gbe0_rxvldctr_user_data_in <= cast_gw_dout_net_x4;
-  zcu111_tengbe_tx_rx_gbe0_txctr_user_data_in <= cast_gw_dout_net_x5;
-  zcu111_tengbe_tx_rx_gbe0_txfullctr_user_data_in <= cast_gw_dout_net_x6;
-  zcu111_tengbe_tx_rx_gbe0_txofctr_user_data_in <= cast_gw_dout_net_x7;
-  zcu111_tengbe_tx_rx_gbe0_txs_ss_bram_addr <= convert_addr_dout_net_x0;
-  zcu111_tengbe_tx_rx_gbe0_txs_ss_bram_data_in <= convert_din1_dout_net_x0;
+  zcu111_tengbe_tx_rx_gbe0_rxs_ss_status_user_data_in <= cast_gw_dout_net_x4;
+  zcu111_tengbe_tx_rx_gbe0_rxvldctr_user_data_in <= cast_gw_dout_net_x3;
+  zcu111_tengbe_tx_rx_gbe0_txctr_user_data_in <= cast_gw_dout_net_x2;
+  zcu111_tengbe_tx_rx_gbe0_txfullctr_user_data_in <= cast_gw_dout_net_x1;
+  zcu111_tengbe_tx_rx_gbe0_txofctr_user_data_in <= cast_gw_dout_net_x0;
+  zcu111_tengbe_tx_rx_gbe0_txs_ss_bram_addr <= convert_addr_dout_net_x3;
+  zcu111_tengbe_tx_rx_gbe0_txs_ss_bram_data_in <= convert_din1_dout_net_x3;
   zcu111_tengbe_tx_rx_gbe0_txs_ss_bram_data_out_net <= zcu111_tengbe_tx_rx_gbe0_txs_ss_bram_data_out;
-  zcu111_tengbe_tx_rx_gbe0_txs_ss_bram_we <= convert_we_dout_net_x0;
+  zcu111_tengbe_tx_rx_gbe0_txs_ss_bram_we <= convert_we_dout_net_x3;
   zcu111_tengbe_tx_rx_gbe0_txs_ss_ctrl_user_data_out_net <= zcu111_tengbe_tx_rx_gbe0_txs_ss_ctrl_user_data_out;
-  zcu111_tengbe_tx_rx_gbe0_txs_ss_status_user_data_in <= cast_gw_dout_net_x9;
-  zcu111_tengbe_tx_rx_gbe0_txvldctr_user_data_in <= cast_gw_dout_net_x18;
-  zcu111_tengbe_tx_rx_gbe0_linkup_user_data_in <= cast_gw_dout_net_x17;
-  zcu111_tengbe_tx_rx_gbe0_tx_cnt_user_data_in <= cast_gw_dout_net_x16;
+  zcu111_tengbe_tx_rx_gbe0_txs_ss_status_user_data_in <= cast_gw_dout_net_x21;
+  zcu111_tengbe_tx_rx_gbe0_txvldctr_user_data_in <= cast_gw_dout_net_x22;
+  zcu111_tengbe_tx_rx_gbe0_linkup_user_data_in <= cast_gw_dout_net_x27;
+  zcu111_tengbe_tx_rx_gbe0_tx_cnt_user_data_in <= cast_gw_dout_net_x26;
   zcu111_tengbe_tx_rx_gbe1_led_rx_net <= zcu111_tengbe_tx_rx_gbe1_led_rx;
   zcu111_tengbe_tx_rx_gbe1_led_tx_net <= zcu111_tengbe_tx_rx_gbe1_led_tx;
   zcu111_tengbe_tx_rx_gbe1_led_up_net <= zcu111_tengbe_tx_rx_gbe1_led_up;
@@ -16633,59 +16786,61 @@ begin
   zcu111_tengbe_tx_rx_gbe1_rxbadctr_user_data_in <= cast_gw_dout_net_x25;
   zcu111_tengbe_tx_rx_gbe1_rxctr_user_data_in <= cast_gw_dout_net_x24;
   zcu111_tengbe_tx_rx_gbe1_rxeofctr_user_data_in <= cast_gw_dout_net_x23;
-  zcu111_tengbe_tx_rx_gbe1_rxofctr_user_data_in <= cast_gw_dout_net_x22;
-  zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_addr <= convert_addr_dout_net_x3;
-  zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_data_in <= convert_din1_dout_net_x3;
+  zcu111_tengbe_tx_rx_gbe1_rxofctr_user_data_in <= cast_gw_dout_net_x18;
+  zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_addr <= convert_addr_dout_net_x2;
+  zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_data_in <= convert_din1_dout_net_x2;
   zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_data_out_net <= zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_data_out;
-  zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_we <= convert_we_dout_net_x3;
+  zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_we <= convert_we_dout_net_x2;
   zcu111_tengbe_tx_rx_gbe1_rxs_ss_ctrl_user_data_out_net <= zcu111_tengbe_tx_rx_gbe1_rxs_ss_ctrl_user_data_out;
-  zcu111_tengbe_tx_rx_gbe1_rxs_ss_status_user_data_in <= cast_gw_dout_net_x21;
-  zcu111_tengbe_tx_rx_gbe1_rxvldctr_user_data_in <= cast_gw_dout_net_x20;
-  zcu111_tengbe_tx_rx_gbe1_txctr_user_data_in <= cast_gw_dout_net_x19;
-  zcu111_tengbe_tx_rx_gbe1_txfullctr_user_data_in <= cast_gw_dout_net_x13;
-  zcu111_tengbe_tx_rx_gbe1_txofctr_user_data_in <= cast_gw_dout_net_x12;
-  zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_addr <= convert_addr_dout_net_x2;
-  zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_data_in <= convert_din1_dout_net_x2;
+  zcu111_tengbe_tx_rx_gbe1_rxs_ss_status_user_data_in <= cast_gw_dout_net_x17;
+  zcu111_tengbe_tx_rx_gbe1_rxvldctr_user_data_in <= cast_gw_dout_net_x16;
+  zcu111_tengbe_tx_rx_gbe1_txctr_user_data_in <= cast_gw_dout_net_x15;
+  zcu111_tengbe_tx_rx_gbe1_txfullctr_user_data_in <= cast_gw_dout_net_x14;
+  zcu111_tengbe_tx_rx_gbe1_txofctr_user_data_in <= cast_gw_dout_net_x13;
+  zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_addr <= convert_addr_dout_net_x1;
+  zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_data_in <= convert_din1_dout_net_x1;
   zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_data_out_net <= zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_data_out;
-  zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_we <= convert_we_dout_net_x2;
+  zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_we <= convert_we_dout_net_x1;
   zcu111_tengbe_tx_rx_gbe1_txs_ss_ctrl_user_data_out_net <= zcu111_tengbe_tx_rx_gbe1_txs_ss_ctrl_user_data_out;
-  zcu111_tengbe_tx_rx_gbe1_txs_ss_status_user_data_in <= cast_gw_dout_net_x11;
-  zcu111_tengbe_tx_rx_gbe1_txvldctr_user_data_in <= cast_gw_dout_net_x10;
-  zcu111_tengbe_tx_rx_gbe1_linkup_user_data_in <= cast_gw_dout_net_x15;
-  zcu111_tengbe_tx_rx_gbe1_rx_frame_cnt_user_data_in <= cast_gw_dout_net_x14;
-  zcu111_tengbe_tx_rx_led0_gbe0_pulse_tx_gateway <= convert_dout_net_x2;
+  zcu111_tengbe_tx_rx_gbe1_txs_ss_status_user_data_in <= cast_gw_dout_net_x20;
+  zcu111_tengbe_tx_rx_gbe1_txvldctr_user_data_in <= cast_gw_dout_net_x19;
+  zcu111_tengbe_tx_rx_gbe1_linkup_user_data_in <= cast_gw_dout_net_x11;
+  zcu111_tengbe_tx_rx_gbe1_rx_frame_cnt_user_data_in <= cast_gw_dout_net_x12;
+  zcu111_tengbe_tx_rx_led0_gbe0_pulse_tx_gateway <= convert_dout_net_x0;
   zcu111_tengbe_tx_rx_led1_gbe0_up_gateway <= convert_dout_net_x1;
-  zcu111_tengbe_tx_rx_led2_gbe1_pulse_rx_gateway <= convert_dout_net_x0;
-  zcu111_tengbe_tx_rx_led3_gbe1_up_gateway <= convert_dout_net;
+  zcu111_tengbe_tx_rx_led2_gbe1_pulse_rx_gateway <= convert_dout_net;
+  zcu111_tengbe_tx_rx_led3_gbe1_up_gateway <= convert_dout_net_x2;
   zcu111_tengbe_tx_rx_pkt_sim_enable_user_data_out_net <= zcu111_tengbe_tx_rx_pkt_sim_enable_user_data_out;
   zcu111_tengbe_tx_rx_pkt_sim_payload_len_user_data_out_net <= zcu111_tengbe_tx_rx_pkt_sim_payload_len_user_data_out;
   zcu111_tengbe_tx_rx_pkt_sim_period_user_data_out_net <= zcu111_tengbe_tx_rx_pkt_sim_period_user_data_out;
   zcu111_tengbe_tx_rx_rst_user_data_out_net <= zcu111_tengbe_tx_rx_rst_user_data_out;
-  zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_addr <= convert_addr_dout_net_x1;
-  zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_in <= convert_din1_dout_net_x1;
+  zcu111_tengbe_tx_rx_rx_source_ip_user_data_in <= cast_gw_dout_net_x8;
+  zcu111_tengbe_tx_rx_rx_source_port_user_data_in <= cast_gw_dout_net_x9;
+  zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_addr <= convert_addr_dout_net_x0;
+  zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_in <= convert_din1_dout_net_x0;
   zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_out_net <= zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_out;
-  zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_we <= convert_we_dout_net_x1;
+  zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_we <= convert_we_dout_net_x0;
   zcu111_tengbe_tx_rx_tx_snapshot_ss_ctrl_user_data_out_net <= zcu111_tengbe_tx_rx_tx_snapshot_ss_ctrl_user_data_out;
-  zcu111_tengbe_tx_rx_tx_snapshot_ss_status_user_data_in <= cast_gw_dout_net_x8;
+  zcu111_tengbe_tx_rx_tx_snapshot_ss_status_user_data_in <= cast_gw_dout_net_x10;
   clk_net <= clk_1;
   ce_net <= ce_1;
   dest_ip : entity xil_defaultlib.zcu111_tengbe_tx_rx_dest_ip 
   port map (
     zcu111_tengbe_tx_rx_dest_ip_user_data_out => zcu111_tengbe_tx_rx_dest_ip_user_data_out_net,
-    in_reg => reint1_output_port_net
+    in_reg => reint1_output_port_net_x0
   );
   dest_port : entity xil_defaultlib.zcu111_tengbe_tx_rx_dest_port 
   port map (
     zcu111_tengbe_tx_rx_dest_port_user_data_out => zcu111_tengbe_tx_rx_dest_port_user_data_out_net,
-    in_reg => reint1_output_port_net_x0
+    in_reg => reint1_output_port_net
   );
   gbe0 : entity xil_defaultlib.zcu111_tengbe_tx_rx_gbe0 
   port map (
     rst => slice_core_rst_y_net,
     tx_data => delay3_q_net,
     tx_valid => mux1_y_net,
-    tx_dest_ip => reint1_output_port_net,
-    tx_dest_port => reint1_output_port_net_x0,
+    tx_dest_ip => reint1_output_port_net_x0,
+    tx_dest_port => reint1_output_port_net,
     tx_end_of_frame => mux2_y_net,
     rx_ack => constant4_op_net,
     rx_overrun_ack => delay_q_net,
@@ -16713,41 +16868,41 @@ begin
     zcu111_tengbe_tx_rx_gbe0_tx_dest_port => convert_tx_port_dout_net,
     zcu111_tengbe_tx_rx_gbe0_tx_end_of_frame => convert_tx_end_of_frame_dout_net,
     zcu111_tengbe_tx_rx_gbe0_tx_valid => convert_tx_valid_dout_net,
-    zcu111_tengbe_tx_rx_gbe0_rxbadctr_user_data_in => cast_gw_dout_net_x2,
-    zcu111_tengbe_tx_rx_gbe0_rxctr_user_data_in => cast_gw_dout_net_x1,
-    zcu111_tengbe_tx_rx_gbe0_rxeofctr_user_data_in => cast_gw_dout_net_x0,
-    zcu111_tengbe_tx_rx_gbe0_rxofctr_user_data_in => cast_gw_dout_net,
+    zcu111_tengbe_tx_rx_gbe0_rxbadctr_user_data_in => cast_gw_dout_net,
+    zcu111_tengbe_tx_rx_gbe0_rxctr_user_data_in => cast_gw_dout_net_x7,
+    zcu111_tengbe_tx_rx_gbe0_rxeofctr_user_data_in => cast_gw_dout_net_x6,
+    zcu111_tengbe_tx_rx_gbe0_rxofctr_user_data_in => cast_gw_dout_net_x5,
     zcu111_tengbe_tx_rx_gbe0_rxs_ss_bram_addr => convert_addr_dout_net,
     zcu111_tengbe_tx_rx_gbe0_rxs_ss_bram_data_in => convert_din1_dout_net,
     zcu111_tengbe_tx_rx_gbe0_rxs_ss_bram_we => convert_we_dout_net,
-    zcu111_tengbe_tx_rx_gbe0_rxs_ss_status_user_data_in => cast_gw_dout_net_x3,
-    zcu111_tengbe_tx_rx_gbe0_rxvldctr_user_data_in => cast_gw_dout_net_x4,
-    zcu111_tengbe_tx_rx_gbe0_txctr_user_data_in => cast_gw_dout_net_x5,
-    zcu111_tengbe_tx_rx_gbe0_txfullctr_user_data_in => cast_gw_dout_net_x6,
-    zcu111_tengbe_tx_rx_gbe0_txofctr_user_data_in => cast_gw_dout_net_x7,
-    zcu111_tengbe_tx_rx_gbe0_txs_ss_bram_addr => convert_addr_dout_net_x0,
-    zcu111_tengbe_tx_rx_gbe0_txs_ss_bram_data_in => convert_din1_dout_net_x0,
-    zcu111_tengbe_tx_rx_gbe0_txs_ss_bram_we => convert_we_dout_net_x0,
-    zcu111_tengbe_tx_rx_gbe0_txs_ss_status_user_data_in => cast_gw_dout_net_x9,
-    zcu111_tengbe_tx_rx_gbe0_txvldctr_user_data_in => cast_gw_dout_net_x18,
+    zcu111_tengbe_tx_rx_gbe0_rxs_ss_status_user_data_in => cast_gw_dout_net_x4,
+    zcu111_tengbe_tx_rx_gbe0_rxvldctr_user_data_in => cast_gw_dout_net_x3,
+    zcu111_tengbe_tx_rx_gbe0_txctr_user_data_in => cast_gw_dout_net_x2,
+    zcu111_tengbe_tx_rx_gbe0_txfullctr_user_data_in => cast_gw_dout_net_x1,
+    zcu111_tengbe_tx_rx_gbe0_txofctr_user_data_in => cast_gw_dout_net_x0,
+    zcu111_tengbe_tx_rx_gbe0_txs_ss_bram_addr => convert_addr_dout_net_x3,
+    zcu111_tengbe_tx_rx_gbe0_txs_ss_bram_data_in => convert_din1_dout_net_x3,
+    zcu111_tengbe_tx_rx_gbe0_txs_ss_bram_we => convert_we_dout_net_x3,
+    zcu111_tengbe_tx_rx_gbe0_txs_ss_status_user_data_in => cast_gw_dout_net_x21,
+    zcu111_tengbe_tx_rx_gbe0_txvldctr_user_data_in => cast_gw_dout_net_x22,
     goto_116913907_we1 => we_choice_y_net,
     goto_116913907_we4 => logical6_y_net,
-    goto_39954481_we1 => we_choice_y_net_x0,
-    goto_39954481_we4 => logical6_y_net_x0
+    goto_39954481_we1 => we_choice_y_net_x3,
+    goto_39954481_we4 => logical6_y_net_x1
   );
   gbe0_linkup : entity xil_defaultlib.zcu111_tengbe_tx_rx_gbe0_linkup 
   port map (
     out_reg => zcu111_tengbe_tx_rx_gbe0_led_up_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    zcu111_tengbe_tx_rx_gbe0_linkup_user_data_in => cast_gw_dout_net_x17
+    zcu111_tengbe_tx_rx_gbe0_linkup_user_data_in => cast_gw_dout_net_x27
   );
   gbe0_tx_cnt : entity xil_defaultlib.zcu111_tengbe_tx_rx_gbe0_tx_cnt 
   port map (
     out_reg => counter2_op_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    zcu111_tengbe_tx_rx_gbe0_tx_cnt_user_data_in => cast_gw_dout_net_x16
+    zcu111_tengbe_tx_rx_gbe0_tx_cnt_user_data_in => cast_gw_dout_net_x26
   );
   gbe1 : entity xil_defaultlib.zcu111_tengbe_tx_rx_gbe1 
   port map (
@@ -16768,6 +16923,7 @@ begin
     zcu111_tengbe_tx_rx_gbe1_rx_end_of_frame => zcu111_tengbe_tx_rx_gbe1_rx_end_of_frame_net,
     zcu111_tengbe_tx_rx_gbe1_rx_overrun => zcu111_tengbe_tx_rx_gbe1_rx_overrun_net,
     zcu111_tengbe_tx_rx_gbe1_rx_source_ip => zcu111_tengbe_tx_rx_gbe1_rx_source_ip_net,
+    zcu111_tengbe_tx_rx_gbe1_rx_source_port => zcu111_tengbe_tx_rx_gbe1_rx_source_port_net,
     zcu111_tengbe_tx_rx_gbe1_rx_valid => zcu111_tengbe_tx_rx_gbe1_rx_valid_net,
     zcu111_tengbe_tx_rx_gbe1_tx_afull => zcu111_tengbe_tx_rx_gbe1_tx_afull_net,
     zcu111_tengbe_tx_rx_gbe1_tx_overflow => zcu111_tengbe_tx_rx_gbe1_tx_overflow_net,
@@ -16786,23 +16942,23 @@ begin
     zcu111_tengbe_tx_rx_gbe1_rxbadctr_user_data_in => cast_gw_dout_net_x25,
     zcu111_tengbe_tx_rx_gbe1_rxctr_user_data_in => cast_gw_dout_net_x24,
     zcu111_tengbe_tx_rx_gbe1_rxeofctr_user_data_in => cast_gw_dout_net_x23,
-    zcu111_tengbe_tx_rx_gbe1_rxofctr_user_data_in => cast_gw_dout_net_x22,
-    zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_addr => convert_addr_dout_net_x3,
-    zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_data_in => convert_din1_dout_net_x3,
-    zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_we => convert_we_dout_net_x3,
-    zcu111_tengbe_tx_rx_gbe1_rxs_ss_status_user_data_in => cast_gw_dout_net_x21,
-    zcu111_tengbe_tx_rx_gbe1_rxvldctr_user_data_in => cast_gw_dout_net_x20,
-    zcu111_tengbe_tx_rx_gbe1_txctr_user_data_in => cast_gw_dout_net_x19,
-    zcu111_tengbe_tx_rx_gbe1_txfullctr_user_data_in => cast_gw_dout_net_x13,
-    zcu111_tengbe_tx_rx_gbe1_txofctr_user_data_in => cast_gw_dout_net_x12,
-    zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_addr => convert_addr_dout_net_x2,
-    zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_data_in => convert_din1_dout_net_x2,
-    zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_we => convert_we_dout_net_x2,
-    zcu111_tengbe_tx_rx_gbe1_txs_ss_status_user_data_in => cast_gw_dout_net_x11,
-    zcu111_tengbe_tx_rx_gbe1_txvldctr_user_data_in => cast_gw_dout_net_x10,
-    goto_114893778_we1 => we_choice_y_net_x3,
+    zcu111_tengbe_tx_rx_gbe1_rxofctr_user_data_in => cast_gw_dout_net_x18,
+    zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_addr => convert_addr_dout_net_x2,
+    zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_data_in => convert_din1_dout_net_x2,
+    zcu111_tengbe_tx_rx_gbe1_rxs_ss_bram_we => convert_we_dout_net_x2,
+    zcu111_tengbe_tx_rx_gbe1_rxs_ss_status_user_data_in => cast_gw_dout_net_x17,
+    zcu111_tengbe_tx_rx_gbe1_rxvldctr_user_data_in => cast_gw_dout_net_x16,
+    zcu111_tengbe_tx_rx_gbe1_txctr_user_data_in => cast_gw_dout_net_x15,
+    zcu111_tengbe_tx_rx_gbe1_txfullctr_user_data_in => cast_gw_dout_net_x14,
+    zcu111_tengbe_tx_rx_gbe1_txofctr_user_data_in => cast_gw_dout_net_x13,
+    zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_addr => convert_addr_dout_net_x1,
+    zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_data_in => convert_din1_dout_net_x1,
+    zcu111_tengbe_tx_rx_gbe1_txs_ss_bram_we => convert_we_dout_net_x1,
+    zcu111_tengbe_tx_rx_gbe1_txs_ss_status_user_data_in => cast_gw_dout_net_x20,
+    zcu111_tengbe_tx_rx_gbe1_txvldctr_user_data_in => cast_gw_dout_net_x19,
+    goto_114893778_we1 => we_choice_y_net_x2,
     goto_114893778_we4 => logical6_y_net_x3,
-    goto_37934352_we1 => we_choice_y_net_x2,
+    goto_37934352_we1 => we_choice_y_net_x1,
     goto_37934352_we4 => logical6_y_net_x2
   );
   gbe1_linkup : entity xil_defaultlib.zcu111_tengbe_tx_rx_gbe1_linkup 
@@ -16810,21 +16966,21 @@ begin
     out_reg => zcu111_tengbe_tx_rx_gbe1_led_up_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    zcu111_tengbe_tx_rx_gbe1_linkup_user_data_in => cast_gw_dout_net_x15
+    zcu111_tengbe_tx_rx_gbe1_linkup_user_data_in => cast_gw_dout_net_x11
   );
   gbe1_rx_frame_cnt : entity xil_defaultlib.zcu111_tengbe_tx_rx_gbe1_rx_frame_cnt 
   port map (
     out_reg => payload_cnt6_op_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    zcu111_tengbe_tx_rx_gbe1_rx_frame_cnt_user_data_in => cast_gw_dout_net_x14
+    zcu111_tengbe_tx_rx_gbe1_rx_frame_cnt_user_data_in => cast_gw_dout_net_x12
   );
   led0_gbe0_pulse_tx : entity xil_defaultlib.zcu111_tengbe_tx_rx_led0_gbe0_pulse_tx 
   port map (
     gpio_out => spulse_y_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    zcu111_tengbe_tx_rx_led0_gbe0_pulse_tx_gateway => convert_dout_net_x2
+    zcu111_tengbe_tx_rx_led0_gbe0_pulse_tx_gateway => convert_dout_net_x0
   );
   led1_gbe0_up : entity xil_defaultlib.zcu111_tengbe_tx_rx_led1_gbe0_up 
   port map (
@@ -16838,14 +16994,14 @@ begin
     gpio_out => slice2_y_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    zcu111_tengbe_tx_rx_led2_gbe1_pulse_rx_gateway => convert_dout_net_x0
+    zcu111_tengbe_tx_rx_led2_gbe1_pulse_rx_gateway => convert_dout_net
   );
   led3_gbe1_up : entity xil_defaultlib.zcu111_tengbe_tx_rx_led3_gbe1_up 
   port map (
     gpio_out => zcu111_tengbe_tx_rx_gbe1_led_up_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    zcu111_tengbe_tx_rx_led3_gbe1_up_gateway => convert_dout_net
+    zcu111_tengbe_tx_rx_led3_gbe1_up_gateway => convert_dout_net_x2
   );
   pkt_sim : entity xil_defaultlib.zcu111_tengbe_tx_rx_pkt_sim 
   port map (
@@ -16864,6 +17020,20 @@ begin
     in_core_rst => slice_core_rst_y_net,
     in_cnt_rst => slice_cnt_rst_y_net
   );
+  rx_source_ip : entity xil_defaultlib.zcu111_tengbe_tx_rx_rx_source_ip 
+  port map (
+    out_reg => zcu111_tengbe_tx_rx_gbe1_rx_source_ip_net,
+    clk_1 => clk_net,
+    ce_1 => ce_net,
+    zcu111_tengbe_tx_rx_rx_source_ip_user_data_in => cast_gw_dout_net_x8
+  );
+  rx_source_port : entity xil_defaultlib.zcu111_tengbe_tx_rx_rx_source_port 
+  port map (
+    out_reg => zcu111_tengbe_tx_rx_gbe1_rx_source_port_net,
+    clk_1 => clk_net,
+    ce_1 => ce_net,
+    zcu111_tengbe_tx_rx_rx_source_port_user_data_in => cast_gw_dout_net_x9
+  );
   tx_snapshot : entity xil_defaultlib.zcu111_tengbe_tx_rx_tx_snapshot 
   port map (
     in_data => delay3_q_net,
@@ -16873,52 +17043,12 @@ begin
     clk_1 => clk_net,
     ce_1 => ce_net,
     arm_out => arm_or_y_net,
-    zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_addr => convert_addr_dout_net_x1,
-    zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_in => convert_din1_dout_net_x1,
-    zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_we => convert_we_dout_net_x1,
-    zcu111_tengbe_tx_rx_tx_snapshot_ss_status_user_data_in => cast_gw_dout_net_x8,
-    goto_44864968_we1 => we_choice_y_net_x1,
-    goto_44864968_we4 => logical6_y_net_x1
-  );
-  constant4 : entity xil_defaultlib.sysgen_constant_e4d128fc1d 
-  port map (
-    clk => '0',
-    ce => '0',
-    clr => '0',
-    op => constant4_op_net
-  );
-  counter2 : entity xil_defaultlib.zcu111_tengbe_tx_rx_xlcounter_free 
-  generic map (
-    core_name0 => "zcu111_tengbe_tx_rx_c_counter_binary_v12_0_i0",
-    op_arith => xlUnsigned,
-    op_width => 32
-  )
-  port map (
-    clr => '0',
-    rst => slice_cnt_rst_y_net,
-    en => mux2_y_net,
-    clk => clk_net,
-    ce => ce_net,
-    op => counter2_op_net
-  );
-  delay : entity xil_defaultlib.sysgen_delay_716e845f50 
-  port map (
-    clr => '0',
-    d => zcu111_tengbe_tx_rx_gbe0_rx_bad_frame_net,
-    clk => clk_net,
-    ce => ce_net,
-    q => delay_q_net
-  );
-  spulse : entity xil_defaultlib.zcu111_tengbe_tx_rx_xlslice 
-  generic map (
-    new_lsb => 15,
-    new_msb => 15,
-    x_width => 32,
-    y_width => 1
-  )
-  port map (
-    x => counter2_op_net,
-    y => spulse_y_net
+    zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_addr => convert_addr_dout_net_x0,
+    zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_in => convert_din1_dout_net_x0,
+    zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_we => convert_we_dout_net_x0,
+    zcu111_tengbe_tx_rx_tx_snapshot_ss_status_user_data_in => cast_gw_dout_net_x10,
+    goto_44864968_we1 => we_choice_y_net_x0,
+    goto_44864968_we4 => logical6_y_net_x0
   );
   constant_x0 : entity xil_defaultlib.sysgen_constant_f2752652ad 
   port map (
@@ -16933,6 +17063,13 @@ begin
     ce => '0',
     clr => '0',
     op => constant1_op_net
+  );
+  constant4 : entity xil_defaultlib.sysgen_constant_e4d128fc1d 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    op => constant4_op_net
   );
   constant6 : entity xil_defaultlib.sysgen_constant_6475c9ee15 
   port map (
@@ -16961,6 +17098,28 @@ begin
     ce => '0',
     clr => '0',
     op => constant9_op_net
+  );
+  counter2 : entity xil_defaultlib.zcu111_tengbe_tx_rx_xlcounter_free 
+  generic map (
+    core_name0 => "zcu111_tengbe_tx_rx_c_counter_binary_v12_0_i0",
+    op_arith => xlUnsigned,
+    op_width => 32
+  )
+  port map (
+    clr => '0',
+    rst => slice_cnt_rst_y_net,
+    en => mux2_y_net,
+    clk => clk_net,
+    ce => ce_net,
+    op => counter2_op_net
+  );
+  delay : entity xil_defaultlib.sysgen_delay_716e845f50 
+  port map (
+    clr => '0',
+    d => zcu111_tengbe_tx_rx_gbe0_rx_bad_frame_net,
+    clk => clk_net,
+    ce => ce_net,
+    q => delay_q_net
   );
   delay1 : entity xil_defaultlib.sysgen_delay_716e845f50 
   port map (
@@ -16994,6 +17153,17 @@ begin
     clk => clk_net,
     ce => ce_net,
     op => payload_cnt6_op_net
+  );
+  spulse : entity xil_defaultlib.zcu111_tengbe_tx_rx_xlslice 
+  generic map (
+    new_lsb => 15,
+    new_msb => 15,
+    x_width => 32,
+    y_width => 1
+  )
+  port map (
+    x => counter2_op_net,
+    y => spulse_y_net
   );
 end structural;
 -- Generated from Simulink block 
@@ -17131,6 +17301,8 @@ entity zcu111_tengbe_tx_rx is
     zcu111_tengbe_tx_rx_led1_gbe0_up_gateway : out std_logic_vector( 1-1 downto 0 );
     zcu111_tengbe_tx_rx_led2_gbe1_pulse_rx_gateway : out std_logic_vector( 1-1 downto 0 );
     zcu111_tengbe_tx_rx_led3_gbe1_up_gateway : out std_logic_vector( 1-1 downto 0 );
+    zcu111_tengbe_tx_rx_rx_source_ip_user_data_in : out std_logic_vector( 32-1 downto 0 );
+    zcu111_tengbe_tx_rx_rx_source_port_user_data_in : out std_logic_vector( 32-1 downto 0 );
     zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_addr : out std_logic_vector( 12-1 downto 0 );
     zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_in : out std_logic_vector( 128-1 downto 0 );
     zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_we : out std_logic_vector( 1-1 downto 0 );
@@ -17139,7 +17311,7 @@ entity zcu111_tengbe_tx_rx is
 end zcu111_tengbe_tx_rx;
 architecture structural of zcu111_tengbe_tx_rx is 
   attribute core_generation_info : string;
-  attribute core_generation_info of structural : architecture is "zcu111_tengbe_tx_rx,sysgen_core_2019_1,{,compilation=HDL Netlist,block_icon_display=Default,family=zynquplusRFSOC,part=xczu28dr,speed=-2-e,package=ffvg1517,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=0,interface_doc=0,ce_clr=0,clock_period=3.9062,system_simulink_period=1,waveform_viewer=0,axilite_interface=0,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=10,addsub=5,assert=62,concat=40,constant=95,convert=79,counter=38,delay=185,inv=37,logical=79,mux=38,register=115,reinterpret=207,relational=22,shift=5,slice=115,}";
+  attribute core_generation_info of structural : architecture is "zcu111_tengbe_tx_rx,sysgen_core_2019_1,{,compilation=HDL Netlist,block_icon_display=Default,family=zynquplusRFSOC,part=xczu28dr,speed=-2-e,package=ffvg1517,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=0,interface_doc=0,ce_clr=0,clock_period=3.9062,system_simulink_period=1,waveform_viewer=0,axilite_interface=0,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=10,addsub=5,assert=64,concat=40,constant=95,convert=81,counter=38,delay=189,inv=37,logical=79,mux=38,register=115,reinterpret=209,relational=22,shift=5,slice=115,}";
   signal clk_1_net : std_logic;
   signal ce_1_net : std_logic;
 begin
@@ -17253,6 +17425,8 @@ begin
     zcu111_tengbe_tx_rx_led1_gbe0_up_gateway => zcu111_tengbe_tx_rx_led1_gbe0_up_gateway,
     zcu111_tengbe_tx_rx_led2_gbe1_pulse_rx_gateway => zcu111_tengbe_tx_rx_led2_gbe1_pulse_rx_gateway,
     zcu111_tengbe_tx_rx_led3_gbe1_up_gateway => zcu111_tengbe_tx_rx_led3_gbe1_up_gateway,
+    zcu111_tengbe_tx_rx_rx_source_ip_user_data_in => zcu111_tengbe_tx_rx_rx_source_ip_user_data_in,
+    zcu111_tengbe_tx_rx_rx_source_port_user_data_in => zcu111_tengbe_tx_rx_rx_source_port_user_data_in,
     zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_addr => zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_addr,
     zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_in => zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_data_in,
     zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_we => zcu111_tengbe_tx_rx_tx_snapshot_ss_bram_we,

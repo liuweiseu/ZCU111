@@ -172,6 +172,10 @@ entity axi4lite_ic_wrapper is
 		axi4lite_sw_reg_pkt_sim_period_out_we : out std_logic;
 		axi4lite_sw_reg_rst_out : out std_logic_vector(31 downto 0);
 		axi4lite_sw_reg_rst_out_we : out std_logic;
+		axi4lite_sw_reg_rx_source_ip_in : in std_logic_vector(31 downto 0);
+		axi4lite_sw_reg_rx_source_ip_in_we : in std_logic;
+		axi4lite_sw_reg_rx_source_port_in : in std_logic_vector(31 downto 0);
+		axi4lite_sw_reg_rx_source_port_in_we : in std_logic;
 		axi4lite_sw_reg_tx_snapshot_ss_ctrl_out : out std_logic_vector(31 downto 0);
 		axi4lite_sw_reg_tx_snapshot_ss_ctrl_out_we : out std_logic;
 		axi4lite_sw_reg_tx_snapshot_ss_status_in : in std_logic_vector(31 downto 0);
@@ -382,6 +386,10 @@ begin
 	axi4lite_sw_reg_pkt_sim_period_out_we <= axi4lite_sw_reg_out_we.pkt_sim_period;
 	axi4lite_sw_reg_rst_out <= axi4lite_sw_reg_out.rst;
 	axi4lite_sw_reg_rst_out_we <= axi4lite_sw_reg_out_we.rst;
+	axi4lite_sw_reg_in.rx_source_ip <= axi4lite_sw_reg_rx_source_ip_in;
+	axi4lite_sw_reg_in_we.rx_source_ip <= axi4lite_sw_reg_rx_source_ip_in_we;
+	axi4lite_sw_reg_in.rx_source_port <= axi4lite_sw_reg_rx_source_port_in;
+	axi4lite_sw_reg_in_we.rx_source_port <= axi4lite_sw_reg_rx_source_port_in_we;
 	axi4lite_sw_reg_tx_snapshot_ss_ctrl_out <= axi4lite_sw_reg_out.tx_snapshot_ss_ctrl;
 	axi4lite_sw_reg_tx_snapshot_ss_ctrl_out_we <= axi4lite_sw_reg_out_we.tx_snapshot_ss_ctrl;
 	axi4lite_sw_reg_in.tx_snapshot_ss_status <= axi4lite_sw_reg_tx_snapshot_ss_status_in;

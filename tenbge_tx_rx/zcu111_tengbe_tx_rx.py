@@ -104,11 +104,10 @@ try:
     sys.stdout.flush()
     #Set IP address of zcu111 and set arp-table
     gbe_tx = fpga.gbes[tx_core_name]
-    macs=mac_base+numpy.arange(256)
-    macs[21]=0x123456780001
-    gbe_tx.set_arp_table(macs)
     #The dest IP is 192.168.1.21, and the dest mac is 123456780001
-    #gbe_tx.set_single_arp_entry('192.168.1.21',0x123456780001)
+    macs=mac_base+numpy.arange(256)
+    macs[21]=0x185287200001
+    gbe_tx.set_arp_table(macs)
     fpga.write(tx_core_name, gbe_tx.mac.packed(), mac_location)
     fpga.write(tx_core_name, gbe_tx.ip_address.packed(), ip_location)
     value = (fpga.read_int(tx_core_name, word_offset = port_location) & 0xffff0000) | (gbe_tx.port & 0xffff)
@@ -121,8 +120,8 @@ try:
     sys.stdout.flush()
     gbe_rx = fpga.gbes[rx_core_name]
     macs=mac_base+numpy.arange(256)
+    macs[20]=0x185287200000
     gbe_rx.set_arp_table(macs)
-    #gbe_rx.set_single_arp_entry('192.168.1.20',0x123456780000)
     fpga.write(rx_core_name, gbe_rx.mac.packed(), mac_location)
     fpga.write(rx_core_name, gbe_rx.ip_address.packed(), ip_location)
     value = (fpga.read_int(rx_core_name, word_offset = port_location) & 0xffff0000) | (gbe_rx.port & 0xffff)
@@ -136,7 +135,15 @@ try:
     fpga.write_int('dest_ip',ip_base+21)
     fpga.write_int('dest_port',fabric_port)
     print('done')
-    
+    print('---------------------------')
+    print('tx core ip...')
+    print(gbe_tx.ip_address)
+    print('tx core mac...')
+    print(gbe_tx.mac)
+    print('rx core ip...')
+    print(gbe_rx.ip_address)
+    print('rx core mac...')
+    print(gbe_rx.mac)
     print('---------------------------')
     print('Setting-up packet source...')
     sys.stdout.flush()
@@ -183,7 +190,6 @@ try:
     print('-------------------------')
     print('Reading TX meta data')
     gbe_tx_ss = gbe_tx_snap_tx.read(arm=False)['data']
-    
     if sum(gbe_tx_ss['tx_full']):
         print('The TX core is overflowing!!')
     
@@ -218,4 +224,4 @@ try:
         pylab.plot(rx_data, label='RX data')
         pylab.show()
 except:
-    print('Error')
+    raise

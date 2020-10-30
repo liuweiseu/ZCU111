@@ -65,6 +65,8 @@ package axi4lite_sw_reg_pkg is
       pkt_sim_payload_len: std_logic_vector(31 downto 0);
       pkt_sim_period: std_logic_vector(31 downto 0);
       rst: std_logic_vector(31 downto 0);
+      rx_source_ip: std_logic_vector(31 downto 0);
+      rx_source_port: std_logic_vector(31 downto 0);
       tx_snapshot_ss_ctrl: std_logic_vector(31 downto 0);
       tx_snapshot_ss_status: std_logic_vector(31 downto 0);
    end record;
@@ -111,6 +113,8 @@ package axi4lite_sw_reg_pkg is
       pkt_sim_payload_len: std_logic;
       pkt_sim_period: std_logic;
       rst: std_logic;
+      rx_source_ip: std_logic;
+      rx_source_port: std_logic;
       tx_snapshot_ss_ctrl: std_logic;
       tx_snapshot_ss_status: std_logic;
    end record;
@@ -170,6 +174,8 @@ package axi4lite_sw_reg_pkg is
       pkt_sim_payload_len: t_reg_descr;
       pkt_sim_period: t_reg_descr;
       rst: t_reg_descr;
+      rx_source_ip: t_reg_descr;
+      rx_source_port: t_reg_descr;
       tx_snapshot_ss_ctrl: t_reg_descr;
       tx_snapshot_ss_status: t_reg_descr;
    end record;
@@ -212,8 +218,10 @@ package axi4lite_sw_reg_pkg is
       pkt_sim_payload_len    => (X"00000084",31, 0,X"00000000",async_reset,X"0000009c",rw),
       pkt_sim_period         => (X"00000088",31, 0,X"00000000",async_reset,X"0000009c",rw),
       rst                    => (X"0000008c",31, 0,X"00000000",async_reset,X"0000009c",rw),
-      tx_snapshot_ss_ctrl    => (X"00000090",31, 0,X"00000000",async_reset,X"00000094",rw),
-      tx_snapshot_ss_status  => (X"00000094",31, 0,X"00000000",async_reset,X"00000094",r)
+      rx_source_ip           => (X"00000090",31, 0,X"00000000",async_reset,X"0000009c",r),
+      rx_source_port         => (X"00000094",31, 0,X"00000000",async_reset,X"0000009c",r),
+      tx_snapshot_ss_ctrl    => (X"00000098",31, 0,X"00000000",async_reset,X"0000009c",rw),
+      tx_snapshot_ss_status  => (X"0000009c",31, 0,X"00000000",async_reset,X"0000009c",r)
    );
 
    --##########################################################################
@@ -453,6 +461,16 @@ package body axi4lite_sw_reg_pkg is
          sw_reg_decoded.rst := '1';
       end if;
       
+      sw_reg_decoded.rx_source_ip := '0';
+      if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.rx_source_ip,addr) = true and en = '1' then
+         sw_reg_decoded.rx_source_ip := '1';
+      end if;
+      
+      sw_reg_decoded.rx_source_port := '0';
+      if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.rx_source_port,addr) = true and en = '1' then
+         sw_reg_decoded.rx_source_port := '1';
+      end if;
+      
       sw_reg_decoded.tx_snapshot_ss_ctrl := '0';
       if axi4lite_sw_reg_decoder(axi4lite_sw_reg_descr.tx_snapshot_ss_ctrl,addr) = true and en = '1' then
          sw_reg_decoded.tx_snapshot_ss_ctrl := '1';
@@ -506,6 +524,8 @@ package body axi4lite_sw_reg_pkg is
       sw_reg.pkt_sim_payload_len <= axi4lite_sw_reg_descr.pkt_sim_payload_len.rst_val(31 downto 0);
       sw_reg.pkt_sim_period <= axi4lite_sw_reg_descr.pkt_sim_period.rst_val(31 downto 0);
       sw_reg.rst <= axi4lite_sw_reg_descr.rst.rst_val(31 downto 0);
+      sw_reg.rx_source_ip <= axi4lite_sw_reg_descr.rx_source_ip.rst_val(31 downto 0);
+      sw_reg.rx_source_port <= axi4lite_sw_reg_descr.rx_source_port.rst_val(31 downto 0);
       sw_reg.tx_snapshot_ss_ctrl <= axi4lite_sw_reg_descr.tx_snapshot_ss_ctrl.rst_val(31 downto 0);
       sw_reg.tx_snapshot_ss_status <= axi4lite_sw_reg_descr.tx_snapshot_ss_status.rst_val(31 downto 0);
 
@@ -551,6 +571,8 @@ package body axi4lite_sw_reg_pkg is
       sw_reg_rst.pkt_sim_payload_len := '1';
       sw_reg_rst.pkt_sim_period := '1';
       sw_reg_rst.rst := '1';
+      sw_reg_rst.rx_source_ip := '1';
+      sw_reg_rst.rx_source_port := '1';
       sw_reg_rst.tx_snapshot_ss_ctrl := '1';
       sw_reg_rst.tx_snapshot_ss_status := '1';
   
@@ -596,6 +618,8 @@ package body axi4lite_sw_reg_pkg is
       sw_reg.pkt_sim_payload_len <= '0';
       sw_reg.pkt_sim_period <= '0';
       sw_reg.rst <= '0';
+      sw_reg.rx_source_ip <= '0';
+      sw_reg.rx_source_port <= '0';
       sw_reg.tx_snapshot_ss_ctrl <= '0';
       sw_reg.tx_snapshot_ss_status <= '0';
 
@@ -801,6 +825,14 @@ package body axi4lite_sw_reg_pkg is
       
       if sw_reg_decoded.rst = '1' then
          ret(31 downto 0) := sw_reg.rst;
+      end if;
+      
+      if sw_reg_decoded.rx_source_ip = '1' then
+         ret(31 downto 0) := sw_reg.rx_source_ip;
+      end if;
+      
+      if sw_reg_decoded.rx_source_port = '1' then
+         ret(31 downto 0) := sw_reg.rx_source_port;
       end if;
       
       if sw_reg_decoded.tx_snapshot_ss_ctrl = '1' then

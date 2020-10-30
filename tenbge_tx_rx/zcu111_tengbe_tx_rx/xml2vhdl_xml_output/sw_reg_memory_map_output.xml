@@ -36,7 +36,9 @@
 	<node address="0x00000084" description="sw_reg_pkt_sim_payload_len" hw_rst="0" id="pkt_sim_payload_len" mask="0xffffffff" permission="rw" size="1"/>
 	<node address="0x00000088" description="sw_reg_pkt_sim_period" hw_rst="0" id="pkt_sim_period" mask="0xffffffff" permission="rw" size="1"/>
 	<node address="0x0000008c" description="sw_reg_rst" hw_rst="0" id="rst" mask="0xffffffff" permission="rw" size="1"/>
-	<node address="0x00000090" description="sw_reg_tx_snapshot_ss_ctrl" hw_rst="0" id="tx_snapshot_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
-	<node address="0x00000094" description="sw_reg_tx_snapshot_ss_status" hw_rst="0x0" id="tx_snapshot_ss_status" mask="0xffffffff" permission="r" size="1"/>
+	<node address="0x00000090" description="sw_reg_rx_source_ip" hw_rst="0x0" id="rx_source_ip" mask="0xffffffff" permission="r" size="1"/>
+	<node address="0x00000094" description="sw_reg_rx_source_port" hw_rst="0x0" id="rx_source_port" mask="0xffffffff" permission="r" size="1"/>
+	<node address="0x00000098" description="sw_reg_tx_snapshot_ss_ctrl" hw_rst="0" id="tx_snapshot_ss_ctrl" mask="0xffffffff" permission="rw" size="1"/>
+	<node address="0x0000009c" description="sw_reg_tx_snapshot_ss_status" hw_rst="0x0" id="tx_snapshot_ss_status" mask="0xffffffff" permission="r" size="1"/>
 </node>
 <!-- This file has been automatically generated using xml2vhdl.py version 1.16 /!-->

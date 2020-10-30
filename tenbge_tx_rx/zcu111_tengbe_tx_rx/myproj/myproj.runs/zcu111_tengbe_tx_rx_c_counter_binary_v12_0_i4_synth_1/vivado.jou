@@ -2,8 +2,8 @@
 # Vivado v2019.1.3 (64-bit)
 # SW Build 2644227 on Wed Sep  4 09:44:18 MDT 2019
 # IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
-# Start of session at: Fri Oct 23 14:31:10 2020
-# Process ID: 22742
+# Start of session at: Sat Oct 24 23:55:14 2020
+# Process ID: 14088
 # Current directory: /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx/myproj/myproj.runs/zcu111_tengbe_tx_rx_c_counter_binary_v12_0_i4_synth_1
 # Command line: vivado -log zcu111_tengbe_tx_rx_c_counter_binary_v12_0_i4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zcu111_tengbe_tx_rx_c_counter_binary_v12_0_i4.tcl
 # Log file: /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx/myproj/myproj.runs/zcu111_tengbe_tx_rx_c_counter_binary_v12_0_i4_synth_1/zcu111_tengbe_tx_rx_c_counter_binary_v12_0_i4.vds

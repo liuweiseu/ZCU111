@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.3 (64-bit)
+# SW Build 2644227 on Wed Sep  4 09:44:18 MDT 2019
+# IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+# Start of session at: Thu Oct 29 20:17:15 2020
+# Process ID: 8629
+# Current directory: /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/cpu_buffer_synth_1
+# Command line: vivado -log cpu_buffer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_buffer.tcl
+# Log file: /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/cpu_buffer_synth_1/cpu_buffer.vds
+# Journal file: /home/wei/casper/ZCU111/tenbge_tx_rx/zcu111_tengbe_tx_rx_direct/myproj/myproj.runs/cpu_buffer_synth_1/vivado.jou
+#-----------------------------------------------------------
+source cpu_buffer.tcl -notrace

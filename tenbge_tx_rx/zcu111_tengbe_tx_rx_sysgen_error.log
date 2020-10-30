@@ -1,0 +1,25 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2019.1                 /home/wei/Software/Vivado_2019_1/install/Vivado/2019.1
+Matlab 9.4.0.949201 (R2018a) Update 6   /home/wei/Software/matlab2018a/install
+Vivado 2019.1                           /home/wei/Software/Vivado_2019_1/install/Vivado/2019.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Type assertion failed
+     Block: 'zcu111_tengbe_tx_rx/rx_source_port /assert_reg'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'zcu111_tengbe_tx_rx/rx_source_port /assert_reg'
+
+Details:
+The input type propagated to this block did not match the
+specified type.
+  Expected Type: UFix_32_0
+  Actual Type: UFix_16_0
+
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
